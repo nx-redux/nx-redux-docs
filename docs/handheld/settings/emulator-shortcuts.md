@@ -23,6 +23,10 @@ hidden in [Simple Mode](simple-mode.md).
   seconds; `B` cancels.
 - `LEFT` / `RIGHT` steps through the buttons instead.
 - Press `X` to clear a shortcut (`NONE`).
+- Each button or `MENU` + button combination can be on only one shortcut.
+  If another shortcut already uses the one you press, the screen names that
+  shortcut and waits for a different button. `LEFT` / `RIGHT` skips the ones
+  in use. To move a button to another shortcut, clear it first.
 
 Prefer `MENU` + button combinations: a shortcut on a plain button the game
 also uses does both, while a `MENU` + button shortcut doesn't press that

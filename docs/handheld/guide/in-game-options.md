@@ -123,6 +123,8 @@ the rest keep following Settings.
   button for a `MENU` + button combination.
 - Press `X` to clear a shortcut you set here. It goes back to the Settings
   button.
+- A button you already set here for another shortcut can't be used twice.
+  The line below the list names that shortcut; clear it first.
 - Keep them with [Save Changes](#save-changes), for the console or for the
   game.
 
