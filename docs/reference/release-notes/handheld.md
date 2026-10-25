@@ -9,6 +9,25 @@ for every device from the
 [releases page](https://github.com/nx-redux/nx-handheld/releases), or
 update on the device from [Settings → About](../../handheld/settings/about.md).
 
+## v2.4.1
+
+*25 October 2026*
+
+Fixes for Emulator Shortcuts.
+
+### Fixes
+
+- **Toggle D-pad Joystick (Brick):** now also works in
+  [PortMaster](../../handheld/apps/portmaster.md) ports, using the same
+  button you set in
+  [Emulator Shortcuts](../../handheld/settings/emulator-shortcuts.md). A buzz
+  confirms each switch: one for joystick, two for D-pad. The option is now
+  shown only on the Brick, since the Brick Pro and Smart Pro S have real
+  sticks.
+- **No shared buttons:** Emulator Shortcuts, and **Options → Shortcuts** in
+  game, no longer let two shortcuts use the same button or combo. Pick one
+  that's already taken and it's refused, with the name of the shortcut using it.
+
 ## v2.4.0
 
 *24 October 2026*
