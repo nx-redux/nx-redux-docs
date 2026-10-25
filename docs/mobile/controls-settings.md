@@ -1,7 +1,8 @@
 # Controls settings
 
 **Tools → Settings → Controls** sets how strong the vibration is, whether the
-main menu has the on-screen pad, and where the pad's buttons sit. The rows
+main menu has the on-screen pad, where the pad's buttons sit, and your
+in-game shortcuts. The rows
 work as on every [Settings](settings.md#buttons) page: `Left` / `Right` step
 a value, and `A` or a tap flips a switch or picks a choice.
 
@@ -11,6 +12,7 @@ a value, and `A` or a tap flips a switch or picks a choice.
 | [**Game rumble**](#game-rumble) | Strength of the game's own rumble | Off, Light, Medium, Strong | Medium |
 | [**Menu pad**](#menu-pad) | On-screen pad below the main menu | On, Off | On |
 | [**Pad layout**](#pad-layout) | Move and resize the pad's buttons | Default, Custom | Default |
+| [**Shortcuts**](#shortcuts) | Controller buttons and touch buttons for fast forward, rewind, reset and Save & Quit | | |
 | [**Reset to defaults**](#reset-to-defaults) | Puts this page back to its defaults | | |
 
 ![Settings, with Controls open beside the sections: Pad vibration Light, Game rumble Medium, Menu pad On, Pad layout Default, Reset to defaults](../assets/screenshots/mobile/settings-controls.webp){ .nx-wide }
@@ -91,8 +93,73 @@ In the editor:
       over **Reset** (the selected group), **Reset all**, **Cancel** and
       **Save**. Drag the panel aside when it covers a group.
 
+## Shortcuts
+
+Actions you can run during play: from a controller button or a `MENU` +
+button combination, or from up to two touch buttons on the on-screen pad.
+Nothing is bound by default. Every console and game uses these, unless its
+in-game [Options → Shortcuts](in-game-menu.md#shortcuts) page sets its own.
+
+| Shortcut | What it does |
+| --- | --- |
+| **Toggle FF** / **Hold FF** | Fast forward: on and off with each press, or only while held. |
+| **Toggle Rewind** / **Hold Rewind** | Rewind: on and off with each press, or only while held. Needs [Rewind](in-game-menu.md#console-settings) turned on for the console. |
+| **Reset Game** | Restart the game. It asks first. |
+| **Save & Quit** | Save your place and leave the game, as the in-game menu's [Save & Quit](in-game-menu.md#quitting) does. A controller's only: it can't be a touch button. |
+
+Fast forward runs at the console's **Max FF Speed**, and turning on fast
+forward turns rewind off, and the other way round. See
+[Console Settings](in-game-menu.md#console-settings).
+
+### Binding a button
+
+- Press `A` on a shortcut, then press the button you want. For a
+  combination, hold `MENU` and press another button.
+- `B` cancels the wait, and `X` sets the shortcut back to **None**.
+- Each button or combination does one thing. Pressing one another shortcut
+  already uses moves it to this shortcut, and the other one becomes
+  **None**.
+- Binding needs a controller. Without one, the row reads **Connect a
+  controller to bind**.
+
+Prefer `MENU` + button combinations. A shortcut on a plain button the game
+also uses takes that button from the game, while a combination leaves every
+button to the game.
+
+??? info "More detail"
+    - `MENU` alone and `SELECT` + `START` open the in-game menu, and `SELECT`
+      and `START` stay the game's, so `MENU` alone, `SELECT` and `START`
+      can't be bound, alone or in a combination.
+    - A console's own hotkeys win over shortcuts. On the Nintendo DS, for
+      example, `R2` swaps the screens and `L2` is the stylus, so a shortcut
+      on either shows **Unavailable** in that console's games. See
+      [Console shortcuts](controls.md#console-shortcuts).
+    - With any `MENU` combination bound, `MENU` opens the menu when you let
+      go of it, and only after a short press: holding it for a combination
+      never opens the menu.
+    - Shortcuts are off during a [netplay](netplay.md) match, since they
+      would put the players out of step.
+    - Only the first player's controller runs shortcuts.
+
+### Touch buttons
+
+**Touch button 1** and **Touch button 2** put a button on the on-screen pad
+for one action. **None**, the default, leaves it off the pad. A hold action
+works while your finger stays on it, and a toggle flips with each tap.
+Move them with the other buttons in [Pad layout](#pad-layout).
+
+??? info "More detail"
+    - A rewind button is hidden while the console's **Rewind** is off, or in
+      a game that can't rewind.
+    - The touch buttons are hidden during a netplay match.
+
+### Clear all
+
+Sets every shortcut to **None** and takes both touch buttons off the pad.
+
 ## Reset to defaults
 
 Puts **Pad vibration**, **Game rumble** and **Menu pad** back to their
 defaults, and every pad layout back to the default pad. It does not ask
-first.
+first. Your [shortcuts](#shortcuts) stay: **Clear all** on their page
+clears them.
