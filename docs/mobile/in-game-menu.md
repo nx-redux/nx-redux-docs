@@ -75,7 +75,11 @@ On **Quit**:
   was.
 
 Both keep the game's battery save. Leaving the app with the game open also
-saves your place.
+saves your place. Either way you land straight back where you started the
+game: Home, the game list or the Game Switcher.
+
+On a controller, a **Save & Quit** [shortcut](controls-settings.md#shortcuts)
+does the same without opening the menu. It is unbound until you set it.
 
 ![The Quit Game dialog over the first page: Save & Quit and Quit](../assets/screenshots/mobile/in-game-quit-dialog.webp){ .nx-wide }
 
@@ -147,7 +151,8 @@ By touch, tap a tab, a shortcut, a cheat or a player row.
 
 | Row | What it's for |
 | --- | --- |
-| [Console Settings](#console-settings) | Controller rows, and some console-specific rows. |
+| [Console Settings](#console-settings) | Controller rows, fast forward and rewind, and some console-specific rows. |
+| [Shortcuts](#shortcuts) | This console's or game's own shortcuts. |
 | [Frontend](#frontend) | Scaling, sharpness, overlay, screen offset, pad opacity and the debug HUD. |
 | [Shaders](#shaders) | Shader presets and their parameters. |
 | [Core Options](#core-options) | The emulator core's own settings. |
@@ -186,6 +191,10 @@ switch, choices or list as described in [Options rows](#options-rows).
 | **Portrait Pad** | Nintendo DS, Nintendo 3DS | Shown, Hidden | Shown |
 | **Wii Controller**, **Motion Controls** | Nintendo Wii | See [Nintendo Wii & GameCube](emulators/wii-gamecube.md#wii) | Auto |
 | **Bottom screen** | Every console, while a second screen is connected | System default, Main screen, Second screen | System default |
+| **Max FF Speed** | Every console | 2x to 8x | 4x |
+| **Fast Forward Audio** | Every console | Off, On | Off |
+| **Rewind** | Consoles whose emulator can rewind | Off, On | Off |
+| **Rewind Audio** | Consoles whose emulator can rewind | Off, On | Off |
 
 - **Controller Type** is the Sega pad the game sees.
 - **Controller Layout** names the letters printed on your controller. See
@@ -194,6 +203,12 @@ switch, choices or list as described in [Options rows](#options-rows).
   See [Nintendo DS](emulators/nintendo-ds.md#portrait-pad).
 - **Bottom screen** picks the touch screen for this console. See
   [Dual Screens & External Displays](dual-screen.md#for-one-console).
+- **Max FF Speed** is how fast fast forward runs. **Fast Forward Audio** and
+  **Rewind Audio** play the game's sound while it runs fast or backwards.
+- **Rewind** keeps the last moments of play so a
+  [rewind shortcut](controls-settings.md#shortcuts) or the panel's
+  **Rewind** can go back. It uses battery, so it is off until you turn it
+  on.
 
 Settings the game reads only when it starts, such as **Graphics API**, aren't
 here. Set them in [Game Settings](emulator-settings.md#game-settings) or
@@ -211,6 +226,29 @@ here. Set them in [Game Settings](emulator-settings.md#game-settings) or
       Screen** and **Pointer** rows. Changing them here would do nothing until
       the next launch. Set them for one game in Game Settings, or for the
       console in Emulator Settings.
+
+## Shortcuts
+
+This console's or game's own [shortcuts](controls-settings.md#shortcuts),
+over the ones in **Tools → Settings → Controls → Shortcuts**: one row per
+shortcut, then **Touch button 1** and **Touch button 2**. A row ending in
+**(default)** follows Controls; once you change it, it is this console's or
+game's own.
+
+- Press `A` on a shortcut, then the button you want. For a combination, hold
+  `MENU` and press another button. `B` cancels the wait.
+- `X` sets the row to **None** here, and `Y` puts it back to the default.
+- On a touch button, `LEFT` / `RIGHT` pick its action.
+
+As with every Options page, keep your changes with
+[Save Changes](#save-changes), for this console or this game.
+
+??? info "More detail"
+    - A shortcut on a button the console's own hotkeys use reads
+      **Unavailable**, with the hotkey as its line. See
+      [Console shortcuts](controls.md#console-shortcuts).
+    - The rewind rows are left out for consoles whose emulator can't rewind.
+    - **Save & Quit** can't be a touch button.
 
 ## Frontend
 
@@ -367,8 +405,8 @@ details page for now.
 
 ## Save Changes
 
-Keeps what you changed in Console Settings, Frontend, Shaders and Core
-Options.
+Keeps what you changed in Console Settings, Shortcuts, Frontend, Shaders and
+Core Options.
 
 ![The Save Changes page](../assets/screenshots/mobile/in-game-save-changes.webp){ .nx-wide }
 

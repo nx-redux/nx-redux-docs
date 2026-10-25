@@ -213,13 +213,19 @@ Below it are up to four tabs. A tab shows only when it applies.
 | --- | --- | --- |
 | **Swap disc** | A game with more than one disc | Puts the next disc in, such as **Disc 2 of 3**. The button shows the disc in use, such as `1/2`. |
 | **Second screen** | A second screen is connected | Turns the second screen on or off. Filled while on. |
-| **Fast forward**, **Rewind**, **Screenshot**, **Reset** | Always | Shown dimmed: not available yet. |
+| **Fast forward** | Always | Turns fast forward on or off. Filled while on. |
+| **Rewind** | The console's [Rewind](in-game-menu.md#console-settings) is on | Turns rewind on or off. Filled while on. |
+| **Reset** | Always | Restarts the game. It asks first. |
 
 ??? info "More detail"
     - **Swap disc** works as the in-game menu's **Disc** row does, while the
       game keeps running.
     - **Second screen** changes **Settings → Second screen → Enable**.
-    - In a [netplay](netplay.md) match, **Swap disc** is hidden.
+    - **Fast forward** and **Rewind** work as the Toggle
+      [shortcuts](controls-settings.md#shortcuts): turning one on turns the
+      other off. From the in-game menu, they close the menu.
+    - In a [netplay](netplay.md) match, **Swap disc**, **Fast forward**,
+      **Rewind** and **Reset** are hidden.
 
 ### Achievements
 

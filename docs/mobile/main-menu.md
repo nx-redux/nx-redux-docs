@@ -333,7 +333,8 @@ also run **down** the screen instead of across: set its **orientation** row
 in [Layouts](layouts.md) to **Vertical**.
 
 - `Up` / `Down` move through the items, wrapping as a [List](#consoles-list) does.
-- `Left` / `Right` switch tabs on a tab, and do nothing in a game list.
+- `Left` / `Right` switch tabs on a tab, and move a page in a game list (see
+  [Game lists](#game-lists)).
 
 <div class="grid" markdown>
 
@@ -475,15 +476,30 @@ names leave out the region and version text in brackets.
 | `Y` **Netplay** | Play the game with another device. Shown for games that have [netplay](netplay.md) |
 | `B` | Return to the tab |
 | `A` **Resume** / **Open** | Launch the game. **Resume** continues from its auto-save; **Open** shows when it has none |
+| `L1` / `R1` | Jump to the first game of the previous or next letter |
+| `Left` / `Right` | Move a page up or down: in List, Minimal and a vertical Carousel or Backdrop |
 
 A long press on a game opens the context menu too. To start a game with an
 auto-save from the beginning, choose **Play from start** in its menu.
+
+**Jumping through a long list.** `L1` / `R1` work in every layout. They step
+through the games by first letter: names starting with a digit or a symbol
+come first, then `A` to `Z`, then names starting with an accented letter.
+`Left` / `Right` move by as many games as the screen shows, and stop at the
+first and last game. Hold either button to keep going.
 
 ??? info "More detail"
     - For games with achievements, the info line adds your progress and the
       next achievement to go for.
     - The hint bar has no `B` **Back**, to leave room for the game's own
       actions. `B` still returns to the tab.
+    - `L1` / `R1` jump only in a console's list. Recently Played, a
+      collection, Hidden games and search results aren't in name order, so
+      there they do nothing.
+    - In Grid and in a horizontal Carousel or Backdrop, `Left` / `Right` move
+      one game, as before.
+    - `L1` from inside a letter goes to the start of the letter before it,
+      as on the handheld.
 
 ### List { #games-list }
 

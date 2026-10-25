@@ -278,7 +278,8 @@ saves). To feel a game's rumble:
 | `SELECT` | Open the [Game Switcher](game-switcher.md). The main menu's hint reads **Recent**. |
 | `START` | On the main menu, [search](main-menu.md#search) your games. In a game list, [search that list's games](main-menu.md#searching-a-game-list) |
 | `MENU`, or a long press | Open the context menu |
-| `L1` / `R1` | Switch main menu tabs |
+| `L1` / `R1` | Switch main menu tabs. In a console's game list, jump to the previous or next letter |
+| `Left` / `Right` | In a game list drawn as a List, Minimal or a vertical Carousel or Backdrop, move a page. See [Game lists](main-menu.md#game-lists) |
 
 **Which button confirms:**
 
@@ -327,9 +328,12 @@ and where it shows.
 ## In-game menu
 
 Press `MENU`, hold `SELECT` + `START`, or use Android's Back gesture during a
-game. The menu has save states and Options: Console Settings, Frontend,
-Shaders, Core Options, Cheats, Achievements and Save Changes. See
+game. The menu has save states and Options: Console Settings, Shortcuts,
+Frontend, Shaders, Core Options, Cheats, Achievements and Save Changes. See
 [In-game Menu](in-game-menu.md).
+
+For fast forward, rewind, reset and Save & Quit without the menu, bind
+[shortcuts](controls-settings.md#shortcuts) to your controller's buttons.
 
 ## Console shortcuts
 
@@ -340,7 +344,8 @@ In a multiplayer game, `SELECT` + `START` works on Player 1's controller only.
     `MENU` and the combo never reach the game, but the game does see the
     `SELECT` press before `START`, except on the Nintendo 3DS.
 
-Some consoles have buttons and shortcuts of their own. They are on each
+Some consoles have buttons and shortcuts of their own, and they win over
+the [shortcuts](controls-settings.md#shortcuts) you bind. They are on each
 console's page:
 
 | Console | Its own buttons |
