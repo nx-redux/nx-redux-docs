@@ -37,8 +37,8 @@ screens.
 The on-screen pad is laid out like a 3DS. `STICK` / `D-PAD` switches between
 the d-pad and the Circle Pad. Games that use the New 3DS buttons also get
 `ZL`, `ZR` and the C-stick: see [New 3DS controls](#new-3ds-controls).
-The round button in the pad's bottom-left corner is the
-[mic button](#microphone).
+The round button in the pad's bottom-left corner (right of `L` in
+landscape) is the [mic button](#microphone).
 
 The pad also has **STYLUS**, which turns [stylus mode](#stylus-mode) on or
 off (pressed in while it's on), and **SWAP**, which swaps the screens. In
@@ -247,8 +247,8 @@ room.
 ## Microphone
 
 Games that listen for a blow, a shout or your voice hear your phone's
-microphone while the **Mic** is on. Turn it on with the **mic button** in the
-on-screen pad's bottom-left corner, the **Mic** tile in the game panel's
+microphone while the **Mic** is on. Turn it on with the round **mic button**
+on the on-screen pad, the **Mic** tile in the game panel's
 [Shortcuts](../dual-screen.md#shortcuts) tab, or a **Toggle mic**
 [shortcut](../controls-settings.md#shortcuts) on a controller. It works as on
 the [Nintendo DS](nintendo-ds.md#microphone): Android asks the first time,
@@ -266,7 +266,7 @@ each time a game starts.
 In portrait, long-press the arrow in the pad's bottom-right corner to hide
 the pad band. The two screens get its room, and one see-through pad lies
 across the bottom of the screen instead; the screens reach into it by a
-quarter of its height at most. The arrow stays in the
+third of its height at most. The arrow stays in the
 corner: long-press it again to bring the band back. A plain tap does
 nothing.
 

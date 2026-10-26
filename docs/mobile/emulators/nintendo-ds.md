@@ -25,7 +25,8 @@ on the pad are the app's, and a round one:
   while stylus mode is on.
 - **SWAP** swaps the big screen.
 - The **mic button** lets the game hear the
-  [microphone](#microphone). It sits in the pad's bottom-left corner.
+  [microphone](#microphone). It sits in the pad's bottom-left corner in
+  portrait, and right of `L` in landscape.
 
 In portrait they sit either side of `MENU` and `STICK`. In landscape
 **STYLUS** is under `MENU` and **SWAP** under `START`; with the portrait
@@ -209,7 +210,7 @@ Some games ask you to blow or shout into the DS's microphone: Fossil Fighters,
 Zelda Spirit Tracks and Nintendogs, for example. Turn the **Mic** on when the
 game asks, and off again afterwards:
 
-- tap the **mic button** in the on-screen pad's bottom-left corner,
+- tap the round **mic button** on the on-screen pad,
 - or tap **Mic** in the game panel's
   [Shortcuts](../dual-screen.md#shortcuts) tab,
 - or bind **Toggle mic** to a controller button in
@@ -244,8 +245,8 @@ The Mic is off each time a game starts, and is not saved.
         - Portrait: the band's bottom-left corner, level with the arrow
           that hides the band. With the band hidden, it is first in the
           bottom row, left of `MENU`.
-        - Landscape and half-folded: the left half's bottom corner, toward
-          the game.
+        - Landscape and half-folded: right of `L`, in the left half's
+          top row.
     - The mic button is not part of [Pad layout](../controls-settings.md#pad-layout):
       it stays where it is. The editor draws it so you can keep other
       buttons clear of it.
@@ -255,7 +256,7 @@ The Mic is off each time a game starts, and is not saved.
 In portrait, long-press the arrow in the pad's bottom-right corner to hide
 the pad band. The two screens get its room, and one see-through pad lies
 across the bottom of the screen instead; the screens reach into it by a
-quarter of its height at most. The arrow stays in the
+third of its height at most. The arrow stays in the
 corner: long-press it again to bring the band back. A plain tap does
 nothing.
 
