@@ -70,7 +70,7 @@ Eight consoles have a second emulator, each with its own tag:
 | Sega SG-1000 | `SG1000` (PicoDrive), `GPGX` (Genesis Plus GX) |
 | Sega CD | `SEGACD` (PicoDrive), `GPGX` (Genesis Plus GX) |
 
-- For a whole console: **Tools → Settings → Emulators → Default
+- For a whole console: **Tools → Settings → Emulation → Default
   emulators**.
 - For one game: press `MENU` on it in a game list, or long-press it, and
   pick **Emulator**. This wins over the default.

@@ -1,13 +1,13 @@
 # Emulator Settings
 
-**Tools → Settings → Emulators → Settings** opens **Emulator Settings**. It
+**Tools → Settings → Emulation → Default settings** opens **Emulator Settings**. It
 sets each emulator's options for a whole console, without starting a game
 first.
 
-The **Emulators** section holds two rows: **Default emulators** (see
-[below](#default-emulators)) and **Settings**.
+The **Emulation** section holds two rows: **Default emulators** (see
+[below](#default-emulators)) and **Default settings**.
 
-![Settings, with Emulators open beside the sections: Default emulators and Settings](../assets/screenshots/mobile/settings-emulators.webp){ .nx-wide }
+![Settings, with Emulation open beside the sections: Default emulators and Default settings](../assets/screenshots/mobile/settings-emulators.webp){ .nx-wide }
 
 For one game, use **Game Settings** in the game's context menu instead. See
 [Game Settings](#game-settings).
@@ -107,7 +107,7 @@ The second screen has its own section in Settings: see
 ## Default emulators
 
 Some consoles can run on more than one emulator. **Tools → Settings →
-Emulators → Default emulators** picks the emulator for a game with
+Emulation → Default emulators** picks the emulator for a game with
 no emulator of its own.
 
 ![Default emulators beside the Settings sections: one row per console with its emulator and tag, such as Game Boy Advance with gpSP (GBA)](../assets/screenshots/mobile/default-emulators.webp){ .nx-wide }
