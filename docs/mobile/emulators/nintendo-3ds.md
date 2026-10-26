@@ -126,7 +126,9 @@ value; keep it for the game or the console with
 
 In a game the page lists only one **Layout** row, the one in use for the way
 you're holding the phone (**Layout (portrait, controller)** while a controller
-hides the pad); the other rows all stay. Turn the phone or pick another layout and the row follows. Emulator
+hides the pad); the other rows all stay. The **Layout** rows change in place
+without a preview: Azahar draws the layout, so the new one shows when you go
+back to the game. Turn the phone or pick another layout and the row follows. Emulator
 Settings and Game Settings list every row, so you can set up each
 orientation there.
 
