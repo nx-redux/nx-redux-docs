@@ -79,7 +79,7 @@ while that layout is **Picture in picture**. Turn the phone or pick another layo
 Emulator Settings and Game Settings list every row, so you can set up each
 orientation there.
 
-![Console Settings of Super Princess Peach on DS: the three Layout rows, Big Screen, Inset Corner and Inset Size](../../assets/screenshots/mobile/ds-console-settings.webp){ .nx-wide }
+![Console Settings in Mario Kart DS on the Fold's cover screen: the landscape Layout row, 3D Resolution at Auto · 4x now with Max Scale, Big Screen and Portrait Pad](../../assets/screenshots/mobile/ds-console-settings.webp){ .nx-wide }
 
 | Row | Values | Default | See |
 | --- | --- | --- | --- |
