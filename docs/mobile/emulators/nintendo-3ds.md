@@ -259,7 +259,7 @@ nothing.
 </div>
 <div markdown>
 <figure class="nx-phone" markdown>
-![Mario Kart 7 in portrait with the pad hidden: the two screens fill the height, the see-through pad across the bottom, the arrow ringed](../../assets/screenshots/mobile/3ds-portrait-pad-hidden-arrow.webp){ .nx-phone__screen }
+![Mario Kart 7 in portrait with the pad hidden: Stacked, the two screens the same size, the see-through pad across the bottom, the arrow ringed](../../assets/screenshots/mobile/3ds-portrait-pad-hidden-arrow.webp){ .nx-phone__screen }
 ![](../../assets/landing/mobile/zfold8.webp){ .nx-phone__frame }
 </figure>
 <p class="nx-phones__caption">Pad hidden</p>

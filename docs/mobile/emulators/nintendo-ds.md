@@ -217,7 +217,7 @@ nothing.
 </div>
 <div markdown>
 <figure class="nx-phone" markdown>
-![Kirby Mass Attack in portrait with the pad hidden: the two screens fill the height, the see-through pad across the bottom, the arrow ringed](../../assets/screenshots/mobile/ds-portrait-pad-hidden-arrow.webp){ .nx-phone__screen }
+![Kirby Mass Attack in portrait with the pad hidden: Large screen, the top screen big and the touch screen below it, the see-through pad across the bottom, the arrow ringed](../../assets/screenshots/mobile/ds-portrait-pad-hidden-arrow.webp){ .nx-phone__screen }
 ![](../../assets/landing/mobile/zfold8.webp){ .nx-phone__frame }
 </figure>
 <p class="nx-phones__caption">Pad hidden</p>
