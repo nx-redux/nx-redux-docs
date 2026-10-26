@@ -124,6 +124,12 @@ Settings**, and for the console in
 value; keep it for the game or the console with
 [Save Changes](../in-game-menu.md#save-changes).
 
+In a game the page lists only the **Layout** row in use, for the way you're
+holding the phone (**Layout (portrait, controller)** while a controller hides
+the pad). Turn the phone or pick another layout and the row follows. Emulator
+Settings and Game Settings list every row, so you can set up each
+orientation there.
+
 ![Console Settings of a 3DS game in landscape: the three Layout rows, New 3DS Controls and Portrait Pad, with Controller Layout below](../../assets/screenshots/mobile/3ds-console-settings.webp){ .nx-wide }
 
 | Row | Values | Default | See |
@@ -131,6 +137,9 @@ value; keep it for the game or the console with
 | **Layout (portrait)** | Large screen, Stacked, Single screen, Side by side | Stacked | [Screen layouts](#screen-layouts) |
 | **Layout (portrait, controller)** | The same | Stacked | [Screen layouts](#screen-layouts) |
 | **Layout (landscape)** | The same | Depends on the screen | [Screen layouts](#screen-layouts) |
+| **3D Resolution** | Auto, Quality, Performance | Auto | [3D rendering](#3d-rendering) |
+| **Max Scale** | 1x up to what the display can show (shown in Auto only) | 3x | [3D rendering](#3d-rendering) |
+| **Scale** | 1x up to half of the most the display can show, rounded up (shown in Performance only) | 2x | [3D rendering](#3d-rendering) |
 | **New 3DS Controls** | Auto, On, Off | Auto | [New 3DS controls](#new-3ds-controls) |
 | **Portrait Pad** | Shown, Hidden | Shown | [Portrait pad](#portrait-pad) |
 | **Controller Layout** | Auto-detect, Xbox (A at the bottom), Nintendo (A on the right) | Auto-detect | [Controls](../controls.md#controller-buttons) |
@@ -186,6 +195,35 @@ Until you pick one, the screen decides:
       isn't offered. A layout saved as it reads as **Large screen**.
     - A layout you picked before these layouts came is kept. One left at the
       old default, **Top over bottom**, now follows the screen's default.
+
+## 3D rendering
+
+**3D Resolution** in [Console Settings](#console-settings) sets how sharply
+the games are drawn. Azahar renders at a whole multiple of the 3DS's own
+top-screen width (400 px).
+
+| Mode | What it does |
+| --- | --- |
+| **Auto** | Draws at the largest multiple that fits the width the screens are shown at, up to **Max Scale** (3x by default, lower than the DS's 4x because the 3DS is heavier). |
+| **Quality** | The same with no cap: as sharp as the display can show, up to Azahar's 10x. |
+| **Performance** | A fixed **Scale**, from 1x up to half of the most the display can show, rounded up. 2x by default. |
+
+**Max Scale** shows only in Auto and **Scale** only in Performance. A higher
+scale is sharper but slower: if a game stutters, try Performance at a lower
+**Scale**.
+
+In a game the row reads like **Auto · 3x now** in Auto and Quality, the scale
+in use (Performance shows its **Scale**). It follows turning the phone,
+folding it and changing the layout, straight away. These rows show no
+preview strip.
+
+??? info "More detail"
+    - The lists follow the display: a phone tops out lower than the unfolded
+      Galaxy Z Fold. The core's own limit is 10x.
+    - Azahar's own **Internal Resolution**, **Large Screen Proportion** and
+      **Stereoscopic 3D Mode** no longer appear in Core Options: the app sets
+      the resolution, and the other two would not fit the app's layouts.
+      **Prominent 3DS Screen** and **Screen Swap Mode** stay.
 
 ## Motion
 

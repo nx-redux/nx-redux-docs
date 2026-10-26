@@ -57,6 +57,13 @@ you to blow or shout.
   **Quality** has no cap, and **Performance** uses a fixed **Scale**.
   melonDS's own Internal Resolution and unused screen options are gone. See
   [3D rendering](../../mobile/emulators/nintendo-ds.md#3d-rendering).
+- **3DS 3D Resolution.** The same row for 3DS games: **Auto** draws at the
+  whole multiple of the 3DS's screen width that fits (up to **Max Scale**,
+  3x by default), **Quality** has no cap, **Performance** uses a fixed
+  **Scale**. Azahar's own Internal Resolution, Large Screen Proportion and
+  Stereoscopic 3D Mode are gone. In a game, Console Settings lists only the
+  Layout row in use. See
+  [3D rendering](../../mobile/emulators/nintendo-3ds.md#3d-rendering).
 - **Portrait band.** The pad band is the same height in the menu and in a
   game. With the band hidden (DS, 3DS, and tall arcade, WonderSwan and Lynx
   games), one see-through pad lies across the bottom, and the New 3DS
