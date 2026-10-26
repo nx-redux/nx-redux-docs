@@ -75,10 +75,13 @@ you to blow or shout.
   controller connected, since the on-screen pad can't be bound. Without
   one, the page points you to **Touch button 1** and **2**. See
   [Shortcuts](../../mobile/controls-settings.md#shortcuts).
-- **3DS touch.** With the pad solid beside the picture, the whole bottom
-  screen takes touches again. Only the main screen does, and only while the
-  pad covers part of the picture. See
+- **3DS touch.** The bottom screen takes touches wherever it is drawn, in
+  every layout, with the pad shown or hidden. See
   [Touch](../../mobile/emulators/nintendo-3ds.md#touch).
+- **3DS Large screen in portrait.** The bottom screen grows to fill the
+  height left under the top screen, up to the top's size (half its size
+  when swapped). See
+  [Screen layouts](../../mobile/emulators/nintendo-3ds.md#screen-layouts).
 - **Pad layout editor.** The landscape editor shows the pad as the game
   draws it, and DS and 3DS get a Half-folded layout of their own on
   foldables. Landscape moves made for the old pad over the game are cleared

@@ -161,7 +161,7 @@ Azahar draws both screens as one picture, which fills the room the
 
 | Layout | Picture |
 | --- | --- |
-| **Large screen**<br>The top screen big, the bottom screen half its size centred under it. | [![Mario Kart 7, Large screen: the top screen big, the bottom screen half its size under it](../../assets/screenshots/mobile/3ds-portrait-large.webp)](../../assets/screenshots/mobile/3ds-portrait-large.webp) |
+| **Large screen**<br>The top screen big, the bottom screen centred under it: half its size, or in portrait as big as the height left allows, up to the top's size. | [![Mario Kart 7, Large screen: the top screen big, the bottom screen half its size under it](../../assets/screenshots/mobile/3ds-portrait-large.webp)](../../assets/screenshots/mobile/3ds-portrait-large.webp) |
 | **Stacked**<br>The top screen above the bottom screen, at the same scale. | [![Mario Kart 7, Stacked: the top screen above the bottom screen](../../assets/screenshots/mobile/3ds-portrait-top-over-bottom.webp)](../../assets/screenshots/mobile/3ds-portrait-top-over-bottom.webp) |
 | **Single screen**<br>Only the top screen. | [![Mario Kart 7, Single screen: only the top screen](../../assets/screenshots/mobile/3ds-portrait-single.webp)](../../assets/screenshots/mobile/3ds-portrait-single.webp) |
 | **Side by side**<br>The two screens next to each other. | [![Mario Kart 7, Side by side: the two screens next to each other](../../assets/screenshots/mobile/3ds-portrait-side-by-side.webp)](../../assets/screenshots/mobile/3ds-portrait-side-by-side.webp) |
@@ -262,21 +262,12 @@ Stylus mode is off each time a game starts, and is not saved.
 
 ## Touch
 
-Touch the bottom screen wherever it is drawn, as long as the on-screen pad
-doesn't cover part of the picture: in portrait with the pad band, in
-landscape with the pad solid beside the picture, half-folded, or with a
-controller.
+Touch the bottom screen wherever it is drawn: in portrait and landscape,
+with the pad shown or hidden, half-folded, or with a controller.
 
-While the pad covers part of the picture (in landscape, its see-through
-halves overlapping the screens, or in portrait with the
-[pad hidden](#portrait-pad), the screens reaching into it), only the main
-screen takes touches: the big one, or the first (top or left) when both are
-the same size.
-
-**For games that need buttons and touch together**, press **SWAP** to make
-the bottom screen the main one. Then touch it anywhere between the buttons
-while you play with them. A layout with one big screen gives it the most
-room.
+**For games that need buttons and touch together**, a layout with one big
+screen gives the bottom screen the most room; press **SWAP** to make it the
+big one.
 
 ??? info "More detail"
     - The see-through buttons still take the touches that land on them. To
@@ -331,8 +322,8 @@ The choice is **Portrait Pad** (Shown or Hidden) in **Options → Console
 Settings**, and the long-press saves it for the console.
 
 ??? info "More detail"
-    - Touch follows the [touch rule](#touch): swap the bottom screen up with
-      **SWAP** to touch it, or use [stylus mode](#stylus-mode).
+    - The bottom screen takes [touches](#touch) where the pad's buttons
+      don't cover it.
     - The pad is drawn solid when the screens stop above it.
     - With a controller connected the pad hides too, as in landscape.
     - Landscape is not affected.
