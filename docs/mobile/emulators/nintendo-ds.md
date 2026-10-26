@@ -79,13 +79,13 @@ value; keep it for the game or the console with
 | **Layout (portrait)** | Large screen, Stacked, Single screen, Picture in picture, Side by side | Large screen | [Screen layouts](#screen-layouts) |
 | **Layout (portrait, controller)** | The same | Large screen | [Screen layouts](#screen-layouts) |
 | **Layout (landscape)** | The same; no Side by side on a [squarer screen](#which-layout-by-default) | Depends on the screen | [Screen layouts](#screen-layouts) |
+| **3D Resolution** | Auto, Quality, Performance | Auto | [3D rendering](#3d-rendering) |
+| **Max Scale** | 1x up to what the display can show (shown in Auto only) | 4x | [3D rendering](#3d-rendering) |
+| **Scale** | 1x up to half of the most the display can show, rounded up (shown in Performance only) | 2x | [3D rendering](#3d-rendering) |
 | **Big Screen** | Top screen, Bottom screen | Top screen | [Big screen and inset](#big-screen-and-inset) |
 | **Inset Corner** | Top left, Top right, Bottom left, Bottom right | Top right | [Big screen and inset](#big-screen-and-inset) |
 | **Inset Size** | Small, Medium, Large | Medium | [Big screen and inset](#big-screen-and-inset) |
 | **Inset Opacity** | 100%, 75%, 50% | 100% | [Big screen and inset](#big-screen-and-inset) |
-| **3D Resolution** | Auto, Quality, Performance | Auto | [3D rendering](#3d-rendering) |
-| **Max Scale** | 1x up to what the display can show (shown in Auto only) | 4x | [3D rendering](#3d-rendering) |
-| **Scale** | 1x up to half of the most the display can show, rounded up (shown in Performance only) | 2x | [3D rendering](#3d-rendering) |
 | **Portrait Pad** | Shown, Hidden | Shown | [Portrait pad](#portrait-pad) |
 | **Controller Layout** | Auto-detect, Xbox (A at the bottom), Nintendo (A on the right) | Auto-detect | [Controls](../controls.md#controller-buttons) |
 
@@ -329,18 +329,19 @@ DS screens side by side on the other screen. See
 scale is sharper but slower: if a game stutters, try Performance at a lower
 **Scale**.
 
-In a game the row reads like **Auto · 6x now**, the scale in use. It follows
+In a game the row reads like **Auto · 6x now** in Auto and Quality, the scale in use (Performance shows its **Scale**). It follows
 turning the phone, folding it and changing the layout, straight away.
 
 ??? info "More detail"
     - The lists follow the display: a phone tops out lower than the unfolded
       Galaxy Z Fold. The core's own limit is 8x.
     - 3D renders on the GPU on devices with OpenGL ES 3.2, else in software.
-    - In Software **Render Mode** the row is greyed with **Needs Render Mode
-      → OpenGL**: the software renderer always draws at 1x.
+    - In Software **Render Mode** the rows can't be changed and show **Needs
+      Render Mode → OpenGL** (greyed in Emulator Settings and Game Settings):
+      melonDS's software renderer doesn't use the setting.
     - melonDS's own **Internal Resolution** and its unused screen options
-      (Secondary Screen Scale and Filtering, Screen Layout #2 to #8, the Hybrid
-      options, Cursor Timeout, Show Screen Layout) no longer appear in Core
+      (for example Secondary Screen Scale and Filtering, OpenGL Filtering, Screen
+      Layout #2 to #8, the Hybrid options, Cursor Timeout, Show Screen Layout) no longer appear in Core
       Options: the app sets the resolution and draws the screens itself.
     - A **Render Mode** change in Core Options applies the next time the game
       starts, once you keep it with Save Changes.
