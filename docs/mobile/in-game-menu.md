@@ -348,7 +348,9 @@ as you make it.
 
     These rows open adjust mode: **Screen Scaling**, **Screen Sharpness**,
     **Overlay**, **Offset screen X** and **Y**, **Shader**, each shader
-    parameter, and the Nintendo DS screen rows in **Console Settings**.
+    parameter, and the Nintendo DS **Layout**, **Big Screen** and inset rows in
+    **Console Settings** (not **3D Resolution**: the paused game draws no new
+    frame, so its change shows when you go back to the game).
 
 ## Options rows
 
@@ -377,7 +379,10 @@ The pages scroll smoothly as you move.
 
 The running core's own settings, grouped into the core's categories.
 `LEFT` / `RIGHT` change a value. Only options that can change while the game
-runs are listed.
+runs are listed, and a line at the top says so. The rest apply when a game
+starts: set them in the game's [Game Settings](emulator-settings.md#game-settings),
+or for every game in **Tools → Settings → Emulation → Default settings**
+([Emulator Settings](emulator-settings.md)).
 
 ??? info "More detail"
 

@@ -52,6 +52,11 @@ you to blow or shout.
 
 ### Improvements
 
+- **DS 3D Resolution.** A new Console Settings row for DS games: **Auto**
+  draws 3D at the size the screen is shown (up to **Max Scale**),
+  **Quality** has no cap, and **Performance** uses a fixed **Scale**.
+  melonDS's own Internal Resolution and unused screen options are gone. See
+  [3D rendering](../../mobile/emulators/nintendo-ds.md#3d-rendering).
 - **Portrait band.** The pad band is the same height in the menu and in a
   game. With the band hidden (DS, 3DS, and tall arcade, WonderSwan and Lynx
   games), one see-through pad lies across the bottom, and the New 3DS
