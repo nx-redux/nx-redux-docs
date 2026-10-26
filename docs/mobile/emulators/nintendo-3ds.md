@@ -124,13 +124,24 @@ Settings**, and for the console in
 value; keep it for the game or the console with
 [Save Changes](../in-game-menu.md#save-changes).
 
-![Console Settings of a 3DS game in landscape: the three Layout rows, New 3DS Controls and Portrait Pad, with Controller Layout below](../../assets/screenshots/mobile/3ds-console-settings.webp){ .nx-wide }
+In a game the page lists only one **Layout** row, the one in use for the way
+you're holding the phone (**Layout (portrait, controller)** while a controller
+hides the pad); the other rows all stay. The **Layout** rows change in place
+without a preview: Azahar draws the layout, so the new one shows when you go
+back to the game. Turn the phone or pick another layout and the row follows. Emulator
+Settings and Game Settings list every row, so you can set up each
+orientation there.
+
+![Console Settings in Mario Kart 7 on the Fold's cover screen: the landscape Layout row, 3D Resolution at Auto · 3x now with Max Scale, New 3DS Controls, Portrait Pad and Controller Layout](../../assets/screenshots/mobile/3ds-console-settings.webp){ .nx-wide }
 
 | Row | Values | Default | See |
 | --- | --- | --- | --- |
 | **Layout (portrait)** | Large screen, Stacked, Single screen, Side by side | Stacked | [Screen layouts](#screen-layouts) |
 | **Layout (portrait, controller)** | The same | Stacked | [Screen layouts](#screen-layouts) |
 | **Layout (landscape)** | The same | Depends on the screen | [Screen layouts](#screen-layouts) |
+| **3D Resolution** | Auto, Quality, Performance | Auto | [3D rendering](#3d-rendering) |
+| **Max Scale** | 1x up to what the display can show (shown in Auto only) | 3x | [3D rendering](#3d-rendering) |
+| **Scale** | 1x up to half of the most the display can show, rounded up (shown in Performance only) | 2x | [3D rendering](#3d-rendering) |
 | **New 3DS Controls** | Auto, On, Off | Auto | [New 3DS controls](#new-3ds-controls) |
 | **Portrait Pad** | Shown, Hidden | Shown | [Portrait pad](#portrait-pad) |
 | **Controller Layout** | Auto-detect, Xbox (A at the bottom), Nintendo (A on the right) | Auto-detect | [Controls](../controls.md#controller-buttons) |
@@ -150,7 +161,7 @@ Azahar draws both screens as one picture, which fills the room the
 
 | Layout | Picture |
 | --- | --- |
-| **Large screen**<br>The top screen big, the bottom screen half its size centred under it. | [![Mario Kart 7, Large screen: the top screen big, the bottom screen half its size under it](../../assets/screenshots/mobile/3ds-portrait-large.webp)](../../assets/screenshots/mobile/3ds-portrait-large.webp) |
+| **Large screen**<br>The top screen big, the bottom screen centred under it: half its size, or in portrait as big as the height left allows, up to the top's size. | [![Mario Kart 7, Large screen: the top screen big, the bottom screen half its size under it](../../assets/screenshots/mobile/3ds-portrait-large.webp)](../../assets/screenshots/mobile/3ds-portrait-large.webp) |
 | **Stacked**<br>The top screen above the bottom screen, at the same scale. | [![Mario Kart 7, Stacked: the top screen above the bottom screen](../../assets/screenshots/mobile/3ds-portrait-top-over-bottom.webp)](../../assets/screenshots/mobile/3ds-portrait-top-over-bottom.webp) |
 | **Single screen**<br>Only the top screen. | [![Mario Kart 7, Single screen: only the top screen](../../assets/screenshots/mobile/3ds-portrait-single.webp)](../../assets/screenshots/mobile/3ds-portrait-single.webp) |
 | **Side by side**<br>The two screens next to each other. | [![Mario Kart 7, Side by side: the two screens next to each other](../../assets/screenshots/mobile/3ds-portrait-side-by-side.webp)](../../assets/screenshots/mobile/3ds-portrait-side-by-side.webp) |
@@ -179,13 +190,42 @@ Until you pick one, the screen decides:
     - A squarer screen is the same as on the
       [DS](nintendo-ds.md#which-layout-by-default).
     - The app sets Azahar's own **Screen Layout** option from the layout rows,
-      so in **Core Options** it shows locked.
+      so it no longer appears in **Core Options**.
     - **Screen Swap Mode** in **Core Options** sets whether the swap toggles
       (the default) or lasts only while you hold the buttons.
     - Azahar's own large screen, with the bottom screen beside the top one,
       isn't offered. A layout saved as it reads as **Large screen**.
     - A layout you picked before these layouts came is kept. One left at the
       old default, **Top over bottom**, now follows the screen's default.
+
+## 3D rendering
+
+**3D Resolution** in [Console Settings](#console-settings) sets how sharply
+the games are drawn. Azahar renders at a whole multiple of the 3DS's own
+top-screen width (400 px).
+
+| Mode | What it does |
+| --- | --- |
+| **Auto** | Draws at the largest multiple that fits the width the screens are shown at, up to **Max Scale** (3x by default). |
+| **Quality** | The same with no cap: as sharp as the display can show, up to Azahar's 10x. |
+| **Performance** | A fixed **Scale**, from 1x up to half of the most the display can show, rounded up. 2x by default. |
+
+**Max Scale** shows only in Auto and **Scale** only in Performance. A higher
+scale is sharper but slower: if a game stutters, try Performance at a lower
+**Scale**.
+
+In a game the row reads like **Auto · 3x now** in Auto and Quality, the scale
+in use (Performance shows its **Scale**). It follows turning the phone,
+folding it and changing the layout, straight away. These rows show no
+preview strip.
+
+??? info "More detail"
+    - The lists follow the display: a phone tops out lower than the unfolded
+      Galaxy Z Fold. The core's own limit is 10x.
+    - Azahar's own **Internal Resolution**, **Large Screen Proportion** and
+      **Stereoscopic 3D Mode** no longer appear in Core Options: the app sets
+      the resolution, and the app fixes the other two.
+      **Prominent 3DS Screen** and **Screen Swap Mode** stay.
 
 ## Motion
 
@@ -222,21 +262,12 @@ Stylus mode is off each time a game starts, and is not saved.
 
 ## Touch
 
-Touch the bottom screen wherever it is drawn, as long as the on-screen pad
-doesn't cover part of the picture: in portrait with the pad band, in
-landscape with the pad solid beside the picture, half-folded, or with a
-controller.
+Touch the bottom screen wherever it is drawn: in portrait and landscape,
+with the pad shown or hidden, half-folded, or with a controller.
 
-While the pad covers part of the picture (in landscape, its see-through
-halves overlapping the screens, or in portrait with the
-[pad hidden](#portrait-pad), the screens reaching into it), only the main
-screen takes touches: the big one, or the first (top or left) when both are
-the same size.
-
-**For games that need buttons and touch together**, press **SWAP** to make
-the bottom screen the main one. Then touch it anywhere between the buttons
-while you play with them. A layout with one big screen gives it the most
-room.
+**For games that need buttons and touch together**, a layout with one big
+screen gives the bottom screen the most room; press **SWAP** to make it the
+big one.
 
 ??? info "More detail"
     - The see-through buttons still take the touches that land on them. To
@@ -291,8 +322,8 @@ The choice is **Portrait Pad** (Shown or Hidden) in **Options → Console
 Settings**, and the long-press saves it for the console.
 
 ??? info "More detail"
-    - Touch follows the [touch rule](#touch): swap the bottom screen up with
-      **SWAP** to touch it, or use [stylus mode](#stylus-mode).
+    - The bottom screen takes [touches](#touch) where the pad's buttons
+      don't cover it.
     - The pad is drawn solid when the screens stop above it.
     - With a controller connected the pad hides too, as in landscape.
     - Landscape is not affected.

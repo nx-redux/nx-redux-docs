@@ -57,6 +57,13 @@ you to blow or shout.
   **Quality** has no cap, and **Performance** uses a fixed **Scale**.
   melonDS's own Internal Resolution and unused screen options are gone. See
   [3D rendering](../../mobile/emulators/nintendo-ds.md#3d-rendering).
+- **3DS 3D Resolution.** The same row for 3DS games: **Auto** draws at the
+  whole multiple of the 3DS's screen width that fits (up to **Max Scale**,
+  3x by default), **Quality** has no cap, **Performance** uses a fixed
+  **Scale**. Azahar's own Internal Resolution, Large Screen Proportion and
+  Stereoscopic 3D Mode are gone. In a game, Console Settings lists only the
+  Layout row in use. See
+  [3D rendering](../../mobile/emulators/nintendo-3ds.md#3d-rendering).
 - **Portrait band.** The pad band is the same height in the menu and in a
   game. With the band hidden (DS, 3DS, and tall arcade, WonderSwan and Lynx
   games), one see-through pad lies across the bottom, and the New 3DS
@@ -68,10 +75,13 @@ you to blow or shout.
   controller connected, since the on-screen pad can't be bound. Without
   one, the page points you to **Touch button 1** and **2**. See
   [Shortcuts](../../mobile/controls-settings.md#shortcuts).
-- **3DS touch.** With the pad solid beside the picture, the whole bottom
-  screen takes touches again. Only the main screen does, and only while the
-  pad covers part of the picture. See
+- **3DS touch.** The bottom screen takes touches wherever it is drawn, in
+  every layout, with the pad shown or hidden. See
   [Touch](../../mobile/emulators/nintendo-3ds.md#touch).
+- **3DS Large screen in portrait.** The bottom screen grows to fill the
+  height left under the top screen, up to the top's size (half its size
+  when swapped). See
+  [Screen layouts](../../mobile/emulators/nintendo-3ds.md#screen-layouts).
 - **Pad layout editor.** The landscape editor shows the pad as the game
   draws it, and DS and 3DS get a Half-folded layout of their own on
   foldables. Landscape moves made for the old pad over the game are cleared
