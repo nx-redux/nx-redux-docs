@@ -124,16 +124,16 @@ Settings**, and for the console in
 value; keep it for the game or the console with
 [Save Changes](../in-game-menu.md#save-changes).
 
-In a game the page lists only the one of the three **Layout** rows in use (the 3D Resolution and other rows all stay), for the way you're
-holding the phone (**Layout (portrait, controller)** while a controller hides
-the pad). Turn the phone or pick another layout and the row follows. Emulator
+In a game the page lists only one **Layout** row, the one in use for the way
+you're holding the phone (**Layout (portrait, controller)** while a controller
+hides the pad); the other rows all stay. Turn the phone or pick another layout and the row follows. Emulator
 Settings and Game Settings list every row, so you can set up each
 orientation there.
 
 ![Console Settings of a 3DS game in landscape, an earlier version of the page: all three Layout rows, New 3DS Controls and Portrait Pad, with Controller Layout below](../../assets/screenshots/mobile/3ds-console-settings.webp){ .nx-wide }
 
-This picture predates 3D Resolution and the in-game filter: now only the Layout
-row in use is listed, and the 3D Resolution rows sit under it.
+This picture predates 3D Resolution and the in-game filter: a game now lists
+one Layout row, with the 3D Resolution rows under it.
 
 | Row | Values | Default | See |
 | --- | --- | --- | --- |
