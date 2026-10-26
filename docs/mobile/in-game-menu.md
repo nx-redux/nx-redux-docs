@@ -377,7 +377,10 @@ The pages scroll smoothly as you move.
 
 The running core's own settings, grouped into the core's categories.
 `LEFT` / `RIGHT` change a value. Only options that can change while the game
-runs are listed.
+runs are listed, and a line at the top says so. The rest apply when a game
+starts: set them in the game's [Game Settings](emulator-settings.md#game-settings),
+or for every game in **Tools → Settings → Emulation → Default settings**
+([Emulator Settings](emulator-settings.md)).
 
 ??? info "More detail"
 
