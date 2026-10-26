@@ -47,8 +47,7 @@ and the game sits between them:
   both do, so the two halves stay level.
 - Both halves keep clear of the camera cutout, on whichever side it is.
 - On the Nintendo DS and 3DS, the round
-  [mic button](emulators/nintendo-ds.md#microphone) sits in the left half's
-  bottom corner, toward the game.
+  [mic button](emulators/nintendo-ds.md#microphone) sits right of `L`.
 
 ![The landscape pad beside a Sega Genesis game: the two halves either side of the picture](../assets/screenshots/mobile/pad-landscape.webp){ .nx-wide }
 
@@ -93,8 +92,9 @@ the long-press saves it for the console.
 | Arcade, WonderSwan, Atari Lynx | Games taller than wide: vertical arcade boards and handheld games held upright. Wide games keep the band and show no arrow |
 
 ??? info "More detail"
-    - The game may reach into the pad by a quarter of its height at most.
-      A game that stops above it is centred in the room above, and the pad
+    - The game may reach into the pad by a quarter of its height at most
+      (a third for the Nintendo DS and 3DS, so the unfolded Galaxy Z Fold
+      shows a DS game's top screen at 6×). A game that stops above it is centred in the room above, and the pad
       is drawn solid.
     - The pad's buttons take the touches that land on them; touches between
       them reach the game.

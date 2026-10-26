@@ -22,8 +22,8 @@ you to blow or shout.
 
 - **Microphone for DS and 3DS.** Games that listen, such as Fossil Fighters,
   Zelda Spirit Tracks or Nintendogs, hear your phone's microphone while their
-  **Mic** is on. Turn it on with the round mic button in the pad's
-  bottom-left corner, the **Mic** tile in the game panel, or a **Toggle mic**
+  **Mic** is on. Turn it on with the round mic button on the pad (bottom
+  left in portrait, right of `L` in landscape), the **Mic** tile in the game panel, or a **Toggle mic**
   shortcut. Android asks for the microphone the first time; without it, the
   game hears a made-up blow so mic puzzles can still be passed. The Mic is
   off each time a game starts. See
@@ -55,7 +55,9 @@ you to blow or shout.
 - **Portrait band.** The pad band is the same height in the menu and in a
   game. With the band hidden (DS, 3DS, and tall arcade, WonderSwan and Lynx
   games), one see-through pad lies across the bottom, and the New 3DS
-  C-stick sits between the d-pad and the face buttons. See
+  C-stick sits between the d-pad and the face buttons. Your touch buttons
+  sit in its top row, and DS and 3DS screens may reach a third into it, so
+  the unfolded Galaxy Z Fold shows a DS game at 6× + 3×. See
   [Hiding the portrait band](../../mobile/controls.md#hiding-the-portrait-band).
 - **Shortcuts without a controller.** The bind rows only show with a
   controller connected, since the on-screen pad can't be bound. Without
