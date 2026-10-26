@@ -30,7 +30,7 @@ is covered by that service's own privacy policy.
 | Service | Used for | What it receives |
 | --- | --- | --- |
 | [RetroAchievements](https://retroachievements.org) | Achievements (optional, needs your account) | Your username and password when you sign in, then a sign-in token; which game you play, identified by a hash of the game file; the achievements you unlock |
-| [ScreenScraper](https://www.screenscraper.fr) | Artwork | The game's file name, a checksum and size of the file, and the system; your ScreenScraper username and password if you sign in |
+| [ScreenScraper](https://www.screenscraper.fr) | Artwork | The game's file name, a checksum and size of the file, and the system; the names of Android games you added to the Android console, for their screenshots; your ScreenScraper username and password if you sign in |
 | [TheGamesDB](https://thegamesdb.net) | Artwork (optional, needs your own key) | The game's name and system, and your API key |
 | [SteamGridDB](https://www.steamgriddb.com) | Artwork (optional, needs your own key) | The game's name, and your API key |
 | [libretro thumbnails](https://thumbnails.libretro.com) | Artwork | The game's name and system |
