@@ -170,7 +170,8 @@ To set these before a game starts, for a whole emulator or one game, use
 
     - The game's cheats are on the game panel's [Cheats](#cheats) tab.
     - **Console Settings** holds the controller rows, the Nintendo DS screen
-      layouts, the Nintendo 3DS New 3DS Controls and Portrait Pad for both.
+      layouts, the Nintendo 3DS New 3DS Controls, and Portrait Pad for both
+      and for arcade, WonderSwan and Atari Lynx.
     - Two things are saved straight away instead: the Nintendo DS layout
       hotkeys (see [Nintendo DS](emulators/nintendo-ds.md#controls)) and
       achievement mutes (`X` on the [Achievements](#achievements) page).
@@ -188,7 +189,7 @@ switch, choices or list as described in [Options rows](#options-rows).
 | **Controller Layout** | Every console | Auto-detect, Xbox (A at the bottom), Nintendo (A on the right) | Auto-detect |
 | **Layout (portrait)** and the other screen rows | Nintendo DS, Nintendo 3DS | See [Nintendo DS](emulators/nintendo-ds.md) and [Nintendo 3DS](emulators/nintendo-3ds.md) | |
 | **New 3DS Controls** | Nintendo 3DS | Auto, On, Off | Auto |
-| **Portrait Pad** | Nintendo DS, Nintendo 3DS | Shown, Hidden | Shown |
+| **Portrait Pad** | Nintendo DS, Nintendo 3DS, arcade, WonderSwan, Atari Lynx | Shown, Hidden | Shown |
 | **Wii Controller**, **Motion Controls** | Nintendo Wii | See [Nintendo Wii & GameCube](emulators/wii-gamecube.md#wii) | Auto |
 | **Bottom screen** | Every console, while a second screen is connected | System default, Main screen, Second screen | System default |
 | **Max FF Speed** | Every console | 2x to 8x | 4x |
@@ -199,8 +200,10 @@ switch, choices or list as described in [Options rows](#options-rows).
 - **Controller Type** is the Sega pad the game sees.
 - **Controller Layout** names the letters printed on your controller. See
   [Controls](controls.md#controller-buttons).
-- **Portrait Pad** hides the portrait pad band for the see-through buttons.
-  See [Nintendo DS](emulators/nintendo-ds.md#portrait-pad).
+- **Portrait Pad** hides the portrait pad band for a see-through pad over
+  the game. On arcade, WonderSwan and Atari Lynx it applies to games taller
+  than wide only. See
+  [Hiding the portrait band](controls.md#hiding-the-portrait-band).
 - **Bottom screen** picks the touch screen for this console. See
   [Dual Screens & External Displays](dual-screen.md#for-one-console).
 - **Max FF Speed** is how fast fast forward runs. **Fast Forward Audio** and
@@ -263,20 +266,40 @@ console. `LEFT` / `RIGHT` change a value.
 
 | Option | Values | Default | What it does |
 | --- | --- | --- | --- |
-| **Screen Scaling** | Native, Aspect, Fullscreen | Aspect | **Native**: integer scaling. **Aspect**: the core's aspect ratio. **Fullscreen**: fills the screen. |
+| **Screen Scaling** | Auto, Native, Aspect, Fullscreen | Auto | **Auto**: the best fit for the screen and the console, with room for the pad (see below). **Native**: integer scaling. **Aspect**: the core's aspect ratio. **Fullscreen**: fills the screen. |
 | **Screen Sharpness** | NEAREST, LINEAR | NEAREST | **LINEAR** smooths lines. |
 | **Overlay** | None, or an overlay bundled for this console | None | A frame image drawn around the game. |
 | **Offset screen X** / **Offset screen Y** | −64 to 64 | 0 | Move the game image by this many pixels. |
-| **Pad Opacity (landscape)** | 100%, 60%, 40%, 25% | 40% | How opaque the on-screen buttons are in landscape. |
+| **Pad Opacity (landscape)** | 100%, 60%, 40%, 25% | 40% | How opaque the on-screen buttons are where they overlap the game. |
 | **Debug HUD** | Off, On | Off | Show frames per second, the core, the resolution and scaler information. |
+
+**Auto** sizes the game by the kind of console:
+
+| Consoles | Auto |
+| --- | --- |
+| Arcade and the 2D home consoles, such as NES, Super Nintendo, Genesis and TurboGrafx-16, and Doom | The largest whole-number scale of the game's height, at the console's shape |
+| The handhelds, such as Game Boy, Game Boy Advance, Game Gear, WonderSwan and Lynx, and PICO-8 | Native: the largest whole-number scale, square pixels |
+| Nintendo 64, PlayStation, PSP, Dreamcast, GameCube, Wii and Nintendo 3DS | Fills the room it has, at the game's shape |
+
+In landscape the game sits between the [pad halves](controls.md#landscape),
+in portrait above the pad band, centred both ways. **Native**, **Aspect** and
+**Fullscreen** size the game for the whole screen, as before Auto, and the
+landscape pad may lie over its edges. The Nintendo DS screens have their own
+[layouts](emulators/nintendo-ds.md#screen-layouts).
 
 ??? info "More detail"
 
+    - Whole-number scales keep every pixel the same size, so pixel art,
+      scanline shaders and grid overlays stay even.
+    - A **Screen Scaling** you picked before Auto came is kept. One left at
+      the old default, **Aspect**, is now **Auto**.
     - **Fullscreen** uses non-square pixels.
     - **LINEAR** works best when the final image is high resolution: a core
       that outputs a high resolution, or upscaling with shaders.
-    - **Pad Opacity** is for landscape, where the buttons sit over the game.
-      The portrait pad has its own band and is not affected.
+    - **Pad Opacity** is for the landscape pad where it overlaps the game,
+      and for the see-through pad of a [hidden portrait band](controls.md#hiding-the-portrait-band).
+      Where the pad clears the game it is drawn solid. The portrait band is
+      not affected.
     - While the Nintendo DS screens are drawn apart, **Overlay** reads
       **Unavailable**: overlays are off in those layouts.
     - Overlays are bundled for Game Boy, Game Boy Color, Game Boy Advance
@@ -435,6 +458,6 @@ bottom-left corners of the game.
 
 ??? info "More detail"
 
-    While the landscape pad is over the game, notifications move to the top
-    centre, between the pad's system buttons, so they don't cover the
-    controls.
+    In landscape, and in portrait with the band hidden, notifications move
+    to the top centre so they don't cover the controls. In landscape they
+    fit between the pad's shoulder buttons.

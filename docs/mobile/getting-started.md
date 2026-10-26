@@ -29,7 +29,8 @@ New to NX Redux? See [About NX Redux](../about.md) first.
 - **Home screen:** the app can be your phone's home screen, and list your
   Android games and apps. See [Launcher Mode & Android Games](launcher.md).
 - **Foldables:** on a half-folded phone, Flex mode puts the game above the
-  hinge and the pad below it. See [Foldables & Large Screens](foldables.md).
+  hinge and the pad below it, and a DS or 3DS game's touch screen below it
+  like the real handheld. See [Foldables & Large Screens](foldables.md).
 - **Local multiplayer:** two to four players on one phone, each on their
   own controller. See [Local Multiplayer](multiplayer.md).
 - **Not in the app yet:** some systems the handheld runs, such as home
@@ -83,7 +84,10 @@ The first time you open the app, a short setup walks you through it. Use
 9. **RetroAchievements.** Sign in, then download the achievement data in the
    background. See [RetroAchievements](retroachievements.md).
 10. **Customise the layout?** Pick the menu's look page by page, each with a
-   picture, or keep the defaults. See [Menu Layouts](layouts.md).
+   picture, or keep the defaults. See [Menu Layouts](layouts.md). In
+   portrait without a controller, the first page asks whether to show the
+   on-screen pad, and its **Pad theme**, with **Pad buttons** for the Black
+   theme. See [Appearance](appearance.md#pad-theme).
 11. **Accents.** Pick your **Accent** and **Secondary accent**.
 12. **Ready, player one.** Press **Press Start** to open the main menu.
 

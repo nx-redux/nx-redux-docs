@@ -7,16 +7,17 @@ controller to play with real buttons instead. With a controller each, two to
 four people can play one game; see [Local Multiplayer](multiplayer.md).
 
 - **Portrait:** the pad sits in a band below the screen, in games and on the
-  main menu, the game lists and the Game Switcher.
+  main menu, the game lists and the Game Switcher. The band is the same
+  height on the main menu and in every game.
     - In a game, the band goes away while a controller is connected, so the
       game gets the full height.
-    - Nintendo DS and 3DS games can hide the band for see-through buttons:
-      long-press the arrow in its bottom-right corner. See
-      [Nintendo DS](emulators/nintendo-ds.md#portrait-pad).
+    - Nintendo DS and 3DS games, and tall games on arcade, WonderSwan and
+      Atari Lynx, can hide the band: long-press the arrow in its bottom-right
+      corner. See [Hiding the portrait band](#hiding-the-portrait-band).
     - On the main menu the band stays with a controller. Turn it off with
       [**Menu pad**](controls-settings.md#menu-pad).
-- **Landscape:** the buttons sit in two clusters over the game. See
-  [Landscape](#landscape).
+- **Landscape:** the pad splits into two halves, one either side of the
+  game. See [Landscape](#landscape).
 - **`STICK`** switches the on-screen d-pad to an analog stick and back. While
   the stick is on, the button reads **D-PAD**.
 - To move or resize the pad's buttons, for every console or for one, use
@@ -28,25 +29,73 @@ four people can play one game; see [Local Multiplayer](multiplayer.md).
       Pocket Taco or the 8BitDo FlipPad, keeps the band in a game.
     - When the band goes away for a controller, the Nintendo DS screens use
       their own controller layout (see [Nintendo DS](emulators/nintendo-ds.md)).
+    - On a phone the band is 5.8 cm tall, or a little less where that leaves
+      a 4:3 game an even margin all round. On a tablet it is tall enough for
+      full-size buttons, and never more than 60% of the screen.
 
 ### Landscape
 
-In landscape the pad splits into two clusters over the game:
+In landscape the pad splits into two halves, one either side of the game,
+and the game sits between them:
 
-- The system buttons sit in the top corners: `MENU` and `STICK` on the left,
-  `SELECT` and `START` on the right.
-- The shoulders, the d-pad and the face buttons sit at the bottom.
-- Both clusters keep clear of the camera cutout, on whichever side it is.
+- **Left half**, top to bottom: `L1` `L2`, the d-pad, then `MENU` and
+  `STICK`.
+- **Right half**: `R2` `R1`, the face buttons, then `SELECT` and `START`.
+- A second row under `MENU` and `START` holds the Nintendo DS and 3DS
+  **STYLUS** and **SWAP**, and your
+  [touch buttons](controls-settings.md#touch-buttons). When one half has it,
+  both do, so the two halves stay level.
+- Both halves keep clear of the camera cutout, on whichever side it is.
 
-![The landscape pad over a Sega Genesis game, system buttons at the top](../assets/screenshots/mobile/pad-landscape.webp){ .nx-wide }
+![The landscape pad beside a Sega Genesis game: the two halves either side of the picture](../assets/screenshots/mobile/pad-landscape.webp){ .nx-wide }
 
-**Pad Opacity (landscape)** sets how opaque the clusters are (40% by
-default). It is in the in-game menu under **Options →
+The pad is drawn **solid** when its buttons clear the game, and
+**see-through** when they overlap it. **Pad Opacity (landscape)** sets how see-through (40%
+by default). It is in the in-game menu under **Options →
 [Frontend](in-game-menu.md#frontend)**, not in Settings, and is saved per
 game or console with Save Changes.
 
+With [Screen Scaling](in-game-menu.md#frontend) on **Auto** (the default),
+the game keeps out of the pad's way: it may run under the inner half of each
+side's buttons at most, never past them. On a wide tablet it stays clear of
+the pad altogether. With a controller connected the pad goes away and the
+game is sized for the whole screen.
+
 ??? info "More detail"
-    **Pad Opacity (landscape)** offers 100%, 60%, 40% and 25%.
+    - The buttons are 11 mm across, whatever the screen, and shrink only
+      when the screen is too short for the rows. On a squarer phone screen,
+      such as the Galaxy Z Fold's cover screen, they are the portrait pad's
+      size instead, so the game keeps more room.
+    - On a tablet the d-pad and the face buttons sit at the screen's
+      mid-height.
+    - The room kept for the pad is measured from the buttons drawn: a
+      console with fewer buttons, or groups made smaller in
+      [Pad layout](controls-settings.md#pad-layout), gives the game more.
+    - **Pad Opacity (landscape)** offers 100%, 60%, 40% and 25%.
+    - With **Native**, **Aspect** or **Fullscreen** scaling, the game is
+      sized for the whole screen as before, and the pad lies over its edges,
+      see-through where it overlaps.
+
+### Hiding the portrait band
+
+In portrait, long-press the arrow in the band's bottom-right corner to hide
+it. The game gets the band's room, and one see-through pad lies across the
+bottom of the screen instead. Long-press the arrow again to bring the band
+back. The choice is **Portrait Pad** in **Options → Console Settings**, and
+the long-press saves it for the console.
+
+| Console | Games that can hide it |
+| --- | --- |
+| Nintendo DS, Nintendo 3DS | Every game. See [Nintendo DS](emulators/nintendo-ds.md#portrait-pad) |
+| Arcade, WonderSwan, Atari Lynx | Games taller than wide: vertical arcade boards and handheld games held upright. Wide games keep the band and show no arrow |
+
+??? info "More detail"
+    - The game may reach into the pad by a quarter of its height at most.
+      A game that stops above it is centred in the room above, and the pad
+      is drawn solid.
+    - The pad's buttons take the touches that land on them; touches between
+      them reach the game.
+    - With a controller connected the pad hides, as in landscape.
 
 ### Each console's buttons
 
@@ -101,8 +150,9 @@ the portrait pad:
 | --- | --- |
 | **Charcoal** (default) | The dark pad |
 | **Retro** | A light grey body with magenta face buttons |
+| **Black** | A pure black body, with grey or outlined buttons ([Pad buttons](appearance.md#pad-buttons)) |
 
-The landscape clusters always stay Charcoal.
+The landscape halves always stay Charcoal.
 
 <div class="nx-phones" markdown>
 <div markdown>
@@ -353,7 +403,7 @@ console's page:
 | [Nintendo 3DS](emulators/nintendo-3ds.md#controls) | **SWAP** or `SELECT` + `R1` swaps screens, **STYLUS** or `SELECT` + `L1` turns stylus mode on, `SELECT` + `LEFT` / `RIGHT` changes the layout, `L2` / `R2` are `ZL` / `ZR`, the right stick is the C-stick |
 | [Nintendo DS](emulators/nintendo-ds.md#controls) | **SWAP** or `R2` swaps screens, `SELECT` + a direction changes the layout or inset, **STYLUS** or `L2` turns stylus mode on |
 | [Sega Dreamcast, NAOMI, Atomiswave](emulators/dreamcast.md#controls) | Analog `L2` / `R2`, and on the arcade boards `SELECT` for a coin, `L3` for Test and `R3` for Service |
-| [Arcade (FBNeo)](emulators/arcade.md#controls) | `SELECT` inserts a coin |
+| [Arcade (FBNeo)](emulators/arcade.md#controls) | `SELECT` inserts a coin; the on-screen pad labels it **COIN** |
 | [Nintendo 64](emulators/nintendo-64.md#controls) | Buttons by letter, `Z` on `L2`, the C buttons on the right stick |
 | [PlayStation](emulators/playstation.md#controls), [PSP](emulators/psp.md#controls) | `×` `○` `△` `□` by position |
 | [Sega consoles](emulators/sega.md) | The Sega pad, `Mode` and **Controller Type** |

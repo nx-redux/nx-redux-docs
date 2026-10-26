@@ -1,13 +1,13 @@
 # Emulator Settings
 
-**Tools → Settings → Emulators → Settings** opens **Emulator Settings**. It
+**Tools → Settings → Emulation → Default settings** opens **Emulator Settings**. It
 sets each emulator's options for a whole console, without starting a game
 first.
 
-The **Emulators** section holds two rows: **Default emulators** (see
-[below](#default-emulators)) and **Settings**.
+The **Emulation** section holds two rows: **Default emulators** (see
+[below](#default-emulators)) and **Default settings**.
 
-![Settings, with Emulators open beside the sections: Default emulators and Settings](../assets/screenshots/mobile/settings-emulators.webp){ .nx-wide }
+![Settings, with Emulation open beside the sections: Default emulators and Default settings](../assets/screenshots/mobile/settings-emulators.webp){ .nx-wide }
 
 For one game, use **Game Settings** in the game's context menu instead. See
 [Game Settings](#game-settings).
@@ -55,7 +55,8 @@ What you set here is the console's setting, the same as the in-game menu's
     - **Console settings** holds **Controller Layout** for every console,
       **Controller Type** for Sega Genesis, Sega CD and Sega 32X, the
       **Layout** and **Big Screen** rows for Nintendo DS, the **Layout** rows and
-      **New 3DS Controls** for Nintendo 3DS, **Portrait Pad** for both, and the Wii's rows
+      **New 3DS Controls** for Nintendo 3DS, **Portrait Pad** for both and for
+      arcade, WonderSwan and Atari Lynx, and the Wii's rows
       ([Nintendo Wii & GameCube](emulators/wii-gamecube.md#console-settings)).
     - While a second screen is connected, every console also has **Bottom
       screen**: **System default**, **Main screen** or **Second screen**. See
@@ -106,7 +107,7 @@ The second screen has its own section in Settings: see
 ## Default emulators
 
 Some consoles can run on more than one emulator. **Tools → Settings →
-Emulators → Default emulators** picks the emulator for a game with
+Emulation → Default emulators** picks the emulator for a game with
 no emulator of its own.
 
 ![Default emulators beside the Settings sections: one row per console with its emulator and tag, such as Game Boy Advance with gpSP (GBA)](../assets/screenshots/mobile/default-emulators.webp){ .nx-wide }

@@ -174,7 +174,9 @@ as an unfolded Fold held sideways, some pages split into two panes. See
 [Foldables & Large Screens](../../mobile/foldables.md).
 
 ??? info "More detail"
-    - Nintendo DS games keep their usual layout when folded.
+    - Half-folded, Nintendo DS and 3DS games put the top screen above the
+      fold and the touch screen below it, between the pad's halves, like
+      the real handheld.
     - The pages that split into two panes are Settings, the in-game menu,
       RetroAchievements and Artwork.
 
