@@ -40,9 +40,9 @@ the d-pad and the Circle Pad. Games that use the New 3DS buttons also get
 
 The pad also has **STYLUS**, which turns [stylus mode](#stylus-mode) on or
 off (pressed in while it's on), and **SWAP**, which swaps the screens. In
-portrait they sit either side of `MENU` and `STICK`; over the game
-(landscape, or portrait with the [pad hidden](#portrait-pad)) **STYLUS** is
-under `MENU` and **SWAP** under `START`.
+portrait they sit either side of `MENU` and `STICK`. In landscape
+**STYLUS** is under `MENU` and **SWAP** under `START`; with the portrait
+[pad hidden](#portrait-pad) they sit beside the shoulder buttons.
 
 On a controller the shortcuts are `SELECT` combos, because `L2` and `R2` are
 the 3DS's own `ZL` and `ZR`:
@@ -51,7 +51,7 @@ the 3DS's own `ZL` and `ZR`:
 | --- | --- |
 | `SELECT` + `R1`, or **SWAP** | Swap the screens. |
 | `SELECT` + `L1`, or **STYLUS** | Turn stylus mode on or off. |
-| `SELECT` + `LEFT` / `RIGHT` | Change the layout of the orientation you're in: **Top over bottom**, **Large screen**, **Side by side**, **Single screen**, and round again. |
+| `SELECT` + `LEFT` / `RIGHT` | Change the layout of the orientation you're in: **Large screen**, **Stacked**, **Single screen**, **Side by side**, and round again. [Half-folded](#half-folded) it only shows **Layout is set by the fold**. |
 | `SELECT` + `START`, or `MENU` | Open the [in-game menu](../in-game-menu.md). |
 
 A controller adds:
@@ -105,8 +105,9 @@ extra setup.
       Pad Pro, such as Majora's Mask 3D, Monster Hunter 4 Ultimate and
       Xenoblade Chronicles 3D.
     - `ZL` and `ZR` sit where `L2` and `R2` are on other consoles. The
-      C-stick is centred under `SELECT` and `START` in portrait, and at the
-      top left of the face buttons in landscape.
+      C-stick is centred under `SELECT` and `START` in portrait, at the top
+      left of the face buttons in landscape, and between the d-pad and the
+      face buttons with the portrait [pad hidden](#portrait-pad).
     - A change in the in-game menu updates the pad straight away.
 
     **Auto** finds the game by the title ID in `.3ds`, `.cci` and `.cxi`
@@ -125,9 +126,9 @@ value; keep it for the game or the console with
 
 | Row | Values | Default | See |
 | --- | --- | --- | --- |
-| **Layout (portrait)** | Top over bottom, Large screen, Side by side, Single screen | Top over bottom | [Screen layouts](#screen-layouts) |
-| **Layout (portrait, controller)** | The same | Top over bottom | [Screen layouts](#screen-layouts) |
-| **Layout (landscape)** | The same | Top over bottom | [Screen layouts](#screen-layouts) |
+| **Layout (portrait)** | Large screen, Stacked, Single screen, Side by side | Stacked | [Screen layouts](#screen-layouts) |
+| **Layout (portrait, controller)** | The same | Stacked | [Screen layouts](#screen-layouts) |
+| **Layout (landscape)** | The same | Depends on the screen | [Screen layouts](#screen-layouts) |
 | **New 3DS Controls** | Auto, On, Off | Auto | [New 3DS controls](#new-3ds-controls) |
 | **Portrait Pad** | Shown, Hidden | Shown | [Portrait pad](#portrait-pad) |
 | **Controller Layout** | Auto-detect, Xbox (A at the bottom), Nintendo (A on the right) | Auto-detect | [Controls](../controls.md#controller-buttons) |
@@ -139,14 +140,18 @@ Settings (see [Graphics API](index.md#graphics-api)).
 
 ## Screen layouts
 
+The layouts have the [Nintendo DS](nintendo-ds.md#screen-layouts) names.
+Azahar draws both screens as one picture, which fills the room the
+[on-screen pad](../controls.md#landscape) leaves, at its shape.
+
 <div class="nx-layouts" markdown>
 
 | Layout | Picture |
 | --- | --- |
-| **Top over bottom** (default)<br>The top screen above the bottom screen. In landscape the top screen takes three quarters of the height and the bottom screen is a third of its size. | [![Mario Kart 7, Top over bottom: the top screen above the bottom screen](../../assets/screenshots/mobile/3ds-portrait-top-over-bottom.webp)](../../assets/screenshots/mobile/3ds-portrait-top-over-bottom.webp) |
-| **Large screen**<br>The top screen big, the bottom screen small at its top right. | [![Mario Kart 7, Large screen: the top screen big, the bottom screen small at its top right](../../assets/screenshots/mobile/3ds-portrait-large.webp)](../../assets/screenshots/mobile/3ds-portrait-large.webp) |
-| **Side by side**<br>The two screens next to each other. | [![Mario Kart 7, Side by side: the two screens next to each other](../../assets/screenshots/mobile/3ds-portrait-side-by-side.webp)](../../assets/screenshots/mobile/3ds-portrait-side-by-side.webp) |
+| **Large screen**<br>The top screen big, the bottom screen half its size centred under it. | [![Mario Kart 7, Large screen: the top screen big, the bottom screen half its size under it](../../assets/screenshots/mobile/3ds-portrait-large.webp)](../../assets/screenshots/mobile/3ds-portrait-large.webp) |
+| **Stacked**<br>The top screen above the bottom screen, at the same scale. | [![Mario Kart 7, Stacked: the top screen above the bottom screen](../../assets/screenshots/mobile/3ds-portrait-top-over-bottom.webp)](../../assets/screenshots/mobile/3ds-portrait-top-over-bottom.webp) |
 | **Single screen**<br>Only the top screen. | [![Mario Kart 7, Single screen: only the top screen](../../assets/screenshots/mobile/3ds-portrait-single.webp)](../../assets/screenshots/mobile/3ds-portrait-single.webp) |
+| **Side by side**<br>The two screens next to each other. | [![Mario Kart 7, Side by side: the two screens next to each other](../../assets/screenshots/mobile/3ds-portrait-side-by-side.webp)](../../assets/screenshots/mobile/3ds-portrait-side-by-side.webp) |
 
 </div>
 
@@ -155,17 +160,30 @@ wider screen. **SWAP** (or `SELECT` + `R1`) swaps which screen is the big
 or upper one, in every layout.
 
 As on the DS, each orientation keeps its own layout: **Layout (portrait)**
-and **Layout (landscape)** in [Console Settings](#console-settings), all
-**Top over bottom** by default. With a controller connected the on-screen
-pad goes away in portrait and **Layout (portrait, controller)** is used.
-`SELECT` + `LEFT` / `RIGHT` changes the one you're in and saves it for the
-game straight away, without Save Changes.
+and **Layout (landscape)** in [Console Settings](#console-settings). With a
+controller connected the on-screen pad goes away in portrait and **Layout
+(portrait, controller)** is used. `SELECT` + `LEFT` / `RIGHT` changes the
+one you're in and saves it for the game straight away, without Save
+Changes.
+
+Until you pick one, the screen decides:
+
+| Screen | Portrait | Landscape |
+| --- | --- | --- |
+| A phone | Stacked | Side by side |
+| A squarer screen or a tablet, such as the Galaxy Z Fold's cover and inner screens | Stacked | Large screen |
 
 ??? info "More detail"
+    - A squarer screen is the same as on the
+      [DS](nintendo-ds.md#which-layout-by-default).
     - The app sets Azahar's own **Screen Layout** option from the layout rows,
       so in **Core Options** it shows locked.
     - **Screen Swap Mode** in **Core Options** sets whether the swap toggles
       (the default) or lasts only while you hold the buttons.
+    - Azahar's own large screen, with the bottom screen beside the top one,
+      isn't offered. A layout saved as it reads as **Large screen**.
+    - A layout you picked before these layouts came is kept. One left at the
+      old default, **Top over bottom**, now follows the screen's default.
 
 ## Motion
 
@@ -202,11 +220,11 @@ Stylus mode is off each time a game starts, and is not saved.
 
 ## Touch
 
-Touch the bottom screen wherever it is drawn, as long as the on-screen
-buttons aren't over the game: in portrait with the pad band, or with a
+Touch the bottom screen wherever it is drawn, as long as the on-screen pad
+isn't beside or over the game: in portrait with the pad band, or with a
 controller.
 
-While the on-screen buttons are over the game (landscape without a
+While the on-screen pad is beside or over the game (landscape without a
 controller, or portrait with the [pad hidden](#portrait-pad)), only the main
 screen takes touches: the big one, or the first (top or left) when both are
 the same size.
@@ -225,8 +243,9 @@ room.
 ## Portrait pad
 
 In portrait, long-press the arrow in the pad's bottom-right corner to hide
-the pad band. The two screens get its room, and the see-through landscape
-buttons sit over the lower half of the game instead. The arrow stays in the
+the pad band. The two screens get its room, and one see-through pad lies
+across the bottom of the screen instead; the screens reach into it by a
+quarter of its height at most. The arrow stays in the
 corner: long-press it again to bring the band back. A plain tap does
 nothing.
 
@@ -240,7 +259,7 @@ nothing.
 </div>
 <div markdown>
 <figure class="nx-phone" markdown>
-![Mario Kart 7 in portrait with the pad hidden: the two screens fill the height, the see-through buttons over the lower half, the arrow ringed](../../assets/screenshots/mobile/3ds-portrait-pad-hidden-arrow.webp){ .nx-phone__screen }
+![Mario Kart 7 in portrait with the pad hidden: the two screens fill the height, the see-through pad across the bottom, the arrow ringed](../../assets/screenshots/mobile/3ds-portrait-pad-hidden-arrow.webp){ .nx-phone__screen }
 ![](../../assets/landing/mobile/zfold8.webp){ .nx-phone__frame }
 </figure>
 <p class="nx-phones__caption">Pad hidden</p>
@@ -253,9 +272,18 @@ Settings**, and the long-press saves it for the console.
 ??? info "More detail"
     - Touch follows the [touch rule](#touch): swap the bottom screen up with
       **SWAP** to touch it, or use [stylus mode](#stylus-mode).
-    - With a controller connected the see-through buttons hide too, as in
-      landscape.
+    - The pad is drawn solid when the screens stop above it.
+    - With a controller connected the pad hides too, as in landscape.
     - Landscape is not affected.
+
+## Half-folded
+
+On a foldable such as the Galaxy Z Fold, fold the inner screen partway, like
+a small laptop, and the top screen moves right above the hinge, the touch
+screen right below it, with the pad either side of the touch screen. Each
+screen is as big as its half allows, at its shape, whatever layout you saved, and the
+touch screen takes touches. Open the phone flat and your layout comes back.
+See [Foldables & Large Screens](../foldables.md#nintendo-ds-and-3ds-half-folded).
 
 ## Second screen
 
@@ -267,7 +295,8 @@ instead, with both 3DS screens side by side on the other screen. See
 [Dual Screens & External Displays](../dual-screen.md#nintendo-ds-and-3ds).
 
 ??? info "More detail"
-    The **Layout** rows aren't used while split or with the panel up.
+    The **Layout** rows aren't used while split or with the panel up, nor is
+    the [half-folded](#half-folded) layout.
 
 ## Cheats and achievements
 

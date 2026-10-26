@@ -16,7 +16,7 @@ Arcade games run on the bundled **FinalBurn Neo** core.
 
 | Control | What it does |
 | --- | --- |
-| `SELECT` | Insert a coin |
+| `SELECT` (**COIN** on the on-screen pad) | Insert a coin |
 | `START` | Start |
 | D-pad, left stick | The joystick |
 | Face buttons and shoulders | The game's buttons |
@@ -25,6 +25,9 @@ Arcade games run on the bundled **FinalBurn Neo** core.
   The game sees the `SELECT` press first, so it may count a coin.
 - Some games put extra buttons, such as Service, on `L3` and `R3` (pressing
   the sticks), on controllers only.
+- Vertical games, such as many shoot-'em-ups, show a tall picture. In
+  portrait you can hide the pad band for them: see
+  [Hiding the portrait band](../controls.md#hiding-the-portrait-band).
 
 ## Adding games
 

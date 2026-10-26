@@ -82,6 +82,13 @@ Games show in anaglyph 3D out of the box.
 - **Atari 7800:** the bottom and right face buttons are `1` and `2`.
 - **Atari Lynx:** `L1` and `R1` are `Option 1` and `Option 2`.
 
+### Games held upright
+
+WonderSwan and Atari Lynx games made to be held upright show a picture
+taller than wide. In portrait you can hide the pad band for them, so the
+game gets its room: see
+[Hiding the portrait band](../controls.md#hiding-the-portrait-band).
+
 ### PICO-8
 
 The bottom and right face buttons are `O` and `X`. PICO-8 games have no save

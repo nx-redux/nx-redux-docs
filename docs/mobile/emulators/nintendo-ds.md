@@ -25,17 +25,17 @@ on the pad are the app's:
   while stylus mode is on.
 - **SWAP** swaps the big screen.
 
-In portrait they sit either side of `MENU` and `STICK`. Over the game
-(landscape, or portrait with the [pad hidden](#portrait-pad)) **STYLUS** is
-under `MENU` and **SWAP** under `START`.
+In portrait they sit either side of `MENU` and `STICK`. In landscape
+**STYLUS** is under `MENU` and **SWAP** under `START`; with the portrait
+[pad hidden](#portrait-pad) they sit beside the shoulder buttons.
 
 With a controller or the on-screen pad:
 
 | Buttons | What they do |
 | --- | --- |
 | `R2` on a controller, or **SWAP** | Swap the big screen. |
-| `SELECT` + `LEFT` / `RIGHT` | Change the layout of the orientation you're in. In portrait this steps through Picture in picture, Stacked, Single screen, Large screen and Side by side. |
-| `SELECT` + `UP` / `DOWN` | Move the inset to the previous or next corner, clockwise. |
+| `SELECT` + `LEFT` / `RIGHT` | Change the layout of the orientation you're in: Large screen, Stacked, Single screen, Picture in picture, Side by side, and round again. |
+| `SELECT` + `UP` / `DOWN` | Move the picture-in-picture inset to the previous or next corner, clockwise. |
 | `L2` on a controller, or **STYLUS** | Turn stylus mode on or off. |
 | `MENU`, or `SELECT` + `START` | Open the [in-game menu](../in-game-menu.md). |
 
@@ -44,6 +44,8 @@ away, without Save Changes. Stylus mode is not saved.
 
 ??? info "More detail"
     - A short label shows the new setting.
+    - [Half-folded](#half-folded) the fold sets the layout: `SELECT` +
+      `LEFT` / `RIGHT` only shows **Layout is set by the fold**.
     - A controller's `L2` and `R2` never reach the game: the DS has no such
       buttons.
     - `SELECT` on its own still reaches the game. Only `SELECT` + a direction
@@ -68,9 +70,9 @@ value; keep it for the game or the console with
 
 | Row | Values | Default | See |
 | --- | --- | --- | --- |
-| **Layout (portrait)** | Auto, Picture in picture, Stacked, Single screen, Large screen, Side by side | Auto | [Screen layouts](#screen-layouts) |
-| **Layout (portrait, controller)** | The same | Stacked | [Screen layouts](#screen-layouts) |
-| **Layout (landscape)** | Side by side, Single screen, Picture in picture, Large screen, Stacked | Stacked | [Screen layouts](#screen-layouts) |
+| **Layout (portrait)** | Large screen, Stacked, Single screen, Picture in picture, Side by side | Large screen | [Screen layouts](#screen-layouts) |
+| **Layout (portrait, controller)** | The same | Large screen | [Screen layouts](#screen-layouts) |
+| **Layout (landscape)** | The same; no Side by side on a [squarer screen](#which-layout-by-default) | Depends on the screen | [Screen layouts](#screen-layouts) |
 | **Big Screen** | Top screen, Bottom screen | Top screen | [Big screen and inset](#big-screen-and-inset) |
 | **Inset Corner** | Top left, Top right, Bottom left, Bottom right | Top right | [Big screen and inset](#big-screen-and-inset) |
 | **Inset Size** | Small, Medium, Large | Medium | [Big screen and inset](#big-screen-and-inset) |
@@ -86,9 +88,11 @@ Every row takes effect straight away; none needs the game restarted. Only
 
 The DS has two screens, and there's more than one way to fit them on a
 phone. Pick a layout for each orientation to suit the game and how you
-like to play: both screens the same size, one big with the other small, or
-just one. The pictures are in portrait; landscape draws the same layouts
-across the wider screen. Portrait and landscape keep their own layout, so turning the
+like to play: one big with the other smaller, both the same size, or just
+one. Every layout draws the screens at whole-number scales, so the pixels
+stay even, in the room the [on-screen pad](../controls.md#landscape) leaves.
+The pictures are in portrait; landscape draws the same layouts across the
+wider screen. Portrait and landscape keep their own layout, so turning the
 phone switches between them, and `SELECT` + `LEFT` / `RIGHT` changes the
 one you're in without opening the menu.
 
@@ -96,32 +100,56 @@ one you're in without opening the menu.
 
 | Layout | Picture |
 | --- | --- |
-| **Stacked**<br>One screen above the other. In landscape the first takes three quarters of the height and the other is a third of its size. | [![A DS game, Stacked: the top screen above the bottom screen](../../assets/screenshots/mobile/ds-portrait-stacked.webp)](../../assets/screenshots/mobile/ds-portrait-stacked.webp) |
-| **Picture in picture**<br>One screen big, the other small in a corner over it. `SELECT` + `UP` / `DOWN` moves the small screen to another [corner](#controls). | [![A DS game, Picture in picture: the bottom screen small in the top-right corner](../../assets/screenshots/mobile/ds-portrait-pip.webp)](../../assets/screenshots/mobile/ds-portrait-pip.webp) |
-| **Large screen**<br>One screen big, the other small next to it: above or below it in portrait, beside it in landscape. `SELECT` + `UP` / `DOWN` moves the small screen to another [corner](#controls). | [![A DS game, Large screen: the bottom screen small above the top screen, at the right](../../assets/screenshots/mobile/ds-portrait-large.webp)](../../assets/screenshots/mobile/ds-portrait-large.webp) |
+| **Large screen**<br>The big screen, with the other one smaller, at least half its size, centred below it. | [![A DS game, Large screen: the top screen big, the bottom screen smaller and centred below it](../../assets/screenshots/mobile/ds-portrait-large.webp)](../../assets/screenshots/mobile/ds-portrait-large.webp) |
+| **Stacked**<br>Both screens the same size, one above the other. | [![A DS game, Stacked: the top screen above the bottom screen](../../assets/screenshots/mobile/ds-portrait-stacked.webp)](../../assets/screenshots/mobile/ds-portrait-stacked.webp) |
 | **Single screen**<br>Only the big screen. | [![A DS game, Single screen: only the top screen](../../assets/screenshots/mobile/ds-portrait-single.webp)](../../assets/screenshots/mobile/ds-portrait-single.webp) |
-| **Side by side**<br>Each screen takes half the width. | [![A DS game, Side by side: the two screens next to each other](../../assets/screenshots/mobile/ds-portrait-side-by-side.webp)](../../assets/screenshots/mobile/ds-portrait-side-by-side.webp) |
-| **Auto**<br>**Stacked** when both screens fit the width, else **Picture in picture**. Portrait only. |  |
+| **Picture in picture**<br>The big screen, with the other small in a corner over it. `SELECT` + `UP` / `DOWN` moves the small screen to another [corner](#controls). | [![A DS game, Picture in picture: the bottom screen small in the top-right corner](../../assets/screenshots/mobile/ds-portrait-pip.webp)](../../assets/screenshots/mobile/ds-portrait-pip.webp) |
+| **Side by side**<br>Both screens the same size, next to each other. | [![A DS game, Side by side: the two screens next to each other](../../assets/screenshots/mobile/ds-portrait-side-by-side.webp)](../../assets/screenshots/mobile/ds-portrait-side-by-side.webp) |
 
 </div>
 
 **Layout (portrait)** and **Layout (landscape)** in
-[Console Settings](#console-settings) pick the layout for each orientation:
-**Auto** in portrait and **Stacked** in landscape by default.
+[Console Settings](#console-settings) pick the layout for each orientation.
+Until you pick one, the screen decides (see
+[below](#which-layout-by-default)).
 
 With a controller connected, the on-screen pad goes away in portrait and the
 screens get the full height. **Layout (portrait, controller)** is used then:
-same choices, **Stacked** by default.
-
-Without a controller, the on-screen buttons sit over the game in landscape.
-**Pad Opacity (landscape)** in **Options → Frontend** sets how opaque
-they are: 100%, 60%, 40% or 25% (40% by default).
+the same choices, with the same default as portrait.
 
 ??? info "More detail"
+    - In Large screen the small screen takes the largest whole-number scale
+      that fits under the big one, at least half the big one's. In portrait,
+      where that would leave it under 2×, it fills the room left up to 2×.
+      **Inset Corner** and **Inset Size** don't move or size it.
+    - On a wide tablet in landscape, Single screen and Picture in picture
+      are one step smaller than the most that fits.
     - A clip-on controller that holds the phone keeps the pad band and the
       normal portrait layout. The GameSir Pocket Taco is recognised as one.
       The 8BitDo FlipPad is expected to be recognised too.
     - Screen Scaling and the screen offsets don't apply to the DS screens.
+    - A layout you picked before these layouts came is kept. One left at
+      its old default (**Auto** in portrait, **Stacked** in landscape and
+      with a controller) now follows the screen's default.
+
+### Which layout by default
+
+| Screen | Portrait | Landscape |
+| --- | --- | --- |
+| A phone | Large screen | Side by side |
+| A squarer screen or a tablet, such as the Galaxy Z Fold's cover and inner screens | Large screen | Large screen |
+
+On a squarer screen **Side by side** isn't offered in landscape: the two
+screens would come out too small. A Side by side picked elsewhere shows as
+Large screen there, and `SELECT` + `LEFT` / `RIGHT` skips it. In portrait it
+stays.
+
+??? info "More detail"
+    - A squarer screen is a phone screen less than 1.8 times as long as it
+      is wide, such as the Fold's cover screen, or a tablet-size screen (at
+      least 600 dp across) less than 1.5 times, such as the unfolded Fold.
+    - The app goes by the size of its window, not the device, so split
+      screen and DeX windows follow these rules too.
 
 ### Big screen and inset
 
@@ -129,17 +157,17 @@ These apply in both orientations, straight away: no restart needed.
 
 | Option | Values | Default | What it does |
 | --- | --- | --- | --- |
-| **Big Screen** | Top screen, Bottom screen | Top screen | The screen shown big in picture in picture, large screen and single screen, and first in stacked and side by side. |
-| **Inset Corner** | Top left, Top right, Bottom left, Bottom right | Top right | Where the small screen sits in picture in picture and large screen. |
-| **Inset Size** | Small, Medium, Large | Medium | The small screen's width in picture in picture and large screen: 25%, 33% or 40% of the big screen's width. |
-| **Inset Opacity** | 100%, 75%, 50% | 100% | How opaque the small screen is. Below 100%, the big screen shows through it. |
+| **Big Screen** | Top screen, Bottom screen | Top screen | The screen shown big in large screen, picture in picture and single screen, and first in stacked and side by side. **SWAP** or `R2` swaps it. |
+| **Inset Corner** | Top left, Top right, Bottom left, Bottom right | Top right | Where the small screen sits in picture in picture. |
+| **Inset Size** | Small, Medium, Large | Medium | The small screen's width in picture in picture: 25%, 33% or 40% of the big screen's width. |
+| **Inset Opacity** | 100%, 75%, 50% | 100% | How opaque the small screen is in picture in picture. Below 100%, the big screen shows through it. |
 
 ??? info "More detail"
     - Overlays are off while the DS screens are drawn apart. The **Overlay**
       row shows **Unavailable**.
-    - Shader presets apply to the big screen, and to both screens in portrait
-      stacked and side by side. The small screen of picture in picture, large
-      screen and landscape stacked is drawn without them.
+    - Shader presets apply to the screens drawn at the big screen's size:
+      both in stacked and side by side, the big one alone in large screen
+      and picture in picture. A smaller screen is drawn without them.
 
 ## Stylus mode
 
@@ -156,31 +184,26 @@ Stylus mode is off each time a game starts, and is not saved.
 
 ## Touch
 
-Touch the bottom screen wherever it is drawn, as long as the on-screen
-buttons aren't over the game: in portrait with the pad band, or with a
-controller.
+Touch the bottom screen wherever it is drawn, except as the small screen of
+picture in picture.
 
-While the on-screen buttons are over the game (landscape without a
-controller, or portrait with the [pad hidden](#portrait-pad)), only the main
-screen takes touches: the big one, or the first (top or left) when both are
-the same size.
-
-**For games that need buttons and touch together**, press **SWAP** to make
-the bottom screen the main one. Then touch it anywhere between the buttons
-while you play with them. A layout with one big screen gives it the most
-room.
+The on-screen pad's buttons take the touches that land on them, also where
+they overlap the game. Touches between them reach the game, so you can play
+with the buttons and touch the bottom screen together.
 
 ??? info "More detail"
-    - The see-through buttons still take the touches that land on them. To
-      reach something under a button, such as a menu item in a corner of the
-      bottom screen, use [stylus mode](#stylus-mode), whose pen reaches the
-      bottom screen either way, or turn the phone to portrait.
+    - To reach something under a button, such as a menu item in a corner of
+      the bottom screen, use [stylus mode](#stylus-mode), whose pen reaches
+      the bottom screen anywhere, or turn the phone to portrait.
+    - To touch the bottom screen in picture in picture, press **SWAP** to
+      make it the big one.
 
 ## Portrait pad
 
 In portrait, long-press the arrow in the pad's bottom-right corner to hide
-the pad band. The two screens get its room, and the see-through landscape
-buttons sit over the lower half of the game instead. The arrow stays in the
+the pad band. The two screens get its room, and one see-through pad lies
+across the bottom of the screen instead; the screens reach into it by a
+quarter of its height at most. The arrow stays in the
 corner: long-press it again to bring the band back. A plain tap does
 nothing.
 
@@ -194,7 +217,7 @@ nothing.
 </div>
 <div markdown>
 <figure class="nx-phone" markdown>
-![Kirby Mass Attack in portrait with the pad hidden: the two screens fill the height, the see-through buttons over the lower half, the arrow ringed](../../assets/screenshots/mobile/ds-portrait-pad-hidden-arrow.webp){ .nx-phone__screen }
+![Kirby Mass Attack in portrait with the pad hidden: the two screens fill the height, the see-through pad across the bottom, the arrow ringed](../../assets/screenshots/mobile/ds-portrait-pad-hidden-arrow.webp){ .nx-phone__screen }
 ![](../../assets/landing/mobile/zfold8.webp){ .nx-phone__frame }
 </figure>
 <p class="nx-phones__caption">Pad hidden</p>
@@ -205,11 +228,19 @@ The choice is **Portrait Pad** (Shown or Hidden) in **Options → Console
 Settings**, and the long-press saves it for the console.
 
 ??? info "More detail"
-    - Touch follows the [touch rule](#touch): swap the bottom screen up with
-      **SWAP** to touch it, or use [stylus mode](#stylus-mode).
-    - With a controller connected the see-through buttons hide too, as in
-      landscape.
+    - The pad's buttons take their own touches; touches between them reach
+      the screens. See [Touch](#touch).
+    - The pad is drawn solid when the screens stop above it.
+    - With a controller connected the pad hides too, as in landscape.
     - Landscape is not affected.
+
+## Half-folded
+
+On a foldable such as the Galaxy Z Fold, fold the inner screen partway, like
+a small laptop, and the game lays itself out like a DS: the top screen right
+above the hinge, the touch screen right below it, with the pad either side
+of the touch screen. Open the phone flat and your layout comes back. See
+[Foldables & Large Screens](../foldables.md#nintendo-ds-and-3ds-half-folded).
 
 ## Second screen
 
@@ -224,7 +255,8 @@ DS screens side by side on the other screen. See
 ??? info "More detail"
     - While split, **SWAP** changes **Big Screen**, so the screen on the
       picture screen is the one **Big Screen** names.
-    - The **Layout** rows aren't used while split or with the panel up.
+    - The **Layout** rows aren't used while split or with the panel up, nor
+      is the [half-folded](#half-folded) layout.
 
 ## 3D rendering
 

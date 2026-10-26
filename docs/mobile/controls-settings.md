@@ -60,10 +60,11 @@ you have changed a layout, and `A` opens its page:
 | --- | --- |
 | **Console** | Whose layout you edit: **Shared**, or one of the consoles in your library |
 | **Portrait band** | Opens the editor for the pad below the screen in portrait, in games and on the main menu |
-| **Landscape overlay** | Opens the editor for the button clusters over a landscape game |
+| **Landscape** | Opens the editor for the pad halves beside a landscape game |
+| **Half-folded** | Opens the editor for the Nintendo DS and 3DS pad beside the touch screen on a [half-folded](foldables.md#nintendo-ds-and-3ds-half-folded) foldable. Shows for **Shared**, Nintendo DS and Nintendo 3DS, on the inner screen of a foldable |
 | **Reset console** | Puts the chosen console's layouts on this screen back |
 
-![Controls → Pad layout beside the Settings sections: Console Shared, Portrait band Default, Landscape overlay Default and Reset console](../assets/screenshots/mobile/settings-controls-pad-layout.webp){ .nx-wide }
+![Controls → Pad layout beside the Settings sections: Console Shared, Portrait band Default, Landscape Default and Reset console](../assets/screenshots/mobile/settings-controls-pad-layout.webp){ .nx-wide }
 
 **Shared** is the layout every console uses. A console you give a layout of
 its own uses that instead.
@@ -83,7 +84,13 @@ In the editor:
       inner screen, for example, are set up apart. The page edits the screen
       you are on. A screen with no layout yet starts from the other screen's.
     - The editor opens full screen, turned to the layout's orientation, with
-      a grey block where the game goes.
+      a grey block where the game goes. In landscape the block and the pad
+      sit where a game of that console puts them, so the preview matches
+      the game. **Half-folded** shows the DS or 3DS top screen above a line
+      for the hinge, and the touch screen between the two halves below it.
+    - Landscape moves and sizes made before the pad moved beside the game
+      were cleared once, since they were made for the old spots. Portrait
+      layouts were kept.
     - A group is the d-pad, the face buttons, a pair of shoulders or a pair
       of system buttons. Dropped near its usual spot, a group snaps back
       there.

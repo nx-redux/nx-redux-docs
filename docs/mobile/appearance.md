@@ -6,7 +6,8 @@ pad, the text size and the colours. The menu styles have their own category,
 
 - `Left` / `Right` step the highlighted row's value.
 - `A`, or a tap, on **Accent** or **Secondary accent** opens the list of
-  colours. **Pad theme** and **Text size** show their choices on the row:
+  colours. **Pad theme**, **Pad buttons** and **Text size** show their
+  choices on the row:
   tap one, or press `A` to step to the next. See
   [Settings](settings.md#touch).
 
@@ -14,7 +15,8 @@ pad, the text size and the colours. The menu styles have their own category,
 
 | Setting | What it does | Values | Default |
 | --- | --- | --- | --- |
-| [**Pad theme**](#pad-theme) | Colours of the portrait pad | Charcoal, Retro | Charcoal |
+| [**Pad theme**](#pad-theme) | Colours of the portrait pad | Charcoal, Retro, Black | Charcoal |
+| [**Pad buttons**](#pad-buttons) | How the Black pad's buttons look. Shows only with the Black theme | Grey, Outline | Grey |
 | [**Accent**](#accent) | The selection colour | White, Red, Orange, Amber, Lime, Teal, Sky, Violet, Pink | White |
 | [**Secondary accent**](#secondary-accent) | The bar behind a selected value | Auto, then the same nine colours | Teal |
 | [**Text size**](#text-size) | Size of the text across the app | Large, Small | Large |
@@ -26,6 +28,7 @@ The colours of the on-screen pad in portrait, in the menus and in games.
 
 - **Charcoal** (default): the dark pad.
 - **Retro**: a light grey body with magenta face buttons.
+- **Black**: a pure black body, its buttons set by [Pad buttons](#pad-buttons).
 
 <div class="nx-phones" markdown>
 <div markdown>
@@ -44,13 +47,22 @@ The colours of the on-screen pad in portrait, in the menus and in games.
 </div>
 </div>
 
-The landscape button clusters always stay Charcoal. See
+The landscape pad halves always stay Charcoal. See
 [Controls](controls.md) for the pad itself.
 
 ??? info "More detail"
-    The landscape clusters' opacity is set per game or console with **Pad
+    The landscape pad's opacity is set per game or console with **Pad
     Opacity (landscape)** in the in-game [Frontend](in-game-menu.md#frontend)
     options, not here.
+
+## Pad buttons
+
+How the buttons look on the **Black** pad theme. The row shows only while
+**Pad theme** is **Black**.
+
+- **Grey** (default): Charcoal's grey buttons on the black body.
+- **Outline**: each button drawn as a thin outline with its label, lit
+  faintly while you hold it.
 
 ## Accent
 
@@ -102,6 +114,7 @@ else.
 
 ## Reset to defaults
 
-Puts **Pad theme**, **Accent**, **Secondary accent** and **Text size** back to
-their defaults. It does not ask first. It leaves the [Layouts](layouts.md)
-page alone: that page has its own **Reset to defaults**.
+Puts **Pad theme**, **Pad buttons**, **Accent**, **Secondary accent** and
+**Text size** back to their defaults. It does not ask first. It leaves the
+[Layouts](layouts.md) page alone: that page has its own **Reset to
+defaults**.

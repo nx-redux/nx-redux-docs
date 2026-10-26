@@ -55,7 +55,8 @@ What you set here is the console's setting, the same as the in-game menu's
     - **Console settings** holds **Controller Layout** for every console,
       **Controller Type** for Sega Genesis, Sega CD and Sega 32X, the
       **Layout** and **Big Screen** rows for Nintendo DS, the **Layout** rows and
-      **New 3DS Controls** for Nintendo 3DS, **Portrait Pad** for both, and the Wii's rows
+      **New 3DS Controls** for Nintendo 3DS, **Portrait Pad** for both and for
+      arcade, WonderSwan and Atari Lynx, and the Wii's rows
       ([Nintendo Wii & GameCube](emulators/wii-gamecube.md#console-settings)).
     - While a second screen is connected, every console also has **Bottom
       screen**: **System default**, **Main screen** or **Second screen**. See

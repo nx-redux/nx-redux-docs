@@ -14,12 +14,13 @@ the screen. The app splits at the hinge:
 - **Above the hinge:** the game, or the menu.
 - **Below the hinge:**
     - in portrait, the portrait pad;
-    - in landscape, the two pad clusters, drawn solid instead of over the
-      game;
+    - in landscape, the two pad halves, drawn solid;
     - with a controller connected, nothing. The lower half stays empty.
 
 There is no setting. Flex mode starts when you fold the phone and stops when
-you open it flat. It works in games and in the main menu alike.
+you open it flat. It works in games and in the main menu alike, and a game
+you start while half-folded starts in it. Nintendo DS and 3DS games get a
+layout of their own: see [below](#nintendo-ds-and-3ds-half-folded).
 
 ??? info "More detail"
     - The hinge must run across the screen, and each half must be at least a
@@ -28,7 +29,46 @@ you open it flat. It works in games and in the main menu alike.
     - On a phone that doesn't report its half-folded state, such as the
       Galaxy Z Fold, the app reads the hinge angle: between 30° and 150°
       counts as folded.
-    - Nintendo DS games keep their usual layout.
+
+### Nintendo DS and 3DS half-folded
+
+Half-fold the inner screen of a foldable such as the Galaxy Z Fold, and a DS
+or 3DS game is held like the real handheld:
+
+- **Above the hinge:** the top screen, right against the fold.
+- **Below the hinge:** the touch screen, right against the fold, with the
+  pad either side of it: the d-pad on the left, the face buttons on the
+  right, the shoulders above each, `MENU` `STICK` under the left side and
+  `SELECT` `START` under the right, and **STYLUS** and **SWAP** on a second
+  row.
+- **With a controller connected:** no pad, and the touch screen alone below
+  the hinge, bigger.
+
+The touch screen takes touches, and **SWAP** trades the two screens across
+the hinge. Fold or open the phone mid-game and the layout follows; your
+[layout](emulators/nintendo-ds.md#screen-layouts) comes back when the phone
+is flat.
+
+??? info "More detail"
+    - The DS screens are drawn at whole-number scales: on the Galaxy Z Fold,
+      the top screen at 6× and the touch screen at 4×. The 3DS screens fill
+      their room at their shape.
+    - The buttons are the size of the cover screen's pad, and always solid.
+      The touch screen may run under each side's buttons by a quarter of
+      their reach at most.
+    - While half-folded, `SELECT` + `LEFT` / `RIGHT` doesn't change the
+      layout and shows **Layout is set by the fold**. On a phone that can
+      half-fold, the **Layout** rows in Console Settings say they set the
+      layout used when the phone isn't half-folded.
+    - On a narrower foldable, such as a Galaxy Z Flip, there is no room for
+      the touch screen between the pad's halves: both screens stack above
+      the hinge, and the portrait pad sits below it.
+    - If the hinge reading leaves no room for this layout, the game keeps
+      its flat layout.
+    - Move or resize these buttons with **Half-folded** in
+      [Pad layout](controls-settings.md#pad-layout).
+    - With a [second screen](dual-screen.md#nintendo-ds-and-3ds) the game
+      keeps the split across the two screens instead.
 
 ## Home on wide and large screens
 

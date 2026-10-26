@@ -164,7 +164,8 @@ back to the touch screen.
       same as on one screen, so it carries over when you play without the
       second screen. On the 3DS the swap lasts for this session.
     - The screen layout settings, such as **Layout (landscape)**, aren't used
-      while the game is split or the panel is up.
+      while the game is split or the panel is up, and neither is the
+      [half-folded](foldables.md#nintendo-ds-and-3ds-half-folded) layout.
 
 ## Other games
 
