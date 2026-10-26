@@ -9,34 +9,18 @@ for every device from the
 [releases page](https://github.com/nx-redux/nx-handheld/releases), or
 update on the device from [Settings → About](../../handheld/settings/about.md).
 
-## v2.4.1
-
-*25 October 2026*
-
-Fixes for Emulator Shortcuts.
-
-### Fixes
-
-- **Toggle D-pad Joystick (Brick):** now also works in
-  [PortMaster](../../handheld/apps/portmaster.md) ports, using the same
-  button you set in
-  [Emulator Shortcuts](../../handheld/settings/emulator-shortcuts.md). A buzz
-  confirms each switch: one for joystick, two for D-pad. The option is now
-  shown only on the Brick, since the Brick Pro and Smart Pro S have real
-  sticks.
-- **No shared buttons:** Emulator Shortcuts, and **Options → Shortcuts** in
-  game, no longer let two shortcuts use the same button or combo. Pick one
-  that's already taken and it's refused, with the name of the shortcut using it.
-
 ## v2.4.0
 
-*24 October 2026*
+*24 October 2026 · v2.4.1 on 25 October · v2.4.2 on 26 October*
 
 Games start and quit faster, and resuming goes straight from the menu to your
 game without a black screen. RetroAchievements can download achievement data
 one console at a time, and about a thousand more cheats work, including MSX.
 Home, the Grid and Settings get a round of layout fixes, and Save & Quit from
 the in-game menu no longer crashes.
+
+Patch v2.4.1 fixes Emulator Shortcuts, and v2.4.2 a flash when resuming a
+game. Their changes are listed below, marked with their version.
 
 ### New features
 
@@ -115,6 +99,20 @@ the in-game menu no longer crashes.
 - **Streams:** radio, podcast and lyrics connections now check the server's
   certificate. A device whose clock is badly wrong can't open them until the
   clock is set.
+- **Toggle D-pad Joystick (Brick):** now also works in
+  [PortMaster](../../handheld/apps/portmaster.md) ports, using the same
+  button you set in
+  [Emulator Shortcuts](../../handheld/settings/emulator-shortcuts.md). A buzz
+  confirms each switch: one for joystick, two for D-pad. The option is now
+  shown only on the Brick, since the Brick Pro and Smart Pro S have real
+  sticks. (v2.4.1)
+- **No shared buttons:** Emulator Shortcuts, and **Options → Shortcuts** in
+  game, no longer let two shortcuts use the same button or combo. Pick one
+  that's already taken and it's refused, with the name of the shortcut using it. (v2.4.1)
+- **Resuming a game:** with a shader on, the first frame no longer flashes
+  black or glitches for a split second. With frame blending on (gpSP, mGBA
+  and Gambatte), the first frame after resuming or loading a state is no
+  longer washed out or darkened. (v2.4.2)
 
 ## v2.3.0
 
@@ -157,28 +155,17 @@ and over-the-air updates no longer fail as "corrupt" on the Smart Pro S.
   boot. Files the card's driver had left hidden from earlier boots blocked
   the update; they are now cleared before it runs.
 
-## v2.2.1
-
-*19 October 2026*
-
-A fix for PortMaster.
-
-### Fixes
-
-- **PortMaster:** after PortMaster updated itself to 2026.10.18, every port
-  install failed and was rolled back. Ports install again; ports you
-  installed earlier were not affected.
-- **Moonlight New:** pairing failed with a missing `libavcodec.so.58`; it
-  now finds the library PortMaster ships.
-
 ## v2.2.0
 
-*18 October 2026*
+*18 October 2026 · v2.2.1 on 19 October*
 
 Device Sync now works over a USB cable, syncs with NX Redux for Android, and
 also carries your BIOS files and collections. Emulator shortcuts move to
 Settings and apply to every game. Consoles can use your own logos, and
 fast-forward runs faster on SNES, arcade and Mega Drive.
+
+Patch v2.2.1 fixes PortMaster installs. Its changes are listed below,
+marked with their version.
 
 !!! warning "Before you update"
     - **Set your emulator shortcuts again.** Shortcuts are now set once for
@@ -263,93 +250,15 @@ fast-forward runs faster on SNES, arcade and Mega Drive.
 - **Game Boy Advance:** Classic NES Series carts (such as *Pac-Man* or
   *Super Mario Bros.*) now run; they start on mGBA automatically, keeping
   their saves in `Saves/GBA`.
-
-## v2.1.2
-
-*13 October 2026*
-
-A patch release. The Game Switcher gets a List layout, fast-forward and
-PlayStation run faster, and a launch could load the wrong game from a zip.
-RetroAchievements, PSP and mGBA each get fixes too.
-
-### New features
-
-- **Game Switcher List layout.** **Settings → Layouts → Game Switcher
-  layout** switches between **Full screen** (the default) and **List**, which
-  shows your recent games as a list with the selected game's last frame
-  behind it. Full screen gets a larger title and an info line that runs the
-  full width and follows **Extra info**. See
-  [Game Switcher](../../handheld/guide/game-switcher.md).
-- **Resume and Netplay in the context menu.** With **Layouts → Button
-  hints** set to `Hide`, a game's `MENU` context menu now lists **Resume (X)** and
-  **Netplay (Y)** so those actions stay easy to find.
-- **Settings moved.** The boot view and Game Switcher rows are now under
-  **Layouts**, and the clock rows under **Appearance**.
-
-### Fixes
-
-- **Zipped games:** launching a game could load another game whose name
-  starts the same way (for example *Double Dragon* opening *Double Dragon
-  II*), with saves going to the wrong game. Every zip or 7z now unpacks into
-  its own folder.
-- **RetroAchievements:** an achievement earned offline no longer shows as
-  locked when you open the game again online before the sync finishes, and
-  the **offline (softcore)** notice shows again when a game starts without
-  Wi-Fi.
-- **PSP:** choosing **Vulkan** or **None** as the Backend made games very
-  slow (the core fell back to software rendering). Backend now offers
-  **Automatic** and **OpenGL** only; a saved Vulkan setting switches back
-  automatically.
-- **Fast-forward:** NES and Famicom Disk System now reach the Max FF Speed
-  you set (they stopped at 2x on the Brick).
-- **Smart Pro S:** the lighter consoles (NES, SNES, Mega Drive, Game Boy and
-  others) no longer stutter or crackle on CPU **Auto**, and shaders get the
-  full GPU speed.
-- **PlayStation (Brick, Brick Pro):** threaded rendering is on by default,
-  so demanding games drop far fewer frames.
-- **Dreamcast, Nintendo 64, PSP:** the left stick no longer also presses the
-  D-pad.
-- **mGBA:** **More Sun** and **Less Sun** now brighten and darken the solar
-  sensor as named (they were swapped), for the Boktai games.
-- **Music Player:** some MP3s with a cover embedded in the file showed a
-  wrong cover fetched online instead; the embedded cover now shows.
-
-## v2.1.1
-
-*12 October 2026*
-
-A patch release. PortMaster ports get per-game CPU and GPU settings, Game Boy
-Advance no longer lags on the Smart Pro S, and RetroAchievements, the Music
-Player and Weston-based ports each get fixes.
-
-### New features
-
-- **Launch Options for ports.** Choose **Launch Options** in a port's context
-  menu to set its CPU speed and, on the Smart Pro S, how many CPU cores and
-  how much GPU speed it gets. Lower settings save battery on light games;
-  higher ones help heavy ports. Each port remembers its choice, and
-  **Tools → Emulator Settings → Ports (Launch Options)** sets the default for
-  all of them. See [Launch Options](../../handheld/guide/launch-options.md).
-- **JPG game art.** Box art and screenshots saved as `.jpg` or `.jpeg` in a
-  `.media` folder now show when there is no `.png` with the same name.
-
-### Fixes
-
-- **Game Boy Advance (Smart Pro S):** gpSP and mGBA no longer lag, including
-  with a shader on.
-- **RetroAchievements:** achievements made offline now sync even when your
-  username in Settings is capitalised differently from your account.
-  **Sync** no longer downloads games it already has, and the achievement list
-  follows the set's own order, so **Next** shows the right achievement.
-- **PortMaster:** ports that use the Weston runtime no
-  longer unmount the SD card and leave a black screen.
-- **Music Player:** song tags and radio song titles in non-English text
-  (accents, Japanese, Cyrillic and so on) show correctly instead of `???` or
-  nothing.
+- **PortMaster:** after PortMaster updated itself to 2026.10.18, every port
+  install failed and was rolled back. Ports install again; ports you
+  installed earlier were not affected. (v2.2.1)
+- **Moonlight New:** pairing failed with a missing `libavcodec.so.58`; it
+  now finds the library PortMaster ships. (v2.2.1)
 
 ## v2.1.0
 
-*11 October 2026*
+*11 October 2026 · v2.1.1 on 12 October · v2.1.2 on 13 October*
 
 Netplay grows up in NX Redux 2.1: play over a USB cable between two devices,
 link Game Boy Advance games with a real link cable, and start netplay straight
@@ -357,6 +266,11 @@ from Home. Nintendo 64 now runs inside NX Redux's own emulator, PlayStation
 gains a second, sharper system (SwanStation) and Dreamcast a lighter one for
 the slower devices, and the menus run at a smooth 60 fps with more art choices
 for your game lists.
+
+Patch v2.1.1 adds Launch Options for ports and fixes Game Boy Advance lag
+on the Smart Pro S. v2.1.2 adds a List layout for the Game Switcher and
+fixes zipped games loading the wrong game. Their changes are listed below,
+marked with their version.
 
 !!! warning "Before you update"
     - **Netplay needs v2.1 on both devices.** v2.1 can't play with v2.0 or
@@ -447,6 +361,25 @@ for your game lists.
 - **Faster emulators.** DraStic (Nintendo DS) runs at the CPU's full speed,
   **Auto** CPU speed uses the whole clock range, and the Smart Pro S keeps its
   fast cores on for the lighter systems.
+- **Launch Options for ports.** Choose **Launch Options** in a port's context
+  menu to set its CPU speed and, on the Smart Pro S, how many CPU cores and
+  how much GPU speed it gets. Lower settings save battery on light games;
+  higher ones help heavy ports. Each port remembers its choice, and
+  **Tools → Emulator Settings → Ports (Launch Options)** sets the default for
+  all of them. See [Launch Options](../../handheld/guide/launch-options.md). (v2.1.1)
+- **JPG game art.** Box art and screenshots saved as `.jpg` or `.jpeg` in a
+  `.media` folder now show when there is no `.png` with the same name. (v2.1.1)
+- **Game Switcher List layout.** **Settings → Layouts → Game Switcher
+  layout** switches between **Full screen** (the default) and **List**, which
+  shows your recent games as a list with the selected game's last frame
+  behind it. Full screen gets a larger title and an info line that runs the
+  full width and follows **Extra info**. See
+  [Game Switcher](../../handheld/guide/game-switcher.md). (v2.1.2)
+- **Resume and Netplay in the context menu.** With **Layouts → Button
+  hints** set to `Hide`, a game's `MENU` context menu now lists **Resume (X)** and
+  **Netplay (Y)** so those actions stay easy to find. (v2.1.2)
+- **Settings moved.** The boot view and Game Switcher rows are now under
+  **Layouts**, and the clock rows under **Appearance**. (v2.1.2)
 
 ### Fixes
 
@@ -508,6 +441,42 @@ for your game lists.
   minui-presenter, start again.
 - **Folders:** every system now has its `Bios`, `Cheats`, `Overlays` and
   `Saves` folders on a fresh install.
+- **Game Boy Advance (Smart Pro S):** gpSP and mGBA no longer lag, including
+  with a shader on. (v2.1.1)
+- **RetroAchievements:** achievements made offline now sync even when your
+  username in Settings is capitalised differently from your account.
+  **Sync** no longer downloads games it already has, and the achievement list
+  follows the set's own order, so **Next** shows the right achievement. (v2.1.1)
+- **PortMaster:** ports that use the Weston runtime no
+  longer unmount the SD card and leave a black screen. (v2.1.1)
+- **Music Player:** song tags and radio song titles in non-English text
+  (accents, Japanese, Cyrillic and so on) show correctly instead of `???` or
+  nothing. (v2.1.1)
+- **Zipped games:** launching a game could load another game whose name
+  starts the same way (for example *Double Dragon* opening *Double Dragon
+  II*), with saves going to the wrong game. Every zip or 7z now unpacks into
+  its own folder. (v2.1.2)
+- **RetroAchievements:** an achievement earned offline no longer shows as
+  locked when you open the game again online before the sync finishes, and
+  the **offline (softcore)** notice shows again when a game starts without
+  Wi-Fi. (v2.1.2)
+- **PSP:** choosing **Vulkan** or **None** as the Backend made games very
+  slow (the core fell back to software rendering). Backend now offers
+  **Automatic** and **OpenGL** only; a saved Vulkan setting switches back
+  automatically. (v2.1.2)
+- **Fast-forward:** NES and Famicom Disk System now reach the Max FF Speed
+  you set (they stopped at 2x on the Brick). (v2.1.2)
+- **Smart Pro S:** the lighter consoles (NES, SNES, Mega Drive, Game Boy and
+  others) no longer stutter or crackle on CPU **Auto**, and shaders get the
+  full GPU speed. (v2.1.2)
+- **PlayStation (Brick, Brick Pro):** threaded rendering is on by default,
+  so demanding games drop far fewer frames. (v2.1.2)
+- **Dreamcast, Nintendo 64, PSP:** the left stick no longer also presses the
+  D-pad. (v2.1.2)
+- **mGBA:** **More Sun** and **Less Sun** now brighten and darken the solar
+  sensor as named (they were swapped), for the Boktai games. (v2.1.2)
+- **Music Player:** some MP3s with a cover embedded in the file showed a
+  wrong cover fetched online instead; the embedded cover now shows. (v2.1.2)
 
 ## v2.0.0
 
@@ -734,47 +703,18 @@ Menus and emulators also run cooler with new per-device CPU policies.
   starting shows a loading screen instead of failing to launch.
 - **Search:** the hint bar repaints cleanly when the shift indicator clears.
 
-## v1.11.1
-
-*19 September 2026*
-
-A small patch release. The Smart Pro S no longer pops from the speaker at
-boot or when a game starts, its Bluetooth comes back after sleep, the
-On-Screen Display gets three fixes and a lighter idle poll, and the
-Developer SSH toggle now shows the full login line with the device's IP.
-
-### New features
-
-- **SSH login hint.** While SSH is running, the hint under
-  **Settings → Developer → Enable SSH** shows the exact login line with the
-  device's current IP address and password, and the connected network in
-  **Settings → Network** shows the same IP. See
-  [Developer → Enable SSH](../../handheld/settings/developer.md#enable-ssh-sftp).
-
-### Fixes
-
-- **Smart Pro S:** the speaker pop at boot and at the start of a game,
-  most noticeable with the N64, Nintendo DS and Dreamcast emulators, is
-  gone. The codec powers its output stage up for every new audio stream
-  and that transient reached the speaker amp; the amp is now kept muted
-  until the stream is running and is unmuted with the volume held at zero.
-- **Smart Pro S:** Bluetooth re-attaches after the device wakes from sleep,
-  and stays off when you have disabled it.
-- **OSD:** on the Brick Pro the **Home** press that opens the panel no longer
-  closes it again, the slider widget is centred, and the active widget's
-  focus ring stays white instead of taking the theme accent.
-- **OSD:** the hidden daemon polls input every 20 ms instead of every
-  millisecond, so it uses less CPU while the panel is closed.
-
 ## v1.11.0
 
-*17 September 2026*
+*17 September 2026 · v1.11.1 on 19 September*
 
 This release adds a built-in cheat downloader, a Nintendo / Xbox button
 layout setting, and safer Netplay saves that never touch the client's own.
 The Artwork Manager scans Roms like the game list, Pokémon Gen1Recomp++
 replaces the old Xtras recreation, and a batch of fixes covers Amiga, PSP,
 DraStic, offline RetroAchievements and the Brick updater.
+
+Patch v1.11.1 fixes the Smart Pro S speaker pop and Bluetooth after sleep.
+Its changes are listed below, marked with their version.
 
 ### New features
 
@@ -808,6 +748,11 @@ DraStic, offline RetroAchievements and the Brick updater.
 - **Developer debug logging.** A **Debug logging** toggle under
   [Developer settings](../../handheld/settings/developer.md#debug-logging) turns off all
   `.userdata` log writes when you do not need them, keeping the card clean.
+- **SSH login hint.** While SSH is running, the hint under
+  **Settings → Developer → Enable SSH** shows the exact login line with the
+  device's current IP address and password, and the connected network in
+  **Settings → Network** shows the same IP. See
+  [Developer → Enable SSH](../../handheld/settings/developer.md#enable-ssh-sftp). (v1.11.1)
 
 ### Fixes
 
@@ -829,6 +774,18 @@ DraStic, offline RetroAchievements and the Brick updater.
   **Release date**, and settings-row labels now fit beside their value.
 - **PortMaster:** it is now a shell launcher and installed paks are migrated
   automatically, so a system update keeps PortMaster installed.
+- **Smart Pro S:** the speaker pop at boot and at the start of a game,
+  most noticeable with the N64, Nintendo DS and Dreamcast emulators, is
+  gone. The codec powers its output stage up for every new audio stream
+  and that transient reached the speaker amp; the amp is now kept muted
+  until the stream is running and is unmuted with the volume held at zero. (v1.11.1)
+- **Smart Pro S:** Bluetooth re-attaches after the device wakes from sleep,
+  and stays off when you have disabled it. (v1.11.1)
+- **OSD:** on the Brick Pro the **Home** press that opens the panel no longer
+  closes it again, the slider widget is centred, and the active widget's
+  focus ring stays white instead of taking the theme accent. (v1.11.1)
+- **OSD:** the hidden daemon polls input every 20 ms instead of every
+  millisecond, so it uses less CPU while the panel is closed. (v1.11.1)
 
 ## v1.10.0
 
