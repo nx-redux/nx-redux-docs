@@ -72,6 +72,14 @@ Settings**, and for the console in
 value; keep it for the game or the console with
 [Save Changes](../in-game-menu.md#save-changes).
 
+In a game the page lists only the rows that change the picture right now:
+the **Layout** row for the way you're holding the phone (**Layout (portrait,
+controller)** while a controller hides the pad), and **Inset Corner**,
+**Inset Size** and **Inset Opacity** only while that layout is **Picture in
+picture**. Turn the phone or pick another layout and the rows follow.
+Emulator Settings and Game Settings list every row, so you can set up each
+orientation there.
+
 ![Console Settings of Super Princess Peach on DS: the three Layout rows, Big Screen, Inset Corner and Inset Size](../../assets/screenshots/mobile/ds-console-settings.webp){ .nx-wide }
 
 | Row | Values | Default | See |
