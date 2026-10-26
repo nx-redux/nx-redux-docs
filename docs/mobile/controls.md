@@ -46,6 +46,9 @@ and the game sits between them:
   [touch buttons](controls-settings.md#touch-buttons). When one half has it,
   both do, so the two halves stay level.
 - Both halves keep clear of the camera cutout, on whichever side it is.
+- On the Nintendo DS and 3DS, the round
+  [mic button](emulators/nintendo-ds.md#microphone) sits in the left half's
+  bottom corner, toward the game.
 
 ![The landscape pad beside a Sega Genesis game: the two halves either side of the picture](../assets/screenshots/mobile/pad-landscape.webp){ .nx-wide }
 

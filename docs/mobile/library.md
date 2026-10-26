@@ -48,6 +48,7 @@ it reads, in one list.
 | **ROM Folder:** and its name | One row per extra folder, with its path or its state under it. `A` offers to remove it. |
 | **Add ROM folder** | Pick another extra folder to scan. |
 | **All files access** | Android 11 and later. A switch: a tap, or `A`, opens Android's page for the app. See [All files access](#all-files-access). |
+| **Microphone access** | On phones with a microphone. On or Off: a tap, or `A`, asks for it, or opens Android's page for the app when Android won't ask again. See [Microphone access](#microphone-access). |
 | **Saves** | Save formats, and export or import your saves. See [Saves](#saves). |
 | **Android games** | How many apps are in the Android console. Opens the picker. See [Launcher Mode & Android Games](launcher.md#android-games). |
 | **Unassigned games** | Only when some games have no console. Shows how many, and opens their list. See [Unassigned games](#unassigned-games). |
@@ -93,6 +94,23 @@ faster on large libraries, and uses its own [folder picker](#the-folder-picker).
       what: **Off: your home folder can't be read, so** and the folder used
       instead, or **Off: some ROM folders can't be read**. The app no longer
       says it with a notice each time it starts.
+
+## Microphone access
+
+Nintendo DS and 3DS games that listen for a blow or a shout hear your phone's
+microphone while their **Mic** is on and this access is allowed. See
+[Microphone](emulators/nintendo-ds.md#microphone).
+
+The app asks for it the first time you turn a game's Mic on, never at
+install or start. Turned off, or never allowed, the games hear a made-up blow
+instead, so their mic puzzles can still be passed.
+
+??? info "More detail"
+    - The row is hidden on phones without a microphone and on Android TV.
+    - Once you have said no in Android's prompt and it won't ask again, the
+      row opens Android's page for the app instead, where you can turn the
+      **Microphone** permission on.
+    - What the games hear stays on your phone and is never recorded.
 
 ## The folder picker
 

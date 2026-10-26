@@ -8,9 +8,74 @@ What changed in each release of NX Redux for Android phones, tablets and
 Android handhelds. Download the APK from the
 [releases page](https://github.com/nx-redux/nx-mobile/releases).
 
+## v0.5.0
+
+*26 October 2026*
+
+The picture and the on-screen pad are now laid out together. In landscape the
+pad sits beside the game instead of over its edges, and pixel-art consoles
+get the largest whole-number size that fits. DS and 3DS games get new
+layouts, a half-folded layout on foldables, and a **Mic** for games that ask
+you to blow or shout.
+
+### New features
+
+- **Microphone for DS and 3DS.** Games that listen, such as Fossil Fighters,
+  Zelda Spirit Tracks or Nintendogs, hear your phone's microphone while their
+  **Mic** is on. Turn it on with the round mic button in the pad's
+  bottom-left corner, the **Mic** tile in the game panel, or a **Toggle mic**
+  shortcut. Android asks for the microphone the first time; without it, the
+  game hears a made-up blow so mic puzzles can still be passed. The Mic is
+  off each time a game starts. See
+  [Nintendo DS](../../mobile/emulators/nintendo-ds.md#microphone) and
+  [Microphone access](../../mobile/library.md#microphone-access).
+- **Pad beside the picture.** In landscape the pad's two halves sit either
+  side of the game, solid where they clear it and see-through only where
+  they overlap. DS and 3DS **STYLUS** and **SWAP**, and your touch buttons,
+  get a second row under `MENU` and `START`. See
+  [Landscape](../../mobile/controls.md#landscape).
+- **Screen Scaling → Auto**, the new default. Arcade and 2D home consoles
+  take the largest whole-number size that fits, 2D handhelds play at Native,
+  and 3D consoles fill their space at their own shape. A Screen Scaling you
+  picked yourself is kept. See
+  [Frontend](../../mobile/in-game-menu.md#frontend).
+- **New DS and 3DS layouts.** Large screen, Stacked, Single screen, Picture
+  in picture and Side by side, at whole-number sizes, with a default that
+  suits your screen. Your old pick carries over. See
+  [Screen layouts](../../mobile/emulators/nintendo-ds.md#screen-layouts).
+- **Half-folded DS and 3DS.** Fold a Galaxy Z Fold partway and the game
+  lays itself out like a DS: the top screen above the hinge, the touch
+  screen below it with the pad either side. See
+  [Foldables](../../mobile/foldables.md#nintendo-ds-and-3ds-half-folded).
+- **Black pad theme.** A pure black portrait pad, with **Pad buttons** Grey
+  or Outline. See [Pad theme](../../mobile/appearance.md#pad-theme).
+
+### Improvements
+
+- **Portrait band.** The pad band is the same height in the menu and in a
+  game. With the band hidden (DS, 3DS, and tall arcade, WonderSwan and Lynx
+  games), one see-through pad lies across the bottom, and the New 3DS
+  C-stick sits between the d-pad and the face buttons. See
+  [Hiding the portrait band](../../mobile/controls.md#hiding-the-portrait-band).
+- **Shortcuts without a controller.** The bind rows only show with a
+  controller connected, since the on-screen pad can't be bound. Without
+  one, the page points you to **Touch button 1** and **2**. See
+  [Shortcuts](../../mobile/controls-settings.md#shortcuts).
+- **3DS touch.** With the pad solid beside the picture, the whole bottom
+  screen takes touches again. Only the main screen does, and only while the
+  pad covers part of the picture. See
+  [Touch](../../mobile/emulators/nintendo-3ds.md#touch).
+- **Pad layout editor.** The landscape editor shows the pad as the game
+  draws it, and DS and 3DS get a Half-folded layout of their own on
+  foldables. Landscape moves made for the old pad over the game are cleared
+  once; portrait layouts are kept.
+- **Launch and quit.** A game shows black until its picture is placed,
+  with no flash at the wrong size, and the menu no longer jiggles on the
+  way back.
+
 ## v0.4.1
 
-*25 October 2026*
+*25 October 2026 · v0.4.2 on 25 October*
 
 A fix-up for v0.4.0. Save-state screenshots show again in the in-game menu's
 slots, on Home's Continue card and in the Game Switcher, and Continue picks
@@ -52,6 +117,9 @@ without opening the menu.
   instead.
 - **Continue** shows the screenshot of your latest save after you leave a
   game from a game list or the Game Switcher, without restarting the app.
+- **Ready to install** in Settings → About installs when you press it
+  (v0.4.2). Before, a download that finished while Settings was open only
+  installed after you went back to the main menu.
 
 ## v0.4.0
 

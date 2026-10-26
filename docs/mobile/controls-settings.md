@@ -113,6 +113,7 @@ in-game [Options → Shortcuts](in-game-menu.md#shortcuts) page sets its own.
 | **Toggle Rewind** / **Hold Rewind** | Rewind: on and off with each press, or only while held. Needs [Rewind](in-game-menu.md#console-settings) turned on for the console. |
 | **Reset Game** | Restart the game. It asks first. |
 | **Save & Quit** | Save your place and leave the game, as the in-game menu's [Save & Quit](in-game-menu.md#quitting) does. A controller's only: it can't be a touch button. |
+| **Toggle mic** | Nintendo DS and 3DS only, as its row says: turn the game's [Mic](emulators/nintendo-ds.md#microphone) on or off. A controller's only: the pad has its own mic button. |
 
 Fast forward runs at the console's **Max FF Speed**, and turning on fast
 forward turns rewind off, and the other way round. See
@@ -162,6 +163,7 @@ Move them with the other buttons in [Pad layout](#pad-layout).
 ??? info "More detail"
     - A rewind button is hidden while the console's **Rewind** is off, or in
       a game that can't rewind.
+    - **Save & Quit** and **Toggle mic** aren't offered for the touch buttons.
     - The touch buttons are hidden during a netplay match.
 
 ### Clear all
