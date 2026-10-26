@@ -73,63 +73,20 @@ you to blow or shout.
   with no flash at the wrong size, and the menu no longer jiggles on the
   way back.
 
-## v0.4.1
-
-*25 October 2026 · v0.4.2 on 25 October*
-
-A fix-up for v0.4.0. Save-state screenshots show again in the in-game menu's
-slots, on Home's Continue card and in the Game Switcher, and Continue picks
-up the new one as soon as you leave a game. Resuming now shows the save's
-screenshot right away instead of a black screen, and Save & Quit drops you
-straight back where you were, with no fade or slide. Game lists jump by
-letter with `L1` / `R1` and by a page with `Left` / `Right`. A new
-**Save & Quit** shortcut, unbound until you set it, quits from a controller
-without opening the menu.
-
-### New features
-
-- **Page jump in game lists.** `L1` / `R1` jump to the previous or next
-  letter in a console's game list, in every layout. `Left` / `Right` move a
-  page in List, Minimal and the vertical Carousel and Backdrop. See
-  [Game lists](../../mobile/main-menu.md#game-lists).
-- **Save & Quit shortcut.** Bind it in
-  [Controls → Shortcuts](../../mobile/controls-settings.md#shortcuts) to quit
-  a game from a controller, saving your place, without opening the menu.
-  Nothing is bound by default.
-
-### Improvements
-
-- **Resume without black.** A game you resume shows the save's screenshot
-  from the moment it opens until the game itself is ready, instead of a
-  black screen and a glimpse of the game starting over.
-- **Instant Save & Quit.** Quitting cuts straight back to Home, the game
-  list or the Game Switcher, with no fade. Resuming from the
-  [Game Switcher](../../mobile/game-switcher.md) no longer slides the
-  switcher away first, and quitting lands back on it with the game's new
-  screenshot.
-
-### Fixes
-
-- **Save-state screenshots** show again in the in-game menu's
-  [Save and Load](../../mobile/in-game-menu.md#the-first-page) slots, on
-  Home's Continue card and in the Game Switcher. Since v0.4.0 moved saves to
-  your home folder, they were missing, and Continue showed the game's artwork
-  instead.
-- **Continue** shows the screenshot of your latest save after you leave a
-  game from a game list or the Game Switcher, without restarting the app.
-- **Ready to install** in Settings → About installs when you press it
-  (v0.4.2). Before, a download that finished while Settings was open only
-  installed after you went back to the main menu.
-
 ## v0.4.0
 
-*25 October 2026*
+*25 October 2026 · v0.4.1 and v0.4.2 on 25 October*
 
 Play on two screens: DS and 3DS games put the bottom screen on a second
 display, other games get a game panel there, and the main menu spreads across
 both. Fast forward, rewind and reset arrive with shortcuts you set yourself,
 saves move into your home folder so an uninstall keeps them, and the GitHub
 build now updates itself.
+
+Patch v0.4.1 brings back save-state screenshots, resumes without a black
+screen, quits instantly and adds page jump and a Save & Quit shortcut;
+v0.4.2 fixes **Ready to install** in About. Their changes are listed below,
+marked with their version.
 
 ### New features
 
@@ -201,6 +158,14 @@ build now updates itself.
   work. With All files access, the cheat database goes in your home folder's
   `Cheats/<TAG>/`, one folder per console, so a reinstall finds it. See
   [Where the files go](../../mobile/cheats.md#where-the-files-go).
+- **Page jump in game lists.** `L1` / `R1` jump to the previous or next
+  letter in a console's game list, in every layout. `Left` / `Right` move a
+  page in List, Minimal and the vertical Carousel and Backdrop. See
+  [Game lists](../../mobile/main-menu.md#game-lists). (v0.4.1)
+- **Save & Quit shortcut.** Bind it in
+  [Controls → Shortcuts](../../mobile/controls-settings.md#shortcuts) to quit
+  a game from a controller, saving your place, without opening the menu.
+  Nothing is bound by default. (v0.4.1)
 
 ### Improvements
 
@@ -241,6 +206,14 @@ build now updates itself.
   rows evenly between their two columns.
 - **A stuck game** is closed after 20 seconds, and the menu says it stopped
   responding, instead of the app freezing.
+- **Resume without black.** A game you resume shows the save's screenshot
+  from the moment it opens until the game itself is ready, instead of a
+  black screen and a glimpse of the game starting over. (v0.4.1)
+- **Instant Save & Quit.** Quitting cuts straight back to Home, the game
+  list or the Game Switcher, with no fade. Resuming from the
+  [Game Switcher](../../mobile/game-switcher.md) no longer slides the
+  switcher away first, and quitting lands back on it with the game's new
+  screenshot. (v0.4.1)
 
 ### Fixes
 
@@ -253,6 +226,17 @@ build now updates itself.
 - **An extra ROM folder** emptied of games but left with subfolders no longer
   makes every rescan fail.
 - **Layouts → Reset to defaults** now updates Home straight away.
+- **Save-state screenshots** show again in the in-game menu's
+  [Save and Load](../../mobile/in-game-menu.md#the-first-page) slots, on
+  Home's Continue card and in the Game Switcher. With saves in your home
+  folder they were missing, and Continue showed the game's artwork
+  instead. (v0.4.1)
+- **Continue** shows the screenshot of your latest save after you leave a
+  game from a game list or the Game Switcher, without restarting the app.
+  (v0.4.1)
+- **Ready to install** in Settings → About installs when you press it.
+  Before, a download that finished while Settings was open only installed
+  after you went back to the main menu. (v0.4.2)
 
 ## v0.3.0
 
@@ -335,7 +319,7 @@ backgrounds.
 
 ## v0.1.0
 
-*18 October 2026*
+*18 October 2026 · v0.1.1 on 19 October*
 
 The first public release: an early preview, so our first players can try it
 and tell us what works and what doesn't before v1.0. Expect rough edges, and
@@ -345,6 +329,9 @@ while it settles.
 It needs Android 8.0 or later on a 64-bit ARM (arm64) device. Bring your own
 games and, for the systems that need them, BIOS files. See
 [Getting Started on Mobile](../../mobile/getting-started.md).
+
+Patch v0.1.1 fixes games that failed to start on Android 14 and older with
+**Could not start the game … library not found**.
 
 ### What's in it
 
