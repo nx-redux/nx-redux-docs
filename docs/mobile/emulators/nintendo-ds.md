@@ -29,7 +29,10 @@ on the pad are the app's, and a round one:
 
 In portrait they sit either side of `MENU` and `STICK`. In landscape
 **STYLUS** is under `MENU` and **SWAP** under `START`; with the portrait
-[pad hidden](#portrait-pad) they sit beside the shoulder buttons.
+[pad hidden](#portrait-pad) they sit beside the shoulder buttons, with your
+[touch buttons](../controls-settings.md#touch-buttons) next to them toward
+the middle: **Touch button 1** beside **STYLUS**, **Touch button 2** beside
+**SWAP**.
 
 With a controller or the on-screen pad:
 

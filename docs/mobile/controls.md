@@ -98,6 +98,10 @@ the long-press saves it for the console.
       is drawn solid.
     - The pad's buttons take the touches that land on them; touches between
       them reach the game.
+    - Your [touch buttons](controls-settings.md#touch-buttons) sit in the top
+      row, beside the shoulder buttons toward the middle (on the DS and 3DS,
+      beside **STYLUS** and **SWAP**). On the New 3DS, with `ZL` and `ZR`
+      there too, they narrow so the two sides don't meet.
     - With a controller connected the pad hides, as in landscape.
 
 ### Each console's buttons
