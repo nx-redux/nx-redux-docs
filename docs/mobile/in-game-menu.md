@@ -240,6 +240,10 @@ game's own.
 - `X` sets the row to **None** here, and `Y` puts it back to the default.
 - On a touch button, `LEFT` / `RIGHT` pick its action.
 
+With no controller connected, only the touch buttons are listed, under a
+line saying to connect a controller to bind buttons. The shortcut rows, and
+what you set on them, come back when one connects.
+
 As with every Options page, keep your changes with
 [Save Changes](#save-changes), for this console or this game.
 

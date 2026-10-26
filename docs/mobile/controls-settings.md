@@ -119,8 +119,12 @@ forward turns rewind off, and the other way round. See
 - Each button or combination does one thing. Pressing one another shortcut
   already uses moves it to this shortcut, and the other one becomes
   **None**.
-- Binding needs a controller. Without one, the row reads **Connect a
-  controller to bind**.
+
+Binding needs a controller, since the on-screen pad can't be bound. With
+no controller connected, the shortcut rows are hidden and the page reads
+**Connect a controller to bind buttons**: use the
+[touch buttons](#touch-buttons) instead. The rows come back, with what you
+bound, when a controller connects.
 
 Prefer `MENU` + button combinations. A shortcut on a plain button the game
 also uses takes that button from the game, while a combination leaves every
@@ -156,6 +160,7 @@ Move them with the other buttons in [Pad layout](#pad-layout).
 ### Clear all
 
 Sets every shortcut to **None** and takes both touch buttons off the pad.
+With no controller connected, it still clears the hidden shortcut rows.
 
 ## Reset to defaults
 
