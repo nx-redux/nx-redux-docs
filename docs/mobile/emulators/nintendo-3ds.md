@@ -124,13 +124,16 @@ Settings**, and for the console in
 value; keep it for the game or the console with
 [Save Changes](../in-game-menu.md#save-changes).
 
-In a game the page lists only the **Layout** row in use, for the way you're
+In a game the page lists only the one of the three **Layout** rows in use (the 3D Resolution and other rows all stay), for the way you're
 holding the phone (**Layout (portrait, controller)** while a controller hides
 the pad). Turn the phone or pick another layout and the row follows. Emulator
 Settings and Game Settings list every row, so you can set up each
 orientation there.
 
-![Console Settings of a 3DS game in landscape: the three Layout rows, New 3DS Controls and Portrait Pad, with Controller Layout below](../../assets/screenshots/mobile/3ds-console-settings.webp){ .nx-wide }
+![Console Settings of a 3DS game in landscape, an earlier version of the page: all three Layout rows, New 3DS Controls and Portrait Pad, with Controller Layout below](../../assets/screenshots/mobile/3ds-console-settings.webp){ .nx-wide }
+
+This picture predates 3D Resolution and the in-game filter: now only the Layout
+row in use is listed, and the 3D Resolution rows sit under it.
 
 | Row | Values | Default | See |
 | --- | --- | --- | --- |
@@ -188,7 +191,7 @@ Until you pick one, the screen decides:
     - A squarer screen is the same as on the
       [DS](nintendo-ds.md#which-layout-by-default).
     - The app sets Azahar's own **Screen Layout** option from the layout rows,
-      so in **Core Options** it shows locked.
+      so it no longer appears in **Core Options**.
     - **Screen Swap Mode** in **Core Options** sets whether the swap toggles
       (the default) or lasts only while you hold the buttons.
     - Azahar's own large screen, with the bottom screen beside the top one,
@@ -204,7 +207,7 @@ top-screen width (400 px).
 
 | Mode | What it does |
 | --- | --- |
-| **Auto** | Draws at the largest multiple that fits the width the screens are shown at, up to **Max Scale** (3x by default, lower than the DS's 4x because the 3DS is heavier). |
+| **Auto** | Draws at the largest multiple that fits the width the screens are shown at, up to **Max Scale** (3x by default). |
 | **Quality** | The same with no cap: as sharp as the display can show, up to Azahar's 10x. |
 | **Performance** | A fixed **Scale**, from 1x up to half of the most the display can show, rounded up. 2x by default. |
 
@@ -222,7 +225,7 @@ preview strip.
       Galaxy Z Fold. The core's own limit is 10x.
     - Azahar's own **Internal Resolution**, **Large Screen Proportion** and
       **Stereoscopic 3D Mode** no longer appear in Core Options: the app sets
-      the resolution, and the other two would not fit the app's layouts.
+      the resolution, and the app fixes the other two.
       **Prominent 3DS Screen** and **Screen Swap Mode** stay.
 
 ## Motion
