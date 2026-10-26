@@ -132,10 +132,7 @@ back to the game. Turn the phone or pick another layout and the row follows. Emu
 Settings and Game Settings list every row, so you can set up each
 orientation there.
 
-![Console Settings of a 3DS game in landscape, an earlier version of the page: all three Layout rows, New 3DS Controls and Portrait Pad, with Controller Layout below](../../assets/screenshots/mobile/3ds-console-settings.webp){ .nx-wide }
-
-This picture predates 3D Resolution and the in-game filter: a game now lists
-one Layout row, with the 3D Resolution rows under it.
+![Console Settings in Mario Kart 7 on the Fold's cover screen: the landscape Layout row, 3D Resolution at Auto · 3x now with Max Scale, New 3DS Controls, Portrait Pad and Controller Layout](../../assets/screenshots/mobile/3ds-console-settings.webp){ .nx-wide }
 
 | Row | Values | Default | See |
 | --- | --- | --- | --- |
