@@ -348,7 +348,9 @@ as you make it.
 
     These rows open adjust mode: **Screen Scaling**, **Screen Sharpness**,
     **Overlay**, **Offset screen X** and **Y**, **Shader**, each shader
-    parameter, and the Nintendo DS screen rows in **Console Settings**.
+    parameter, and the Nintendo DS **Layout**, **Big Screen** and inset rows in
+    **Console Settings** (not **3D Resolution**: the paused game draws no new
+    frame, so its change shows when you go back to the game).
 
 ## Options rows
 
