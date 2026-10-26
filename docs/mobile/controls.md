@@ -46,6 +46,9 @@ and the game sits between them:
   [touch buttons](controls-settings.md#touch-buttons). When one half has it,
   both do, so the two halves stay level.
 - Both halves keep clear of the camera cutout, on whichever side it is.
+- On the Nintendo DS and 3DS, the round
+  [mic button](emulators/nintendo-ds.md#microphone) sits in the left half's
+  bottom corner, toward the game.
 
 ![The landscape pad beside a Sega Genesis game: the two halves either side of the picture](../assets/screenshots/mobile/pad-landscape.webp){ .nx-wide }
 
@@ -95,6 +98,10 @@ the long-press saves it for the console.
       is drawn solid.
     - The pad's buttons take the touches that land on them; touches between
       them reach the game.
+    - Your [touch buttons](controls-settings.md#touch-buttons) sit in the top
+      row, beside the shoulder buttons toward the middle (on the DS and 3DS,
+      beside **STYLUS** and **SWAP**). On the New 3DS, with `ZL` and `ZR`
+      there too, they narrow so the two sides don't meet.
     - With a controller connected the pad hides, as in landscape.
 
 ### Each console's buttons

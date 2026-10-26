@@ -58,6 +58,7 @@ there is no online matchmaking.
 | Wi-Fi multicast | Finding your other device on the same Wi-Fi |
 | Notifications and foreground service | Showing progress while a Device Sync runs |
 | Vibration | Feedback from the on-screen controls |
+| Microphone (optional) | Letting Nintendo DS and 3DS games hear you blow or speak, only while you turn their Mic on. Asked the first time you do. The sound goes straight to the game: it is never recorded, stored or sent anywhere |
 | All files access (GitHub APK only, optional) | Reading your games and saving to a folder you choose anywhere on your storage. The Google Play app uses its own folder and folders you pick instead |
 | Install packages (GitHub APK only) | Installing an update you download from inside the app |
 

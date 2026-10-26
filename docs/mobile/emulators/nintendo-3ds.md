@@ -37,6 +37,8 @@ screens.
 The on-screen pad is laid out like a 3DS. `STICK` / `D-PAD` switches between
 the d-pad and the Circle Pad. Games that use the New 3DS buttons also get
 `ZL`, `ZR` and the C-stick: see [New 3DS controls](#new-3ds-controls).
+The round button in the pad's bottom-left corner is the
+[mic button](#microphone).
 
 The pad also has **STYLUS**, which turns [stylus mode](#stylus-mode) on or
 off (pressed in while it's on), and **SWAP**, which swaps the screens. In
@@ -221,11 +223,13 @@ Stylus mode is off each time a game starts, and is not saved.
 ## Touch
 
 Touch the bottom screen wherever it is drawn, as long as the on-screen pad
-isn't beside or over the game: in portrait with the pad band, or with a
+doesn't cover part of the picture: in portrait with the pad band, in
+landscape with the pad solid beside the picture, half-folded, or with a
 controller.
 
-While the on-screen pad is beside or over the game (landscape without a
-controller, or portrait with the [pad hidden](#portrait-pad)), only the main
+While the pad covers part of the picture (in landscape, its see-through
+halves overlapping the screens, or in portrait with the
+[pad hidden](#portrait-pad), the screens reaching into it), only the main
 screen takes touches: the big one, or the first (top or left) when both are
 the same size.
 
@@ -239,6 +243,23 @@ room.
       reach something under a button, such as a menu item in a corner of the
       bottom screen, use [stylus mode](#stylus-mode), whose pen reaches the
       bottom screen either way, or turn the phone to portrait.
+
+## Microphone
+
+Games that listen for a blow, a shout or your voice hear your phone's
+microphone while the **Mic** is on. Turn it on with the **mic button** in the
+on-screen pad's bottom-left corner, the **Mic** tile in the game panel's
+[Shortcuts](../dual-screen.md#shortcuts) tab, or a **Toggle mic**
+[shortcut](../controls-settings.md#shortcuts) on a controller. It works as on
+the [Nintendo DS](nintendo-ds.md#microphone): Android asks the first time,
+and without the permission the game hears a made-up blow. The Mic is off
+each time a game starts.
+
+??? info "More detail"
+    - Even with the Mic on, the phone's microphone only opens while the game
+      is listening, so Android's recording dot shows only then.
+    - While the Mic is off, the menu is open or the app is in the
+      background, the game hears silence and the microphone is closed.
 
 ## Portrait pad
 

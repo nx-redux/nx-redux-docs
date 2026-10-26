@@ -19,15 +19,20 @@ the two screens.
 
 The face buttons, d-pad, `L1`, `R1`, `START` and `SELECT` are the DS's own:
 the on-screen pad labels `L1` and `R1` as **L** and **R**. Two more buttons
-on the pad are the app's:
+on the pad are the app's, and a round one:
 
 - **STYLUS** turns [stylus mode](#stylus-mode) on or off. It stays pressed in
   while stylus mode is on.
 - **SWAP** swaps the big screen.
+- The **mic button** lets the game hear the
+  [microphone](#microphone). It sits in the pad's bottom-left corner.
 
 In portrait they sit either side of `MENU` and `STICK`. In landscape
 **STYLUS** is under `MENU` and **SWAP** under `START`; with the portrait
-[pad hidden](#portrait-pad) they sit beside the shoulder buttons.
+[pad hidden](#portrait-pad) they sit beside the shoulder buttons, with your
+[touch buttons](../controls-settings.md#touch-buttons) next to them toward
+the middle: **Touch button 1** beside **STYLUS**, **Touch button 2** beside
+**SWAP**.
 
 With a controller or the on-screen pad:
 
@@ -197,6 +202,53 @@ with the buttons and touch the bottom screen together.
       the bottom screen anywhere, or turn the phone to portrait.
     - To touch the bottom screen in picture in picture, press **SWAP** to
       make it the big one.
+
+## Microphone
+
+Some games ask you to blow or shout into the DS's microphone: Fossil Fighters,
+Zelda Spirit Tracks and Nintendogs, for example. Turn the **Mic** on when the
+game asks, and off again afterwards:
+
+- tap the **mic button** in the on-screen pad's bottom-left corner,
+- or tap **Mic** in the game panel's
+  [Shortcuts](../dual-screen.md#shortcuts) tab,
+- or bind **Toggle mic** to a controller button in
+  [Shortcuts](../controls-settings.md#shortcuts).
+
+All three flip the same switch. The mic button is dimmed while the Mic is off
+and pressed in while it is on, and the **Mic** tile is filled.
+
+The first time you turn it on, Android asks whether NX Redux may use the
+microphone:
+
+- **Allow**: the game hears your phone's microphone.
+- **Don't allow**: the game hears a made-up blow instead, so blowing puzzles
+  can still be passed. The app doesn't ask again.
+
+Change your answer later in
+**Tools → Settings → Library → [Microphone access](../library.md#microphone-access)**.
+
+The Mic is off each time a game starts, and is not saved.
+
+??? info "More detail"
+    - While the Mic is off the game hears silence and the phone's microphone
+      is closed, so Android shows no recording dot. It also closes while the
+      in-game menu is open and while the app is in the background, and
+      opens again when you go back to the game.
+    - A phone without a microphone, or an Android TV, never asks: the game
+      hears the made-up blow.
+    - What the game hears never leaves your phone and is not recorded.
+    - In a [netplay](../netplay.md) match the Mic is hidden, since the other
+      player's game wouldn't hear it.
+    - Where the mic button sits:
+        - Portrait: the band's bottom-left corner, level with the arrow
+          that hides the band. With the band hidden, it is first in the
+          bottom row, left of `MENU`.
+        - Landscape and half-folded: the left half's bottom corner, toward
+          the game.
+    - The mic button is not part of [Pad layout](../controls-settings.md#pad-layout):
+      it stays where it is. The editor draws it so you can keep other
+      buttons clear of it.
 
 ## Portrait pad
 

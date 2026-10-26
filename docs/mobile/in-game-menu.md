@@ -255,7 +255,8 @@ As with every Options page, keep your changes with
       **Unavailable**, with the hotkey as its line. See
       [Console shortcuts](controls.md#console-shortcuts).
     - The rewind rows are left out for consoles whose emulator can't rewind.
-    - **Save & Quit** can't be a touch button.
+    - **Toggle mic** is only listed for the Nintendo DS and 3DS.
+    - **Save & Quit** and **Toggle mic** can't be touch buttons.
 
 ## Frontend
 

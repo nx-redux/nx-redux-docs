@@ -216,6 +216,7 @@ Below it are up to four tabs. A tab shows only when it applies.
 | **Second screen** | A second screen is connected | Turns the second screen on or off. Filled while on. |
 | **Fast forward** | Always | Turns fast forward on or off. Filled while on. |
 | **Rewind** | The console's [Rewind](in-game-menu.md#console-settings) is on | Turns rewind on or off. Filled while on. |
+| **Mic** | A Nintendo DS or 3DS game | Lets the game hear the microphone, or stops it. Filled while on. See [Microphone](emulators/nintendo-ds.md#microphone). |
 | **Reset** | Always | Restarts the game. It asks first. |
 
 ??? info "More detail"
@@ -225,8 +226,10 @@ Below it are up to four tabs. A tab shows only when it applies.
     - **Fast forward** and **Rewind** work as the Toggle
       [shortcuts](controls-settings.md#shortcuts): turning one on turns the
       other off. From the in-game menu, they close the menu.
+    - **Mic** is the same switch as the pad's mic button. From the in-game
+      menu, it closes the menu.
     - In a [netplay](netplay.md) match, **Swap disc**, **Fast forward**,
-      **Rewind** and **Reset** are hidden.
+      **Rewind**, **Mic** and **Reset** are hidden.
 
 ### Achievements
 
