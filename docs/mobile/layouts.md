@@ -183,9 +183,7 @@ the last two.
 | --- | --- | --- | --- |
 | [**Page title**](#page-title-and-button-hints) | Show, Hide | Show | Always |
 | [**Button hints**](#page-title-and-button-hints) | Show, Hide | Hide | Always |
-| [**Recent hint**](#single-hints) | Show, Hide | Show | When Button hints is Show |
-| [**Search hint**](#single-hints) | Show, Hide | Show | When Button hints is Show |
-| [**Netplay hint**](#single-hints) | Show, Hide | Show | When Button hints is Show, on a phone with netplay |
+| [**Netplay hint**](#netplay-hint) | Show, Hide | Show | When Button hints is Show, on a phone with netplay |
 
 ### Page title and button hints
 
@@ -218,20 +216,17 @@ dropped first, since those buttons do what you'd expect.
       list and in the
       [Game Switcher](game-switcher.md#play-time-and-achievements), the
       selected game's play time and achievements move down into that row.
-      **Recent** and **Search** become icons at the right of the title.
 
-#### Single hints
+#### Netplay hint { #netplay-hint }
 
-**Recent hint**, **Search hint** and **Netplay hint** each hide one hint
-(`SELECT` **Recent**, `START` **Search** or `Y` **Netplay**) and leave the
-rest of the bar. The button still works, and touch gets another way in:
+**Netplay hint** set to **Hide** takes `Y` **Netplay** out of the hint bar
+and leaves the rest of it. `Y` still works, and **Netplay** leads a game's
+`MENU` menu, after **Play from start**, in game lists and on Home. With
+**Button hints** hidden, Netplay is handled this way too.
 
-- **Recent** and **Search** become icons at the right of a game list's
-  title. On the main menu they are always icons, at the top right.
-- **Netplay** leads a game's `MENU` menu, after **Play from start**, in game
-  lists and on Home.
-
-With **Button hints** hidden, all three are handled this way.
+**Recent** and **Search** are never hints: they are always icons, at the
+right of a game list's title and at the top right of the main menu.
+`SELECT` and `START` open them too.
 
 ## Game Switcher
 
@@ -317,7 +312,7 @@ default. It asks first: `A` resets, `B` keeps everything.
     Home's **Stats**, the game lists' layout, orientation and alignment,
     the Consoles **Background**, **List art**, **Backdrop art**, **Layout
     options**, **Achievements panel**, **Page title**, **Button hints** and
-    the single hints, the Game Switcher's **Layout** and **Extra info**.
+    **Netplay hint**, the Game Switcher's **Layout** and **Extra info**.
 
 ??? info "Games without artwork"
     A game with no screenshot or box art gets a generated abstract picture,

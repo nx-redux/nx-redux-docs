@@ -116,7 +116,8 @@ block of words.
   [Game lists](../../mobile/main-menu.md#game-lists).
 - **Button hints off by default.** Hints show only in game lists, Recent,
   search results and the tools. With a full bar, `A` **Select** and `B`
-  **Back** go first. See
+  **Back** go first. **Recent** and **Search** are always icons now, so their
+  two hint rows are gone from Layouts. See
   [Page title and button hints](../../mobile/layouts.md#page-title-and-button-hints).
 - **Settings.** The sections sit as a block of words at the bottom left, the
   current one in your accent; on a wide screen the rows sit beside them at a
