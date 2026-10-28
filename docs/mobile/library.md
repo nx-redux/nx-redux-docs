@@ -121,9 +121,11 @@ the app.
 ![The app's folder picker at Internal storage's root: Create new folder on the left, the folders beside it with NXRedux selected, files dimmed](../assets/screenshots/mobile/file-picker.webp){ .nx-wide }
 
 - Open folders until you reach the one you want, then choose **Use this
-  folder** (or **Save here** for an export).
+  folder** (or **Save here** for an export) at the bottom.
 - `A` **Select** opens a folder, or picks the row. `B` **Back** goes up a
   level, and at the storage list cancels.
+- `Left` / `Right` jump between the folders and the actions at the bottom,
+  wrapping round. The hint names where they go: **Actions** or **Folders**.
 - `X` **New folder**, or **Create new folder**, asks for a name and opens the
   new folder.
 
@@ -131,17 +133,17 @@ the app.
     - It starts at your storage, **Internal storage** and any SD card, or
       next to your home folder. The title shows the folder's path, such as
       **Internal storage/NXRedux**.
-    - The first rows are **Use this folder** (or **Save here**) and **Create
-      new folder**, then **..** for the folder above. Folders follow, A–Z,
-      then the files, dimmed: they show what a folder holds, but can't be
-      picked. When importing a zip, the `.zip` files are the ones you pick.
-      Hidden (dot) folders and files are not shown.
+    - The picker opens on the first entry: **..** for the folder above,
+      then the folders, A–Z, then the files, dimmed: they show what a folder
+      holds, but can't be picked. When importing a zip, the `.zip` files are
+      the ones you pick. Hidden (dot) folders and files are not shown.
+    - **Use this folder** (or **Save here**) and **Create new folder** sit
+      at the bottom, in one column with the rest, in portrait and landscape.
     - When picking the home folder, a line under the title says what the
       folder is: **Empty folder**, **NX Redux folder**, or **Has other files:
       games found in it will be sorted into Roms**. An SD card's root can be
       the home folder; the phone's storage root has no **Use this folder**
       row.
-    - In landscape, the folder's entries sit in a column on the right.
     - An export over a file of the same name asks **Replace <name>?** first.
 
 ## Unassigned games

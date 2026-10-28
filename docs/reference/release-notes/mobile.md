@@ -16,7 +16,9 @@ The picture and the on-screen pad are now laid out together. In landscape the
 pad sits beside the game instead of over its edges, and pixel-art consoles
 get the largest whole-number size that fits. DS and 3DS games get new
 layouts, a half-folded layout on foldables, and a **Mic** for games that ask
-you to blow or shout.
+you to blow or shout. The main menu moves its tabs to the bottom, colour now
+marks the selected game in every layout, and Settings is rebuilt as a quiet
+block of words.
 
 ### New features
 
@@ -49,6 +51,14 @@ you to blow or shout.
   [Foldables](../../mobile/foldables.md#nintendo-ds-and-3ds-half-folded).
 - **Black pad theme.** A pure black portrait pad, with **Pad buttons** Grey
   or Outline. See [Pad theme](../../mobile/appearance.md#pad-theme).
+- **Tabs at the bottom.** The main menu's tabs sit along the bottom, with
+  Home's stats and the **Recent** and **Search** icons at the top. Swipe
+  sideways to switch tabs: the page slides while the tabs and icons stay put.
+  The main menu has no hint bar any more. See [Tabs](../../mobile/main-menu.md#tabs).
+- **Colour marks the selection.** In Grid, Carousel and Backdrop, the
+  selected game is in full colour with its name in your accent, and the
+  others are grey and dimmed. No ring goes round the selection. See
+  [Main Menu & Home](../../mobile/main-menu.md#home).
 
 ### Improvements
 
@@ -89,6 +99,41 @@ you to blow or shout.
 - **Launch and quit.** A game shows black until its picture is placed,
   with no flash at the wrong size, and the menu no longer jiggles on the
   way back.
+- **Grids scroll up and down.** Every Grid (Home, Consoles, Collections,
+  Tools and game lists) scrolls vertically only, as many columns as the
+  screen's width holds, settling on a whole row. `Left` / `Right` move
+  within a row and switch tab from the first or last column. Consoles show
+  their logos alone, sized to look even, with the game count under the
+  selected one. See [Grid](../../mobile/main-menu.md#consoles-grid).
+- **Home.** Home now starts in **Minimal**. List Home is one list with
+  **Continue**, **New** and **Not started** tags and the game's facts under
+  the stats. Grid Home drops its shelf labels. Carousel Home sits centred on
+  the screen. See [Home](../../mobile/main-menu.md#home).
+- **Game lists.** The selected game's stats sit under the list's title in
+  Minimal and Grid, and in List while the hint bar shows. Carousel and
+  Backdrop centre on the screen, their unselected games grey, and
+  Backdrop's picture is dimmer behind the boxes. See
+  [Game lists](../../mobile/main-menu.md#game-lists).
+- **Button hints off by default.** Hints show only in game lists, Recent,
+  search results and the tools. With a full bar, `A` **Select** and `B`
+  **Back** go first. See
+  [Page title and button hints](../../mobile/layouts.md#page-title-and-button-hints).
+- **Settings.** The sections sit as a block of words at the bottom left, the
+  current one in your accent; on a wide screen the rows sit beside them at a
+  fixed place. One tap opens a section, a tap on a control acts, and a long
+  press opens the help. Resets ask first. Section labels are in the accent.
+  See [Settings](../../mobile/settings.md).
+- **Accents.** The nine accents are lighter, and **Secondary accent** has its
+  own darker colours, with **Auto** (a dark shade of the accent) the new
+  default. Both rows are colour swatches. See
+  [Accent](../../mobile/appearance.md#accent).
+- **Folder picker.** Its actions sit at the bottom, under the folders, in one
+  column on every screen. `Left` / `Right` jump between the folders and the
+  actions. See [The folder picker](../../mobile/library.md#the-folder-picker).
+- **Launching from Minimal.** The screen goes black outward from the game's
+  name, and the name stays in your accent until the game's first frame. It
+  follows Android's **Remove animations** setting.
+- **Game Switcher layout** is picked from a row of choices in Layouts.
 
 ## v0.4.0
 

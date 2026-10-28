@@ -13,12 +13,16 @@ Each tab and the game lists can be drawn in different styles, picked in
 You can drive every screen with the on-screen pad, a controller or touch.
 See [Controls](controls.md).
 
+The tabs sit along the bottom of the screen. Home's stats and the **Recent**
+and **Search** icons sit at the top. The main menu has no hint bar: its
+buttons work without one, and the icons stand in for `SELECT` and `START`.
+
 ??? info "More detail"
     - Consoles, Collections, Tools and the game lists can each be a list, a
       grid, a carousel or Minimal (just the names), and game lists have one
       more style, Backdrop.
-    - With touch only (no controller, and no pad on screen) there is no hint
-      bar: tap the items, and use the icons at the top right.
+    - Game lists, Recent, search results and the tools keep their hint bar
+      while [Button hints](layouts.md#page-title-and-button-hints) is on.
 
 ## Tabs
 
@@ -29,8 +33,8 @@ See [Controls](controls.md).
 | [**Collections**](#collections) | Your own lists of games |
 | [**Tools**](#tools) | The built-in tools, Settings included |
 
-- **Switch tabs** with `L1` / `R1`, or tap a tab. `Left` / `Right` switch
-  tabs too.
+- **Switch tabs** with `L1` / `R1`, tap a tab, or swipe the page sideways.
+  `Left` / `Right` switch tabs too.
 - An empty tab, such as Collections before you make one, is left out.
 - You can hide any tab in [Layouts](layouts.md#showing-and-hiding-tabs).
   `MENU` on any item still opens a hidden tab, so Settings is always
@@ -39,44 +43,44 @@ See [Controls](controls.md).
 ??? info "More detail"
     - The tab order wraps around.
     - `Left` / `Right` switch tabs:
-        - in List style and in a Vertical Carousel, always;
-        - in Grid and a Horizontal Carousel, when you push past the first or
-          last item;
+        - in List and Minimal, and in a Vertical Carousel, always;
+        - in a Grid, from the first or last column of a row (the d-pad
+          moves along the row first);
+        - in a Horizontal Carousel, when you push past the first or last
+          item;
         - on Home, when you push past the left or right edge.
+    - Swiping sideways switches tabs in List, Minimal and Grid. The page
+      slides with your finger while the tabs and the icons stay put, and
+      the tab changes once you let go past a third of the way, or flick. A Carousel
+      swipe moves its row instead.
     - Touching and holding the tab row also opens a hidden tab. If a tab you
       are on goes away, the menu moves to the next tab.
 
 ### The tab row
 
-Press `Up` from the top of the content to move onto the tab row.
+The tabs along the bottom show where you are: the current tab's word is
+lit. The d-pad never moves onto them; `L1` / `R1`, a tap or a swipe switch
+tabs.
 
 | Button | What it does |
 | --- | --- |
-| `Left` / `Right`, `L1` / `R1` | Switch tabs |
-| `Down`, `A` or `B` | Go back into the content |
-| `Up` | Jump to the bottom of the content |
-| `SELECT` **Recent** | Open the [Game Switcher](game-switcher.md) |
-| `START` **Search** | [Search](#search) your games |
+| `L1` / `R1` | Switch tabs |
+| `SELECT` | Open the [Game Switcher](game-switcher.md) (the **Recent** icon) |
+| `START` | [Search](#search) your games (the **Search** icon) |
 
 ??? info "More detail"
-    - `Up` reaches the tab row from the top of Home, the top row of a Grid or
-      a Horizontal Carousel. In List style and a Vertical Carousel, `Up` on
-      the first item wraps to the last instead.
     - With **Page title** hidden in
       [Layouts](layouts.md#page-title-and-button-hints) there is no tab row,
-      and `L1` / `R1` switch tabs.
-    - With only one tab left, an **NX Redux** title stands in its place, and
-      `Up` does not move onto it. The same goes for a tab opened over another.
-    - When the hint bar doesn't show **Recent** or **Search** (touch only,
-      Button hints hidden, or their own hint hidden in
-      [Layouts](layouts.md#page-title-and-button-hints)), they are icons at
-      the right of the tab row instead.
+      and `L1` / `R1` switch tabs. Home's stats move into a header at the
+      top, beside the icons.
+    - With only one tab left, an **NX Redux** title stands in its place. The
+      same goes for a tab opened over another.
 
 ## Home
 
 Home is the starting point: your most recent game, this month's play time,
-and everything you pinned. It comes in four layouts, **List**, **Grid** (the
-default), **Carousel** and **Minimal**. Pick one in
+and everything you pinned. It comes in four layouts, **List**, **Grid**,
+**Carousel** and **Minimal** (the default). Pick one in
 [Settings → Layouts → Home → Home layout](layouts.md#the-layouts-page).
 
 Every layout starts with a two-line stats strip:
@@ -103,8 +107,9 @@ long-press for the menu.
       second line.
     - [Home stats](layouts.md#home-stats) in Layouts → Home hides the strip.
       [Extra info](layouts.md#extra-info) hides the play time and
-      achievements on the cards. With **Page title** hidden, the strip moves
-      up into the tab row's place.
+      achievements on the cards.
+    - The `Y` **Netplay** and `MENU` buttons work without hints; **Netplay**
+      also leads the game's `MENU` list on Home.
     - `A` shows **Play** when the game has no auto-save.
     - **Play from start** leads the `MENU` list. There is no menu on **Pick a
       game**, unless a tab is hidden and the menu offers it.
@@ -120,8 +125,10 @@ Everything on Home in one list, with the selected game's picture behind it.
 - **The list** starts with your most recent game, tagged **Continue** (or
   **Pick a game** on a fresh install). Then come your pinned games, games
   from the [shelves](foldables.md#shelves), and your pinned tools.
-- **Game info** (when you last played, play time) shows only while
-  [Button hints](layouts.md#page-title-and-button-hints) are hidden.
+- **Tags.** A shelf game carries **New** or **Not started** after its name;
+  the selected row's tag is lit.
+- **Game info** (when you last played, play time, achievements) sits under
+  the stats at the top, for the selected game.
 
 | Button | What it does |
 | --- | --- |
@@ -129,24 +136,23 @@ Everything on Home in one list, with the selected game's picture behind it.
 | `Left` / `Right` | Switch tab |
 
 ??? info "More detail"
-    - The stats sit on two lines under the tabs, left-aligned.
+    - The stats sit on two lines at the top, left-aligned, with a row's gap
+      before the list.
     - The Continue game is selected when Home opens. Pinned games follow in
-      the order you pinned them, then the shelf games (**New**, **Not
-      started**, **Pick up again**), each with its shelf name as a pill tag,
-      then every pinned tool. Each shelf holds at most 3 games. The shelves
-      show in List on any screen size.
-    - Behind the Continue game you see where you left off. A selected tool
-      shows its icon, large and dim, on the right.
-    - Where more rows scroll in, the list fades out at that edge, with no
-      scroll arrows.
-    - Game info also needs [Extra info](layouts.md#extra-info) on, and shows
-      in the row where the hints were.
+      the order you pinned them, then the shelf games, then every pinned
+      tool. Each shelf holds at most 3 games. The shelves show in List on
+      any screen size.
+    - Behind the selected game its picture shows, dimmed, fading out
+      smoothly into the tabs. A pinned tool has no picture behind it.
+    - The list sits on the tabs and grows up the screen. Where more rows
+      scroll in, it fades out at that edge, with no scroll arrows.
+    - Game info also needs [Extra info](layouts.md#extra-info) on.
     - On a fresh install, with only **Pick a game** in the list, its card
       fills the screen.
 
 ### Grid
 
-This is the default layout.
+Cards and squares, the selected one in colour.
 
 ![Home in Grid: the Continue card filling the top, under the stats strip](../assets/screenshots/mobile/home-layout-grid.webp)
 
@@ -159,7 +165,11 @@ This is the default layout.
   fit, the last square is **+N**, which opens the Tools tab.
 - **Pinned games** fill the rows below, each with its name and play time.
 - **Shelves** of games to pick from come last: **New**, **Not started** and
-  **Pick up again**. See [Shelves](foldables.md#shelves).
+  **Pick up again**, each game with its shelf's badge. See
+  [Shelves](foldables.md#shelves).
+- **The selection is in colour.** The selected card is in full colour with
+  its name in your accent; the other cards are grey and dimmed, their names
+  and badges too.
 
 | Button | What it does |
 | --- | --- |
@@ -178,10 +188,14 @@ This is the default layout.
     - A long press opens the same menu as `MENU`.
     - Drag up and down to scroll without selecting anything. Let go mid-drag
       and the page glides on.
+    - Swipe sideways to switch tabs.
 
 ??? info "More detail"
-    - The stats strip sits on two lines under the tabs. The Continue card
-      wears a **Continue** badge.
+    - The stats strip sits on two lines at the top. The Continue card
+      wears a **Continue** badge. Each card has a faint edge, so a dark
+      picture still shows its shape.
+    - The page fades at the top once scrolled, and at the bottom while more
+      is below. A fixed gap keeps the last row clear of the tabs.
     - While the Consoles tab is hidden, **Pick a game** opens it over Home,
       and a long press opens the hidden-tab menu. **+N** works the same way
       while Tools is hidden.
@@ -193,7 +207,7 @@ This is the default layout.
       Continue card, and the screen holds just that top section: the other
       pinned games start below it, a scroll away.
     - The shelves show on every screen size, portrait and landscape alike,
-      each under its own label. Their cards are the pinned games' size, in
+      one after another with no labels. Their cards are the pinned games' size, in
       the same grid: two to a row in portrait, four on a tablet. A shelf
       holds up to 4 games in portrait and on a row of four, and 3 on a
       narrower landscape row. A **New** or **Not started** game shows its
@@ -209,16 +223,18 @@ tools in a row of squares underneath. Swipe the carousel to scroll it.
 - **The carousel** starts on the **Continue** card (or **Pick a game** on a
   fresh install), then your pinned games, then the shelf games.
 - **Game info** (name, last played, play time, achievements) shows inside
-  the selected card.
+  the selected card, its name in your accent.
+- **The selection is in colour**, as on [Grid](#grid): the cards beside it
+  are grey and dimmed.
 
 | Button | What it does |
 | --- | --- |
 | `Left` / `Right` | Move along the carousel or the tools row. Past either end, switch tab |
 | `Down` | From the carousel, go to the tools row (the square you last used) |
-| `Up` | From the tools row, back to the carousel. From the carousel, the tab row |
+| `Up` | From the tools row, back to the carousel |
 
 ??? info "More detail"
-    - The stats sit on two centred lines under the tabs.
+    - The stats sit on two lines at the top.
     - The Continue card has a **Continue** badge and is selected when Home
       opens. Shelf games follow in the order **New**, **Not started**,
       **Pick up again**, each badged with its shelf name. Each shelf holds at
@@ -227,13 +243,14 @@ tools in a row of squares underneath. Swipe the carousel to scroll it.
       like the Grid's Continue card. The cards beside it show their picture
       only.
     - The tool squares are the size of the Grid's portrait tool squares, in
-      landscape too. The strip, the carousel and the tools row sit centred
-      on the screen as one group. When the tools don't all fit, the last
-      square is **+N**, which opens the Tools tab.
+      landscape too. The carousel and the tools row fill the room between
+      the stats and the tabs; in landscape they sit centred on the screen's
+      height as one group. When the tools don't all fit, the last square is
+      **+N**, which opens the Tools tab.
 
 ### Minimal
 
-Just the names, big, on plain black: no art, no cards.
+The default layout. Just the names, big, on plain black: no art, no cards.
 
 ![Home in Minimal: the stats strip at the top, Streets of Rage 2 solid in the accent, the other games as outlined names fading towards the bottom](../assets/screenshots/mobile/home-layout-minimal.webp)
 
@@ -256,8 +273,10 @@ Just the names, big, on plain black: no art, no cards.
     - A long name wraps at its words onto up to three lines.
     - With touch, drag the names up and down; let go and they settle on the
       name you threw them to.
-    - Opening a game fades the other names, then a dark band in your accent
-      grows from the name over the screen as the game loads.
+    - Opening a game fades the other names, then the screen goes black
+      outward from the game's name. The name stays, in your accent, until
+      the game's first frame shows. It follows Android's **Remove
+      animations** setting.
 
 ## Pinning games and tools
 
@@ -306,20 +325,26 @@ the first.
 
 ### Grid { #consoles-grid }
 
-Rows of tiles that slide sideways as you move, each console's logo with its
-game count.
+Rows of console logos that scroll up and down, each logo alone. The selected
+one is lit, with its game count under it.
 
 ![Consoles tab in Grid style, Final Burn Neo selected](../assets/screenshots/mobile/consoles-grid.webp)
 
+- `Up` / `Down` move a row, `Left` / `Right` along it. From the first or
+  last column, `Left` / `Right` switch tab.
+- Swipe up and down to scroll, sideways to switch tab.
+
 ??? info "More detail: rows and columns"
-    - Two rows on most phones, three on a tall phone held upright (such as a
-      Galaxy Z Flip), and three or four on a large screen.
-    - On a phone held upright the Consoles tab shows two consoles across,
-      each half the screen wide. Once you move past the second, the selected
-      console stays in the middle with half of each neighbour showing on
-      either side, as on the handheld.
-    - A tall phone's Grid starts with two or three columns across, and once
-      it scrolls the selected column stays in the middle the same way.
+    - As many columns fit as the screen's width allows, each at least a set
+      width (wider for game screenshots than for logos and icons), with
+      12 dp between them. Turned sideways there are always at least three.
+    - The rows fill the height (at least three), and the grid comes to rest
+      on a whole row. A row cut by the top or bottom edge fades out, and the
+      selection stays a row clear of the edge.
+    - The logos are sized by how much of the tile they cover, so wide and
+      tall logos look the same size.
+    - Collections and Tools in Grid work the same way, with each
+      collection's name and each tool's icon in place of a logo.
 
 ### Carousel { #consoles-carousel }
 
@@ -492,7 +517,8 @@ first and last game. Hold either button to keep going.
     - For games with achievements, the info line adds your progress and the
       next achievement to go for.
     - The hint bar has no `B` **Back**, to leave room for the game's own
-      actions. `B` still returns to the tab.
+      actions. `B` still returns to the tab. When the hints don't fit, `A`
+      **Select** and `B` **Back** are the first to go.
     - `L1` / `R1` jump only in a console's list. Recently Played, a
       collection, Hidden games and search results aren't in name order, so
       there they do nothing.
@@ -512,17 +538,21 @@ or in a box (see [List art](layouts.md#list-art)).
 
 ??? info "More detail"
     The selected game's last-played time, achievements and next achievement
-    show only where the hints would be: with
-    [Button hints](layouts.md#page-title-and-button-hints) hidden, or with
-    touch alone. While the hint bar shows, they are left out.
+    sit in the bottom row, where the hints would be, while
+    [Button hints](layouts.md#page-title-and-button-hints) is hidden or with
+    touch alone. While the hint bar shows, they move under the list's title,
+    with a row's gap before the games; without room beside the time, the
+    next achievement takes a line of its own.
 
     The list fades out at the edge where more games scroll in, with no scroll
     arrows.
 
 ### Grid { #games-grid }
 
-Rows of tiles with each game's screenshot. The selected tile adds its name,
-last-played time and achievement count.
+Rows of tiles with each game's screenshot, scrolling up and down as on
+[Consoles](#consoles-grid). The selected tile is in colour with its name in
+your accent; the others are grey and dimmed, their names too. The selected
+game's play time and achievements sit under the list's title.
 
 ![Game Boy Advance list in Grid style, Astro Boy - Omega Factor selected](../assets/screenshots/mobile/game-list-grid.webp)
 
@@ -535,14 +565,17 @@ bottom of the picture.
 ![Game Boy Advance list in Carousel style, Advance Wars 2 - Black Hole Rising in the middle](../assets/screenshots/mobile/game-list-carousel.webp)
 
 ??? info "More detail"
-    A game's stats sit over a dark fade. The side games get smaller the
-    further they are from the middle.
+    - A game's stats sit over a dark fade. The side games get smaller the
+      further they are from the middle, and are grey and dimmed. The
+      selected game's name is in your accent.
+    - The selected game and its name sit centred on the screen's height.
 
 ### Backdrop { #games-backdrop }
 
 The selected game's box art stands over its dimmed screenshot, with its
-neighbours' boxes to the sides. Its caption gives the name, then the play
-time and achievement count, then the next achievement on its own line.
+neighbours' boxes to the sides, in grey. Its caption gives the name in your
+accent, then the play time and achievement count, then the next achievement
+on its own line.
 
 ![Game Boy Advance list in Backdrop style, Advance Wars 2 - Black Hole Rising's box over its screenshot](../assets/screenshots/mobile/game-list-backdrop.webp)
 
@@ -555,8 +588,9 @@ title: no art and no game info. `Up` and `Down` wrap as a
 ![Sega Genesis list in Minimal, Streets of Rage 2 selected, the other game names outlined and fading](../assets/screenshots/mobile/game-list-minimal.webp)
 
 ??? info "More detail"
-    `A` fades the other names, then a dark band in your accent grows from the
-    game's name over the screen as the game loads.
+    `A` fades the other names, then the screen goes black outward from the
+    game's name, which stays in your accent until the game's first frame.
+    The selected game's play time and achievements sit under the title.
 
 ### Vertical game lists { #game-lists-alignment }
 
@@ -724,8 +758,7 @@ as `GBA`. It reads **No results** when nothing matches.
 | `A` **Resume** / **Open** | Launch the game, from its auto-save when it has one |
 
 ??? info "More detail"
-    - Search also works from the tab row. The hint reads **Search** once you
-      have games.
+    - The **Search** icon shows once you have games.
     - The results use your game list style.
 
 ### How matching works

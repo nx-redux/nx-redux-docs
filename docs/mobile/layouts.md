@@ -49,7 +49,7 @@ sideways). The picture changes as you change a row.
 | Row | Values | Default | Shows |
 | --- | --- | --- | --- |
 | [**Home tab**](#showing-and-hiding-tabs) | Show, Hide | Show | Always |
-| **Home layout** | List, Grid, Carousel, Minimal | Grid | When Home tab is Show |
+| **Home layout** | List, Grid, Carousel, Minimal | Minimal | When Home tab is Show |
 | [**New shelf**](foldables.md#shelves) | Show, Hide | Show | When Home tab is Show |
 | [**Not started shelf**](foldables.md#shelves) | Show, Hide | Show | When Home tab is Show |
 | [**Home stats**](#home-stats) | Show, Hide | Show | When Home tab is Show |
@@ -182,7 +182,7 @@ the last two.
 | Row | Values | Default | Shows |
 | --- | --- | --- | --- |
 | [**Page title**](#page-title-and-button-hints) | Show, Hide | Show | Always |
-| [**Button hints**](#page-title-and-button-hints) | Show, Hide | Show | Always |
+| [**Button hints**](#page-title-and-button-hints) | Show, Hide | Hide | Always |
 | [**Recent hint**](#single-hints) | Show, Hide | Show | When Button hints is Show |
 | [**Search hint**](#single-hints) | Show, Hide | Show | When Button hints is Show |
 | [**Netplay hint**](#single-hints) | Show, Hide | Show | When Button hints is Show, on a phone with netplay |
@@ -191,12 +191,16 @@ the last two.
 
 - **Page title** set to **Hide** removes the main menu's tab row and a game
   list's title. `L1` / `R1` still switch tabs.
-- **Button hints** set to **Hide** removes the hint bar along the bottom of
-  the main menu and the game lists.
+- **Button hints** set to **Show** adds the hint bar along the bottom of the
+  game lists, Recent, search results and the tools. It is off by default.
+  The main menu's tabs never have a hint bar.
 
 Other screens, such as Settings and the in-game menu, keep both. The
 **Title and hints** row on the Layouts page sums up the two: **Show**,
 **Title only**, **Hints only** or **Hide**.
+
+When a bar has more hints than fit, `A` **Select** and `B` **Back** are
+dropped first, since those buttons do what you'd expect.
 
 !!! note
     These only take effect while a controller is connected or the portrait
@@ -206,15 +210,15 @@ Other screens, such as Settings and the in-game menu, keep both. The
 
 ??? info "More detail: where the space goes"
     - With the title hidden, its space goes to the page. A List shows more
-      rows. Home moves its stats strip up into the tab row's place, and a
-      Grid Home's tool squares grow. Grid, Carousel and
+      rows. Home moves its stats strip into a header at the top beside the
+      icons, and a Grid Home's tool squares grow. Grid, Carousel and
       Backdrop keep their size and centre in the full height. A game list's
       icons stay at the top right.
-    - With the hints hidden, their space stays empty, Home included. In a
-      List game list and in the
+    - With the hints hidden, a game list keeps the bar's row. In a List game
+      list and in the
       [Game Switcher](game-switcher.md#play-time-and-achievements), the
       selected game's play time and achievements move down into that row.
-      **Recent** and **Search** become icons at the right of the tab row.
+      **Recent** and **Search** become icons at the right of the title.
 
 #### Single hints
 
@@ -222,8 +226,8 @@ Other screens, such as Settings and the in-game menu, keep both. The
 (`SELECT` **Recent**, `START` **Search** or `Y` **Netplay**) and leave the
 rest of the bar. The button still works, and touch gets another way in:
 
-- **Recent** and **Search** become icons at the right of the tab row, or of
-  a game list's title.
+- **Recent** and **Search** become icons at the right of a game list's
+  title. On the main menu they are always icons, at the top right.
 - **Netplay** leads a game's `MENU` menu, after **Play from start**, in game
   lists and on Home.
 
@@ -306,7 +310,7 @@ underneath, where you left it.
 ## Reset to defaults
 
 **Reset to defaults** puts every row on the Layouts group pages back to its
-default. It does not ask first.
+default. It asks first: `A` resets, `B` keeps everything.
 
 ??? info "More detail: what it resets"
     Every tab shown, each tab's layout and orientation, the shelves and
