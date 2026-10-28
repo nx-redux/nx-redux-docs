@@ -65,7 +65,8 @@ Turn on **Settings → Developer → Enable SSH / SFTP** (or **Start SSH / SFTP 
 Wi-Fi connected. The hint under the toggle shows the exact login line with
 the device's current IP address. The connected network in
 **Settings → Network** shows the same IP. The username is `root`. On Brick
-and Brick Pro the password is `tina`; Smart Pro S needs no password.
+and Brick Pro the password is `tina`. On Smart Pro S the password is `root`
+with firmware 1.0.2 or later; firmware 1.0.1 needs no password.
 
 ```sh
 ssh root@192.168.1.8
