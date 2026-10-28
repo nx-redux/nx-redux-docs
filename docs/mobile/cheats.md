@@ -14,8 +14,6 @@ Patches is part of the app.
 
 Open **Tools → Cheats & Patches** and choose **Download (about 39 MB)**.
 
-![Tools → Cheat Database, not installed: about 37 MB download, cheats for 25 systems, and Download (about 37 MB)](../assets/screenshots/mobile/cheat-database.webp){ .nx-wide }
-
 - You need about 400 MB of free space. With less, it stops with **Not enough
   space (needs about 400 MB free)**.
 - A progress bar follows the download and install. `B` cancels.
@@ -43,6 +41,8 @@ Dolphin's own codes instead. See
 
 With the cheats installed, the page offers **Check for updates** and
 **Remove**.
+
+![Tools → Cheats & Patches, installed: 28 systems, 29195 files, the last update's date, and Check for updates and Remove](../assets/screenshots/mobile/cheat-database.webp){ .nx-wide }
 
 - **Check for updates** downloads again only when libretro's cheats or
   PCSX2's patches have changed, or when the app now has cheats for systems

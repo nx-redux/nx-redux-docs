@@ -452,7 +452,7 @@ its style in [Layouts](layouts.md#tools). The styles work as on
 
 <figure markdown>
 
-![Tools tab in Grid: Apps, Artwork, Cheat Database, Device Sync, Game Tracker, RetroAchievements (selected, in the accent), the added apps and Settings, the others in grey](../assets/screenshots/mobile/tab-tools.webp)
+![Tools tab in Grid: Apps, Artwork, Cheats & Patches (selected, in the accent), Device Sync, Game Tracker, RetroAchievements, the added apps and Settings, the others in grey](../assets/screenshots/mobile/tab-tools.webp)
 
 <figcaption>Grid</figcaption>
 </figure>
