@@ -28,13 +28,13 @@ block of words. And the PlayStation 2 joins the bundled consoles.
   and games in `Roms/Sony PlayStation 2 (PS2)/`; both folders appear on the
   first start after updating. Each game gets its own memory card in
   `Saves/PS2/<game>/`, and save states, resume and the Game Switcher work as
-  on the other consoles. **3D Resolution** (Auto up to **Max Scale**, 2x by
-  default; Quality; Performance at native) and **Graphics API** (OpenGL ES
-  or Vulkan) apply as on the 3DS. ISO, CHD and ZSO games open in place,
+  on the other consoles. Two controllers give two players. **3D Resolution**
+  (Auto up to **Max Scale**, 2x by default; Quality; Performance at native)
+  and **Graphics API** (OpenGL ES or Vulkan) apply as on the 3DS. ISO, CHD and ZSO games open in place,
   never copied. See [PlayStation 2](../../mobile/emulators/playstation-2.md).
 - **Cheats & Patches.** The cheat download also fetches PCSX2's patches for
   PS2: widescreen and no-interlacing patches for many games, turned on in
-  **Core Options**. Your own `.pnach` cheats go in `Cheats/PS2/`. See
+  **Core Options** in Game Settings or Emulator Settings. Your own `.pnach` cheats go in `Cheats/PS2/`. See
   [Cheats & Patches](../../mobile/emulators/playstation-2.md#cheats-patches).
 - **Microphone for DS and 3DS.** Games that listen, such as Fossil Fighters,
   Zelda Spirit Tracks or Nintendogs, hear your phone's microphone while their

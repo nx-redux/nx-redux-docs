@@ -29,7 +29,7 @@ Each system has as many players as the console had controller ports.
 | Players | Systems |
 | --- | --- |
 | Up to 4 | Nintendo 64, Nintendo Wii, Nintendo GameCube, Sega Dreamcast, Arcade (FBNeo), TurboGrafx-16 |
-| 2 | NES and Famicom Disk System, Super Nintendo, Sega Genesis, Master System, SG-1000, Sega CD, 32X, PlayStation, Atari 2600, Atari 7800, Atari 5200, ColecoVision |
+| 2 | NES and Famicom Disk System, Super Nintendo, Sega Genesis, Master System, SG-1000, Sega CD, 32X, PlayStation, PlayStation 2, Atari 2600, Atari 7800, Atari 5200, ColecoVision |
 | 1 | Every other system, such as Game Gear, the Game Boys, Nintendo DS, Nintendo 3DS, PSP and PICO-8 |
 
 ??? info "More detail"

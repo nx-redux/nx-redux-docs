@@ -45,7 +45,9 @@ A controller works 1:1, including both sticks, `L3` and `R3` (press the
 sticks) and all four shoulder buttons.
 
 ??? info "More detail"
-    - The game reads one controller: PS2 multiplayer isn't available.
+    - Two players: connect a second controller and it's player 2, as on the
+      [GameCube](wii-gamecube.md). See [Multiplayer](../multiplayer.md). The
+      multitap (3 or 4 players) isn't supported.
     - The face buttons are on or off: games that read how hard a button is
       pressed (such as aiming gently in Metal Gear Solid 2) see it fully
       pressed.
@@ -129,13 +131,20 @@ game.
 **Cheats & Patches** (in [Cheats](../cheats.md)) downloads PCSX2's
 `patches.zip` for PS2 alongside libretro's cheats for the other consoles. It
 holds widescreen and no-interlacing patches for many games, matched to each
-game by the game itself. Turn them on in **Core Options**:
+game by the game itself. Turn them on in **Core Options** in
+[Game Settings](../emulator-settings.md#game-settings) for one game, or in
+[Emulator Settings](../emulator-settings.md) for every PS2 game. They need the
+game restarted, so the in-game menu doesn't list them:
 
 | Option | What it does |
 | --- | --- |
 | **Widescreen Patches** | Draws supported games in 16:9. Set **Aspect Ratio** to 16:9 alongside it. |
 | **No-Interlacing Patches** | Draws supported games progressive, sharper than any deinterlacer. |
-| **Cheats** | Loads your own `.pnach` cheat files from `Cheats/PS2/`. |
+| **Cheats** | Loads your own `.pnach` cheat files from `Cheats/PS2/`. Every cheat in the game's files is turned on. |
+
+Leave **Aspect Ratio** on Auto: the widescreen patch switches the picture to
+16:9 itself. The picture gets wider without stretching: you see more of the
+scene at the sides.
 
 ??? info "More detail"
     - libretro's cheat collection has no PS2 cheats, so the in-game menu's
