@@ -2,17 +2,16 @@
 
 **Tools → Settings → System** is the last Settings section. It holds the
 app-wide switches, the app's version and your device's details, and the
-licenses, in five groups:
+licenses. The three switches come first, then the **About** and
+**Licenses** groups:
 
 | Group | Rows |
 | --- | --- |
-| [**General**](#pause-when-unfocused) | **Pause when unfocused** |
-| [**Launcher**](#use-as-home-screen) | **Use as home screen** |
-| [**Developer**](#debug-log) | **Debug log** |
+| The switches | [**Pause when unfocused**](#pause-when-unfocused), [**Use as home screen**](#use-as-home-screen) and [**Debug log**](#debug-log) |
 | [**About**](#about) | The version and device rows, **Copy device info**, and **Check for updates** in the build from GitHub |
 | [**Licenses**](#licenses) | What the app is made of and its licenses, and **Full list of licenses** |
 
-![Settings, with System open beside the sections: General, Launcher, Developer and About](../assets/screenshots/mobile/settings-about.webp){ .nx-wide }
+![Settings, with System open beside the sections: Pause when unfocused, Use as home screen and Debug log, then the About group with the version, build and release date](../assets/screenshots/mobile/settings-about.webp){ .nx-wide }
 
 ## Pause when unfocused
 

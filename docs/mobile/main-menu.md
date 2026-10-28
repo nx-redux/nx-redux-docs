@@ -4,7 +4,7 @@ The main menu is split into four tabs: **Home**, **Consoles**,
 **Collections** and **Tools**. The app opens on Home, or on the first tab you
 have not hidden.
 
-![Home in Grid: the Home, Consoles and Tools tabs at the top, the This month and Most played strip, Streets of Rage 2 on the Continue card beside the pinned tools, and the button hints along the bottom](../assets/screenshots/mobile/home.webp)
+![Home in Minimal: the This month and Most played strip and the Recent and Search icons at the top, Advance Wars 2 - Black Hole Rising selected in the accent among the other names, and the Home, Consoles, Collections and Tools tabs along the bottom](../assets/screenshots/mobile/home.webp)
 
 Each tab and the game lists can be drawn in different styles, picked in
 [Menu Layouts](layouts.md): see [Home](#home), [Consoles](#consoles),
@@ -81,7 +81,7 @@ tabs.
 Home is the starting point: your most recent game, this month's play time,
 and everything you pinned. It comes in four layouts, **List**, **Grid**,
 **Carousel** and **Minimal** (the default). Pick one in
-[Settings → Layouts → Home → Home layout](layouts.md#the-layouts-page).
+[Settings → Layouts → Home → Layout](layouts.md#home).
 
 Every layout starts with a two-line stats strip:
 
@@ -105,7 +105,7 @@ long-press for the menu.
 ??? info "More detail"
     - A month without play shows **No play yet** on the first line, and no
       second line.
-    - [Home stats](layouts.md#home-stats) in Layouts → Home hides the strip.
+    - [Stats](layouts.md#home-stats) in Layouts → Home hides the strip.
       [Extra info](layouts.md#extra-info) hides the play time and
       achievements on the cards.
     - The `Y` **Netplay** and `MENU` buttons work without hints; **Netplay**
@@ -120,7 +120,7 @@ long-press for the menu.
 
 Everything on Home in one list, with the selected game's picture behind it.
 
-![Home in List: the play time line on top, Continue first, then more games as rows, some tagged New or Not started](../assets/screenshots/mobile/home-layout-list.webp)
+![Home in List: the stats and the selected game's facts on top, Astro Boy - Omega Factor selected over its dimmed picture, the other games as rows tagged Continue, New or Not started](../assets/screenshots/mobile/home-layout-list.webp)
 
 - **The list** starts with your most recent game, tagged **Continue** (or
   **Pick a game** on a fresh install). Then come your pinned games, games
@@ -154,9 +154,9 @@ Everything on Home in one list, with the selected game's picture behind it.
 
 Cards and squares, the selected one in colour.
 
-![Home in Grid: the Continue card filling the top, under the stats strip](../assets/screenshots/mobile/home-layout-grid.webp)
+![Home in Grid: Advance Wars on the Continue card in colour, its name in the accent, two pinned games beside it in grey, and the pinned tools in a column on the right](../assets/screenshots/mobile/home-layout-grid.webp)
 
-![Grid Home scrolled to the pinned games, with Mother 3 selected](../assets/screenshots/mobile/home-pins.webp)
+![Grid Home scrolled down to the shelves: WarioWare Gold selected on the New shelf in colour, the other New and Not started games in grey, each with its badge and console](../assets/screenshots/mobile/home-pins.webp)
 
 - **Continue card.** Your most recent game, with when you last played it and
   for how long. Press `A` to jump back in. On a fresh install it reads
@@ -218,7 +218,7 @@ Cards and squares, the selected one in colour.
 The same games in one row of cards, centred on the screen, with your pinned
 tools in a row of squares underneath. Swipe the carousel to scroll it.
 
-![Home in Carousel: the Continue card in the middle with its time and achievements, the next items beside it](../assets/screenshots/mobile/home-layout-carousel.webp)
+![Home in Carousel: Advance Wars on the Continue card in colour, its name in the accent with its time, achievements and next achievement, the next game beside it in grey, and the pinned tools in a row underneath](../assets/screenshots/mobile/home-layout-carousel.webp)
 
 - **The carousel** starts on the **Continue** card (or **Pick a game** on a
   fresh install), then your pinned games, then the shelf games.
@@ -252,7 +252,7 @@ tools in a row of squares underneath. Swipe the carousel to scroll it.
 
 The default layout. Just the names, big, on plain black: no art, no cards.
 
-![Home in Minimal: the stats strip at the top, Streets of Rage 2 solid in the accent, the other games as outlined names fading towards the bottom](../assets/screenshots/mobile/home-layout-minimal.webp)
+![Home in Minimal: the stats strip at the top, Astro Boy - Omega Factor solid in the accent, the other games as outlined names with their Continue, New and Not started tags, fading towards the bottom](../assets/screenshots/mobile/home-layout-minimal.webp)
 
 - **The list** holds the same items as [List](#list): Continue, your pinned
   games, the shelf games and your pinned tools.
@@ -305,14 +305,14 @@ Collections and Tools take the same buttons, and `MENU` adds their options.
 
 ??? info "More detail"
     In the List and Carousel styles the selected console's controller shows
-    too, unless you set **Consoles background** to **Background** or **None**
+    too, unless you set Layouts → Consoles → **Background** to **Background** or **None**
     in [Layouts](layouts.md#consoles-background).
 
 ### List { #consoles-list }
 
 A plain list, with the selected console's controller beside it.
 
-![Consoles tab in List style, Arcade selected with its controller beside the list](../assets/screenshots/mobile/consoles-list.webp)
+![Consoles tab in List style, Game Boy Color selected with its console beside the list, the list fading at the bottom where more consoles scroll in](../assets/screenshots/mobile/consoles-list.webp)
 
 `Up` on the first row wraps to the last, and `Down` on the last row wraps to
 the first.
@@ -328,7 +328,7 @@ the first.
 Rows of console logos that scroll up and down, each logo alone. The selected
 one is lit, with its game count under it.
 
-![Consoles tab in Grid style, Final Burn Neo selected](../assets/screenshots/mobile/consoles-grid.webp)
+![Consoles tab in Grid style: rows of console logos, Game Boy Color selected in the accent with 2 games under it, the others in grey, the bottom row fading where more scroll in](../assets/screenshots/mobile/consoles-grid.webp)
 
 - `Up` / `Down` move a row, `Left` / `Right` along it. From the first or
   last column, `Left` / `Right` switch tab.
@@ -385,7 +385,7 @@ The consoles' names alone, big, as on [Minimal Home](#minimal): the selected
 one solid in your accent, the others outlined and fading away from it. `Up`
 and `Down` wrap as a [List](#consoles-list) does.
 
-![Consoles tab in Minimal, Sega Genesis selected, the other console names outlined and fading](../assets/screenshots/mobile/consoles-minimal.webp)
+![Consoles tab in Minimal, Game Boy Color selected in the accent, the other console names outlined and fading away from it](../assets/screenshots/mobile/consoles-minimal.webp)
 
 ??? info "More detail"
     - `A` fades the other names, then the console's name flies up into the
@@ -412,7 +412,7 @@ once you have a collection, and `A` **Open** opens its
 
 <figure markdown>
 
-![Collections tab in Minimal, Couch Multiplayer selected among the collection names](../assets/screenshots/mobile/collections-minimal.webp)
+![Collections tab in Minimal, Kart Racers selected in the accent among the outlined collection names](../assets/screenshots/mobile/collections-minimal.webp)
 
 <figcaption>Minimal</figcaption>
 </figure>
@@ -426,7 +426,7 @@ To build one from a game list:
 3. Pick an existing collection, or **New Collection…** to make one and name
    it.
 
-![Advance Wars' menu in the Game Boy Advance list, with Add to Collection selected](../assets/screenshots/mobile/add-to-collection.webp)
+![Castlevania - Aria of Sorrow's menu in the Game Boy Advance list, with Add to Collection selected](../assets/screenshots/mobile/add-to-collection.webp)
 
 Press `MENU` on a collection, or long-press it, to **Rename** or **Delete**
 it. Delete asks first, and removes only the list: the games stay in your
@@ -452,14 +452,14 @@ its style in [Layouts](layouts.md#tools). The styles work as on
 
 <figure markdown>
 
-![Tools tab in Grid: RetroAchievements, Game Tracker, Artwork, Cheat Database, Device Sync and Settings](../assets/screenshots/mobile/tab-tools.webp)
+![Tools tab in Grid: Apps, Artwork, Cheat Database, Device Sync, Game Tracker, RetroAchievements (selected, in the accent), the added apps and Settings, the others in grey](../assets/screenshots/mobile/tab-tools.webp)
 
 <figcaption>Grid</figcaption>
 </figure>
 
 <figure markdown>
 
-![Tools tab in Minimal, Game Tracker selected among the tool names](../assets/screenshots/mobile/tools-minimal.webp)
+![Tools tab in Minimal, RetroAchievements selected in the accent among the outlined tool and app names](../assets/screenshots/mobile/tools-minimal.webp)
 
 <figcaption>Minimal</figcaption>
 </figure>
@@ -469,7 +469,7 @@ its style in [Layouts](layouts.md#tools). The styles work as on
 `A` **Open** opens the tool. `MENU` on a tool, or a long press, offers **Pin**
 or **Unpin**, which puts it on [Home](#pinning-games-and-tools).
 
-![The RetroAchievements tool's menu with Unpin, over the Tools tab](../assets/screenshots/mobile/tool-menu.webp)
+![The RetroAchievements tool's menu with Unpin, over the Tools grid](../assets/screenshots/mobile/tool-menu.webp)
 
 The tools have their own pages: [RetroAchievements](retroachievements.md),
 [Game Tracker](game-tracker.md), [Artwork](artwork.md),
@@ -532,7 +532,7 @@ first and last game. Hold either button to keep going.
 The games as rows, with the selected game's picture filling the background
 or in a box (see [List art](layouts.md#list-art)).
 
-![Game Boy Advance list in List style, Advance Wars selected, its picture behind the list](../assets/screenshots/mobile/game-list-list.webp)
+![Game Boy Advance list in List style, Advance Wars selected, its picture behind the list, and its time, achievements and next achievement in the bottom row](../assets/screenshots/mobile/game-list-list.webp)
 
 `Up` and `Down` wrap at the ends, as on a [tab](#consoles-list).
 
@@ -552,9 +552,10 @@ or in a box (see [List art](layouts.md#list-art)).
 Rows of tiles with each game's screenshot, scrolling up and down as on
 [Consoles](#consoles-grid). The selected tile is in colour with its name in
 your accent; the others are grey and dimmed, their names too. The selected
-game's play time and achievements sit under the list's title.
+game's play time and achievements sit under the list's title, or inside its
+tile while the title is hidden.
 
-![Game Boy Advance list in Grid style, Astro Boy - Omega Factor selected](../assets/screenshots/mobile/game-list-grid.webp)
+![Game Boy Advance list in Grid style: Advance Wars selected in colour, its name in the accent with its time and achievements, the other games in grey with their names dimmed](../assets/screenshots/mobile/game-list-grid.webp)
 
 ### Carousel { #games-carousel }
 
@@ -562,7 +563,7 @@ The default. The selected game is large in the middle, its name below its
 picture, and its play time, achievement count and next achievement at the
 bottom of the picture.
 
-![Game Boy Advance list in Carousel style, Advance Wars 2 - Black Hole Rising in the middle](../assets/screenshots/mobile/game-list-carousel.webp)
+![Game Boy Advance list in Carousel style: Advance Wars 2 - Black Hole Rising in the middle in colour, its time, achievements and next achievement on the picture, its name in the accent below, the games either side in grey](../assets/screenshots/mobile/game-list-carousel.webp)
 
 ??? info "More detail"
     - A game's stats sit over a dark fade. The side games get smaller the
@@ -577,15 +578,16 @@ neighbours' boxes to the sides, in grey. Its caption gives the name in your
 accent, then the play time and achievement count, then the next achievement
 on its own line.
 
-![Game Boy Advance list in Backdrop style, Advance Wars 2 - Black Hole Rising's box over its screenshot](../assets/screenshots/mobile/game-list-backdrop.webp)
+![Game Boy Advance list in Backdrop style: Advance Wars 2 - Black Hole Rising's box in colour over its dimmed screenshot, its neighbours' boxes in grey, and its name in the accent with its time, achievements and next achievement below](../assets/screenshots/mobile/game-list-backdrop.webp)
 
 ### Minimal { #games-minimal }
 
 The games' names alone, big, as on [Minimal Home](#minimal), under the page
-title: no art and no game info. `Up` and `Down` wrap as a
+title: no art. The selected game's info sits under the title while the title
+shows. `Up` and `Down` wrap as a
 [List](#games-list) does.
 
-![Sega Genesis list in Minimal, Streets of Rage 2 selected, the other game names outlined and fading](../assets/screenshots/mobile/game-list-minimal.webp)
+![Game Boy Advance list in Minimal, Bomberman Tournament selected in the accent, the other game names outlined and fading away from it](../assets/screenshots/mobile/game-list-minimal.webp)
 
 ??? info "More detail"
     `A` fades the other names, then the screen goes black outward from the
@@ -596,21 +598,21 @@ title: no art and no game info. `Up` and `Down` wrap as a
 
 A Carousel or Backdrop game list can run down the screen (see
 [Orientation](#orientation)), with the same caption lines. The stack sits on
-the left and the details on the right; set **Game lists alignment** in
-[Layouts](layouts.md#game-lists) to **Right** to swap the sides.
+the left and the details on the right; set **Alignment** in
+[Layouts → Game lists](layouts.md#game-lists) to **Right** to swap the sides.
 
 <div class="grid" markdown>
 
 <figure markdown>
 
-![Vertical Backdrop aligned left: Advance Wars 2's box on the left, its details on the right](../assets/screenshots/mobile/game-list-backdrop-vertical-left.webp)
+![Vertical Backdrop aligned left: Advance Wars 2's box in colour on the left between its grey neighbours, its name in the accent and its details on the right](../assets/screenshots/mobile/game-list-backdrop-vertical-left.webp)
 
 <figcaption>Backdrop, Vertical, Left</figcaption>
 </figure>
 
 <figure markdown>
 
-![Vertical Backdrop aligned right: Advance Wars 2's details on the left, its box on the right](../assets/screenshots/mobile/game-list-backdrop-vertical-right.webp)
+![Vertical Backdrop aligned right: Advance Wars 2's name in the accent and its details on the left, its box in colour on the right between its grey neighbours](../assets/screenshots/mobile/game-list-backdrop-vertical-right.webp)
 
 <figcaption>Backdrop, Vertical, Right</figcaption>
 </figure>
@@ -656,7 +658,7 @@ the trophy icon opens a panel from the right with the selected game's
 achievements. See [RetroAchievements on game lists](retroachievements.md#on-game-lists)
 for its buttons.
 
-![The achievements panel over the Game Boy Advance list: Advance Wars (0 of 92) and its achievements with their points and descriptions, Class Dismissed! selected](../assets/screenshots/mobile/achievements-panel.webp)
+![The achievements panel over the Game Boy list: Tetris (3 of 13) and its achievements with their points and descriptions, Line 'Em Up selected](../assets/screenshots/mobile/achievements-panel.webp)
 
 ??? info "More detail"
     - Tapping the selected game's name or info line opens the panel too.
@@ -668,7 +670,7 @@ for its buttons.
 Press `MENU` on a game to see what you can do with it. The menu depends on
 where the game is listed.
 
-![Astro Boy - Omega Factor's context menu in the Game Boy Advance list, with Play from start first](../assets/screenshots/mobile/context-menu.webp)
+![Castlevania - Aria of Sorrow's context menu in the Game Boy Advance list: Play from start, Netplay, Pin Item, Hide Game, Rename Rom, Add to Collection, Game Settings and Emulator](../assets/screenshots/mobile/context-menu.webp)
 
 | Item | What it does |
 | --- | --- |
@@ -722,7 +724,7 @@ on any item of the main menu ends with an entry for each hidden tab
 (**Consoles**, **Collections** or **Tools**). Pick one to open that tab over
 the current one; `B` returns.
 
-![Home with the Tools tab hidden: Dragon Ball Z - The Legacy of Goku II's menu, with Netplay, Pin and Tools, Tools selected](../assets/screenshots/mobile/hidden-tabs-menu.webp)
+![Home with the Tools tab hidden, only Home, Consoles and Collections along the bottom: Mario Kart DS's menu, with Play from start, Pin and Tools, Tools selected](../assets/screenshots/mobile/hidden-tabs-menu.webp)
 
 ??? info "More detail"
     Only a hidden tab that has something in it is offered. Items that have no
@@ -740,7 +742,7 @@ list: see [Searching a game list](#searching-a-game-list).
 3. The matches open as a game list titled **Search:** and your words, such
    as **Search: mario kart**.
 
-![The Search prompt over the Home tab, with “castlevania” typed](../assets/screenshots/mobile/search-prompt.webp)
+![The Search prompt over Home, with “Castlevania” typed, and B Cancel and A OK under it](../assets/screenshots/mobile/search-prompt.webp)
 
 `B` or `START` closes the prompt without searching.
 

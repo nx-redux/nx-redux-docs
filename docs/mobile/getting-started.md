@@ -9,7 +9,7 @@ features to Android phones, tablets, foldables and Android handhelds. It runs re
 systems through emulators bundled in the app, with nothing extra to download.
 
 <figure class="nx-phone" markdown>
-![NX Redux on the Home tab, on the cover screen of a folded Galaxy Z Fold: Dragon Ball Z - The Legacy of Goku II on the Continue card, with the on-screen pad below](../assets/screenshots/mobile/home-full.webp){ .nx-phone__screen }
+![NX Redux on the Home tab, on the cover screen of a folded Galaxy Z Fold: the stats and the Recent and Search icons on top, Astro Boy - Omega Factor selected among the game names, the Home, Consoles, Collections and Tools tabs, and the on-screen pad below](../assets/screenshots/mobile/home-full.webp){ .nx-phone__screen }
 ![](../assets/landing/mobile/zfold8.webp){ .nx-phone__frame }
 </figure>
 

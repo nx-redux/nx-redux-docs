@@ -3,7 +3,7 @@
 Open **Tools → Settings** for the app's settings. They are split into six
 sections, or seven while a second screen is connected.
 
-![Settings: the sections on the left, with Library previewed on the right](../assets/screenshots/mobile/settings.webp){ .nx-wide }
+![Settings: the sections as a block of words at the bottom left, Library in the accent, with Library's rows previewed on the right](../assets/screenshots/mobile/settings.webp){ .nx-wide }
 
 | Section | What it holds |
 | --- | --- |
@@ -30,6 +30,21 @@ sections, or seven while a second screen is connected.
   down from there. See [Foldables & Large Screens](foldables.md#two-pane-screens).
 - A reset row (**Reset to defaults**, **Clear all**, **Reset console**) asks
   first: `A` resets, `B` keeps everything.
+
+![Appearance's Reset to defaults asking first: Pad theme, Pad buttons, Accent, Secondary accent and Text size go back to their defaults, with B Cancel and A Reset](../assets/screenshots/mobile/settings-reset-confirm.webp){ .nx-wide }
+
+Held upright, Settings shows one level at a time: first the section words,
+then the open section's rows in their place. `B` goes back up a level.
+
+<div class="nx-phones" markdown>
+<div markdown>
+<figure class="nx-phone" markdown>
+![Settings held upright on the Fold's cover screen: the section words at the bottom left, Layouts in the accent, the NX mark faint at the top right](../assets/screenshots/mobile/settings-upright.webp){ .nx-phone__screen }
+![](../assets/landing/mobile/zfold8.webp){ .nx-phone__frame }
+</figure>
+<p class="nx-phones__caption">Upright</p>
+</div>
+</div>
 
 ## Buttons
 

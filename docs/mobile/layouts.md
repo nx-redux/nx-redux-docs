@@ -11,7 +11,7 @@ game stats. For what each style looks like, see
 The Layouts page lists its groups, each with what it is set to now. Press `A`
 on a group to open its page, and `B` to come back.
 
-![Settings, with Layouts open beside the sections: Home, Consoles, Collections, Tools, Game lists, Title and hints, Game Switcher and Extra info](../assets/screenshots/mobile/settings-layouts.webp){ .nx-wide }
+![Settings with Layouts highlighted in the sections: its groups Home, Consoles, Collections, Tools, Game lists, Title and hints and Game Switcher, each with what it is set to, fading at the bottom where Extra info follows](../assets/screenshots/mobile/settings-layouts.webp){ .nx-wide }
 
 | Row | Shows |
 | --- | --- |
@@ -44,19 +44,19 @@ sideways). The picture changes as you change a row.
 
 ## Home
 
-![Layouts → Home beside the Settings sections: Home tab on, Home layout List and New shelf, with a picture of List Home below](../assets/screenshots/mobile/settings-layouts-home.webp){ .nx-wide }
+![Layouts → Home beside the Settings sections: Visible, New shelf, Not started shelf and Stats on, and Layout Minimal selected, with the top of its picture below](../assets/screenshots/mobile/settings-layouts-home.webp){ .nx-wide }
 
 | Row | Values | Default | Shows |
 | --- | --- | --- | --- |
-| [**Home tab**](#showing-and-hiding-tabs) | Show, Hide | Show | Always |
-| **Home layout** | List, Grid, Carousel, Minimal | Minimal | When Home tab is Show |
-| [**New shelf**](foldables.md#shelves) | Show, Hide | Show | When Home tab is Show |
-| [**Not started shelf**](foldables.md#shelves) | Show, Hide | Show | When Home tab is Show |
-| [**Home stats**](#home-stats) | Show, Hide | Show | When Home tab is Show |
+| [**Visible**](#showing-and-hiding-tabs) | Show, Hide | Show | Always |
+| [**New shelf**](foldables.md#shelves) | Show, Hide | Show | While Home is visible |
+| [**Not started shelf**](foldables.md#shelves) | Show, Hide | Show | While Home is visible |
+| [**Stats**](#home-stats) | Show, Hide | Show | While Home is visible |
+| **Layout** | List, Grid, Carousel, Minimal | Minimal | While Home is visible |
 
-### Home stats
+### Stats { #home-stats }
 
-**Home stats** set to **Hide** removes Home's stats strip (**This month**,
+**Stats** set to **Hide** removes Home's stats strip (**This month**,
 **Most played**) in every Home layout. The cards keep their play time and
 achievements; [Extra info](#extra-info) hides those.
 
@@ -66,19 +66,19 @@ achievements; [Extra info](#extra-info) hides those.
 
 ## Consoles
 
-![Layouts → Consoles beside the Settings sections: Consoles tab Show, Consoles layout Carousel, Consoles orientation Horizontal, Consoles background, with a picture of the Carousel below](../assets/screenshots/mobile/settings-layouts-consoles.webp){ .nx-wide }
+![Layouts → Consoles beside the Settings sections: Visible on and Layout Minimal selected, with a picture of the Consoles tab in Minimal below](../assets/screenshots/mobile/settings-layouts-consoles.webp){ .nx-wide }
 
 | Row | Values | Default | Shows |
 | --- | --- | --- | --- |
-| [**Consoles tab**](#showing-and-hiding-tabs) | Show, Hide | Show | Always |
-| **Consoles layout** | List, Grid, Carousel, Minimal | Carousel | When Consoles tab is Show |
-| [**Consoles orientation**](main-menu.md#orientation) | Horizontal, Vertical | Horizontal | When Consoles tab is Show and Consoles layout is Carousel |
-| [**Consoles background**](#consoles-background) | Controller, Background, None | Controller | When Consoles tab is Show and Consoles layout is List or Carousel |
+| [**Visible**](#showing-and-hiding-tabs) | Show, Hide | Show | Always |
+| **Layout** | List, Grid, Carousel, Minimal | Carousel | While Consoles is visible |
+| [**Orientation**](main-menu.md#orientation) | Horizontal, Vertical | Horizontal | While Consoles is visible and Layout is Carousel |
+| [**Background**](#consoles-background) | Controller, Background, None | Controller | While Consoles is visible and Layout is List or Carousel |
 
-### Consoles background
+### Background { #consoles-background }
 
 What shows with the consoles in the List and Carousel styles. The row hides
-while **Consoles layout** is **Grid**.
+while **Layout** is **Grid**.
 
 - **Controller** (default): each console's controller, beside the list or
   behind its logo in the Carousel.
@@ -94,23 +94,23 @@ while **Consoles layout** is **Grid**.
 
 ## Collections
 
-![Layouts → Collections: Collections tab Show, Collections layout Carousel, Collections orientation Horizontal, with a picture of the collections carousel](../assets/screenshots/mobile/settings-layouts-collections.webp){ .nx-wide }
+![Layouts → Collections beside the Settings sections: Visible on and Layout Minimal selected, with a picture of the Collections tab in Minimal below](../assets/screenshots/mobile/settings-layouts-collections.webp){ .nx-wide }
 
 | Row | Values | Default | Shows |
 | --- | --- | --- | --- |
-| [**Collections tab**](#showing-and-hiding-tabs) | Show, Hide | Show | Always |
-| **Collections layout** | List, Grid, Carousel, Minimal | Minimal | When Collections tab is Show |
-| [**Collections orientation**](main-menu.md#orientation) | Horizontal, Vertical | Horizontal | When Collections tab is Show and Collections layout is Carousel |
+| [**Visible**](#showing-and-hiding-tabs) | Show, Hide | Show | Always |
+| **Layout** | List, Grid, Carousel, Minimal | Minimal | While Collections is visible |
+| [**Orientation**](main-menu.md#orientation) | Horizontal, Vertical | Horizontal | While Collections is visible and Layout is Carousel |
 
 ## Tools
 
-![Layouts → Tools: Tools tab on, Tools layout Carousel, with a picture of the Tools carousel](../assets/screenshots/mobile/settings-layouts-tools.webp){ .nx-wide }
+![Layouts → Tools beside the Settings sections: Visible on and Layout Grid selected, with a picture of the Tools grid below](../assets/screenshots/mobile/settings-layouts-tools.webp){ .nx-wide }
 
 | Row | Values | Default | Shows |
 | --- | --- | --- | --- |
-| [**Tools tab**](#showing-and-hiding-tabs) | Show, Hide | Show | Always |
-| **Tools layout** | List, Grid, Carousel, Minimal | Grid | When Tools tab is Show |
-| [**Tools orientation**](main-menu.md#orientation) | Horizontal, Vertical | Horizontal | When Tools tab is Show and Tools layout is Carousel |
+| [**Visible**](#showing-and-hiding-tabs) | Show, Hide | Show | Always |
+| **Layout** | List, Grid, Carousel, Minimal | Grid | While Tools is visible |
+| [**Orientation**](main-menu.md#orientation) | Horizontal, Vertical | Horizontal | While Tools is visible and Layout is Carousel |
 
 ## Game lists
 
@@ -118,13 +118,13 @@ while **Consoles layout** is **Grid**.
 
 | Row | Values | Default | Shows |
 | --- | --- | --- | --- |
-| **Game lists layout** | List, Grid, Carousel, Backdrop, Minimal | Carousel | Always |
-| [**Game lists orientation**](main-menu.md#orientation) | Horizontal, Vertical | Horizontal | When Game lists layout is Carousel or Backdrop |
-| [**Game lists alignment**](main-menu.md#game-lists-alignment) | Left, Right | Left | When Game lists orientation is Vertical |
-| [**List art**](#list-art) | Screenshot, Mix, 3D box art, 2D box art, Wheel, None | Screenshot | When Game lists layout is List |
-| [**Backdrop art**](#backdrop-art) | 3D box art, 2D box art, Wheel | 3D box art | When Game lists layout is Backdrop |
+| [**List art**](#list-art) | Screenshot, Mix, 3D box art, 2D box art, Wheel, None | Screenshot | When Layout is List |
+| [**Backdrop art**](#backdrop-art) | 3D box art, 2D box art, Wheel | 3D box art | When Layout is Backdrop |
 | [**Layout options**](#layout-options-and-achievements-panel) | Show, Hide | Show | Always |
 | [**Achievements panel**](#layout-options-and-achievements-panel) | Show, Hide | Show | Always |
+| [**Alignment**](main-menu.md#game-lists-alignment) | Left, Right | Left | When Orientation is Vertical |
+| **Layout** | List, Grid, Carousel, Backdrop, Minimal | Carousel | Always |
+| [**Orientation**](main-menu.md#orientation) | Horizontal, Vertical | Horizontal | When Layout is Carousel or Backdrop |
 
 ### List art
 
@@ -239,9 +239,9 @@ With **Button hints** hidden, all three are handled this way.
 
 | Row | Values | Default |
 | --- | --- | --- |
-| [**Game Switcher layout**](#game-switcher-layout) | Full screen, List | Full screen |
+| [**Layout**](#game-switcher-layout) | Full screen, List | Full screen |
 
-### Game Switcher layout
+### Layout { #game-switcher-layout }
 
 How the [Game Switcher](game-switcher.md) draws your recent games:
 
@@ -260,7 +260,7 @@ portrait or landscape.
 ??? info "More detail: what it hides"
     - **Home** leaves the play time and achievements off the Continue card,
       pinned games and the [shelves](foldables.md#shelves). Its stats strip
-      follows [Home stats](#home-stats) instead.
+      follows [Stats](#home-stats) instead.
     - A **List** game list leaves the selected game's play time,
       achievements and next achievement out of the hint row when the hints
       are hidden.
@@ -314,10 +314,10 @@ default. It asks first: `A` resets, `B` keeps everything.
 
 ??? info "More detail: what it resets"
     Every tab shown, each tab's layout and orientation, the shelves and
-    **Home stats**, the game lists' layout, orientation and alignment,
-    **Consoles background**, **List art**, **Backdrop art**, **Layout
+    Home's **Stats**, the game lists' layout, orientation and alignment,
+    the Consoles **Background**, **List art**, **Backdrop art**, **Layout
     options**, **Achievements panel**, **Page title**, **Button hints** and
-    the single hints, **Game Switcher layout** and **Extra info**.
+    the single hints, the Game Switcher's **Layout** and **Extra info**.
 
 ??? info "Games without artwork"
     A game with no screenshot or box art gets a generated abstract picture,

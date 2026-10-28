@@ -5,7 +5,7 @@ you left off. Open it with `SELECT` (**Recent**) on the main menu or in a game
 list, or tap the **Recent** icon at the top right.
 
 It has two layouts, picked in
-[**Tools → Settings → Layouts → Game Switcher → Game Switcher layout**](layouts.md#game-switcher-layout):
+[**Tools → Settings → Layouts → Game Switcher → Layout**](layouts.md#game-switcher-layout):
 **Full screen** (the default) and **List**.
 
 ??? info "More detail"

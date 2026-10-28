@@ -15,7 +15,7 @@ a value, and `A` or a tap flips a switch or picks a choice.
 | [**Shortcuts**](#shortcuts) | Controller buttons and touch buttons for fast forward, rewind, reset and Save & Quit | | |
 | [**Reset to defaults**](#reset-to-defaults) | Puts this page back to its defaults | | |
 
-![Settings, with Controls open beside the sections: Pad vibration Light, Game rumble Medium, Menu pad On, Pad layout Default, Reset to defaults](../assets/screenshots/mobile/settings-controls.webp){ .nx-wide }
+![Settings, with Controls open beside the sections: Pad vibration Light, Game rumble Medium, Menu pad On, Pad layout Default, Shortcuts and Reset to defaults](../assets/screenshots/mobile/settings-controls.webp){ .nx-wide }
 
 ## Pad vibration
 

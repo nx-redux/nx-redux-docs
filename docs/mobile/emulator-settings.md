@@ -7,7 +7,7 @@ first.
 The **Emulation** section holds two rows: **Default emulators** (see
 [below](#default-emulators)) and **Default settings**.
 
-![Settings, with Emulation open beside the sections: Default emulators and Default settings](../assets/screenshots/mobile/settings-emulators.webp){ .nx-wide }
+![Settings with Emulation highlighted in the sections: its pages Default emulators and Default settings beside them, in the same large words](../assets/screenshots/mobile/settings-emulators.webp){ .nx-wide }
 
 For one game, use **Game Settings** in the game's context menu instead. See
 [Game Settings](#game-settings).
@@ -18,7 +18,7 @@ The page lists each emulator that runs one of your consoles, with the tags it
 covers, such as **Gambatte GB · GBC**. Press `A` on an emulator. When it
 covers more than one tag, the app asks for the console first.
 
-![mGBA for Game Boy Advance (MGBA) beside the Settings sections: Console settings, then Core settings with its groups](../assets/screenshots/mobile/emulator-settings.webp){ .nx-wide }
+![mGBA for Game Boy Advance (MGBA) beside the Settings sections: the last Console settings row, then the Core settings label in the accent with its groups System, Video, Audio, Input & Auxiliary Devices and Performance](../assets/screenshots/mobile/emulator-settings.webp){ .nx-wide }
 
 ??? info "More detail"
 
@@ -76,7 +76,7 @@ What you set here is the console's setting, the same as the in-game menu's
 Open a game's context menu with `MENU` in a game list, or a long press on
 the game, and choose **Game Settings**. The same page opens over the list, for that one game.
 
-![Game Settings for Astro Boy - Omega Factor, over the Game Boy Advance list](../assets/screenshots/mobile/game-settings.webp)
+![Game Settings for Tetris, over the Game Boy list: the Console settings label in the accent, then Controller Layout, Max FF Speed, Fast Forward Audio and Rewind](../assets/screenshots/mobile/game-settings.webp)
 
 - The first change gives the game its own settings, starting from the
   console's.

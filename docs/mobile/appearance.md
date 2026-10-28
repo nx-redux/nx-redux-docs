@@ -10,7 +10,7 @@ pad, the text size and the colours. The menu styles have their own category,
   next. **Pad theme**, **Pad buttons** and **Text size** show their choices
   on the row the same way. See [Settings](settings.md#touch).
 
-![Settings, with Appearance open beside the sections: Pad theme Charcoal, Accent White, Secondary accent Teal and Text size Large](../assets/screenshots/mobile/settings-appearance.webp){ .nx-wide }
+![Settings, with Appearance open beside the sections: Pad theme Charcoal, the Accent swatches with Teal ringed, the Secondary accent swatches with Auto ringed, Text size Large and Reset to defaults](../assets/screenshots/mobile/settings-appearance.webp){ .nx-wide }
 
 | Setting | What it does | Values | Default |
 | --- | --- | --- | --- |
@@ -44,6 +44,13 @@ The colours of the on-screen pad in portrait, in the menus and in games.
 </figure>
 <p class="nx-phones__caption">Retro</p>
 </div>
+<div markdown>
+<figure class="nx-phone" markdown>
+![Settings → Appearance with Pad theme set to Black and Pad buttons Grey: grey buttons on a pure black pad, a faint line along its top](../assets/screenshots/mobile/pad-black.webp){ .nx-phone__screen }
+![](../assets/landing/mobile/zfold8.webp){ .nx-phone__frame }
+</figure>
+<p class="nx-phones__caption">Black</p>
+</div>
 </div>
 
 The landscape pad halves always stay Charcoal. See
@@ -63,6 +70,26 @@ How the buttons look on the **Black** pad theme. The row shows only while
 - **Outline**: each button drawn as a thin outline with its label, lit
   faintly while you hold it.
 
+<div class="nx-phones" markdown>
+<div markdown>
+<figure class="nx-phone" markdown>
+![The Black pad with Pad buttons Grey](../assets/screenshots/mobile/pad-black.webp){ .nx-phone__screen }
+![](../assets/landing/mobile/zfold8.webp){ .nx-phone__frame }
+</figure>
+<p class="nx-phones__caption">Grey</p>
+</div>
+<div markdown>
+<figure class="nx-phone" markdown>
+![The Black pad with Pad buttons Outline: each button a thin grey outline with its label](../assets/screenshots/mobile/pad-black-outline.webp){ .nx-phone__screen }
+![](../assets/landing/mobile/zfold8.webp){ .nx-phone__frame }
+</figure>
+<p class="nx-phones__caption">Outline</p>
+</div>
+</div>
+
+A faint line runs along the top of the Black pad, under a soft shadow on the
+screen above, so the pad stays apart from a black screen.
+
 ## Accent
 
 The selection colour: the highlight on the selected row, the name of the
@@ -76,7 +103,7 @@ There are nine light colours, shown as swatches: **White** (default),
 
 *Home with the Sky accent*
 
-![Home with the Sky accent](../assets/screenshots/mobile/accent-home.webp)
+![Minimal Home with the Sky accent: Astro Boy - Omega Factor selected in sky blue](../assets/screenshots/mobile/accent-home.webp)
 
 ## Secondary accent
 
