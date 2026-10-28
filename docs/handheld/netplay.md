@@ -93,7 +93,8 @@ With the link mode left on **Automatic**, games that support the wireless
 adapter (FireRed, LeafGreen, Emerald) keep using it, so the Union Room works
 as before. For a cable trade between FireRed/LeafGreen and Ruby/Sapphire the
 host sets the game's link option to **Link Cable - Real (USB only)** before
-starting the session. The joiner follows the host's choice.
+starting the session. The joiner follows the host's choice for that session
+only: its own link setting is unchanged, and its next game uses it again.
 
 ??? info "More detail"
     - Wi-Fi and Hotspot sessions keep the previous Game Boy Advance link
