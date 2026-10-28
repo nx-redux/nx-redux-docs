@@ -25,7 +25,7 @@ lives on the SD card. You can reach it two ways:
     | Host     | the IP address from the hint                           |
     | Port     | `22`                                                   |
     | Username | `root`                                                 |
-    | Password | `tina` on Brick and Brick Pro; leave empty on Smart Pro S |
+    | Password | `tina` on Brick and Brick Pro; on Smart Pro S `root` with firmware 1.0.2 or later, empty with firmware 1.0.1 |
 
 4. Go to `/mnt/SDCARD`. That is the root of the SD card.
 
