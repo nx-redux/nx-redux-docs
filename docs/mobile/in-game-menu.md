@@ -405,7 +405,7 @@ To keep the cheats you turned on, use **Save Changes → Save for game**. See
 ??? info "More detail"
 
     - With no cheats for the game, the tab says **No cheats for this game.**
-      and how to add some: download them with **Tools → Cheat Database**, or
+      and how to add some: download them with **Tools → Cheats & Patches**, or
       add a RetroArch `.cht` file, named as the file it looked for, in
       `Cheats/<TAG>/`.
     - When a game's cheats come from several files, each row names its

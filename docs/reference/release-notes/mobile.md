@@ -18,10 +18,24 @@ get the largest whole-number size that fits. DS and 3DS games get new
 layouts, a half-folded layout on foldables, and a **Mic** for games that ask
 you to blow or shout. The main menu moves its tabs to the bottom, colour now
 marks the selected game in every layout, and Settings is rebuilt as a quiet
-block of words.
+block of words. And the PlayStation 2 joins the bundled consoles.
 
 ### New features
 
+- **PlayStation 2.** PS2 games run on the new **ARMSX2** core, with a full
+  DualShock 2 on screen: the d-pad and both sticks always there, and `L3` /
+  `R3` buttons under the sticks. Put a BIOS (any `.bin` dump) in `Bios/PS2/`
+  and games in `Roms/Sony PlayStation 2 (PS2)/`; both folders appear on the
+  first start after updating. Each game gets its own memory card in
+  `Saves/PS2/<game>/`, and save states, resume and the Game Switcher work as
+  on the other consoles. Two controllers give two players. **3D Resolution**
+  (Auto up to **Max Scale**, 2x by default; Quality; Performance at native)
+  and **Graphics API** (OpenGL ES or Vulkan) apply as on the 3DS. ISO, CHD and ZSO games open in place,
+  never copied. See [PlayStation 2](../../mobile/emulators/playstation-2.md).
+- **Cheats & Patches.** The cheat download also fetches PCSX2's patches for
+  PS2: widescreen and no-interlacing patches for many games, turned on in
+  **Core Options** in Game Settings or Emulator Settings. Your own `.pnach` cheats go in `Cheats/PS2/`. See
+  [Cheats & Patches](../../mobile/emulators/playstation-2.md#cheats-patches).
 - **Microphone for DS and 3DS.** Games that listen, such as Fossil Fighters,
   Zelda Spirit Tracks or Nintendogs, hear your phone's microphone while their
   **Mic** is on. Turn it on with the round mic button on the pad (bottom
@@ -132,7 +146,8 @@ block of words.
   column on every screen. `Left` / `Right` jump between the folders and the
   actions. See [The folder picker](../../mobile/library.md#the-folder-picker).
 - **Launching from Minimal.** The screen goes black outward from the game's
-  name, and the name stays in your accent until the game's first frame. It
+  name, and the name stays in your accent until the game's first frame. A
+  long name wraps onto more lines rather than running off the screen. It
   follows Android's **Remove animations** setting.
 - **Game Switcher layout** is picked from a row of choices in Layouts.
 

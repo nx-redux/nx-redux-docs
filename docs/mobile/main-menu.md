@@ -441,7 +441,7 @@ library.
 ## Tools
 
 The built-in tools, each with its icon: **RetroAchievements**,
-**Game Tracker**, **Artwork**, **Cheat Database**, **Device Sync** and
+**Game Tracker**, **Artwork**, **Cheats & Patches**, **Device Sync** and
 **Settings**, and **Apps** with every Android app on the phone, plus any
 apps you add to Tools from there (see
 [Android apps](launcher.md#android-apps)). By default it is a Grid; pick
@@ -452,7 +452,7 @@ its style in [Layouts](layouts.md#tools). The styles work as on
 
 <figure markdown>
 
-![Tools tab in Grid: Apps, Artwork, Cheat Database, Device Sync, Game Tracker, RetroAchievements (selected, in the accent), the added apps and Settings, the others in grey](../assets/screenshots/mobile/tab-tools.webp)
+![Tools tab in Grid: Apps, Artwork, Cheats & Patches (selected, in the accent), Device Sync, Game Tracker, RetroAchievements, the added apps and Settings, the others in grey](../assets/screenshots/mobile/tab-tools.webp)
 
 <figcaption>Grid</figcaption>
 </figure>
@@ -473,7 +473,7 @@ or **Unpin**, which puts it on [Home](#pinning-games-and-tools).
 
 The tools have their own pages: [RetroAchievements](retroachievements.md),
 [Game Tracker](game-tracker.md), [Artwork](artwork.md),
-[Cheat Database](cheats.md), [Device Sync](device-sync.md) and
+[Cheats & Patches](cheats.md), [Device Sync](device-sync.md) and
 [Settings](settings.md).
 
 ??? info "More detail"

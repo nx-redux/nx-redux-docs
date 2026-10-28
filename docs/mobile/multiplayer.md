@@ -29,7 +29,7 @@ Each system has as many players as the console had controller ports.
 | Players | Systems |
 | --- | --- |
 | Up to 4 | Nintendo 64, Nintendo Wii, Nintendo GameCube, Sega Dreamcast, Arcade (FBNeo), TurboGrafx-16 |
-| 2 | NES and Famicom Disk System, Super Nintendo, Sega Genesis, Master System, SG-1000, Sega CD, 32X, PlayStation, Atari 2600, Atari 7800, Atari 5200, ColecoVision |
+| 2 | NES and Famicom Disk System, Super Nintendo, Sega Genesis, Master System, SG-1000, Sega CD, 32X, PlayStation, PlayStation 2, Atari 2600, Atari 7800, Atari 5200, ColecoVision |
 | 1 | Every other system, such as Game Gear, the Game Boys, Nintendo DS, Nintendo 3DS, PSP and PICO-8 |
 
 ??? info "More detail"
@@ -133,6 +133,7 @@ everyone.
 | --- | --- |
 | [Sega Dreamcast](emulators/dreamcast.md#multiplayer) | Players 2 to 4 have the Vibration Pack but no memory card. Games save to Player 1's card. |
 | [PlayStation](emulators/playstation.md#controls) | Player 2 gets the same DualShock pad as Player 1. |
+| [PlayStation 2](emulators/playstation-2.md#multiplayer) | Player 2 gets a DualShock 2 like Player 1: both sticks, `L3` and `R3`. Games save to the one memory card in slot 1. |
 | [Sega Genesis, Sega CD, 32X](emulators/sega.md#controller-type) | **Controller Type** applies to Player 2 too. |
 | [Nintendo 64](emulators/nintendo-64.md#rumble) | Each player's Rumble Pak is set in Core Options, from **Player 1 Pak** to **Player 4 Pak**. |
 | [Nintendo Wii, GameCube](emulators/wii-gamecube.md#multiplayer) | Every player gets Player 1's controller. On Wii, each player shakes with `R2`, and only Player 1 can point or use the phone's motion. |
@@ -142,6 +143,6 @@ everyone.
 - A controller that Android sees as two devices, such as a pair of
   Joy-Cons, becomes two players.
 - No multitap adapters yet, such as the NES Four Score, the Super Nintendo
-  or PlayStation multitap, or the Sega Team Player.
+  or PlayStation and PlayStation 2 multitaps, or the Sega Team Player.
 - No link-cable play between players on one phone. Game Boy and Game Boy
   Advance link play works between two devices with [Netplay](netplay.md).

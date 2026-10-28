@@ -208,7 +208,7 @@ nav:
           - Launcher Mode & Android Games: mobile/launcher.md
       - Apps & Features:
           - Artwork: mobile/artwork.md
-          - Cheats: mobile/cheats.md
+          - Cheats & Patches: mobile/cheats.md
           - Device Sync: mobile/device-sync.md
           - Emulator Settings: mobile/emulator-settings.md
           - Game Tracker: mobile/game-tracker.md
@@ -219,6 +219,7 @@ nav:
           - Nintendo 64: mobile/emulators/nintendo-64.md
           - Sega Dreamcast: mobile/emulators/dreamcast.md
           - PlayStation: mobile/emulators/playstation.md
+          - PlayStation 2: mobile/emulators/playstation-2.md
           - PlayStation Portable: mobile/emulators/psp.md
           - Nintendo DS: mobile/emulators/nintendo-ds.md
           - Nintendo 3DS: mobile/emulators/nintendo-3ds.md
