@@ -16,9 +16,8 @@ Keep the screen on and block sleep while connected to a computer over USB.
 
 Start or stop the SSH server, which also serves SFTP for file transfer. While
 it is running the hint shows the login with the device's current IP address.
-The username is `root`. On Brick and Brick Pro the password is `tina`. On
-Smart Pro S the password is `root` with firmware 1.0.2 or later; firmware
-1.0.1 needs no password.
+The username is `root`. On Brick and Brick Pro the password is `tina`; Smart
+Pro S needs no password.
 
 ```sh
 ssh root@192.168.1.8
