@@ -28,6 +28,11 @@ Android phones.
 
 ## Controls
 
+<figure class="nx-phone" markdown>
+![Dragon Ball Z: Budokai Tenkaichi 3 on the Fold's cover screen, with the PS2 pad: the d-pad and △ ○ × □ in the middle row, a stick at each side below them with L3 and R3 under it, MENU in the middle](../../assets/screenshots/mobile/pad-ps2.webp){ .nx-phone__screen }
+![](../../assets/landing/mobile/zfold8.webp){ .nx-phone__frame }
+</figure>
+
 The on-screen pad is a full DualShock 2: the d-pad and both sticks are always
 there, with no `STICK` / `D-PAD` switch, because PS2 games move between them
 mid-game. **L3** and **R3** are their own buttons, under each stick.
@@ -36,6 +41,8 @@ mid-game. **L3** and **R3** are their own buttons, under each stick.
 | --- | --- |
 | Portrait | The d-pad and the face buttons in the middle row, each stick under its side by the pad's edge, `L3` / `R3` under the sticks. |
 | Landscape | The d-pad and the face buttons by the screen's edges, each stick beside them toward the middle, `L3` / `R3` under the sticks. Touch shortcut 1 sits in `MENU`'s place with `MENU` under it, and touch shortcut 2 in `START`'s place with `SELECT` and `START` under it. |
+
+![Dragon Ball Z: Budokai Tenkaichi 3 in landscape on the Fold's cover screen: the d-pad and the face buttons by the edges, each stick beside them toward the middle with L3 and R3 under it, MENU, SELECT and START at the bottom](../../assets/screenshots/mobile/pad-ps2-landscape.webp){ .nx-wide }
 
 The buttons carry the PlayStation's labels, ○ × △ □, and × confirms in the
 app's menus, as on the [PlayStation](playstation.md). Move any of the groups,
@@ -81,6 +88,8 @@ Settings**, and for the console in
 [Emulator Settings](../emulator-settings.md). `LEFT` / `RIGHT` change a
 value; keep it for the game or the console with
 [Save Changes](../in-game-menu.md#save-changes).
+
+![Console Settings in Dragon Ball Z: Budokai Tenkaichi 3 on the Fold's cover screen: 3D Resolution at Auto · 2x now with Max Scale, Controller Layout, Max FF Speed and Fast Forward Audio](../../assets/screenshots/mobile/ps2-console-settings.webp){ .nx-wide }
 
 | Row | Values | Default | See |
 | --- | --- | --- | --- |
