@@ -32,11 +32,33 @@ accuracy, so it handles games that gpSP gets wrong.
     Netplay connects the GBA **link cable** (and, on gpSP, the **wireless
     adapter**), so games without link play have nothing to connect. Both
     players must use the same folder: an mGBA device can't link with a gpSP
-    device.
+    device. On gpSP the joiner plays with the host's **Link Cable
+    Connectivity** setting for the session, and keeps its own for its next
+    game.
 
 !!! note "gpSP and the BIOS"
     gpSP has a built-in replacement BIOS, so games start without one. The
     real `gba_bios.bin` in `Bios/GBA/` improves compatibility.
+
+## Clock
+
+Games with a clock on the cartridge, such as Pokémon Ruby, Sapphire and
+Emerald and ROM hacks like Pokémon Unbound, follow your device's time on both
+cores. Berries, day and night and daily events keep going while the device is
+off, including after you quit with a save and resume.
+
+??? info "More detail"
+    gpSP's clock is set in the in-game menu under
+    [Options → Core Options](../guide/in-game-options.md) → **RTC Time
+    Source**:
+
+    - **System Clock** (default): the device's time.
+    - **Deterministic**: counts only the time the game runs, and a save state
+      brings back the clock it was saved with. Resuming then rewinds the game's
+      clock to the moment you quit. Use it only when you need a replay to come
+      out the same every time.
+
+    mGBA always uses the device's time.
 
 ## Controls
 

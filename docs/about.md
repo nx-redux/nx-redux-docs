@@ -12,7 +12,7 @@ pinned favourites one press away, and you can switch any of it off, down to a
 emulators, netplay, achievements, media tools and more wait in the Tools tab
 and pause menus until you ask for them.
 
-![NX Redux main menu](assets/screenshots/main-menu.png)
+![NX Redux on Home in the Minimal layout: this month's play and the most played game at the top, the games as big names with Advance Wars 2 - Black Hole Rising selected in the accent, and the Home, Consoles, Collections and Tools tabs along the bottom](assets/screenshots/mobile/home.webp)
 
 [:material-youtube: Watch the feature demonstration on YouTube](https://www.youtube.com/watch?v=l4iJBRgUe4U){ .md-button }
 
