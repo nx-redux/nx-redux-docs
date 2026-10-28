@@ -44,7 +44,7 @@ sideways). The picture changes as you change a row.
 
 ## Home
 
-![Layouts → Home beside the Settings sections: Visible, New shelf, Not started shelf and Stats on, and Layout Minimal selected, with the top of its picture below](../assets/screenshots/mobile/settings-layouts-home.webp){ .nx-wide }
+![Layouts → Home beside the Settings sections: Visible, New shelf, Not started shelf and Stats on, and Layout List, with the top of its picture below](../assets/screenshots/mobile/settings-layouts-home.webp){ .nx-wide }
 
 | Row | Values | Default | Shows |
 | --- | --- | --- | --- |
@@ -94,7 +94,7 @@ while **Layout** is **Grid**.
 
 ## Collections
 
-![Layouts → Collections beside the Settings sections: Visible on and Layout Minimal selected, with a picture of the Collections tab in Minimal below](../assets/screenshots/mobile/settings-layouts-collections.webp){ .nx-wide }
+![Layouts → Collections beside the Settings sections: Visible on, Layout Carousel and Orientation Vertical, with a picture of the vertical collections carousel below](../assets/screenshots/mobile/settings-layouts-collections.webp){ .nx-wide }
 
 | Row | Values | Default | Shows |
 | --- | --- | --- | --- |
@@ -104,7 +104,7 @@ while **Layout** is **Grid**.
 
 ## Tools
 
-![Layouts → Tools beside the Settings sections: Visible on and Layout Grid selected, with a picture of the Tools grid below](../assets/screenshots/mobile/settings-layouts-tools.webp){ .nx-wide }
+![Layouts → Tools beside the Settings sections: Visible on and Layout Minimal selected, with a picture of the Tools tab in Minimal below](../assets/screenshots/mobile/settings-layouts-tools.webp){ .nx-wide }
 
 | Row | Values | Default | Shows |
 | --- | --- | --- | --- |
@@ -114,7 +114,7 @@ while **Layout** is **Grid**.
 
 ## Game lists
 
-![Layouts → Game lists: Game lists layout Carousel, Game lists orientation Horizontal, Layout options and Achievements panel on, with a picture of a game list carousel](../assets/screenshots/mobile/settings-layouts-game-lists.webp){ .nx-wide }
+![Layouts → Game lists beside the Settings sections: Layout options and Achievements panel on, then Layout with Minimal selected on its own line, and the top of a Minimal game list picture below](../assets/screenshots/mobile/settings-layouts-game-lists.webp){ .nx-wide }
 
 | Row | Values | Default | Shows |
 | --- | --- | --- | --- |
@@ -177,7 +177,7 @@ the last two.
 
 ## Title and hints
 
-![Layouts → Title and hints: Page title, Button hints, Recent hint and Search hint on, with a picture of Home with its title and hints](../assets/screenshots/mobile/settings-layouts-title-hints.webp){ .nx-wide }
+![Layouts → Title and hints beside the Settings sections: Page title and Button hints both off, with a picture of a game list with no title and no hint bar below](../assets/screenshots/mobile/settings-layouts-title-hints.webp){ .nx-wide }
 
 | Row | Values | Default | Shows |
 | --- | --- | --- | --- |
@@ -230,7 +230,7 @@ right of a game list's title and at the top right of the main menu.
 
 ## Game Switcher
 
-![Layouts → Game Switcher: Game Switcher layout List, with a picture of the Game Switcher list](../assets/screenshots/mobile/settings-layouts-game-switcher.webp){ .nx-wide }
+![Layouts → Game Switcher beside the Settings sections: Layout Full screen, with a picture of the full-screen Game Switcher on Advance Wars below](../assets/screenshots/mobile/settings-layouts-game-switcher.webp){ .nx-wide }
 
 | Row | Values | Default |
 | --- | --- | --- |
