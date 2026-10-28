@@ -159,7 +159,7 @@ game.
 
 ## Cheats & Patches
 
-**Cheats & Patches** (in [Cheats](../cheats.md)) downloads PCSX2's
+**Cheats & Patches** ([Cheats & Patches](../cheats.md)) downloads PCSX2's
 `patches.zip` for PS2 alongside libretro's cheats for the other consoles. It
 holds widescreen and no-interlacing patches for many games, matched to each
 game by the game itself. Turn them on in **Core Options** in
