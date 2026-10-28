@@ -35,7 +35,7 @@ mid-game. **L3** and **R3** are their own buttons, under each stick.
 | Layout | Where things sit |
 | --- | --- |
 | Portrait | The d-pad and the face buttons in the middle row, each stick under its side by the pad's edge, `L3` / `R3` under the sticks. |
-| Landscape | The d-pad and the face buttons by the screen's edges, each stick below them toward the middle, `L3` / `R3` under the sticks. Touch shortcut 1 sits in `MENU`'s place with `MENU` under it, and touch shortcut 2 in `START`'s place with `SELECT` and `START` under it. |
+| Landscape | The d-pad and the face buttons by the screen's edges, each stick beside them toward the middle, `L3` / `R3` under the sticks. Touch shortcut 1 sits in `MENU`'s place with `MENU` under it, and touch shortcut 2 in `START`'s place with `SELECT` and `START` under it. |
 
 The buttons carry the PlayStation's labels, ○ × △ □, and × confirms in the
 app's menus, as on the [PlayStation](playstation.md). Move any of the groups,
@@ -45,12 +45,34 @@ A controller works 1:1, including both sticks, `L3` and `R3` (press the
 sticks) and all four shoulder buttons.
 
 ??? info "More detail"
-    - Two players: connect a second controller and it's player 2, as on the
-      [GameCube](wii-gamecube.md). See [Multiplayer](../multiplayer.md). The
-      multitap (3 or 4 players) isn't supported.
+    - In landscape the pieces are drawn as big as in portrait where the
+      screen allows. On a screen tall enough for it, each stick sits below
+      its d-pad or face buttons instead of beside them.
+    - The sticks take touches only inside their round well, so the d-pad's
+      corners stay the d-pad's.
     - The face buttons are on or off: games that read how hard a button is
       pressed (such as aiming gently in Metal Gear Solid 2) see it fully
       pressed.
+
+## Multiplayer
+
+Two players can play with two controllers: connect a second one and it's
+Player 2, as on the other consoles. See [Multiplayer](../multiplayer.md).
+
+- Each player gets a DualShock 2: the d-pad, both sticks, `L3` and `R3`, and
+  all four shoulder buttons.
+- The on-screen pad and the in-game menu stay Player 1's.
+- Games save to the one memory card in slot 1, Player 1's, as most PS2 games
+  expect.
+- Rumble goes to each player's own controller when Android can drive its
+  motor. Otherwise Player 1's rumble plays on the phone, and Player 2 gets
+  none. See [Rumble](../multiplayer.md#rumble).
+
+??? info "More detail"
+    - The PS2 multitap (3 or 4 players) isn't supported.
+    - Netplay isn't available for PS2 games.
+    - A second controller port is always plugged in, even when you play
+      alone. Games ignore a pad nobody uses.
 
 ## Console Settings
 
