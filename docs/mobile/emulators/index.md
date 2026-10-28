@@ -6,8 +6,9 @@ download. Folder and tag names match NX Redux on the handheld.
 Systems with their own controls or settings have a page each:
 [Arcade (FBNeo)](arcade.md), [Nintendo 64](nintendo-64.md),
 [Sega Dreamcast](dreamcast.md), [PlayStation](playstation.md),
-[PlayStation Portable](psp.md), [Nintendo DS](nintendo-ds.md),
-[Nintendo 3DS](nintendo-3ds.md), [Nintendo Wii & GameCube](wii-gamecube.md),
+[PlayStation 2](playstation-2.md), [PlayStation Portable](psp.md),
+[Nintendo DS](nintendo-ds.md), [Nintendo 3DS](nintendo-3ds.md),
+[Nintendo Wii & GameCube](wii-gamecube.md),
 the [Sega consoles](sega.md) and the
 [Game Boy & Game Boy Advance](game-boy.md). The rest, such as the Neo Geo
 Pocket's `Option`, are on [Other Systems](other-systems.md).
@@ -24,6 +25,7 @@ Pocket's `Option`, are on [Other Systems](other-systems.md).
 | [Nintendo Wii](wii-gamecube.md) | `WII` | Dolphin |
 | [Nintendo GameCube](wii-gamecube.md) | `GC` | Dolphin |
 | [Nintendo 64](nintendo-64.md) | `N64` | Mupen64Plus-Next |
+| [PlayStation 2](playstation-2.md) | `PS2` | ARMSX2 |
 | [PlayStation Portable](psp.md) | `PSP` | PPSSPP |
 | Game Boy / Game Boy Color | `GB`, `GBC` | Gambatte |
 | Game Boy Advance | `GBA` | gpSP |
@@ -96,9 +98,9 @@ see [Emulator Settings](../emulator-settings.md).
 
 ## Graphics API
 
-Seven consoles can draw with Vulkan instead of OpenGL ES: Nintendo Wii,
+Eight consoles can draw with Vulkan instead of OpenGL ES: Nintendo Wii,
 GameCube, Nintendo 64, Sega Dreamcast, PlayStation on SwanStation (`PSX`),
-PSP and Nintendo 3DS. **Graphics API** picks:
+PlayStation 2, PSP and Nintendo 3DS. **Graphics API** picks:
 
 | Value | What it does |
 | --- | --- |
