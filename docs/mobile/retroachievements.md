@@ -133,7 +133,7 @@ panel that slides in from the right. Open it with `X` (**Achievements** in
 the hint bar), or on a touchscreen, the trophy icon at the right of the
 list's title.
 
-![A game list with the achievements panel open: Advance Wars 2 - Black Hole Rising (0 of 72) and its achievements, Lucky Star highlighted](../assets/screenshots/mobile/ra-panel.webp)
+![The achievements panel over the Game Boy list, showing an achievement's details: Tetris Newbie, Score 20,000 points in Game Type A, 2 points, when it was unlocked and its unlock rate](../assets/screenshots/mobile/ra-panel.webp)
 
 | Button | What it does |
 | --- | --- |

@@ -5,20 +5,19 @@ pad, the text size and the colours. The menu styles have their own category,
 [Layouts](layouts.md).
 
 - `Left` / `Right` step the highlighted row's value.
-- `A`, or a tap, on **Accent** or **Secondary accent** opens the list of
-  colours. **Pad theme**, **Pad buttons** and **Text size** show their
-  choices on the row:
-  tap one, or press `A` to step to the next. See
-  [Settings](settings.md#touch).
+- **Accent** and **Secondary accent** show a circle per colour under the
+  row's name, the current one ringed: tap one, or press `A` to step to the
+  next. **Pad theme**, **Pad buttons** and **Text size** show their choices
+  on the row the same way. See [Settings](settings.md#touch).
 
-![Settings, with Appearance open beside the sections: Pad theme Charcoal, Accent White, Secondary accent Teal and Text size Large](../assets/screenshots/mobile/settings-appearance.webp){ .nx-wide }
+![Settings, with Appearance open beside the sections: Pad theme Charcoal, the Accent swatches with Teal ringed, the Secondary accent swatches with Auto ringed, Text size Large and Reset to defaults](../assets/screenshots/mobile/settings-appearance.webp){ .nx-wide }
 
 | Setting | What it does | Values | Default |
 | --- | --- | --- | --- |
 | [**Pad theme**](#pad-theme) | Colours of the portrait pad | Charcoal, Retro, Black | Charcoal |
 | [**Pad buttons**](#pad-buttons) | How the Black pad's buttons look. Shows only with the Black theme | Grey, Outline | Grey |
 | [**Accent**](#accent) | The selection colour | White, Red, Orange, Amber, Lime, Teal, Sky, Violet, Pink | White |
-| [**Secondary accent**](#secondary-accent) | The bar behind a selected value | Auto, then the same nine colours | Teal |
+| [**Secondary accent**](#secondary-accent) | The bar behind a selected value | Auto, Teal, Red, Rust, Bronze, Moss, Navy, Plum, Wine, Graphite | Auto |
 | [**Text size**](#text-size) | Size of the text across the app | Large, Small | Large |
 | [**Reset to defaults**](#reset-to-defaults) | Puts this page back to its defaults | | |
 
@@ -45,6 +44,13 @@ The colours of the on-screen pad in portrait, in the menus and in games.
 </figure>
 <p class="nx-phones__caption">Retro</p>
 </div>
+<div markdown>
+<figure class="nx-phone" markdown>
+![Settings → Appearance with Pad theme set to Black and Pad buttons Grey: grey buttons on a pure black pad, a faint line along its top](../assets/screenshots/mobile/pad-black.webp){ .nx-phone__screen }
+![](../assets/landing/mobile/zfold8.webp){ .nx-phone__frame }
+</figure>
+<p class="nx-phones__caption">Black</p>
+</div>
 </div>
 
 The landscape pad halves always stay Charcoal. See
@@ -64,18 +70,40 @@ How the buttons look on the **Black** pad theme. The row shows only while
 - **Outline**: each button drawn as a thin outline with its label, lit
   faintly while you hold it.
 
+<div class="nx-phones" markdown>
+<div markdown>
+<figure class="nx-phone" markdown>
+![The Black pad with Pad buttons Grey](../assets/screenshots/mobile/pad-black.webp){ .nx-phone__screen }
+![](../assets/landing/mobile/zfold8.webp){ .nx-phone__frame }
+</figure>
+<p class="nx-phones__caption">Grey</p>
+</div>
+<div markdown>
+<figure class="nx-phone" markdown>
+![The Black pad with Pad buttons Outline: each button a thin grey outline with its label](../assets/screenshots/mobile/pad-black-outline.webp){ .nx-phone__screen }
+![](../assets/landing/mobile/zfold8.webp){ .nx-phone__frame }
+</figure>
+<p class="nx-phones__caption">Outline</p>
+</div>
+</div>
+
+A faint line runs along the top of the Black pad, under a soft shadow on the
+screen above, so the pad stays apart from a black screen.
+
 ## Accent
 
-The selection colour: the highlight on the selected row, tile or card, and
-the line under the current tab. It also colours Home's **Pick a game**
+The selection colour: the highlight on the selected row, the name of the
+selected game or tile, the current tab's word and the current Settings
+section. It also colours Home's **Pick a game**
 picture and the in-game menu.
 
-There are nine colours: **White** (default), **Red**, **Orange**, **Amber**,
-**Lime**, **Teal**, **Sky**, **Violet** and **Pink**.
+There are nine light colours, shown as swatches: **White** (default),
+**Red**, **Orange**, **Amber**, **Lime**, **Teal**, **Sky**, **Violet** and
+**Pink**. Text on the accent is black.
 
 *Home with the Sky accent*
 
-![Home with the Sky accent](../assets/screenshots/mobile/accent-home.webp)
+![Minimal Home with the Sky accent: Astro Boy - Omega Factor selected in sky blue](../assets/screenshots/mobile/accent-home.webp)
 
 ## Secondary accent
 
@@ -84,10 +112,11 @@ The colour of the bar behind a selected setting's value, as in
 [Game Settings](emulator-settings.md) and the
 [in-game menu](in-game-menu.md).
 
-- **Teal** is the default.
-- **Auto** uses a darker shade of the Accent. With the White accent, Auto
-  gives Teal.
-- The nine Accent colours can be picked here too.
+- **Auto** (default) uses a dark shade of the Accent; its circle shows that
+  shade with an **A**. With the White accent, Auto gives Teal.
+- Or pick one of nine dark colours, shown as swatches: **Teal**, **Red**,
+  **Rust**, **Bronze**, **Moss**, **Navy**, **Plum**, **Wine** and
+  **Graphite**. Text on them is light.
 
 ## Text size
 
@@ -115,6 +144,6 @@ else.
 ## Reset to defaults
 
 Puts **Pad theme**, **Pad buttons**, **Accent**, **Secondary accent** and
-**Text size** back to their defaults. It does not ask first. It leaves the
+**Text size** back to their defaults. It asks first: `A` resets, `B` keeps everything. It leaves the
 [Layouts](layouts.md) page alone: that page has its own **Reset to
 defaults**.

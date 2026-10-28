@@ -39,14 +39,14 @@ The app never deletes a game. It moves games only while **Move them into
 **Tools → Settings → Library** shows what the library holds and every folder
 it reads, in one list.
 
-![Settings, with Library open beside the sections: the counts with Rescan, Home folder, Add ROM folder, All files access, Saves and Android games](../assets/screenshots/mobile/settings-library.webp){ .nx-wide }
+![Settings, with Library open beside the sections: the counts with Rescan, Home folder, + Add ROM folder (selected), All files access, Microphone access, Saves and Android games](../assets/screenshots/mobile/settings-library.webp){ .nx-wide }
 
 | Row | What it does |
 | --- | --- |
 | The counts, such as **212 games · 20 consoles** | With **Last scan:** and its date under it. Its **Rescan** button scans every folder again; a notice then says how many games the library has. |
 | **Home folder** | Shows the home folder's path. `A` picks a different one, then offers to copy your saves to it: **Copy** or **Keep separate**. Nothing is deleted from the old folder. Without All files access, `A` opens the access page instead. |
 | **ROM Folder:** and its name | One row per extra folder, with its path or its state under it. `A` offers to remove it. |
-| **Add ROM folder** | Pick another extra folder to scan. |
+| **+ Add ROM folder** | Pick another extra folder to scan, such as one on an SD card. |
 | **All files access** | Android 11 and later. A switch: a tap, or `A`, opens Android's page for the app. See [All files access](#all-files-access). |
 | **Microphone access** | On phones with a microphone. On or Off: a tap, or `A`, asks for it, or opens Android's page for the app when Android won't ask again. See [Microphone access](#microphone-access). |
 | **Saves** | Save formats, and export or import your saves. See [Saves](#saves). |
@@ -118,12 +118,14 @@ With All files access, every folder or file pick (home folder, extra
 folder, import, export) uses the app's own picker, a list like the rest of
 the app.
 
-![The app's folder picker at Internal storage's root: Create new folder on the left, the folders beside it with NXRedux selected, files dimmed](../assets/screenshots/mobile/file-picker.webp){ .nx-wide }
+![The app's folder picker at Internal storage's root: .. and the folders in one column with Alarms selected, Create new folder at the bottom, and the hints Actions, New folder, Back and Select](../assets/screenshots/mobile/file-picker.webp){ .nx-wide }
 
 - Open folders until you reach the one you want, then choose **Use this
-  folder** (or **Save here** for an export).
+  folder** (or **Save here** for an export) at the bottom.
 - `A` **Select** opens a folder, or picks the row. `B` **Back** goes up a
   level, and at the storage list cancels.
+- `Left` / `Right` jump between the folders and the actions at the bottom,
+  wrapping round. The hint names where they go: **Actions** or **Folders**.
 - `X` **New folder**, or **Create new folder**, asks for a name and opens the
   new folder.
 
@@ -131,17 +133,17 @@ the app.
     - It starts at your storage, **Internal storage** and any SD card, or
       next to your home folder. The title shows the folder's path, such as
       **Internal storage/NXRedux**.
-    - The first rows are **Use this folder** (or **Save here**) and **Create
-      new folder**, then **..** for the folder above. Folders follow, A–Z,
-      then the files, dimmed: they show what a folder holds, but can't be
-      picked. When importing a zip, the `.zip` files are the ones you pick.
-      Hidden (dot) folders and files are not shown.
+    - The picker opens on the first entry: **..** for the folder above,
+      then the folders, A–Z, then the files, dimmed: they show what a folder
+      holds, but can't be picked. When importing a zip, the `.zip` files are
+      the ones you pick. Hidden (dot) folders and files are not shown.
+    - **Use this folder** (or **Save here**) and **Create new folder** sit
+      at the bottom, in one column with the rest, in portrait and landscape.
     - When picking the home folder, a line under the title says what the
       folder is: **Empty folder**, **NX Redux folder**, or **Has other files:
       games found in it will be sorted into Roms**. An SD card's root can be
       the home folder; the phone's storage root has no **Use this folder**
       row.
-    - In landscape, the folder's entries sit in a column on the right.
     - An export over a file of the same name asks **Replace <name>?** first.
 
 ## Unassigned games
