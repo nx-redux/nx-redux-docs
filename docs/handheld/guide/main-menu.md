@@ -347,32 +347,55 @@ with `1) `, `2) ` to control their order in the game list.
 
 ## Multi-disc games
 
-Put a multi-disc game in its own folder inside the system folder. The folder
-then behaves as a **single game**:
+Put a multi-disc game in **its own folder** inside the system folder, with the
+disc files and an `.m3u` file named **exactly after the folder**:
+
+```
+Roms/Sony PlayStation (PS)/Final Fantasy VII/
+├── Final Fantasy VII.m3u
+├── Final Fantasy VII (Disc 1).cue / .bin
+├── Final Fantasy VII (Disc 2).cue / .bin
+└── Final Fantasy VII (Disc 3).cue / .bin
+```
+
+The `.m3u` lists one disc per line, by file name only, with no folder in front:
+
+```
+Final Fantasy VII (Disc 1).cue
+Final Fantasy VII (Disc 2).cue
+Final Fantasy VII (Disc 3).cue
+```
+
+The folder then behaves as a **single game**:
 
 - It shows as one entry in the game list and launches disc 1 when opened.
 - It can be pinned to Home.
 - It shares one save/resume identity across discs.
 
-While playing, swap discs from the in-game
-[pause menu](playing-games.md#the-in-game-menu), which shows the current
-**Disc N**. Save states remember which disc they belong to.
+To change disc while playing, open the
+[in-game menu](playing-games.md#the-in-game-menu), press `LEFT` / `RIGHT` on
+**Continue** to pick the disc, then `A`. Save states remember which disc they
+belong to.
+
+!!! warning "An `.m3u` in the system folder doesn't work"
+    A RetroArch-style playlist next to the game folder, such as
+    `Roms/Sony PlayStation (PS)/Final Fantasy VII.m3u` with
+    `./Final Fantasy VII/…` lines, opens as a list of separate discs. Each disc
+    is then a game of its own, with its own save and no disc picker. Move the
+    `.m3u` into the game folder, name it after the folder, and remove the
+    folder from each line.
 
 ??? info "More detail"
-    The folder holds the disc images plus an `.m3u` file named **exactly after
-    the folder**, listing one disc file per line:
-
-    ```
-    Roms/Sony PlayStation (PS)/Final Fantasy VII/
-    ├── Final Fantasy VII.m3u      ← contains the three .cue names, one per line
-    ├── Final Fantasy VII (Disc 1).cue / .bin
-    ├── Final Fantasy VII (Disc 2).cue / .bin
-    └── Final Fantasy VII (Disc 3).cue / .bin
-    ```
-
-    The same folder trick works for single-disc `.cue`/`.bin` games too. A
-    folder containing a matching folder-named `.cue` shows and launches as one
-    game instead of exposing the file pair.
+    - Each line must match a disc's file name exactly. A line that doesn't is
+      skipped, and with fewer than two matching discs there's no disc picker.
+    - The battery save is named after the folder, such as
+      `Saves/PS/Final Fantasy VII.srm` with the default
+      [save format](../settings/system.md#save-format). Discs played one by
+      one before had a save each, named after the disc. Copy the latest one to
+      the new name to keep your progress.
+    - The same folder trick works for single-disc `.cue`/`.bin` games too. A
+      folder containing a matching folder-named `.cue` shows and launches as
+      one game instead of exposing the file pair.
 
 ## Custom display names (map.txt)
 
