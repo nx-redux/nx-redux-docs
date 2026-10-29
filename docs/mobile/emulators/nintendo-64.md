@@ -73,6 +73,54 @@ Mario Kart 64 doesn't. See [Vibration](../controls.md#game-rumble).
   starts. They are in [Emulator Settings](../emulator-settings.md), not in
   the in-game **Core Options**.
 
+## High-resolution texture packs
+
+Texture packs replace the Nintendo 64's blurry textures with high-resolution
+ones. They load only with **Graphics API** set to **OpenGL ES** (the GLideN64
+plugin).
+
+**Getting a pack.** Sites such as evilgames.eu host packs like *Mario Kart 64
+Reloaded*, *Super Mario 64 Reloaded* and *Ocarina of Time Reloaded*. Download
+the **GLideN64 Cache**: a `.7z` holding one `<NAME>_HIRESTEXTURES.hts` file.
+Extract the `.hts` and keep its name. When a pack offers HD and 4K, pick HD.
+
+!!! note "Only the ready-made cache"
+    PNG packs (the **GLideN64 / rt64 Source** download) don't work in the
+    app. Packs made for other emulators don't either.
+
+**Installing a pack:**
+
+1. Put the `.hts` file in `Textures/N64/` in your home folder. Create the
+   folders if they aren't there.
+2. Open [Game Settings](../emulator-settings.md) for the game. Under
+   **Core settings → GLideN64**, turn on **Use High-Res textures**.
+3. Start the game.
+
+`<NAME>` is the game's internal header name, such as `MARIOKART64` or
+`SUPER MARIO 64`, not its file name. The pack's own file name already has it
+right.
+
+!!! tip "Keep packs on internal storage"
+    The game reads a pack in small pieces as scenes need them. An SD card is
+    slow at that, and the game stutters; internal storage keeps it smooth.
+    Your ROMs can stay on the SD card: only the pack needs to move.
+
+??? info "More detail"
+    - **Beside the game, as on the handheld.** A pack also loads from a
+      `.cache/` folder next to the game, such as
+      `Roms/Nintendo 64 (N64)/.cache/MARIOKART64_HIRESTEXTURES.hts`. When
+      both places have the pack, the one in `Textures/N64/` is used.
+    - **Without All files access** the app reads the pack through the folders
+      you picked, so packs work on every install.
+    - **Memory.** **Max High-Res VRAM Limit** caps the memory the textures
+      use. **Auto** picks by the device: 200 MB with up to 3 GB of RAM,
+      500 MB with up to 6 GB, and no limit above that. Over the cap, the
+      textures used least recently are dropped and read again when needed.
+    - **Pack instructions from other emulators.** Only **Use High-Res
+      textures** needs setting; the storage options they mention are already
+      set. Ignore their PC cache paths.
+    - The app never writes to a pack.
+
 ## Multiplayer
 
 Up to four players can play, each on their own controller; see
