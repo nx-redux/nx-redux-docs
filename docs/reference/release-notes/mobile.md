@@ -10,7 +10,7 @@ Android handhelds. Download the APK from the
 
 ## v0.5.0
 
-*26 October 2026*
+*31 October 2026*
 
 The picture and the on-screen pad are now laid out together. In landscape the
 pad sits beside the game instead of over its edges, and pixel-art consoles
