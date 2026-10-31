@@ -18,7 +18,10 @@ get the largest whole-number size that fits. DS and 3DS games get new
 layouts, a half-folded layout on foldables, and a **Mic** for games that ask
 you to blow or shout. The main menu moves its tabs to the bottom, colour now
 marks the selected game in every layout, and Settings is rebuilt as a quiet
-block of words. And the PlayStation 2 joins the bundled consoles.
+block of words; the in-game menu and every pop-up follow its look. The
+PlayStation 2 joins the bundled consoles, N64 games take high-resolution
+texture packs, and your own shaders go in the home folder. Games now run
+in a process of their own, so quitting one frees everything it used.
 
 ### New features
 
@@ -73,6 +76,35 @@ block of words. And the PlayStation 2 joins the bundled consoles.
   selected game is in full colour with its name in your accent, and the
   others are grey and dimmed. No ring goes round the selection. See
   [Main Menu & Home](../../mobile/main-menu.md#home).
+- **N64 high-resolution texture packs.** GLideN64's ready-made cache,
+  `<NAME>_HIRESTEXTURES.hts`, loads from `Textures/N64/` in the home folder
+  or from `.cache/` beside the game; `Textures/N64/` wins when both have it,
+  so a pack can sit on internal storage while the games stay on an SD card.
+  Turn on **Use High-Res textures** in the game's Core Options. Packs load
+  with OpenGL ES only, and PNG packs aren't supported. **Max High-Res VRAM
+  Limit** has a new **Auto** default, picked by the phone's memory. See
+  [High-resolution texture packs](../../mobile/emulators/nintendo-64.md#high-resolution-texture-packs).
+- **Your own shaders.** Put RetroArch GLSL shaders (`.glslp` presets, or a
+  bare `.glsl` in `Shaders/` or `Shaders/glsl/`) in a `Shaders/` folder in
+  the home folder, and they appear at the end of **Shaders → Shader** as
+  `User/…`. Updates never touch that folder. Prefer a shader's `.glslp`: it
+  can ask for sharp pixels, while a bare `.glsl` follows **Screen
+  Sharpness**. See [Your own shaders](../../mobile/in-game-menu.md#your-own-shaders).
+- **System buttons.** Tell NX Redux which buttons on your controller are
+  `SELECT`, `START` and `MENU`, for handhelds whose menu button sends a code
+  Android doesn't name. Setup asks when a controller is connected, a new
+  controller model is asked once, and **Tools → Settings → Controls →
+  System buttons** rebinds them. Without a `MENU`, `SELECT` + `START` opens
+  the menu. See [System buttons](../../mobile/controls-settings.md#system-buttons).
+- **Audio Resampling Quality.** A Console Settings row for every console,
+  **Low**, **Medium**, **High** (the default) or **Max**, as on the
+  handheld. Sound is now converted to the phone's rate with libsamplerate,
+  so it's cleaner than before, with no seam between buffers. See
+  [Console Settings](../../mobile/in-game-menu.md#console-settings).
+- **Most played shelf.** Home's first shelf under your pinned games holds
+  up to four games with the most play time, each showing its time. Hide it
+  in **Layouts → Home → Most played shelf**. See
+  [Shelves](../../mobile/foldables.md#shelves).
 
 ### Improvements
 
@@ -150,6 +182,48 @@ block of words. And the PlayStation 2 joins the bundled consoles.
   long name wraps onto more lines rather than running off the screen. It
   follows Android's **Remove animations** setting.
 - **Game Switcher layout** is picked from a row of choices in Layouts.
+- **Games run in their own process.** A game no longer shares the menu's
+  memory: **Quit** ends it and frees everything its core used. Home or sleep
+  leaves it paused, and picking it again brings it back at the same moment;
+  if Android reclaims it meanwhile, it resumes from its auto-save. Starting
+  another game saves and closes the paused one first.
+- **Launcher mode and Recents.** With NX Redux as the home app, Recents no
+  longer shows a card for NX Redux's home screen, and quitting a game always
+  lands back on NX Redux. See
+  [Use as home screen](../../mobile/launcher.md#use-as-home-screen).
+- **GBA clock and sound.** Pokémon Ruby, Sapphire and Emerald keep the real
+  time after a state is resumed. gpSP plays at 65536 Hz by default, and its
+  music no longer holds notes too long at 32768 Hz. GBA games start on
+  low-memory handhelds such as the AYANEO Pocket Air Mini.
+- **The in-game menu.** The first page and **Options** are lists of words
+  as in Settings, with no pills: the selected one in your accent. Actions
+  such as **Reset Parameters** and **Save Changes'** saves are words too.
+  **Quit Game** and **Reset game?** put their choices side by side, and the
+  **Shortcuts** tiles take fewer columns rather than cutting a label short.
+  See [In-game Menu](../../mobile/in-game-menu.md).
+- **Pop-ups.** Every pop-up's buttons sit inside it, side by side, with no
+  key hints under it. The controller works in it alone: it opens on its
+  first button, `Left` / `Right` move between the buttons, `A` presses the
+  lit one and `B` cancels. In **Rename**, `Down` moves from the text to
+  **OK**. The left stick works as the d-pad, also behind a text box.
+- **Setup.** Every setup step uses the Settings look: the step's question
+  as a large title, its rows, and the buttons as words at the bottom.
+  **Fetch artwork** holds the ScreenScraper sign-in and the SteamGridDB and
+  TheGamesDB keys. With **Move** on, a new ROMs folder asks before moving
+  its games, and says they are moved, not copied.
+- **Grid and Home.** Unselected tiles are brighter. Tool and collection
+  names break only between words and keep clear of the tile's edges
+  (**Cheats & / Patches**). In the Carousel's **Consoles**, **Collections**
+  and **Tools**, the centred item is in your accent. List Home puts the
+  game's facts on one line under the stats.
+- **Settings → Layouts.** The picture under the rows is no longer dimmed
+  while the list scrolls.
+- **Accents.** Orange, Violet and Pink are a little brighter, so a selected
+  name stands out from the grey ones around it.
+- **Achievements.** Running **Download all game data** again finds a game
+  that moved to another folder, such as an SD card, so its achievement line
+  comes back. See
+  [Downloading all game data](../../mobile/retroachievements.md#downloading-all-game-data).
 
 ## v0.4.0
 

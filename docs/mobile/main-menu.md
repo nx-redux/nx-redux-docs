@@ -125,8 +125,8 @@ Everything on Home in one list, with the selected game's picture behind it.
 - **The list** starts with your most recent game, tagged **Continue** (or
   **Pick a game** on a fresh install). Then come your pinned games, games
   from the [shelves](foldables.md#shelves), and your pinned tools.
-- **Tags.** A shelf game carries **New** or **Not started** after its name;
-  the selected row's tag is lit.
+- **Tags.** A shelf game carries **New** or **Not started** after its name,
+  and a **Most played** game its play time; the selected row's tag is lit.
 - **Game info** (when you last played, play time, achievements) sits under
   the stats at the top, for the selected game.
 
@@ -140,7 +140,7 @@ Everything on Home in one list, with the selected game's picture behind it.
       before the list.
     - The Continue game is selected when Home opens. Pinned games follow in
       the order you pinned them, then the shelf games, then every pinned
-      tool. Each shelf holds at most 3 games. The shelves show in List on
+      tool. Each shelf holds at most 4 games. The shelves show in List on
       any screen size.
     - Behind the selected game its picture shows, dimmed, fading out
       smoothly into the tabs. A pinned tool has no picture behind it.
@@ -164,8 +164,9 @@ Cards and squares, the selected one in colour.
 - **Pinned tools** sit beside it as square icon tiles. If they don't all
   fit, the last square is **+N**, which opens the Tools tab.
 - **Pinned games** fill the rows below, each with its name and play time.
-- **Shelves** of games to pick from come last: **New**, **Not started** and
-  **Pick up again**, each game with its shelf's badge. See
+- **Shelves** of games to pick from come last: **Most played**, **New**,
+  **Not started** and **Pick up again**, each game with its shelf's badge (a
+  **Most played** game's is its play time). See
   [Shelves](foldables.md#shelves).
 - **The selection is in colour.** The selected card is in full colour with
   its name in your accent; the other cards are grey and dimmed, their names
@@ -236,9 +237,10 @@ tools in a row of squares underneath. Swipe the carousel to scroll it.
 ??? info "More detail"
     - The stats sit on two lines at the top.
     - The Continue card has a **Continue** badge and is selected when Home
-      opens. Shelf games follow in the order **New**, **Not started**,
-      **Pick up again**, each badged with its shelf name. Each shelf holds at
-      most 3 games. The shelves show in Carousel on any screen size.
+      opens. Shelf games follow in the order **Most played**, **New**, **Not
+      started**, **Pick up again**, each badged with its shelf name (a **Most
+      played** game with its play time). Each shelf holds at most 4 games.
+      The shelves show in Carousel on any screen size.
     - Game info sits at the bottom of the selected card over a dark fade,
       like the Grid's Continue card. The cards beside it show their picture
       only.
@@ -260,8 +262,8 @@ The default layout. Just the names, big, on plain black: no art, no cards.
   stats strip. The other names are its outline, fading the further they are
   from it: below it from half strength down to nothing at the bottom of the
   screen, above it fainter still.
-- **Its tag** (**Continue**, **New**, **Not started**, **Pick up again**,
-  **Tool**) sits at the end of the selected name, as a pill in your
+- **Its tag** (**Continue**, a **Most played** game's play time, **New**,
+  **Not started**, **Pick up again**, **Tool**) sits at the end of the selected name, as a pill in your
   Secondary accent.
 
 | Button | What it does |

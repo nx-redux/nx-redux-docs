@@ -196,6 +196,7 @@ switch, choices or list as described in [Options rows](#options-rows).
 | **Fast Forward Audio** | Every console | Off, On | Off |
 | **Rewind** | Consoles whose emulator can rewind | Off, On | Off |
 | **Rewind Audio** | Consoles whose emulator can rewind | Off, On | Off |
+| **Audio Resampling Quality** | Every console | Low, Medium, High, Max | High |
 
 - **Controller Type** is the Sega pad the game sees.
 - **Controller Layout** names the letters printed on your controller. See
@@ -212,6 +213,11 @@ switch, choices or list as described in [Options rows](#options-rows).
   [rewind shortcut](controls-settings.md#shortcuts) or the panel's
   **Rewind** can go back. It uses battery, so it is off until you turn it
   on.
+- **Audio Resampling Quality** is how carefully the game's sound is
+  converted to your phone's sample rate, as on the handheld. **High** sounds
+  clean at little cost; **Max** is the cleanest and uses the most power;
+  **Low** and **Medium** are the cheapest and can sound gritty, most of all
+  on the Game Boy Advance.
 
 Settings the game reads only when it starts, such as **Graphics API**, aren't
 here. Set them in [Game Settings](emulator-settings.md#game-settings) or
@@ -224,6 +230,9 @@ here. Set them in [Game Settings](emulator-settings.md#game-settings) or
     - With **Controller Layout** set to your controller, its `A` is the
       console's `A`; the other layout gives the console's original button
       positions.
+    - **Audio Resampling Quality** changes the sound at once. While fast
+      forward plays its sound, it uses **Medium** at most, then goes back
+      to your choice.
     - The start-only settings are **Graphics API**
       ([Graphics API](emulators/index.md#graphics-api)), and the Wii's **Wii
       Screen** and **Pointer** rows. Changing them here would do nothing until
@@ -316,8 +325,53 @@ landscape pad may lie over its edges. The Nintendo DS screens have their own
 | **Shader Parameters** | The settings the active shader exposes. |
 | **Reset Parameters** | Restore the shader's default parameter values. |
 
-Shaders come bundled with the app. Unlike the handheld, you can't add your
-own.
+Shaders come bundled with the app, and you can add your own.
+
+### Your own shaders
+
+Put RetroArch GLSL shaders in a `Shaders/` folder in your
+[home folder](getting-started.md#choose-a-home-folder). They appear at the
+end of the **Shader** list, after the bundled ones, as `User/` and their
+path: `Shaders/handheld/PT_SkyWalker541.glslp` shows as
+`User/handheld/PT_SkyWalker541.glslp`.
+
+| File | Listed |
+| --- | --- |
+| A `.glslp` preset anywhere in `Shaders/` | Yes |
+| A single `.glsl` directly in `Shaders/` or in `Shaders/glsl/` | Yes |
+| A preset's own passes and textures (`.glsl`, images in its folders) | No, the preset loads them |
+| Anything else, such as a NextUI `.cfg` | No |
+
+```text
+Shaders/
+├── handheld/
+│   ├── PT_SkyWalker541.glslp
+│   └── shaders/
+│       └── PT_SkyWalker541.glsl
+└── glsl/
+    └── my-scanlines.glsl
+```
+
+The list is read again each time the in-game menu opens, so a shader you
+copy in shows without restarting the game. App updates never touch the
+folder.
+
+!!! tip "Prefer the `.glslp`"
+    A preset can ask for sharp pixels (`filter_linear0 = false`), as most
+    pixel-art shaders need. A single `.glsl` has no such setting, so it
+    follows **Screen Sharpness**; with **LINEAR** the game's pixels are
+    smoothed before the shader sees them.
+
+??? info "More detail"
+
+    - Shaders use RetroArch's GLSL format, the `shaders_glsl` set. Slang
+      (`.slangp`) and Cg presets aren't read.
+    - A user preset's passes and lookup textures are read from inside
+      `Shaders/`, relative to the preset.
+    - A shader's parameters start from its own defaults. Values you tuned on
+      another device don't come along.
+    - Without a home folder (the data still inside the app), only the bundled
+      shaders are offered.
 
 ??? info "More detail"
 

@@ -1,8 +1,8 @@
 # Controls settings
 
 **Tools → Settings → Controls** sets how strong the vibration is, whether the
-main menu has the on-screen pad, where the pad's buttons sit, and your
-in-game shortcuts. The rows
+main menu has the on-screen pad, where the pad's buttons sit, your in-game
+shortcuts, and which controller buttons are `SELECT`, `START` and `MENU`. The rows
 work as on every [Settings](settings.md#buttons) page: `Left` / `Right` step
 a value, and `A` or a tap flips a switch or picks a choice.
 
@@ -13,6 +13,7 @@ a value, and `A` or a tap flips a switch or picks a choice.
 | [**Menu pad**](#menu-pad) | On-screen pad below the main menu | On, Off | On |
 | [**Pad layout**](#pad-layout) | Move and resize the pad's buttons | Default, Custom | Default |
 | [**Shortcuts**](#shortcuts) | Controller buttons and touch buttons for fast forward, rewind, reset and Save & Quit | | |
+| [**System buttons**](#system-buttons) | Which buttons on your controller are `SELECT`, `START` and `MENU` | | |
 | [**Reset to defaults**](#reset-to-defaults) | Puts this page back to its defaults | | |
 
 ![Settings, with Controls open beside the sections: Pad vibration Light, Game rumble Medium, Menu pad On, Pad layout Default, Shortcuts and Reset to defaults](../assets/screenshots/mobile/settings-controls.webp){ .nx-wide }
@@ -170,6 +171,46 @@ Move them with the other buttons in [Pad layout](#pad-layout).
 
 Sets every shortcut to **None** and takes both touch buttons off the pad.
 With no controller connected, it still clears the hidden shortcut rows.
+
+## System buttons
+
+Which buttons on your controller are `SELECT`, `START` and `MENU`. Most
+controllers need nothing here. Some handhelds' menu button sends a code
+Android doesn't name, such as the button under the logo on the AYANEO
+Pocket Air Mini, so NX Redux never sees a `MENU`. Pick the button to use
+for each, and it then acts only as that, in the menu and in games.
+
+The page shows the controller you pressed last, with a row for each
+button:
+
+| Row | Value |
+| --- | --- |
+| **SELECT**, **START**, **MENU** | **Standard** (the button that sends it), or the button you picked |
+| **Reset to defaults** | Puts this controller's three buttons back to **Standard** |
+
+Select a row and press `A`, then press the button to use. `B` or Back
+cancels. A button another row already had swaps with this one. Each
+controller model keeps its own buttons. With no controller connected, the
+page says to connect one.
+
+Setup asks for these when a controller is connected, and the page opens by
+itself over the main menu the first time a new controller model is used:
+
+1. Press `SELECT`, `START` and `MENU`. Each ticks off once it's recognised;
+   any other button says it isn't one of the three.
+2. **I've pressed them all** then asks for each button it didn't see:
+   press the button to use for it.
+
+`SELECT` and `START` are needed. `MENU` can be skipped: without one,
+`SELECT` + `START` opens the menu.
+
+??? info "More detail"
+
+    - A button Android has no key code for is kept by its scan code and
+      shows as **Button** and a number.
+    - Some handhelds' own apps catch a button before any game does. On the
+      AYANEO Pocket Air Mini, remove AYASpace's Custom Keys action for the
+      button first, or NX Redux never receives it.
 
 ## Reset to defaults
 
