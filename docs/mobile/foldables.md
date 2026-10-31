@@ -98,29 +98,32 @@ the Continue card.
 
 ### Shelves
 
-Home shows up to three shelves of games from your library, to help you
+Home shows up to four shelves of games from your library, to help you
 pick something to play. They show on every screen size and in every Home
 layout.
 
 | Shelf | What it holds |
 | --- | --- |
+| **Most played** | The games you've played longest, most first, each with its play time. Right under your pinned games. |
 | **New** | Games the app first found in the last 30 days, newest first. |
 | **Not started** | Games you have never played. Picked again each day. |
 | **Pick up again** | Games you last played more than 14 days ago, most played first. |
 
-[Layouts](layouts.md) can hide the **New** and **Not started** shelves, each
-with its own row in **Layouts → Home**. **Pick up again** always shows when
-it has games.
+[Layouts](layouts.md) can hide the **Most played**, **New** and **Not
+started** shelves, each with its own row in **Layouts → Home**. **Pick up
+again** always shows when it has games.
 
 ??? info "More detail"
     - Shelves show in portrait and landscape alike. Each shelf shows only
-      when it has games, and a game is never on two shelves. A shelf holds
-      at most 3 games, or 4 on Grid Home in portrait and on a row of four.
+      when it has games, and a game is never on two shelves, the shelves
+      filling in the order of the table. A shelf holds at most 4 games; Grid
+      Home in landscape shows as many whole rows as fit within that.
     - Each shelf has its name as a label above it; on Carousel and List Home
-      each game wears it as a badge or tag instead.
+      each game wears it as a badge or tag instead. A **Most played** game's
+      badge is its play time.
     - The game on the Continue card, your pinned games, Unassigned games and
       Android games are left off the shelves.
-    - A hidden shelf's games don't move to another shelf.
+    - A hidden shelf takes no games, so the shelves after it can show them.
 
 ## Two-pane screens
 

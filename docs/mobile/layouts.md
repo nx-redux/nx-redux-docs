@@ -51,6 +51,7 @@ sideways). The picture changes as you change a row.
 | [**Visible**](#showing-and-hiding-tabs) | Show, Hide | Show | Always |
 | [**New shelf**](foldables.md#shelves) | Show, Hide | Show | While Home is visible |
 | [**Not started shelf**](foldables.md#shelves) | Show, Hide | Show | While Home is visible |
+| [**Most played shelf**](foldables.md#shelves) | Show, Hide | Show | While Home is visible |
 | [**Stats**](#home-stats) | Show, Hide | Show | While Home is visible |
 | **Layout** | List, Grid, Carousel, Minimal | Minimal | While Home is visible |
 
