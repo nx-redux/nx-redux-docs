@@ -23,8 +23,8 @@ live preview on the right, with its resolution and file size (for example
 - `A` opens a folder, or opens an image fullscreen.
 - `B` goes up one folder. At the `Images` root, it exits the app.
 
-Supported formats: `png`, `jpg`, `jpeg`, `bmp`, `gif` (animated GIFs show
-their first frame only).
+Supported formats: `png`, `jpg`, `jpeg`, `bmp`, `gif`, `webp` (animated GIFs
+and WebPs show their first frame only).
 
 ## Viewing
 
@@ -68,6 +68,7 @@ for screenshots of games you play holding the device sideways.
   screenshots are re-encoded at the same high quality the OSD uses, so there
   is a very small quality loss; animated GIFs keep all their frames.
 - `png` files are re-saved without any loss.
+- `webp` files can't be rotated: `Y` shows "WebP images can't be rotated".
 - If saving fails, a "Couldn't save rotation" message appears and the
   original file is left as it was.
 
