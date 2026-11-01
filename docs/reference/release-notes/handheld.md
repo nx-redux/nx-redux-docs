@@ -9,6 +9,115 @@ for every device from the
 [releases page](https://github.com/nx-redux/nx-handheld/releases), or
 update on the device from [Settings → About](../../handheld/settings/about.md).
 
+## v2.5.0
+
+*1 November 2026*
+
+The main menu gets a new look: the tabs move to the bottom bar, unselected
+art turns grey so the selection stands out in your Main color, and lists fade
+at their edges instead of showing scroll arrows. PICO-8 can run on your own
+official PICO-8, with Splore to browse and download carts. Game Boy Advance
+music plays at the right speed, and a Pokémon game's clock keeps real time
+across resumes.
+
+### New features
+
+- **New main menu look.**
+  - The tabs (HOME, CONSOLES, …) move to the bottom bar. Switch them with
+    `L1`/`R1`, with `LEFT`/`RIGHT` in vertical layouts, or by moving past the
+    last item in horizontal ones. On the right, **SELECT RECENT** and
+    **START SEARCH** show when there's room, each by its toggle.
+  - Home's play stats move into the top bar beside the status icons.
+  - Unselected box art and screenshots are grey, and the selected logo, tool,
+    collection or name is in your Main color. In a Carousel the centred
+    console, collection or tool turns the Main color as it slides in.
+  - The Grid scrolls up and down instead of sideways.
+  - **List** and **Minimal** no longer show scroll arrows: the rows fade out at
+    an edge while there are more past it, and the selection always keeps one
+    row clear of the fade.
+  - Lists are centred between the top and bottom bars. The selected pill
+    starts at the screen's left edge, and the row text, page title, first
+    button hint, tab labels and Home's stats all start in line with it, in
+    the main menu, Settings and the apps.
+  - See [Main Menu & Home](../../handheld/guide/main-menu.md) and
+    [Layouts](../../handheld/settings/layouts.md).
+- **Native PICO-8.** Put your own official PICO-8 (`pico8_64` and `pico8.dat`
+  from the Raspberry Pi download) in `Bios/P8`, and PICO-8 carts run on it
+  instead of fake08, with the in-game menu, save states, the Game Switcher and
+  resume. **Xtras → Splore** installs Splore, PICO-8's cart browser; carts you
+  favourite there are copied into your PICO-8 folder. Carts with no artwork
+  show their cartridge and label. Without the PICO-8 files nothing changes.
+  See [PICO-8](../../handheld/emulators/other-systems.md#pico-8).
+- **WebP images.** Box art, screenshots and other game art can be `.webp`
+  files, used when there's no `.png` or `.jpg` of the same name, on Home, the
+  game lists, the Game Switcher, Game Tracker and the RetroAchievements games
+  list. The Image Viewer opens them too (an animated WebP shows its first
+  frame). See [Artwork Manager](../../handheld/apps/artwork-manager.md) and
+  [Image Viewer](../../handheld/apps/image-viewer.md).
+- **Full setting descriptions.** When a Settings description doesn't fit its
+  two lines, `Y` **MORE** opens it in full.
+
+### Changes
+
+- **Grid selection ring:** the Main color ring around the selected Grid item
+  is gone. To bring it back, turn on **Settings → Layouts → Grid selection
+  ring** (off by default).
+- **Default layouts:** new installs, and **Layouts → Reset to defaults**, start
+  with Home on Minimal, Consoles on Carousel, Collections on Minimal, Tools on
+  Grid and game lists on Carousel. Layouts you have already set are kept.
+- **Layouts toggles:** **Extra info** covers play time and achievements,
+  **Top bar** everything in the top row except the status icons, and
+  **Bottom bar** the tab row and the button hints.
+- **Button hints:** when there are too many hints to fit, `B` BACK and `A`
+  go first, since they always mean back and confirm, then `START`, `SELECT`,
+  `MENU`, `Y` and `X`. With the bottom bar hidden, a game's play time and
+  achievements line up on the left with the list.
+- **Reset to defaults:** every Settings page asks before resetting.
+- **Home:** Minimal no longer tags pinned tools "Tool", and in the List the
+  Continue tag follows the game's name.
+- **Home on the Bricks:** the Brick's Home List shows six rows instead of
+  five, about as far apart as in the main menu, and on both Bricks the rows
+  sit a little lower.
+- **Backdrop:** the picture behind the row is dimmer, so the names read
+  better.
+- **Music Player:** while music plays, `SELECT` turns the screen off from any
+  page (albums, playlists, radio, podcasts, settings…), not only Now Playing,
+  and you're back on the same page when it wakes. After leaving the Music
+  Player with `START`, a tap of the power button in the main menu turns the
+  screen off and keeps the music playing instead of putting the device to
+  sleep; tap it again to turn the screen back on. See
+  [Music Player](../../handheld/apps/music-player.md).
+- **Multi-disc games:** the in-game menu's disc picker reads `< Disc N >` when
+  selected, to show that `LEFT`/`RIGHT` changes the disc. See
+  [Multi-disc games](../../handheld/guide/main-menu.md#multi-disc-games).
+
+### Fixes
+
+- **Game Boy Advance sound:** with gpSP, music notes and fades played at half
+  speed. gpSP now uses a 65536 Hz sound rate by default; a rate you saved
+  for a console or game still wins.
+- **Game Boy Advance clock:** games with a cartridge clock (Pokémon
+  Ruby/Sapphire/Emerald and ROM hacks such as Unbound) lost the time the
+  device was off whenever they resumed. The clock now follows the device's
+  time; **Emulator Options → RTC Time Source** switches it back.
+- **Netplay:** joining a host that used another GBA link mode saved that mode
+  into your own GBA settings. You now use the host's mode for that session
+  only.
+- **PortMaster:** right after PortMaster updated itself, every port install
+  in that session failed.
+- **Mina the Hollower:** its audio crackled constantly on the built-in
+  speaker.
+- **PICO-8 and RetroAchievements:** every PICO-8 launch tried to load the
+  cart as a Sega Pico game and logged an error. PICO-8 now simply has no
+  achievements.
+- **On-Screen Display:** with the OSD open over a game, the game kept running
+  underneath, and on heavy systems like PSP the sound slowed down and
+  stuttered. The game now pauses while the OSD is open and carries on when it
+  closes; during a netplay or link session it keeps running. See
+  [On-Screen Display](../../handheld/guide/osd.md).
+- **Lynx and Atari 5200:** with frame blending on, the first frame after
+  resuming a game could blend with black or an old frame.
+
 ## v2.4.0
 
 *24 October 2026 · v2.4.1 on 25 October · v2.4.2 on 26 October*

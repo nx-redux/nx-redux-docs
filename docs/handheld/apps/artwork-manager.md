@@ -136,8 +136,8 @@ mix) is saved too, for the [List art](../settings/layouts.md#list-art) and
     picture) is used when a game has no screenshot, and no Artwork Manager
     action changes it.
 
-    A `.jpg` or `.jpeg` with the same name is read when the `.png` is
-    missing (for example art copied from the companion app), in every
+    A `.jpg`, `.jpeg` or `.webp` with the same name is read when the `.png`
+    is missing (for example art copied from the companion app), in every
     `.media` folder, and counts as art in the Library.
 
 !!! note "Art fetched by older releases"
