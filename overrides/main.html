@@ -22,6 +22,10 @@
   <meta property="og:site_name" content="{{ config.site_name }}">
   <meta property="og:title" content="{{ og_title | striptags }}">
   <meta property="og:description" content="{{ og_description }}">
+  <meta property="og:image" content="{{ config.site_url }}assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="NX Redux logo">
   {% if page and page.canonical_url %}
     <meta property="og:url" content="{{ page.canonical_url }}">
   {% endif %}
