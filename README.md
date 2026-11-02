@@ -1,7 +1,7 @@
 # NX Redux Docs
 
 User documentation website for [NX Redux](https://github.com/nx-redux/nx-handheld),
-custom firmware for TrimUI retro handheld devices.
+custom firmware for TrimUI retro handheld devices, and its Android app.
 
 Built with [MkDocs](https://www.mkdocs.org/) and
 [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/).
