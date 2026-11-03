@@ -132,7 +132,8 @@ button hints across the app. First-run setup asks it first. See
 
 The app fetches it. Open **Tools → Artwork** and pick **Fetch missing art**,
 or **Fetch by console**. To fetch one game, press `MENU` on it and pick
-**Fetch art**. See [Artwork](../../mobile/artwork.md).
+**Fetch art**, or **Change art** once it has art, to pick the pictures you
+like. See [Artwork](../../mobile/artwork.md).
 
 ??? info "More detail"
     The art comes from ScreenScraper, libretro-thumbnails, TheGamesDB and

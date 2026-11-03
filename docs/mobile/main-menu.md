@@ -684,6 +684,7 @@ where the game is listed.
 | **Game Settings** | This game's own emulator settings. See [Emulator Settings](emulator-settings.md) |
 | **Netplay** | Play the game with another device. See [Netplay](netplay.md) |
 | **Fetch art** | Download art for this game. See [Artwork](artwork.md) |
+| **Change art** | Pick this game's pictures from every source, in place of **Fetch art** once the game has art. See [Change art](artwork.md#change-art) |
 | **Emulator** | Pick which emulator runs this game. See [Emulators](emulators/index.md) |
 | **Remove from Collection** | Take the game out of the collection you are in |
 | **Achievements** | Open the [achievements panel](#achievements-panel). Shown last, only while its icon is hidden |
@@ -698,15 +699,15 @@ where the game is listed.
 ??? info "More detail: which items show where"
     | List | Items |
     | --- | --- |
-    | A console | **Play from start** when the game has an auto-save, then **Pin Item**, **Hide Game**, **Rename Rom**, **Add to Collection**, **Game Settings**, **Netplay**, **Fetch art**, and **Emulator** on systems with more than one emulator |
+    | A console | **Play from start** when the game has an auto-save, then **Pin Item**, **Hide Game**, **Rename Rom**, **Add to Collection**, **Game Settings**, **Netplay**, **Fetch art** (or **Change art**), and **Emulator** on systems with more than one emulator |
     | A collection | The same, with **Remove from Collection** at the end |
     | [Search](#search) results | The same as a console, without **Emulator** |
     | Unassigned games | **Hide Game**, **Rename Rom**, **Console** |
-    | The Android console | **Pin Item** / **Unpin Item** only |
+    | The Android console | **Pin Item** / **Unpin Item**, then **Fetch art** or **Change art** |
 
     - **Fetch art** shows only for systems the art sources know, and only
-      when the game's art is incomplete, or when **Artwork → Replace existing
-      art** is on.
+      for a game with no art yet. A game that has art shows **Change art**
+      instead. The Android console's menu has them too.
     - **Netplay** shows only for systems that have [netplay](netplay.md).
       When the `Y` **Netplay** hint is not on screen (touch only, Button
       hints hidden, or **Netplay hint** hidden in
