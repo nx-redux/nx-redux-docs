@@ -102,7 +102,7 @@ On touch, **Pause**, **Cancel** and **Done** are buttons above the list.
     | --- | --- |
     | **Waiting** | Queued |
     | **Searching** / **Downloading** | Being fetched now |
-    | **Done** | Box art and a screenshot were found, followed by the sources used |
+    | **Done** | Box art and a screenshot were found, followed by the sources used. It adds **no screenshot** when the screenshot is a SteamGridDB hero, not a real one |
     | **Partial** | Only part was found, followed by **no box**, **no screenshot** or, with **Generate mix** on, **no mix** |
     | **Not found** | No source had art for it |
     | **Skipped** | It already has art, or no source covers its console |
@@ -172,7 +172,7 @@ already knows about.
 The panel has one section for each kind of art, in this order. A section with
 nothing to pick is left out, and the picture in use is marked.
 
-| Section | Replaces | Pictures come from |
+| Section | Saved to | Pictures come from |
 | --- | --- | --- |
 | **Screenshot** | `.media/screenshot/` | ScreenScraper, TheGamesDB, libretro-thumbnails, SteamGridDB heroes |
 | **2D box** | `.media/boxart2d/` | ScreenScraper, TheGamesDB, libretro-thumbnails, SteamGridDB grids |
@@ -227,10 +227,11 @@ pictures come from ScreenScraper and SteamGridDB, searched by the app's name.
 
 ## Settings
 
-**Artwork → Settings** holds what to fetch, your accounts and keys,
-Clear unused images and Reset artwork, on one page. Its rows work like [Settings](settings.md#buttons): the
-On/Off rows are switches, and the ? icon or `X` **Info** shows a row's full
-description.
+**Artwork → Settings** holds what to fetch, your accounts and keys, Clear
+unused images and Reset artwork, on one page, in groups: **Art to fetch**,
+**Accounts**, then **Clear unused images** and **Reset artwork**. Its rows
+work like [Settings](settings.md#buttons): the On/Off rows are switches, and
+the ? icon or `X` **Info** shows a row's full description.
 
 ![Artwork → Settings beside the Artwork page: the Art to fetch group with Replace existing art, 2D box art, Wheel and Generate mix as switches, then the Accounts group with ScreenScraper login and the SteamGridDB API key](../assets/screenshots/mobile/artwork-settings.webp){ .nx-wide }
 
@@ -395,7 +396,7 @@ another kind when that one is missing.
     | **[Game Tracker](game-tracker.md)** | The 3D box art, then the 2D cover, then the screenshot |
 
     - Android games keep their screenshot as the last fallback for a box and
-      the game panel header.
+      the game panel header. They have no 3D box.
 
 ### Abstract art
 
@@ -431,4 +432,5 @@ use, such as **Source: ScreenScraper - libretro-thumbnails - TheGamesDB**.
 - [libretro-thumbnails](https://github.com/libretro-thumbnails/libretro-thumbnails):
   box art and screenshots, from the libretro project
 - [TheGamesDB](https://thegamesdb.net/): box art, screenshots and logos
-- [SteamGridDB](https://www.steamgriddb.com/): grids (as 2D box art), heroes (as screenshots) and logos
+- [SteamGridDB](https://www.steamgriddb.com/): grids (as 2D box art),
+  heroes (as screenshots) and logos
