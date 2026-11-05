@@ -35,10 +35,14 @@ Saves go in `Saves/<tag>/`, such as `Saves/FC/`.
 
 ### NES and Famicom Disk System
 
+When a Famicom Disk System game asks for the other side, press `L1` once. On
+the touch skin the **DISK** button does the same.
+
 | Control | What it does |
 | --- | --- |
-| `L1` | Flip the disk to its other side (Famicom Disk System) |
-| `R1` | Insert or eject the disk (Famicom Disk System) |
+| `L1` | Turn the disk over (Famicom Disk System). One press ejects the disk and puts the next side in about a second later; a message shows the side. With the drive empty, it puts the next side in. |
+| `R1` | Insert or eject the disk by hand (Famicom Disk System) |
+| `X`, `Y` | Turbo `A`, turbo `B`. On by default; turn them off with **Turbo Enable** in the core options. |
 | `R2` | Insert a coin (Vs. System games) |
 
 ### Neo Geo Pocket / Color
