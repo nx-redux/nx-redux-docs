@@ -4,11 +4,11 @@
 through your whole library in the background, and you can keep playing while
 it runs.
 
-![Tools → Artwork: 27 games · 26 with art · 1 missing and the source line above a small Artwork label, with Fetch missing art, Fetch by console and Settings as large words below it](../assets/screenshots/mobile/artwork.webp){ .nx-wide }
+![Tools → Artwork: a small Artwork label with Fetch missing art, Fetch by console and Settings as large words at the bottom left](../assets/screenshots/mobile/artwork.webp){ .nx-wide }
 
 The page opens with the actions as large words at the bottom left, under a
-small **Artwork** label. Above that label sit your counts, such as **217
-games · 148 with art · 69 missing**, and the fetch and source lines. `A` opens
+small **Artwork** label. While a fetch runs or is paused, a line at the top
+of the page shows how far it is. `A` opens
 a word and `B` goes back to Tools. The words are:
 
 | Row | What it does |
@@ -21,9 +21,7 @@ a word and `B` goes back to Tools. The words are:
 
 ??? info "More detail"
 
-    - While a fetch runs or is paused, a line shows how far it is, and a
-      source that stopped gets a note. The last line names the sources in
-      use, such as **Source: ScreenScraper - libretro-thumbnails**.
+    - A source that stopped gets a note at the top of the page.
     - Unassigned games, and folders whose tag no art source knows, are left
       out of the counts and are never fetched.
 
@@ -448,8 +446,7 @@ fetched. Pick a 2D box or a wheel in [Change art](#android-games). See [Android 
 
 ## Credits
 
-Art comes from these sources. The Artwork page's last line names the ones in
-use, such as **Source: ScreenScraper - libretro-thumbnails - TheGamesDB**.
+Art comes from these sources.
 
 - [ScreenScraper](https://www.screenscraper.fr/): box art, screenshots and
   wheels
