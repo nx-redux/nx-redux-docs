@@ -141,9 +141,11 @@ nothing. See
 
 ??? info "More detail"
 
-    The Artwork page stays on the left. Tap a word there to open it
-    instead. **Reset artwork** opens in the right frame with **Settings ›**
-    lit on the left.
+    - A tap on a row of the preview opens that page on the row.
+    - With a page open, the Artwork words stay on the left. A tap on one
+      opens its page instead.
+    - **Reset artwork** opens in the right frame with **Settings ›** lit on
+      the left.
 
 ### One game
 
@@ -332,6 +334,9 @@ either yet.
       ScreenScraper is paused or out of quota, it waits.
     - A game needs a screenshot or a box for a built mix. A wheel alone makes
       none. **Wheel** is never locked: it stays your own choice.
+    - Turning **Mix** on no longer turns **Wheel** on. If you had
+      **Generate mix** on, **Wheel** is switched on once for you, so nothing
+      changes until you turn it off.
     - With **Mix** on, a game counts as missing art until it has its mix. A
       downloaded or picked mix is never rebuilt. When a later fetch brings a
       new screenshot, box or wheel, an app-made mix is made again, and
