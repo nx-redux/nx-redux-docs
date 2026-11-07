@@ -24,6 +24,12 @@ Installed ports land in the `Roms/Ports (PORTS)` folder. They show up under
 Some ports need data files from the original game. Each port's details page
 says what it needs.
 
+## Quitting a port
+
+Press `SELECT` + `START` to quit a port and go back to the main menu
+(`MENU` + `START` works too). A few ports also have a Quit option in their
+own menus.
+
 ## Battery and performance
 
 Each port can have its own CPU cores, CPU speed and GPU speed: choose
