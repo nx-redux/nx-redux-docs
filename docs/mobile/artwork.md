@@ -4,24 +4,24 @@
 through your whole library in the background, and you can keep playing while
 it runs.
 
-![Tools → Artwork: 27 games · 26 with art · 1 missing, the source line, then Fetch missing art, Fetch by console and Settings](../assets/screenshots/mobile/artwork.webp){ .nx-wide }
+![Tools → Artwork: a small Artwork label with Fetch missing art, Fetch by console and Settings as large words at the bottom left](../assets/screenshots/mobile/artwork.webp){ .nx-wide }
 
-The page opens with your counts, such as **217 games · 148 with art · 69
-missing**, and these rows:
+The page opens with the actions as large words at the bottom left, under a
+small **Artwork** label. While a fetch runs or is paused, a line at the top
+of the page shows how far it is. `A` opens
+a word and `B` goes back to Tools. The words are:
 
 | Row | What it does |
 | --- | --- |
 | **Resume art fetch (d/t)** | Carries on a paused fetch. Only shown while one is paused. |
 | **Fetch missing art** | Fetches art for every game that has none. Reads **Fetch all art** when **Replace existing art** is on. |
 | **Fetch by console** | Fetches art for one console. |
-| **Progress** | Shows the current or last fetch. Only shown once a fetch has run, until you choose **Done** there. |
+| **Progress** | Shows the current or last fetch. Only shown while there is a fetch, until you choose **Done** there. |
 | **Settings** | What to fetch, your ScreenScraper login, the SteamGridDB and TheGamesDB keys, and **Reset artwork**. See [Settings](#settings). |
 
 ??? info "More detail"
 
-    - While a fetch runs or is paused, a line shows how far it is, and a
-      source that stopped gets a note. The last line names the sources in
-      use, such as **Source: ScreenScraper - libretro-thumbnails**.
+    - A source that stopped gets a note at the top of the page.
     - Unassigned games, and folders whose tag no art source knows, are left
       out of the counts and are never fetched.
 
@@ -39,18 +39,17 @@ needs. A game is only asked for what it lacks.
 
     | Art | Sources, in order |
     | --- | --- |
-    | **Box art** | ScreenScraper 3D box, ScreenScraper 2D cover, libretro-thumbnails, TheGamesDB, then a SteamGridDB grid |
-    | **Screenshot** | ScreenScraper, libretro-thumbnails, then TheGamesDB |
-    | **2D box art** (optional) | ScreenScraper, libretro-thumbnails, then TheGamesDB |
+    | **Box art** (3D box) | ScreenScraper 3D box |
+    | **2D box art** | ScreenScraper, libretro-thumbnails, TheGamesDB, then a SteamGridDB grid |
+    | **Screenshot** | ScreenScraper, libretro-thumbnails, TheGamesDB, then a SteamGridDB hero |
     | **Wheel** (optional) | ScreenScraper, SteamGridDB, then TheGamesDB |
 
-    - A game with box art and a screenshot is skipped, unless **Replace
+    - A game with its box art and a screenshot is skipped, unless **Replace
       existing art** is on.
-    - When no source has a screenshot, SteamGridDB stands in: a wide **hero**
-      image for landscape backgrounds, and a tall **grid** image for portrait
-      ones.
-    - 2D box art and the wheel are only fetched when you turn them on in
-      [Settings](#settings).
+    - SteamGridDB fills the gaps. A tall **grid** image is saved as 2D box
+      art and a wide **hero** image as the screenshot, each only when that
+      picture is still missing.
+    - The wheel is only fetched when you turn it on in [Settings](#settings).
     - When a source runs out of requests or stops answering, the fetch carries
       on with the others. The Artwork page shows a note for the source that
       stopped.
@@ -103,8 +102,8 @@ On touch, **Pause**, **Cancel** and **Done** are buttons above the list.
     | --- | --- |
     | **Waiting** | Queued |
     | **Searching** / **Downloading** | Being fetched now |
-    | **Done** | Box art and a screenshot were found, followed by the sources used. It adds **no screenshot** when a SteamGridDB hero stands in for the screenshot |
-    | **Partial** | Only part was found, followed by **no box**, **no screenshot** or, with **Generate mix** on, **no mix** |
+    | **Done** | Box art and a screenshot were found, followed by the sources used. It adds **no screenshot** when the screenshot is a SteamGridDB hero, not a real one |
+    | **Partial** | Only part was found, followed by **no box**, **no screenshot** or, with **Mix** on, **no mix** |
     | **Not found** | No source had art for it |
     | **Skipped** | It already has art, or no source covers its console |
     | **Error** | Something went wrong, followed by the reason |
@@ -132,15 +131,19 @@ on the Artwork page carries on from where it stopped.
 
 ### On a wide screen
 
-In landscape on a wide screen, such as an unfolded Fold, the pages below
-Artwork open beside it. See
+In landscape on a wide screen, such as an unfolded Fold, Artwork works like
+[Settings](settings.md): the page of the highlighted word shows on the right.
+**Fetch missing art** and **Resume art fetch** have no page, so they show
+nothing. See
 [Foldables & Large Screens](foldables.md#two-pane-screens).
 
 ??? info "More detail"
 
-    The Artwork page stays on the left, dimmed, with the row you opened lit.
-    Tap a row there to open it instead. **Reset artwork** opens beside
-    **Settings** the same way.
+    - A tap on a row of the preview opens that page on the row.
+    - With a page open, the Artwork words stay on the left. A tap on one
+      opens its page instead.
+    - **Reset artwork** opens in the right frame with **Settings ›** lit on
+      the left.
 
 ### One game
 
@@ -148,44 +151,123 @@ Open a game's context menu with `MENU` in a game list, and choose **Fetch
 art**. The app fetches that game straight away. `B` cancels. See
 [Context menus](main-menu.md#context-menus) for the rest of the menu.
 
+A game that already has art shows **Change art** there instead. See
+[Change art](#change-art).
+
 ??? info "More detail"
 
     - While it works, **Fetching art…** shows. It then says **Art fetched**,
       **No art found**, or **Already has art (Replace existing art is off)**.
-    - **Fetch art** is only offered for games in a console an art source
-      knows, and only when the game's art is incomplete or **Replace existing
-      art** is on.
+    - **Fetch art** and **Change art** are only offered for games in a console
+      an art source knows.
+
+## Change art
+
+**Fetch art** picks one picture for each kind of art and stops. **Change art**
+lets you look at what every source has for a game and choose the pictures you
+like. It is in a game's context menu (`MENU`), in the same place as **Fetch
+art**: a game with no art yet shows **Fetch art**, and a game that has art
+shows **Change art**.
+
+Both open a panel on the right. **Fetch art** fetches the game first, then
+shows what it found. **Change art** opens straight on the pictures the app
+already knows about.
+
+The panel has one section for each kind of art, in this order. A section with
+nothing to pick is left out, and the picture in use is marked.
+
+| Section | Saved to | Pictures come from |
+| --- | --- | --- |
+| **Screenshot** | `.media/screenshot/` | ScreenScraper, TheGamesDB, libretro-thumbnails, SteamGridDB heroes |
+| **2D box** | `.media/boxart2d/` | ScreenScraper, TheGamesDB, libretro-thumbnails, SteamGridDB grids |
+| **3D box** | `.media/boxart/` | ScreenScraper |
+| **Wheel** | `.media/wheel/` | ScreenScraper, TheGamesDB, SteamGridDB logos |
+| **Mix** | `.media/mix/` | ScreenScraper, or the one the app built |
+
+Choose a picture to use it. It replaces the file in that kind's folder, and
+you can pick in several sections at once. **Search again**, at the end, asks
+the sources for more pictures.
+
+??? info "More detail: small previews, and picks that stay"
+
+    - The panel shows small previews. The full picture is only downloaded
+      when you pick it. libretro-thumbnails has no small version, so its
+      preview is the full picture.
+    - The app remembers the links, so opening **Change art** again does not
+      ask the sources again. **Clear unused images** deletes the previews.
+    - ScreenScraper offers each picture for every region, and they all show.
+    - A picture you pick is kept. Later fetches leave it alone, even with
+      **Replace existing art** on, until you pick another one or use
+      **Reset artwork**.
+    - The panel uses **Replace existing art** for the pictures you did not
+      pick.
+
+### Which layout shows it
+
+Picking a 2D box, 3D box or wheel can leave the layout showing a different
+kind of box. The panel then asks **Show this picture?**, such as **Layouts →
+Backdrop art is set to 3D box art. Switch it to 2D box art?** Choose
+**Switch** to change that setting, or **Keep** to leave it.
+
+??? info "More detail"
+
+    - It asks about [Backdrop art](layouts.md#backdrop-art). When Backdrop art
+      already matches but [List art](layouts.md#list-art) is a different box
+      kind, it asks about List art instead. When both differ, one answer
+      switches both.
+    - It does not ask when the setting already matches, or when List art is
+      Screenshot, Mix or None.
+    - Picking a mix asks about List art only: when List art isn't Mix, it
+      asks to switch List art to Mix.
+
+### Android games
+
+Games in the Android console have the same menu item and panel. Their
+sections are **Screenshot**, **2D box** and **Wheel**, with no 3D box and no
+**Mix**. The pictures come from ScreenScraper and SteamGridDB, searched by the
+app's name.
+
+??? info "More detail"
+
+    A picked picture is kept in the app's own storage, with the game's
+    screenshot. Until a game has a 2D box or a wheel, its screenshot is used
+    wherever a box is shown.
+
+    With **Mix** on, an Android game also gets a mix the app builds from its
+    screenshot, 2D box and wheel (never from a SteamGridDB hero). It is kept
+    with the game's other pictures, shown by
+    [List art](layouts.md#list-art) → **Mix**, and deleted by
+    [Reset artwork](#reset-artwork).
 
 ## Settings
 
-**Artwork → Settings** holds what to fetch, your accounts and keys, and
-Reset artwork, on one page, in groups: **Art to fetch**, **Accounts**, then
-**Reset artwork**. Its rows work like [Settings](settings.md#buttons): the
-On/Off rows are switches, and the ? icon or `X` **Info** shows a row's full
-description.
+**Artwork → Settings** holds what to fetch, your accounts and keys, Clear
+unused images and Reset artwork, on one page, in groups: **Art to fetch**,
+**Accounts**, then **Clear unused images** and **Reset artwork**. Its rows
+work like [Settings](settings.md#buttons): the On/Off rows are switches, and
+the ? icon or `X` **Info** shows a row's full description.
 
-![Artwork → Settings beside the Artwork page: the Art to fetch group with Replace existing art, 2D box art, Wheel and Generate mix as switches, then the Accounts group with ScreenScraper login and the SteamGridDB API key](../assets/screenshots/mobile/artwork-settings.webp){ .nx-wide }
+![Artwork → Settings beside the Artwork page: the Art to fetch group with Replace existing art, 2D box art, Wheel and a mix switch, then the Accounts group with ScreenScraper login and the SteamGridDB API key](../assets/screenshots/mobile/artwork-settings.webp){ .nx-wide }
 
 | Row | Default | What it does |
 | --- | --- | --- |
 | **Replace existing art** | Off | Fetch art again for games that already have it. **Fetch missing art** then reads **Fetch all art**. |
-| **2D box art** | Off | Also fetch the flat 2D cover, beside the 3D box. |
-| **Wheel** | Off | Also fetch the game's logo. Locked **On** while **Generate mix** is on. |
-| **Generate mix** | Off | Make the handheld's mix picture on the phone. See [Wheel and mix](#wheel-and-mix). |
+| **2D box art** | Off | Also fetch the flat 2D cover, beside the 3D box. A SteamGridDB grid is saved as 2D box art either way. |
+| **Wheel** | Off | Also fetch the game's logo. |
+| **Mix** | Off | Also fetch the handheld's mix picture, or make it on the phone. See [Wheel and mix](#wheel-and-mix). |
 | **ScreenScraper login** / **ScreenScraper logout** | — | Log in to ScreenScraper, or log out. |
-| **SteamGridDB API key** | Not set | `A` asks for the key. |
-| **TheGamesDB API key** | Not set | `A` asks for the key. |
+| **SteamGridDB API key** | Not set | `A` asks for the key. Once a key is set, the row is replaced by **Remove SteamGridDB key**. |
+| **TheGamesDB API key** | Not set | `A` asks for the key. Once a key is set, the row is replaced by **Remove TheGamesDB key**. |
+| **Clear unused images** | — | Delete the small previews kept for Change art. Shows how much space they take. |
 | **Reset artwork** | — | Delete art the app fetched. See [Reset artwork](#reset-artwork). |
 
 ??? info "More detail"
 
     - `A`, `LEFT` / `RIGHT` or a tap on the row switch the On/Off rows.
-    - While **Generate mix** is on, **Wheel** is dimmed and reads **Needed by
-      Generate mix**.
     - Once logged in, the ScreenScraper row shows today's requests under its
       name, such as `312 / 20,000 today`.
-    - The key rows read **Set** or **Not set**. **Remove SteamGridDB key** and
-      **Remove TheGamesDB key** show once a key is set.
+    - A key row shows until its key is set; then only **Remove SteamGridDB
+      key** or **Remove TheGamesDB key** shows.
     - Once your TheGamesDB key is set, a **TheGamesDB** row shows the requests
       left under its name, such as `896 left this month`.
 
@@ -220,7 +302,16 @@ yourself stay.
 
 ??? info "More detail"
 
-    A fetch running for the same games is paused first.
+    - A fetch running for the same games is paused first.
+    - It also forgets the pictures you picked in Change art for those games,
+      along with their saved links and previews.
+
+### Clear unused images
+
+**Clear unused images** deletes the small previews that Change art keeps,
+except the pictures in use. It asks **Clear unused images?** first, and
+**Delete** removes them. Nothing you see in the menus is lost: the previews
+download again the next time you open **Change art**.
 
 ### Wheel and mix
 
@@ -232,14 +323,22 @@ either yet.
 ??? info "More detail"
 
     - The mix is 384 × 288.
-    - **Generate mix** makes the mix on the phone, the way the handheld's
-      [Artwork Manager](../handheld/apps/artwork-manager.md) does. It needs
-      the wheel, so **Wheel** stays on with it.
-    - A game needs a screenshot or a box for its mix. A wheel alone makes
-      none.
-    - With **Generate mix** on, a game counts as missing art until it has its
-      mix. When a later fetch brings a new screenshot, box or wheel, the mix
-      is made again.
+    - With **Mix** on, ScreenScraper's mix is fetched first and placed on the
+      same canvas size as the mixes the app makes. Only when ScreenScraper
+      has none does the app build one from the screenshot, box and wheel, the
+      way the handheld's
+      [Artwork Manager](../handheld/apps/artwork-manager.md) does.
+    - A game missing only its mix costs one ScreenScraper request. While
+      ScreenScraper is paused or out of quota, it waits.
+    - A game needs a screenshot or a box for a built mix. A wheel alone makes
+      none. **Wheel** is never locked: it stays your own choice.
+    - Turning **Mix** on no longer turns **Wheel** on. If you had
+      **Generate mix** on, **Wheel** is switched on once for you, so nothing
+      changes until you turn it off.
+    - With **Mix** on, a game counts as missing art until it has its mix. A
+      downloaded or picked mix is never rebuilt. When a later fetch brings a
+      new screenshot, box or wheel, an app-made mix is made again, and
+      **Replace existing art** may swap it for ScreenScraper's.
 
 ## Where art is kept
 
@@ -263,13 +362,15 @@ Roms/Game Boy Advance (GBA)/.media/screenshot/Golden Sun.png
     | Folder | Image |
     | --- | --- |
     | `.media/boxart/` | 3D box art |
-    | `.media/boxart2d/` | Flat 2D cover. An older `.media/box2d/` folder is still read. |
-    | `.media/screenshot/` | In-game screenshot |
-    | `.media/grid/` | SteamGridDB grid (tall cover) |
-    | `.media/hero/` | SteamGridDB hero (wide banner) |
+    | `.media/boxart2d/` | Flat 2D cover, including SteamGridDB grids. An older `.media/box2d/` folder is still read. |
+    | `.media/screenshot/` | In-game screenshot, including SteamGridDB heroes |
     | `.media/wheel/` | The game's logo, with **Wheel** on |
-    | `.media/mix/` | The mix, with **Generate mix** on |
+    | `.media/mix/` | The mix, with **Mix** on |
 
+    - SteamGridDB grids are saved as 2D box art and heroes as screenshots.
+      Older `grid/` and `hero/` folders are moved there once, the first time
+      the library is scanned; a file is left where it is when its new folder
+      already has one you placed yourself.
     - Each image is named after the game's file without its extension, as a
       `.png` or `.jpg`. The app uses your own images like fetched art.
     - The handheld's old untyped mix image (`.media/<game>.png`) is ignored.
@@ -283,21 +384,39 @@ Roms/Game Boy Advance (GBA)/.media/screenshot/Golden Sun.png
 
 ## Where each image shows
 
-Game tiles and list backgrounds show the screenshot. The box in Backdrop, and
-the [Game Switcher](game-switcher.md) for a game with no resume screenshot,
-show the box art. When an image is missing, the app falls back to another one.
+Backgrounds and tiles show the screenshot. Boxes show the box art that
+[Backdrop art](layouts.md#backdrop-art) picks, and the app falls back to
+another kind when that one is missing.
 
 ??? info "More detail: every place and its fallbacks"
 
+    **The screenshot only:** every full-screen background (including game
+    list backgrounds in List and Backdrop), Carousel tiles, Grid tiles and
+    Home's pinned games. Without a screenshot they show the generated
+    [abstract art](#abstract-art). A SteamGridDB hero is wide, so it is used
+    on wide tiles and landscape backgrounds, but never on a portrait
+    background.
+
+    **Boxes** follow **Layouts → Backdrop art** (3D box art, 2D box art or
+    Wheel), then fall back through 3D box, 2D box, then wheel. They are:
+
     | Place | What it shows |
     | --- | --- |
-    | **Grid and Carousel tiles**, Home's pinned games | The screenshot. Without one, the SteamGridDB hero on a wide tile or the grid on a tall one. |
-    | **Game list backgrounds** (List and Backdrop) | The screenshot. Without one, the hero in landscape or the grid in portrait. |
-    | **The box** in Backdrop | The 3D box art. Without it, the 2D cover, then the grid, drawn in a case. Without any, an empty case. |
-    | **The [Game Switcher](game-switcher.md)**, when a game has no resume screenshot | The 3D box art, then the 2D cover or the grid in a case. Without any, **No Preview**. |
-    | **Home's Continue card** | The game's last frame, then the screenshot, the hero, then the grid |
+    | **The box** in Backdrop | The box, drawn in a case. A wheel keeps its own shape. Without any, an empty case. |
+    | **List art**, with a boxed kind | The same chain, starting from the picture List art names |
+    | **The game panel** header | The same chain. Without any, the console's logo. |
+    | **The [Game Switcher](game-switcher.md)**, when a game has no resume screenshot | The same chain. Without any, **No Preview**. |
+
+    Other places:
+
+    | Place | What it shows |
+    | --- | --- |
+    | **Home's Continue card** | The game's last frame, then the screenshot |
     | **[RetroAchievements](retroachievements.md)** game list | The screenshot, then the 3D box art, then the 2D cover |
     | **[Game Tracker](game-tracker.md)** | The 3D box art, then the 2D cover, then the screenshot |
+
+    - Android games keep their screenshot as the last fallback for a box and
+      the game panel header. They have no 3D box.
 
 ### Abstract art
 
@@ -314,23 +433,25 @@ missing and is still fetched.
 
 Games in the Android console get their art here too, through **Fetch
 missing art** or **Fetch by console → Android**. Only a screenshot is
-fetched. See [Android games](launcher.md#android-games) for adding them.
+fetched. Pick a 2D box or a wheel in [Change art](#android-games). See [Android games](launcher.md#android-games) for adding them.
 
 ??? info "More detail"
 
-    - The screenshot comes from ScreenScraper only.
+    - The fetched screenshot comes from ScreenScraper only.
+    - With **Mix** on, the app also builds a mix from the screenshot. See
+      [Change art](#android-games).
     - It is kept inside the app's own storage, not in your home folder.
     - Until it has one, an Android game shows abstract art in its icon's
       colours, with the icon in the middle.
 
 ## Credits
 
-Art comes from these sources. The Artwork page's last line names the ones in
-use, such as **Source: ScreenScraper - libretro-thumbnails - TheGamesDB**.
+Art comes from these sources.
 
 - [ScreenScraper](https://www.screenscraper.fr/): box art, screenshots and
   wheels
 - [libretro-thumbnails](https://github.com/libretro-thumbnails/libretro-thumbnails):
   box art and screenshots, from the libretro project
 - [TheGamesDB](https://thegamesdb.net/): box art, screenshots and logos
-- [SteamGridDB](https://www.steamgriddb.com/): grid, hero and logo images
+- [SteamGridDB](https://www.steamgriddb.com/): grids (as 2D box art),
+  heroes (as screenshots) and logos

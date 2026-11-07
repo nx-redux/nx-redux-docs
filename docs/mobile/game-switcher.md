@@ -64,8 +64,7 @@ rows.
         1. the screenshot of the game's resume point, with any black bars
            trimmed off,
         2. its screenshot,
-        3. its hero image, then its grid image,
-        4. its generated abstract picture.
+        3. its generated abstract picture.
 
     - With no recent games, the List shows the same **No Recents** screen as
       Full screen.
@@ -73,16 +72,18 @@ rows.
 ## The picture
 
 In Full screen the picture is the game's resume point screenshot, or else its
-box art. See [Artwork](artwork.md) for where box art comes from.
+box art. The box follows **Backdrop art** in
+[Layouts](layouts.md#backdrop-art). See [Artwork](artwork.md) for where box
+art comes from.
 
 ??? info "More detail"
 
     The switcher shows the first of these it has for the game:
 
     1. the screenshot of its resume point,
-    2. its 3D box art,
-    3. its 2D cover, or else its SteamGridDB grid image, shown in a case,
-    4. **No Preview**.
+    2. the box art **Backdrop art** names, then its 3D box art, its 2D box
+       art, then its wheel, shown in a case,
+    3. **No Preview**.
 
 ## Play time and achievements
 

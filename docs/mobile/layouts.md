@@ -120,7 +120,7 @@ while **Layout** is **Grid**.
 | Row | Values | Default | Shows |
 | --- | --- | --- | --- |
 | [**List art**](#list-art) | Screenshot, Mix, 3D box art, 2D box art, Wheel, None | Screenshot | When Layout is List |
-| [**Backdrop art**](#backdrop-art) | 3D box art, 2D box art, Wheel | 3D box art | When Layout is Backdrop |
+| [**Backdrop art**](#backdrop-art) | 3D box art, 2D box art, Wheel | 3D box art | Always |
 | [**Layout options**](#layout-options-and-achievements-panel) | Show, Hide | Show | Always |
 | [**Achievements panel**](#layout-options-and-achievements-panel) | Show, Hide | Show | Always |
 | [**Alignment**](main-menu.md#game-lists-alignment) | Left, Right | Left | When Orientation is Vertical |
@@ -137,22 +137,45 @@ The picture a game list shows in the List style:
 - **None**: no picture and no background.
 
 A game without the picture you picked shows its screenshot full-screen
-instead. Mix, 2D box art and Wheel come from [Artwork](artwork.md).
+instead. Mix, 2D box art and Wheel come from [Artwork](artwork.md), and
+[Change art](artwork.md#change-art) can pick them one game at a time.
 
 ??? info "More detail"
     - With a box, the game names always stop short of it.
     - **None** applies to every List-style list below the tabs, game lists
       and collections alike.
+    - A boxed kind falls back like the Backdrop box does: see
+      [Which picture shows where](#which-picture-shows-where).
 
 ### Backdrop art
 
 The box in a Backdrop row: **3D box art** (default), **2D box art** or
 **Wheel**. The background stays the screenshot.
 
+Backdrop art also sets the box in the game panel and the
+[Game Switcher](game-switcher.md#the-picture), in every layout, so the row
+shows whatever the Layout is.
+
+When you pick a 2D box, 3D box or wheel in
+[Change art](artwork.md#which-layout-shows-it), the app asks **Show this
+picture?** and can switch this row, and **List art**, to match.
+
 ??? info "More detail"
     - A wheel keeps its own shape instead of being cut into a case.
-    - A game without the picture you picked shows its 3D box art, else a
-      placeholder box.
+    - A game without the picture you picked shows its 3D box art, then its 2D
+      box art, then its wheel, else a placeholder box.
+
+### Which picture shows where
+
+- **Backgrounds, Carousel, Grid and Home tiles:** the screenshot only. A
+  game without one shows generated abstract art.
+- **Boxes, the game panel and the Game Switcher:** the kind **Backdrop art**
+  names, then 3D box art, then 2D box art, then the wheel. **List art**'s
+  boxed kinds fall back the same way.
+- **SteamGridDB heroes** are saved as screenshots, but a hero is wide, so it
+  is never shown as a portrait background.
+
+See [Artwork](artwork.md#where-each-image-shows) for every place.
 
 ### Layout options and achievements panel
 
