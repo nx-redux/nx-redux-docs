@@ -11,7 +11,7 @@ update on the device from [Settings → About](../../handheld/settings/about.md)
 
 ## v2.5.0
 
-*1 November 2026*
+*1 November 2026 · v2.5.1 on 7 November*
 
 The main menu gets a new look: the tabs move to the bottom bar, unselected
 art turns grey so the selection stands out in your Main color, and lists fade
@@ -19,6 +19,10 @@ at their edges instead of showing scroll arrows. PICO-8 can run on your own
 official PICO-8, with Splore to browse and download carts. Game Boy Advance
 music plays at the right speed, and a Pokémon game's clock keeps real time
 across resumes.
+
+Patch v2.5.1 fixes ports that wouldn't run after another firmware was used on
+the device, Cuphead's sound, and The Binding of Isaac: Rebirth's saves. Its
+changes are listed below, marked with their version.
 
 ### New features
 
@@ -117,6 +121,15 @@ across resumes.
   [On-Screen Display](../../handheld/guide/osd.md).
 - **Lynx and Atari 5200:** with frame blending on, the first frame after
   resuming a game could blend with black or an old frame.
+- **PortMaster ports:** on a device that had run another firmware (such as
+  NextUI) before, ports whose setup needs bash failed straight away, and
+  PortMaster said the patch completed without doing anything. Ports now always
+  get PortMaster's own bash. (v2.5.1)
+- **Cuphead:** its sound glitched throughout on the built-in speaker. (v2.5.1)
+- **The Binding of Isaac: Rebirth:** progress and Continue were lost every
+  time the game was launched again. (v2.5.1)
+- **Xtras:** PortMaster showed an old "Latest" version, although installing it
+  always gets the newest PortMaster. (v2.5.1)
 
 ## v2.4.0
 
