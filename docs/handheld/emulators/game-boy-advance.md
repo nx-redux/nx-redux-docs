@@ -7,7 +7,7 @@ one per game by which `Roms` folder the game is in:
 | --- | --- | --- |
 | Folder | `Roms/Game Boy Advance (GBA)/` | `Roms/Game Boy Advance (MGBA)/` |
 | Strength | Faster | More accurate, better for ROM hacks |
-| [Netplay](../netplay.md) (GBA Link) | Yes, for link and wireless adapter games | Link cable games, [USB Cable](../netplay.md#mgba-link-cable-over-usb) only |
+| [Netplay](../netplay.md) (GBA Link) | Yes, for link and wireless adapter games | Link cable games; Wi-Fi and Hotspot too for [games with a Wi-Fi mode](../netplay.md#mgba-link) |
 | BIOS | Recommended: `Bios/GBA/gba_bios.bin` | Optional: `Bios/MGBA/gba_bios.bin` |
 | [File types](rom-formats.md) | `gba` `bin` `agb` `gbz` | `gba` |
 
@@ -24,15 +24,16 @@ accuracy, so it handles games that gpSP gets wrong.
     Netplay only works with games that support the GBA **link cable or
     wireless adapter**, such as trading and versus modes. **gpSP** plays over
     USB Cable, Hotspot and WiFi, wireless adapter included. **mGBA** plays
-    link cable games over the
-    [USB Cable](../netplay.md#mgba-link-cable-over-usb) only, so for Wi-Fi
-    or the Union Room move the game to the `GBA` folder.
+    games with a Wi-Fi mode (the wireless adapter, Pokémon and Advance Wars)
+    over Wi-Fi and Hotspot too; its other link cable games, such as Mario
+    Kart: Super Circuit, link over the USB Cable only. See
+    [mGBA link](../netplay.md#mgba-link).
 
 ??? info "More detail: netplay"
     Netplay connects the GBA **link cable** (and, on gpSP, the **wireless
     adapter**), so games without link play have nothing to connect. Both
-    players must use the same folder: an mGBA device can't link with a gpSP
-    device. On gpSP the joiner plays with the host's **Link Cable
+    players must use the same folder, except that a gpSP device and an mGBA
+    device can link when their games use the same Wi-Fi mode. On gpSP the joiner plays with the host's **Link Cable
     Connectivity** setting for the session, and keeps its own for its next
     game.
 

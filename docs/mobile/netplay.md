@@ -173,8 +173,8 @@ Nintendo 64, Dreamcast, Nintendo DS, Nintendo 3DS and PSP, has no
 | PlayStation | `PSX` | SwanStation, or PCSX-ReARMed | Lockstep |
 | Arcade | `FBN` | FinalBurn Neo | Lockstep |
 | Game Boy / Game Boy Color | `GB`, `GBC` | Gambatte | **GB Link** |
-| Game Boy Advance | `GBA` | gpSP, or mGBA (USB Cable only) | **GBA Link** |
-| Game Boy Advance | `MGBA` | mGBA, or gpSP | **GBA Link**, [USB Cable only](#game-boy-advance-link) |
+| Game Boy Advance | `GBA` | gpSP, or mGBA (for games with a Wi-Fi mode, or over the USB Cable) | **GBA Link** |
+| Game Boy Advance | `MGBA` | mGBA, or gpSP | **GBA Link**, Wi-Fi for [games with a Wi-Fi mode](#game-boy-advance-link) |
 
 | Netplay type | What it means |
 | --- | --- |
@@ -217,14 +217,25 @@ If the two don't match, the joiner is told what to change.
 
 Game Boy Advance games link as two GBAs on a cable:
 
-- **Over Wi-Fi** (gpSP): the link is emulated for the games that need it,
-  and the wireless adapter works (the Union Room in FireRed, LeafGreen and
-  Emerald).
+- **Over Wi-Fi**: the link is emulated for the games that need it, and the
+  wireless adapter works (the Union Room in FireRed, LeafGreen and
+  Emerald). gpSP does this for every game with a link mode. mGBA does it
+  for games with a **Wi-Fi mode**: the wireless adapter games, the Pokémon
+  cable games (Ruby, Sapphire and so on) and Advance Wars 1 and 2.
 - **Over the USB Cable**: a real link cable. Cable link play works as on
   real hardware, such as Pokémon trades and battles, cross-game trades like
-  FireRed with Ruby, and The Legend of Zelda: Four Swords.
-- **mGBA links over the USB Cable only.** A game in the `MGBA` folder offers
-  only **USB Cable**.
+  FireRed with Ruby, and The Legend of Zelda: Four Swords. Wireless adapter
+  games use the wireless adapter on mGBA too, as on gpSP.
+- **Other cable games on mGBA** (Mario Kart: Super Circuit, Four Swords,
+  Golden Sun and so on) link over the **USB Cable only**: the Connection
+  row has just **USB Cable** for them.
+- **gpSP and mGBA can link with each other** when both games use the same
+  Wi-Fi mode, such as FireRed on one and LeafGreen on the other in the
+  Union Room.
+
+Both devices need this version of NX Redux. An older device keeps the earlier
+behaviour (mGBA over the USB Cable only), and mGBA over Wi-Fi against an older
+device is refused with a message.
 
 For a cable trade between FireRed/LeafGreen and Ruby/Sapphire, the host sets
 gpSP's **Link Cable Connectivity** core option to **Link Cable - Real (USB
@@ -237,11 +248,19 @@ only)** before hosting, in **Game Settings** or
 
 ??? info "More detail"
 
-    - A phone that can't use the cable has no `Y` **Netplay** for `MGBA`
-      games. Setting **Emulator** to **mGBA** on a `GBA` game over Wi-Fi says
-      **mGBA links over the USB cable only.**
+    - A phone that can't use the cable still has `Y` **Netplay** for `MGBA`
+      games that have a Wi-Fi mode, and plays them over Wi-Fi. For other
+      `MGBA` games it says the device has no USB cable. Setting **Emulator**
+      to **mGBA** on a `GBA` game over Wi-Fi isn't possible when the game has no
+      Wi-Fi mode.
+    - The phone works out the game's Wi-Fi mode from the ROM when the
+      **Netplay** menu opens. A game inside a `.zip` shows as having none.
     - **Link Cable Connectivity** picks the link mode, and the host's choice
       is used by both devices. Otherwise leave it on **Automatic**.
+    - mGBA has the same option, **Link Cable Connectivity**, in
+      **Settings → Emulation → Default settings → mGBA → Input & Auxiliary
+      Devices**. It applies when a game starts. Leave it on its default: in
+      a match with gpSP, or over Wi-Fi, the app sets the link mode for you.
     - It can't be changed in a match: the in-game menu has no Options during
       a match.
 

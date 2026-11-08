@@ -49,7 +49,7 @@ battles. Each player keeps their own save. See
 | --- | --- |
 | `GB`, `GBC` | Wi-Fi or the USB Cable |
 | `GBA` (gpSP) | Wi-Fi (as the wireless adapter) or the USB Cable (as a real link cable) |
-| `MGBA` (mGBA) | The USB Cable only |
+| `MGBA` (mGBA) | Wi-Fi for games with a Wi-Fi mode (wireless adapter, Pokémon, Advance Wars), otherwise the USB Cable only |
 | `SGB` | No link play |
 
 ## Cheats and achievements
