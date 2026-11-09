@@ -124,8 +124,26 @@ right.
 ## Multiplayer
 
 Up to four players can play, each on their own controller; see
-[Local Multiplayer](../multiplayer.md). [Netplay](../netplay.md) isn't
-available for the Nintendo 64 in the app yet (the handheld has it).
+[Local Multiplayer](../multiplayer.md).
+
+## Netplay
+
+[Netplay](../netplay.md) is for **2 players**, with another phone or an NX
+Redux handheld.
+
+- **Some core settings are fixed for the session.** Settings that change how
+  the game runs are set the same on both devices and show as locked. Your own
+  settings come back after the session.
+- **OpenGL ES only.** A netplay session runs on OpenGL ES whatever
+  **Graphics API** says: on Vulkan the core runs the game differently from the
+  other device.
+
+??? info "More detail"
+    - **Copy Color / Depth To RDRAM** and **Threaded renderer** are off in
+      netplay. Left on, the two devices drift apart.
+    - With those copies off, GLideN64 doesn't draw the time and lap counter in
+      Mario Kart 64's two-player split screen. A handheld on Rice draws it.
+    - 3 or 4 players over netplay isn't supported.
 
 ## Cheats and achievements
 

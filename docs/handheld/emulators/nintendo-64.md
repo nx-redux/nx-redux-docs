@@ -175,18 +175,24 @@ loads faster. The 4k textures are far bigger than these screens can show.
 
 ## Netplay
 
-Nintendo 64 [Netplay](../netplay.md) supports up to 4 players.
+Nintendo 64 [Netplay](../netplay.md) is for **2 players**. It's lockstep
+netplay, the same as the other systems, so a handheld can also play against
+NX Redux Mobile on a phone. Press `Y` on a game and host or join.
 
-!!! warning "Player count depends on the device"
-    For 3–4 players, use a **Smart Pro S** on *every* seat. On the **Smart Pro /
-    Brick / Brick Pro**, stick to **2 players** (as host or joiner).
+- **The host brings the save.** The other player plays on a copy of the
+  host's save; their own save is never touched.
+- **Different video plugins can play together**, for example a Brick on Rice
+  with a Smart Pro S or a phone on GLideN64.
+- **Some emulator options are fixed for the session.** Options that change
+  how the game runs are set the same on both devices and show as locked. Your
+  own settings come back after the session.
 
 ??? info "More detail"
-    - N64 renders a separate split-screen viewport per player. With
-      GLideN64, the Smart Pro, Brick and Brick Pro GPUs can't hold full speed
-      past a 2-way split (3–4 players haven't been tested with Rice).
-    - Devices on different video plugins can play together (for example a
-      Brick on Rice with a Smart Pro S on GLideN64): only the controller inputs
-      travel between them. If a game ever drifts out of sync, set the same RDP
-      Plugin for that game on every device.
+    - With GLideN64, **Copy Color / Depth To RDRAM** and **Threaded renderer**
+      are off in netplay. Left on, the two devices drift apart.
+    - With those copies off, GLideN64 doesn't draw the time and lap counter in
+      Mario Kart 64's two-player split screen. Rice draws it.
+    - Without the threaded renderer, GLideN64 runs slower on the Brick. It
+      stays playable; Rice is faster.
+    - 3 or 4 players over netplay isn't supported.
     - Every device in a session must run the same NX Redux version.
