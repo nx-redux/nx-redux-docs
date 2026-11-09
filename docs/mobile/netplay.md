@@ -158,7 +158,7 @@ cable needs it.
 ## Supported systems
 
 Netplay works only for games in these folders. Every other system, such as
-Nintendo 64, Dreamcast, Nintendo DS, Nintendo 3DS and PSP, has no
+Dreamcast, Nintendo DS, Nintendo 3DS and PSP, has no
 `Y` **Netplay**.
 
 | System | `Roms` folder | Emulator for the match | Netplay type |
@@ -172,6 +172,7 @@ Nintendo 64, Dreamcast, Nintendo DS, Nintendo 3DS and PSP, has no
 | PlayStation | `PS` | PCSX-ReARMed, or SwanStation | Lockstep |
 | PlayStation | `PSX` | SwanStation, or PCSX-ReARMed | Lockstep |
 | Arcade | `FBN` | FinalBurn Neo | Lockstep |
+| Nintendo 64 | `N64` | Mupen64Plus-Next | Lockstep, 2 players ([details](emulators/nintendo-64.md#netplay)) |
 | Game Boy / Game Boy Color | `GB`, `GBC` | Gambatte | **GB Link** |
 | Game Boy Advance | `GBA` | gpSP, or mGBA (USB Cable only) | **GBA Link** |
 | Game Boy Advance | `MGBA` | mGBA, or gpSP | **GBA Link**, [USB Cable only](#game-boy-advance-link) |
