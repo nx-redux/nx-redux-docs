@@ -104,25 +104,43 @@ only: its own link setting is unchanged, and its next game uses it again.
     - Cross-game trades between FireRed/LeafGreen and Ruby/Sapphire also need
       the game's own requirements, such as the National Pokédex in FireRed.
 
-### mGBA link cable over USB
+<a id="mgba-link-cable-over-usb"></a>
 
-Games in the `Game Boy Advance (MGBA)` folder (the **mGBA** core) also get a
-real link cable, but **over the USB Cable only**. After `Y`, the Connection
-screen offers just **USB Cable** for these games. Cable link play such as
-Pokémon trades and battles, cross-game trades and Four Swords works the same
+### mGBA link
+
+Games in the `Game Boy Advance (MGBA)` folder (the **mGBA** core) link two
+ways, depending on the game:
+
+- **Games with a Wi-Fi mode** link over **Wi-Fi or Hotspot** as well as the
+  USB Cable. These are the games gpSP also links with the wireless adapter
+  (Pokémon FireRed, LeafGreen and Emerald, including the Union Room, and
+  other wireless adapter games) and the Pokémon (Ruby, Sapphire and so on)
+  and Advance Wars 1 and 2 link cable games. After `Y`, the Connection
+  screen offers all three connections.
+- **Other cable games** such as Mario Kart: Super Circuit, The Legend of
+  Zelda: Four Swords and Golden Sun link over the **USB Cable only**, as a
+  real link cable. The Connection screen offers just **USB Cable**.
+
+Over the USB Cable, wireless adapter games use the wireless adapter on mGBA
+too, as on gpSP, so the Union Room works over the cable. Other cable play
+(Pokémon trades and battles, cross-game trades, Four Swords) works the same
 way as on gpSP, for 2 players.
 
-- **No wireless adapter on mGBA.** The Union Room and other wireless adapter
-  features (FireRed, LeafGreen, Emerald) need the `Game Boy Advance (GBA)`
-  folder (gpSP).
-- **Both players use the `MGBA` folder.** An mGBA device can't link with a
-  gpSP device: if one player picks the game from `MGBA` and the other from
-  `GBA`, both screens say which emulator the other player is using and go
-  back to the game list.
+- **A gpSP player and an mGBA player can link** when both of their games use
+  the same Wi-Fi mode, such as FireRed on one and LeafGreen on the other
+  in the Union Room. If the games don't use the same mode, or the game has no
+  Wi-Fi mode, use the same folder on both devices: both screens say which
+  emulator the other player is using and go back to the game list.
+- **Both devices need this version of NX Redux.** An older device keeps the
+  earlier behaviour (mGBA over the USB Cable only). Linking mGBA over Wi-Fi
+  or Hotspot with an older device is refused with a message.
 
 ??? info "More detail"
-    - Wi-Fi and Hotspot aren't offered for mGBA because the real cable needs
-      the USB connection's speed.
+    - The wizard works out the game's Wi-Fi mode from the ROM before it
+      offers the connections. There is nothing to set: the mode is picked
+      for you.
+    - Wi-Fi and Hotspot aren't offered for cable games that have no Wi-Fi
+      mode because the real cable needs the USB connection's speed.
     - Saves, `MENU` pause, the leave countdown and charging work as for the
       gpSP link cable above.
     - On the Smart Pro S, an mGBA link session keeps the faster CPU cores
@@ -140,7 +158,7 @@ netplay.
 | Game Boy | `Game Boy (GB)` | gambatte | **GB Link** — link cable games (Pokémon trades and battles, etc.) |
 | Game Boy Color | `Game Boy Color (GBC)` | gambatte | **GB Link** — link cable games |
 | Game Boy Advance | `Game Boy Advance (GBA)` | gpSP | **GBA Link** — wireless adapter and link cable games |
-| Game Boy Advance | `Game Boy Advance (MGBA)` | mGBA | **GBA Link** — link cable games, [USB Cable only](#mgba-link-cable-over-usb) |
+| Game Boy Advance | `Game Boy Advance (MGBA)` | mGBA | **GBA Link** — link cable games; Wi-Fi and Hotspot for [games with a Wi-Fi mode](#mgba-link) |
 | Nintendo ES | `Nintendo ES (FC)` | FCEUmm | Lockstep |
 | Famicom Disk System | `Famicom Disk System (FDS)` | FCEUmm | Lockstep |
 | Super Nintendo ES | `Super Nintendo ES (SFC)` | Snes9x | Lockstep |
@@ -169,8 +187,9 @@ same game.
 
 !!! note "Game Boy Advance and Super Game Boy"
     For Wi-Fi, Hotspot or the Union Room, play from `Game Boy Advance (GBA)`
-    (gpSP); `Game Boy Advance (MGBA)` is
-    [USB Cable only](#mgba-link-cable-over-usb). `Super Game Boy (SGB)` has no
+    (gpSP), or from `Game Boy Advance (MGBA)` for games with a
+    [Wi-Fi mode](#mgba-link). Other `MGBA` games are USB Cable only.
+    `Super Game Boy (SGB)` has no
     netplay: put Game Boy games in `Game Boy (GB)` / `Game Boy Color (GBC)`
     for link play.
 
