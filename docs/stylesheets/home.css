@@ -385,7 +385,7 @@
 .nx-error__hints { justify-content: center; margin-top: 1.8rem; }
 .nx-error__hints label { cursor: pointer; }
 
-/* Mobile main menu demo: the nx-mobile mockup in a frame (tools/build_menu_demo.py),
+/* Mobile main menu demo: the nx-mobile mockup in a frame (tools/menu_demo.py),
    its options above the phone screen and the pad below. */
 .nx-demo .nx-screen__inner { padding-top: 2.4rem; padding-bottom: 3rem; }
 .nx-demo__text { margin: 0.4rem 0 1.4rem; color: var(--nx-soft); font-size: 0.8rem; line-height: 1.5; max-width: 40rem; }
@@ -550,7 +550,7 @@
   line-height: 1.4;
 }
 
-.nx-cards,
+.nx-tiles,
 .nx-news {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
@@ -560,7 +560,7 @@
   list-style: none;
 }
 
-.nx-cards li,
+.nx-tiles li,
 .nx-news li {
   margin: 0;
   padding: 0.9rem 1rem;
@@ -568,11 +568,11 @@
   outline: 1px solid var(--nx-outline);
 }
 
-.nx-cards strong,
+.nx-tiles strong,
 .nx-news strong,
 .nx-steps strong { display: block; font-size: 0.95rem; font-weight: 600; line-height: 1.3; }
 
-.nx-cards span,
+.nx-tiles span,
 .nx-news span,
 .nx-steps span {
   display: block;
