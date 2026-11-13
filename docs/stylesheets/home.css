@@ -385,7 +385,7 @@
 .nx-error__hints { justify-content: center; margin-top: 1.8rem; }
 .nx-error__hints label { cursor: pointer; }
 
-/* Mobile main menu demo: the nx-mobile mockup in a frame (tools/build_menu_demo.py),
+/* Mobile main menu demo: the nx-mobile mockup in a frame (tools/menu_demo.py),
    its options above the phone screen and the pad below. */
 .nx-demo .nx-screen__inner { padding-top: 2.4rem; padding-bottom: 3rem; }
 .nx-demo__text { margin: 0.4rem 0 1.4rem; color: var(--nx-soft); font-size: 0.8rem; line-height: 1.5; max-width: 40rem; }
@@ -410,4 +410,258 @@
   .nx-features .nx-screen__inner { padding-top: 3.2rem; }
   .nx-features__body { grid-template-columns: 1fr; gap: 1.6rem; }
   .nx-list button { font-size: 1.05rem; }
+}
+
+/* One-page landing: a bar under the header switches platform and jumps to
+   a section; each section shows the chosen platform's block. */
+.nx-home[data-platform="handheld"] [data-on="mobile"],
+.nx-home[data-platform="mobile"] [data-on="handheld"] { display: none !important; }
+
+.nx-bar {
+  position: sticky;
+  top: 2.4rem;
+  z-index: 3;
+  background: rgba(0, 0, 0, 0.88);
+  backdrop-filter: blur(8px);
+  border-block: 1px solid var(--nx-outline);
+  color: var(--nx-white);
+}
+
+.nx-bar__inner {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+  max-width: 61rem;
+  margin: 0 auto;
+  padding: 0.5rem 1.2rem;
+}
+
+.nx-switch {
+  display: none;
+  flex: none;
+  padding: 0.15rem;
+  border-radius: 999px;
+  outline: 1px solid var(--nx-outline);
+}
+
+.nx-home.has-switch .nx-switch { display: inline-flex; }
+
+.nx-switch button {
+  margin: 0;
+  padding: 0.3em 0.9em;
+  border: 0;
+  border-radius: 999px;
+  background: none;
+  font: inherit;
+  font-size: 0.75rem;
+  line-height: 1.3;
+  color: var(--nx-soft);
+  cursor: pointer;
+  transition: background-color 120ms ease, color 120ms ease;
+}
+
+.nx-switch button[aria-pressed="true"] { background: var(--nx-white); color: var(--nx-black); }
+
+.nx-bar__links {
+  display: flex;
+  gap: 1.1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow-x: auto;
+  scrollbar-width: none;
+  white-space: nowrap;
+}
+
+.nx-bar__links li { margin: 0; }
+.nx-bar__links a { font-size: 0.75rem; color: var(--nx-soft); }
+.nx-bar__links a:hover { color: var(--nx-white); }
+
+.nx-switch button:focus-visible,
+.nx-bar__links a:focus-visible,
+.nx-btn:focus-visible,
+.nx-faq summary:focus-visible {
+  outline: 0.1rem solid var(--md-accent-fg-color);
+  outline-offset: 0.15rem;
+}
+
+/* The devices stay inside the first screen, clear of the bar. */
+.nx-home .nx-devices { margin-bottom: 0; }
+/* The menu, tagline and hints sit as one block, centred beside the devices. */
+.nx-home .nx-screen__body { align-items: center; }
+.nx-screen__menu .nx-hints { margin-top: 1.6rem; }
+.nx-home .nx-features .nx-screen__inner { padding-top: 2.4rem; }
+
+.nx-home section[id] { scroll-margin-top: 5.2rem; }
+
+.nx-features__shot { width: auto; max-width: 100%; max-height: 21rem; }
+
+.nx-sec { border-top: 1px solid var(--nx-outline); }
+.nx-sec .nx-screen__inner { padding-top: 2.4rem; padding-bottom: 2.8rem; }
+
+.nx-sec__lead {
+  margin: 0.5rem 0 0;
+  font-size: 1.7rem;
+  line-height: 1.25;
+  text-wrap: balance;
+}
+
+.nx-sec__date { margin-left: 0.4em; font-size: 0.8rem; color: var(--nx-grey); }
+
+.nx-sec__text,
+.nx-sec__more {
+  max-width: 34rem;
+  margin: 0.6rem 0 0;
+  font-size: 0.8rem;
+  line-height: 1.55;
+  color: var(--nx-soft);
+}
+
+.nx-sec__more { margin-top: 1.4rem; }
+
+.nx-systems { margin: 1.6rem 0 0; }
+
+.nx-systems__group {
+  display: grid;
+  grid-template-columns: 6.5rem minmax(0, 1fr);
+  gap: 0.6rem 1rem;
+  padding: 0.7rem 0;
+  border-top: 1px solid var(--nx-outline);
+}
+
+.nx-systems dt { padding-top: 0.25rem; font-size: 0.75rem; color: var(--nx-grey); }
+.nx-systems dd { margin: 0; }
+
+.nx-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nx-chips li {
+  margin: 0;
+  padding: 0.25em 0.8em;
+  border-radius: 999px;
+  outline: 1px solid var(--nx-outline);
+  font-size: 0.75rem;
+  line-height: 1.4;
+}
+
+.nx-tiles,
+.nx-news {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+  gap: 0.8rem;
+  margin: 1.6rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nx-tiles li,
+.nx-news li {
+  margin: 0;
+  padding: 0.9rem 1rem;
+  border-radius: 0.5rem;
+  outline: 1px solid var(--nx-outline);
+}
+
+.nx-tiles strong,
+.nx-news strong,
+.nx-steps strong { display: block; font-size: 0.95rem; font-weight: 600; line-height: 1.3; }
+
+.nx-tiles span,
+.nx-news span,
+.nx-steps span {
+  display: block;
+  margin-top: 0.3rem;
+  font-size: 0.72rem;
+  line-height: 1.5;
+  color: var(--nx-soft);
+}
+
+.nx-steps {
+  max-width: 36rem;
+  margin: 1.4rem 0 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: nx-step;
+}
+
+.nx-steps li {
+  position: relative;
+  margin: 0;
+  padding: 0.7rem 0 0.7rem 2.6rem;
+  border-top: 1px solid var(--nx-outline);
+  counter-increment: nx-step;
+}
+
+.nx-steps li::before {
+  content: counter(nx-step);
+  position: absolute;
+  left: 0;
+  top: 0.7rem;
+  display: grid;
+  place-items: center;
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+  background: var(--nx-white);
+  color: var(--nx-black);
+  font-size: 0.8rem;
+}
+
+.nx-sec__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.8rem 1.2rem;
+  margin: 1.4rem 0 0;
+  font-size: 0.8rem;
+}
+
+.nx-btn {
+  display: inline-block;
+  padding: 0.5em 1.2em;
+  border-radius: 999px;
+  background: var(--nx-white);
+  color: var(--nx-black);
+  font-size: 0.85rem;
+}
+
+a.nx-btn:hover { background: var(--md-accent-fg-color); color: var(--nx-black); }
+.nx-btn.is-disabled { background: none; outline: 1px solid var(--nx-outline); color: var(--nx-grey); }
+
+.nx-faq { max-width: 40rem; margin-top: 1rem; }
+
+.nx-faq details { border-bottom: 1px solid var(--nx-outline); }
+
+.nx-faq summary {
+  padding: 0.75rem 0;
+  font-size: 0.95rem;
+  line-height: 1.35;
+  cursor: pointer;
+}
+
+.nx-faq details p {
+  margin: 0 0 0.9rem;
+  font-size: 0.78rem;
+  line-height: 1.55;
+  color: var(--nx-soft);
+}
+
+.nx-demo { border-top: 1px solid var(--nx-outline); }
+
+@media (prefers-reduced-motion: reduce) {
+  .nx-switch button { transition: none; }
+}
+
+@media screen and (max-width: 44.9375em) {
+  .nx-bar__inner { gap: 0.9rem; padding-inline: 0.8rem; }
+  .nx-home .nx-devices { margin-bottom: 0; }
+  .nx-home .nx-features .nx-screen__inner { padding-top: 2rem; }
+  .nx-sec__lead { font-size: 1.3rem; }
+  .nx-systems__group { grid-template-columns: 1fr; gap: 0.4rem; }
 }

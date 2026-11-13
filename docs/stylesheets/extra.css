@@ -272,3 +272,7 @@
 /* Three phones in a row (the Wii & GameCube pads): smaller, so all three fit the column on a wide screen. */
 .md-typeset .nx-phones--three { gap: 0 1.2rem; }
 .md-typeset .nx-phones--three .nx-phone { width: 10rem; }
+
+/* Header: the handheld and mobile repositories side by side. */
+.md-header__source { display: flex; width: auto; max-width: none; }
+.md-header__source .md-source { width: 10.6rem; }

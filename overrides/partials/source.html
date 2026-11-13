@@ -1,0 +1,21 @@
+{# Two repositories: the handheld firmware, with live GitHub facts from the theme, and the mobile app, with its release version. #}
+{% set icon = config.theme.icon.repo or "fontawesome/brands/git-alt" %}
+<a href="{{ config.repo_url }}" title="{{ lang.t('source') }}" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    {% include ".icons/" ~ icon ~ ".svg" %}
+  </div>
+  <div class="md-source__repository">
+    {{ config.repo_name }}
+  </div>
+</a>
+<a href="{{ config.extra.mobile_repo_url }}" title="{{ lang.t('source') }}" class="md-source nx-source-mobile">
+  <div class="md-source__icon md-icon">
+    {% include ".icons/" ~ icon ~ ".svg" %}
+  </div>
+  <div class="md-source__repository md-source__repository--active">
+    {{ config.extra.mobile_repo_name }}
+    <ul class="md-source__facts">
+      <li class="md-source__fact md-source__fact--version">{{ config.extra.mobile_version }}</li>
+    </ul>
+  </div>
+</a>
