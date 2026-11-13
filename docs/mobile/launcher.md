@@ -9,13 +9,13 @@ Tools, and list your Android games as a console:
 | **Tools → Apps** | Every app on the phone. Open one, or add it to Tools. See [Android apps](#android-apps). |
 | **Tools → Settings → Library → Android games** | Pick the apps in the Android console. See [Android games](#android-games). |
 
-![Settings, with System open beside the sections: Use as home screen between Pause when unfocused and Debug log](../assets/screenshots/mobile/settings-launcher.webp){ .nx-wide }
+![Settings, with System open beside the sections: Use as home screen, off, between Screen care and Keyboard](../assets/screenshots/mobile/settings-launcher.webp){ .nx-wide }
 
 ## Use as home screen
 
-Turn **Use as home screen** On, in the **Launcher** group of
-[System](about.md), and Android asks whether to make NX Redux your
-home app. Say yes, and the phone opens to the main menu.
+Turn **Use as home screen** On in [System](about.md), and Android asks
+whether to make NX Redux your home app. Say yes, and the phone opens to the
+main menu.
 
 While the app is the home screen, **Home** (the button or the gesture)
 brings you back to the main menu's Home tab.
@@ -23,10 +23,17 @@ brings you back to the main menu's Home tab.
 To stop using it, turn the row Off. Android's home settings open, so you can
 pick your old launcher again.
 
+[Kids Mode](kids-mode.md) needs NX Redux as the home screen: its setup asks
+for it, and it warns you in **Settings → Kids Mode** when another launcher
+has taken over.
+
 ??? info "More detail"
     - **Back** on the main menu stays where it is, since there is nothing
       under a home screen.
-    - The screen sleeps as usual on the main menu.
+    - The screen sleeps as usual on the main menu. A game keeps it on only
+      while it runs: a paused game sleeps on the phone's timeout.
+    - A game opens straight from the menu and quits straight back to the
+      tab and list you left, with no slide between them.
     - If you turn Android's question down, the row stays Off and a notice
       says where to set it by hand: **Set NX Redux as the home app in Android
       settings → Default apps**.
@@ -48,9 +55,13 @@ Press `MENU`, or long-press an app, for its menu:
 An app in Tools opens like any other tool, and its own `MENU` offers **Pin**
 or **Unpin** and **Remove from Tools**.
 
+On [two screens](dual-screen.md#apps-on-the-picture-screen), an app opens
+on the top screen.
+
 ??? info "More detail"
     - Apps you put in the Android console aren't listed here.
     - Apps that are in Tools carry a mark in the grid.
+    - While [Kids Mode](kids-mode.md) is on, nothing can be pinned to Home.
 
 ## Android games
 
@@ -78,11 +89,19 @@ consoles:
 - **Not tracked:** an Android game never shows on the Continue card or in the
   [Game Switcher](game-switcher.md), and it has no play time in the
   [Game Tracker](game-tracker.md).
-- **Context menu:** only **Pin Item** or **Unpin Item**.
+- **Context menu:** only **Pin Item** or **Unpin Item**, and **Fetch art**
+  or **Change art**.
+
+Android games also show on the [Games tab](main-menu.md#games-tab), with the
+games of every other console.
 
 ??? info "More detail"
     - Each game shows its screenshot fetched with [Artwork](artwork.md).
       Until it has one, it gets abstract art made from its icon's colours.
+    - [Change art](artwork.md#change-art) offers a **Screenshot**, a **2D
+      box** and a **Wheel** for an Android game.
+    - Under its name a game shows a **Game** pill only: Android games have
+      no genre, year or publisher.
     - A pinned Android game sits on Home with your other pinned games.
 
 To take a game out of the console, untick it in **Tools → Settings →

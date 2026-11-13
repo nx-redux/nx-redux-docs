@@ -61,8 +61,30 @@ Dreamcast is included, with the NAOMI and Atomiswave arcade games. See
 
 Yes. Two players can play over Wi-Fi or a USB-C cable, phone to phone or
 phone to an NX Redux handheld (TrimUI Brick, Brick Pro or Smart Pro S).
-Press `Y` **Netplay** on a game. Game Boy and Game Boy Advance games link
-for trades and battles. See [Netplay](../../mobile/netplay.md).
+Press `Y` **Netplay** on a game. Nintendo 64 is included, and Game Boy and
+Game Boy Advance games link for trades and battles. See
+[Netplay](../../mobile/netplay.md).
+
+??? info "More detail"
+    - Game Boy Advance games that need a real link cable, such as Mario Kart
+      Super Circuit, link between two phones with
+      [Cable Link over Wi-Fi](../../mobile/netplay.md#cable-link-over-wi-fi).
+    - DS, 3DS and PSP games play together through their own wireless
+      modes. See the next question.
+
+## Can I play DS, 3DS or PSP games wirelessly with a friend?
+
+Yes. Put both devices on the same Wi-Fi, start the game on each, and use the
+game's own wireless or ad hoc menu, as with two real consoles side by side.
+There is nothing to set up. See
+[Local Wireless](../../mobile/local-wireless.md).
+
+??? info "More detail"
+    - The name the others see is your
+      [Player name](../../mobile/about.md#player-name).
+    - While a game's wireless is on, the in-game menu is **Continue**,
+      **Disconnect** and **Quit**, and save states, rewind and fast forward
+      are off.
 
 ## Can I sync saves with my handheld?
 
@@ -75,13 +97,14 @@ the latest NX Redux first. ROMs sync too when you turn them on, with
 
 Yes. Two to four people can play one game, each on their own controller.
 Start the game and press a button on each controller to join. Nintendo 64,
-Sega Dreamcast, Arcade and TurboGrafx-16 take up to four players, and most
-other home consoles two. See [Local Multiplayer](../../mobile/multiplayer.md).
+GameCube, Wii, Sega Dreamcast, Arcade and TurboGrafx-16 take up to four
+players, and most other home consoles two. See
+[Local Multiplayer](../../mobile/multiplayer.md).
 
 ## Can a second player use the touch controls?
 
-No. The on-screen pad always controls Player 1, so every other player needs
-a controller.
+No. The on-screen [pad skin](../../mobile/controls.md#pad-skins) always
+controls Player 1, so every other player needs a controller.
 
 ## Why did my Joy-Cons become two players?
 
@@ -93,11 +116,14 @@ yet either. See [Local Multiplayer](../../mobile/multiplayer.md#limits).
 
 Not freely. Each console has a fixed mapping, and face buttons work **as
 printed**: your controller's `A` is the console's `A`. To swap the layout,
-use **Controller Layout** in the in-game menu's **Options → Console
-Settings**.
+use **Controller Layout** in the in-game menu's
+[Options](../../mobile/in-game-menu.md#options) **→ Controls**.
 
-On a controller without a mode button, hold `SELECT` + `START` to open the
-in-game menu. See [Controls](../../mobile/controls.md).
+On a controller without a mode button, press `SELECT` + `START` to open the
+in-game menu, or on the main menu the highlighted item's menu. If your controller's `SELECT`, `START` or `MENU` does the
+wrong thing, bind it in
+[System buttons](../../mobile/controls-settings.md#system-buttons). See
+[Controls](../../mobile/controls.md).
 
 ??? info "More detail"
     - PlayStation, PSP, Sega, arcade and a few others go by position instead
@@ -107,6 +133,24 @@ in-game menu. See [Controls](../../mobile/controls.md).
       one that isn't your controller's for the console's original button
       positions, such as the right button as `A` on Super Nintendo with an
       Xbox pad.
+
+## Can I move or resize the on-screen buttons?
+
+Yes. **Tools → Settings → Appearance → Button layout** moves and resizes
+the button groups of each console's pad skin. In a game, the same editor is
+**Adjust buttons** in the in-game menu's **Options → Controls**. See
+[Button layout](../../mobile/controls-settings.md#button-layout).
+
+To play with the game filling the screen and see-through buttons over it,
+turn [Pad skin](../../mobile/appearance.md#pad-skin) off.
+
+## Can I type with my controller?
+
+Yes. Search, rename, sign-ins and every other text prompt use NX Redux's own
+keyboard, which works with the d-pad or touch. To use your phone's keyboard
+instead, for a password manager or swipe typing, set **Tools → Settings →
+System → Keyboard** to **Android**. See
+[Keyboard](../../mobile/about.md#keyboard).
 
 ## Is there a RetroAchievements hardcore mode?
 
@@ -120,6 +164,9 @@ Press `START` on the main menu, or tap the **Search** icon, and type part of
 its name. Case, accents, punctuation and word order don't matter, and
 `fantasy 6` finds *Final Fantasy VI*. In a game list, `START` searches just
 that list. See [Search](../../mobile/main-menu.md#search).
+
+The [Games tab](../../mobile/main-menu.md#games-tab) lists every game from
+every console, A to Z. `L2` / `R2` jump by letter there.
 
 ## Can I make the text smaller?
 
@@ -136,17 +183,30 @@ or **Fetch by console**. To fetch one game, press `MENU` on it and pick
 like. See [Artwork](../../mobile/artwork.md).
 
 ??? info "More detail"
-    The art comes from ScreenScraper, libretro-thumbnails, TheGamesDB and
-    SteamGridDB, and is saved in each game folder's `.media` folder. Art you
-    put there yourself is used too.
+    - The art comes from ScreenScraper, libretro-thumbnails, TheGamesDB and
+      SteamGridDB, and is saved in each game folder's `.media` folder. Art
+      you put there yourself is used too.
+    - Resting on a game in a list also fetches its missing art in the
+      background. Turn that off with **Fetch art and info when browsing**
+      in **Tools → Artwork → Settings**.
+
+## Where do a game's genre, year and publisher come from?
+
+From ScreenScraper, with the art. The app also looks them up in the
+background for the game you rest on. A game shows **Game** until its info
+has arrived. See [Game info](../../mobile/artwork.md#game-info).
+
+A game with achievements shows them in that place by default. To show the
+genre, year and publisher for every game, set **Layouts → Game info** to
+**Details**. See [Game info](../../mobile/layouts.md#game-info).
 
 ## Why does artwork need a ScreenScraper account or API keys?
 
 It doesn't have to. libretro-thumbnails needs nothing, and ScreenScraper
-works without an account at a small daily quota.
+works without an account, on an allowance shared with other players.
 
-- **Signing in to ScreenScraper** raises that quota, so a large library
-  fetches faster.
+- **Signing in to ScreenScraper** gives you your own daily allowance, which
+  goes much further on a large library.
 - **TheGamesDB** and **SteamGridDB** are only used with your own free API
   key.
 
@@ -179,13 +239,40 @@ as an unfolded Fold held sideways, some pages split into two panes. See
       fold and the touch screen below it, between the pad's halves, like
       the real handheld.
     - The pages that split into two panes are Settings, the in-game menu,
-      RetroAchievements and Artwork.
+      RetroAchievements, Game Tracker and Artwork.
 
 ## I removed my SD card and some games disappeared
 
 Games from a folder on a card that is not mounted are left out until the card
 is back. **Tools → Settings → Library** marks the folder **Not available**. Nothing is lost. See
 [Library & ROM folders](../../mobile/library.md).
+
+## How do I use Kids Mode, and what if I forget the PIN?
+
+**Tools → Settings → Kids Mode** opens games only in the play times you
+set, behind a 6-digit PIN. Outside them your child sees large tiles of the
+apps you allowed. It needs NX Redux as the home screen.
+
+If you forget the PIN, delete the file `kids-mode.flag` in your home folder
+with a file manager or from a computer. Kids Mode turns off and the PIN is
+cleared; your play times and allowed apps stay. See
+[Kids Mode](../../mobile/kids-mode.md).
+
+## How do I send a log with a bug report?
+
+Turn on **Tools → Settings → System → Debug log**, then repeat the
+problem. The app writes a log file each time it or a game starts, to the
+`Logs` folder in your home folder, such as
+`20261109-203153-game-PS2-armsx2.log`. Attach that file to your report. No
+computer is needed. See
+[Debug log](../../mobile/about.md#debug-log).
+
+## Will a still picture burn into my OLED screen?
+
+**Screen care** guards against it, and is on by default in **Tools →
+Settings → System**. Everything on screen shifts by a tiny step every 2
+minutes, and a game left alone dims after 5 minutes without input. See
+[Screen care](../../mobile/about.md#screen-care).
 
 ## Is there an iOS version?
 

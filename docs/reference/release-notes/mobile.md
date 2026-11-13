@@ -10,7 +10,7 @@ Android handhelds. Download the APK from the
 
 ## v0.6.0
 
-*13 November 2026*
+*13 November 2026 · v0.6.1 and v0.6.2 on 14 November*
 
 The on-screen pad is now a rendered **pad skin**, with layouts of its own
 for every console and a freer button editor. DS, 3DS and PSP games find
@@ -114,6 +114,20 @@ review fixed crashes, lost play time and lost achievement unlocks.
   report needs no computer. The newest 20 sessions are kept. See
   [Debug log](../../mobile/about.md#debug-log).
 
+- **First-launch tips.** The main menu shows a tips dialog at launch:
+  `MENU` opens the highlighted item's menu, a pad with no `MENU` button can
+  set one in **Settings → Controls → System buttons** or press `SELECT` +
+  `START`, `START` searches your games and `SELECT` opens the Game
+  Switcher. The first game list adds `Y` for Netplay and `X` for
+  achievements. **Got it** closes a tip until the next launch, **Don't show
+  again** for good. (v0.6.1)
+- **Two-screen board on foldables and tablets.** With a pad skin on the
+  unfolded Fold, a tablet or a half-folded Flip, the in-game menu opens in
+  the bottom screen, as on a dual-screen handheld, and the paused game on
+  the top screen gets the pause cover. DS and 3DS games get a **Panel**
+  pill that flips the game panel over the touch screen, and a **Game** pill
+  that flips it back, both at the window's bottom-right. (v0.6.1)
+
 ### Improvements
 
 - **Two screens: the bottom acts, the top informs.** Tools, game lists,
@@ -190,8 +204,9 @@ review fixed crashes, lost play time and lost achievement unlocks.
   and Hexen), Gearcoleco, Stella 2014, Beetle PCE Fast, Beetle VB, RACE,
   ProSystem, A5200, PokeMini, FCEUmm, Supafaust, Gambatte, Genesis Plus
   GX, Handy and Fake-08 move to their latest versions. Save states from
-  v0.5.1 still load, except FBNeo states whose size changed, such as Neo
-  Geo games', which are refused so the game starts fresh. 89 FBNeo sets
+  v0.5.1 still load, except DS states made before melonDS DS 1.4.0 and
+  FBNeo states whose size changed, such as Neo Geo games'. Those are
+  refused, and the game starts fresh from its in-game save. 89 FBNeo sets
   changed their ROMs and need updated zips, and a few were renamed (`alienaru` →
   `alienar`, `gradiusb` → `bs_gradius`, `sailormnj` → `sailormn`).
 - **Vertical arcade and WonderSwan games** are turned correctly on a
@@ -200,6 +215,39 @@ review fixed crashes, lost play time and lost achievement unlocks.
   on the save, the menu rebuilds less while you move, art fetches make
   fewer requests, and a paused game or a picture hidden behind the panel
   costs less to draw.
+
+- **Screen Scaling Auto fills the screen.** Every console now fits the
+  space it has at any size; **Native** keeps whole-number scales. A picture
+  at an in-between size is drawn sharp bilinear while Screen Sharpness is
+  Nearest. (v0.6.1)
+- **DS and 3DS full width in portrait.** With Auto, a DS **Large screen**
+  puts the top screen across the full width with the touch screen under it,
+  and **Stacked** makes both screens full width. The 3DS opens in Large
+  screen by default with the on-screen pad (Stacked with a controller).
+  A two-screen stack starts under the camera cutout. (v0.6.1)
+- **Game lists.** New installs use **Backdrop**, and **Game info** shows
+  achievements by default. On two screens Backdrop is offered again; only
+  the vertical Carousel and Backdrop run across. The Layout dropdown is as
+  wide as its choices. (v0.6.1)
+- **Tools grid** uses the fewest columns that fill the rows in view and is
+  centred, so 7 tools on a 6 × 3 screen sit 3, 3 and 1. (v0.6.1)
+- **Small screens.** On a pad skin's touch screen, Settings pages scroll
+  with the next row peeking under a thin fade, the Carousel's selected item
+  takes at most 60% of the width, and the game panel and in-game menu show
+  a one-line header (name, clock, battery). (v0.6.1)
+- **Notifications** sit at the top centre in portrait, never on a DS or 3DS
+  touch screen. (v0.6.1)
+- **Button layout editor.** Buttons that only touched at a corner are no
+  longer one group, the large layouts' touch shortcuts can be moved, and
+  the buttons show at full opacity while editing. (v0.6.1)
+- **Setup buttons** look like a pop-up's: the page's main action, such as
+  **Continue**, is always in your accent, the others are outlined, and a
+  ring shows where the controller is. A page whose only button is **Skip**
+  shows it in the accent. (v0.6.2)
+- **Folder picker.** **Use this folder** and **New folder** sit side by
+  side, the first in your accent. `Left` / `Right` move between them and
+  back to the folders. See
+  [The folder picker](../../mobile/library.md#the-folder-picker). (v0.6.2)
 
 ### Fixes
 
@@ -232,6 +280,20 @@ review fixed crashes, lost play time and lost achievement unlocks.
 - **Two-pane Settings:** holding `Left` or `Right` moves one level, not
   page after page.
 - **Pause when unfocused:** the screen can sleep while it holds a game.
+- **`SELECT` + `START`** opens the context menu on the main menu; before,
+  `SELECT` or `START` acted the moment it was pressed. (v0.6.1)
+- **DS:** `L2` swaps the screens and `R2` toggles the stylus, as `L3` /
+  `R3` and `SELECT` + `L1` / `R1` do. (v0.6.1)
+- **Pad Opacity** applies again to on-screen buttons moved over the
+  picture. (v0.6.1)
+- **3DS:** the top screen no longer stops short of full width after the
+  touch screen's size changes. (v0.6.1)
+- **In-game menu:** the Options column shows that more rows are below.
+  (v0.6.1)
+- **Pad skins:** the touch shortcuts no longer show under the game panel,
+  and the DS touch screen takes taps beside the on-screen buttons. (v0.6.1)
+- **Device Sync** opens again. Since v0.6.1 it closed the app, from
+  **Tools** and as setup's Device Sync step. (v0.6.2)
 
 ## v0.5.0
 
@@ -282,7 +344,7 @@ in a process of their own, so quitting one frees everything it used.
   take the largest whole-number size that fits, 2D handhelds play at Native,
   and 3D consoles fill their space at their own shape. A Screen Scaling you
   picked yourself is kept. See
-  [Frontend](../../mobile/in-game-menu.md#frontend).
+  [Display](../../mobile/in-game-menu.md#display).
 - **New DS and 3DS layouts.** Large screen, Stacked, Single screen, Picture
   in picture and Side by side, at whole-number sizes, with a default that
   suits your screen. Your old pick carries over. See
@@ -325,7 +387,7 @@ in a process of their own, so quitting one frees everything it used.
   **Low**, **Medium**, **High** (the default) or **Max**, as on the
   handheld. Sound is now converted to the phone's rate with libsamplerate,
   so it's cleaner than before, with no seam between buffers. See
-  [Console Settings](../../mobile/in-game-menu.md#console-settings).
+  [Audio](../../mobile/in-game-menu.md#audio).
 - **Most played shelf.** Home's first shelf under your pinned games holds
   up to four games with the most play time, each showing its time. Hide it
   in **Layouts → Home → Most played shelf**. See
@@ -351,7 +413,7 @@ in a process of their own, so quitting one frees everything it used.
   C-stick sits between the d-pad and the face buttons. Your touch buttons
   sit in its top row, and DS and 3DS screens may reach a third into it, so
   the unfolded Galaxy Z Fold shows a DS game at 6× + 3×. See
-  [Hiding the portrait band](../../mobile/controls.md#hiding-the-portrait-band).
+  [Pad skin off](../../mobile/controls.md#pad-skin-off).
 - **Shortcuts without a controller.** The bind rows only show with a
   controller connected, since the on-screen pad can't be bound. Without
   one, the page points you to **Touch button 1** and **2**. See
@@ -511,7 +573,7 @@ marked with their version.
   **Options → Shortcuts** changes them for one console or one game.
 - **Touch buttons.** Two optional on-screen buttons, each **FF**, **RW**,
   **Hold FF**, **Hold RW** or **Reset**, show once you assign them. Move them
-  in [Pad layout](../../mobile/controls-settings.md#pad-layout).
+  in [Button layout](../../mobile/controls-settings.md#button-layout).
 - **Fast forward, Rewind and Reset in the game panel.** The panel's
   **Shortcuts** tab has working tiles for them, and **Screenshot** is gone.
   A ►► or ◄◄ mark at the top right of the game shows while either runs.
@@ -664,8 +726,8 @@ backgrounds.
 - **DS and 3DS: hide the portrait pad.** Long-press the arrow at the bottom
   right of the pad to hide it: the screens take its room and see-through
   buttons sit over the game. Long-press again to bring it back. See
-  [Nintendo DS](../../mobile/emulators/nintendo-ds.md#portrait-pad) and
-  [Nintendo 3DS](../../mobile/emulators/nintendo-3ds.md#portrait-pad).
+  [Nintendo DS](../../mobile/emulators/nintendo-ds.md#pad-skin) and
+  [Nintendo 3DS](../../mobile/emulators/nintendo-3ds.md#pad-skin).
 - **DS and 3DS: more screen layouts.** Large screen on both, Side by side in
   portrait and Stacked in landscape on the DS, and separate layouts for
   portrait, portrait with a controller and landscape on the 3DS. See the

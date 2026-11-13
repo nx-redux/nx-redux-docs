@@ -38,11 +38,30 @@ The face buttons map to the PSP buttons **by position**:
 - In the app's menus, `×` confirms and `○` goes back.
 - `MENU`, or `SELECT` + `START`, opens the [in-game menu](../in-game-menu.md).
 
-## Core options
+## Emulator options
 
 Some options, such as the CPU core and the PSP model, only take effect when
 a game starts. They are in [Emulator Settings](../emulator-settings.md), not
-in the in-game **Core Options**. The software renderer is not offered.
+in the in-game menu's **Options → [Emulator](../in-game-menu.md#emulator)**.
+The software renderer and **VR Mode** are not offered, and PPSSPP's own
+network options are hidden: the app sets them for
+[ad hoc play](#ad-hoc-multiplayer).
+
+## Ad hoc multiplayer
+
+A game's ad hoc mode links two to four phones on the same Wi-Fi, with
+nothing to set up: start the game on each phone and open its ad hoc
+multiplayer menu. See [Local Wireless](../local-wireless.md).
+
+- **Local Wireless**, in the **Multiplayer** group of
+  [Emulator Settings](../emulator-settings.md) and Game Settings, is **On**
+  by default and read when a game starts.
+- PSP games also have `Y` **Netplay**, also in the game's context menu,
+  to host or join by hand. See [Netplay](../netplay.md).
+- The other players see your
+  [Player name](../about.md#player-name).
+- A save state can't be loaded while the game is in ad hoc mode.
+- Wi-Fi only: there is no USB cable link for PSP.
 
 ## Cheats and achievements
 

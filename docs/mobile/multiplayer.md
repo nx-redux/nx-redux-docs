@@ -13,14 +13,16 @@ The on-screen pad always controls Player 1. Each extra player needs a
 controller.
 
 Playing on two devices instead, such as two phones or a phone and an NX
-Redux handheld? See [Netplay](netplay.md).
+Redux handheld? See [Netplay](netplay.md), or
+[Local Wireless](local-wireless.md) for Nintendo DS, Nintendo 3DS and PSP
+games.
 
 ??? info "More detail"
 
-    The on-screen pad is never a player of its own. In portrait, connecting a
-    controller removes the on-screen pad and gives the game the whole screen,
-    unless it is a clip-on controller such as the GameSir Pocket Taco. See
-    [Controls](controls.md#on-screen-pad-and-controllers).
+    The on-screen pad is never a player of its own. Connecting a controller
+    removes the on-screen pad and gives the game the whole screen, unless
+    it is a clip-on controller such as the GameSir Pocket Taco. See
+    [Controls](controls.md#with-a-controller).
 
 ## Which systems
 
@@ -67,12 +69,12 @@ never joins. Players are kept until you quit the game.
 
 ## The Players page
 
-In a game with more than one player, the [game panel](in-game-menu.md#the-game-panel)
-has a **Players** tab. It's beside the in-game menu's first page, or on a
-handheld's [second screen](dual-screen.md#the-game-panel) while you play.
-With a controller, `A` on the tab's name opens it as a full page.
+In a game with more than one player, the in-game menu's
+[tab row](in-game-menu.md#the-game-panel) has a **Players** tab. On a handheld's
+[second screen](dual-screen.md#players) it is in the game panel while you
+play. With a controller, `A` on the tab's name opens it as a full page.
 
-![The game panel's Players tab in the in-game menu: Player 1 on an 8BitDo Ultimate 2 Wireless, Player 2 Empty](../assets/screenshots/mobile/in-game-players.webp){ .nx-wide }
+![The Players tab in Dragon Ball Z: Budokai Tenkaichi 3's in-game menu: Player 1 and Player 2 both Empty](../assets/screenshots/mobile/in-game-players.webp){ .nx-wide }
 
 | Row | Value | `LEFT` / `RIGHT`, or a tap |
 | --- | --- | --- |
@@ -80,8 +82,10 @@ With a controller, `A` on the tab's name opens it as a full page.
 
 ??? info "More detail"
 
-    - A tap on a row in the panel steps it to the next choice, as `RIGHT`
+    - A tap on a row in the tab steps it to the next choice, as `RIGHT`
       does.
+    - The tab is hidden in a [netplay](netplay.md) match, where each device
+      is one player.
     - The page's footer reads **Close the menu, then press a button on a new
       controller to join.**
     - Two controllers with the same name are numbered, such as **Xbox
@@ -145,4 +149,6 @@ everyone.
 - No multitap adapters yet, such as the NES Four Score, the Super Nintendo
   or PlayStation and PlayStation 2 multitaps, or the Sega Team Player.
 - No link-cable play between players on one phone. Game Boy and Game Boy
-  Advance link play works between two devices with [Netplay](netplay.md).
+  Advance link play works between two devices with [Netplay](netplay.md),
+  and Nintendo DS, 3DS and PSP wireless play with
+  [Local Wireless](local-wireless.md).

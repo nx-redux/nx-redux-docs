@@ -2,147 +2,192 @@
 
 ## On-screen pad and controllers
 
-Without a controller the app shows an on-screen pad. Connect any Android
-controller to play with real buttons instead. With a controller each, two to
-four people can play one game; see [Local Multiplayer](multiplayer.md).
+Without a controller the app draws a **pad skin**: a whole handheld around
+the screen, with the game or the menu in its screen glass and the buttons
+where your thumbs are. Connect any Android controller to play with real
+buttons instead. With a controller each, two to four people can play one
+game; see [Local Multiplayer](multiplayer.md).
 
-- **Portrait:** the pad sits in a band below the screen, in games and on the
-  main menu, the game lists and the Game Switcher. The band is the same
-  height on the main menu and in every game.
-    - In a game, the band goes away while a controller is connected, so the
-      game gets the full height.
-    - Nintendo DS and 3DS games, and tall games on arcade, WonderSwan and
-      Atari Lynx, can hide the band: long-press the arrow in its bottom-right
-      corner. See [Hiding the portrait band](#hiding-the-portrait-band).
-    - On the main menu the band stays with a controller. Turn it off with
-      [**Menu pad**](controls-settings.md#menu-pad).
-- **Landscape:** the pad splits into two halves, one either side of the
-  game. See [Landscape](#landscape).
-- **`STICK`** switches the on-screen d-pad to an analog stick and back. While
-  the stick is on, the button reads **D-PAD**.
-- To move or resize the pad's buttons, for every console or for one, use
-  [**Pad layout**](controls-settings.md#pad-layout).
+- **Portrait:** the screen is at the top and the buttons are below it.
+- **Landscape:** the screen is in the middle, with the buttons in a grip
+  either side. See [Landscape](#landscape).
+- **With a controller:** the skin and its buttons go away, in games and in
+  the menus, and the game or the menu fills the screen. See
+  [With a controller](#with-a-controller).
+- **Pad skin Off:** the game runs full screen under see-through buttons,
+  and the menus have no on-screen pad. See [Pad skin off](#pad-skin-off).
+- To move or resize the buttons, use
+  [**Button layout**](controls-settings.md#button-layout).
 
 ??? info "More detail"
-    - The tools' pages have no pad.
-    - A clip-on controller that sits where the band was, such as the GameSir
-      Pocket Taco or the 8BitDo FlipPad, keeps the band in a game.
-    - When the band goes away for a controller, the Nintendo DS screens use
-      their own controller layout (see [Nintendo DS](emulators/nintendo-ds.md)).
-    - On a phone the band is 5.8 cm tall, or a little less where that leaves
-      a 4:3 game an even margin all round. On a tablet it is tall enough for
-      full-size buttons, and never more than 60% of the screen.
+    - The skin is drawn round every menu screen, the tools' pages too.
+    - A clip-on controller, such as the GameSir Pocket Taco or the 8BitDo
+      FlipPad, counts as a controller: no skin shows. In a portrait game the
+      room it covers below the picture is kept empty.
+    - In a [multiplayer](multiplayer.md) game the on-screen pad stays for
+      Player 1 while the connected controllers belong to other players.
+    - Where no layout of the skin fits the window, such as in split screen,
+      a game shows the see-through buttons instead and the menu fills the
+      window.
+
+### Pad skins
+
+A skin comes in seven colours, picked with
+[**Pad theme**](appearance.md#pad-theme) in **Tools → Settings →
+Appearance**: **NX Carbon** (the default), **NX Onyx**, **NX Obsidian**,
+**NX Plasma**, **NX Ember**, **NX Volt** and **NX Tide**.
+[**Pad skin**](appearance.md#pad-skin) on the same page turns the skin on
+or off.
+
+Each skin has layouts for a phone in portrait and in landscape, a shorter
+screen such as the Galaxy Z Fold's cover screen, the unfolded Fold and
+tablets, and every console has its own buttons in them (see
+[Each console's buttons](#each-consoles-buttons)).
+
+- A row of [touch shortcuts](#touch-shortcuts) sits under the skin's
+  screen.
+- The [in-game menu](in-game-menu.md) opens inside the skin's screen.
+- A touch on the skin's screen reaches the game, so a Nintendo DS or 3DS
+  touch screen works as it is drawn.
+- On a foldable's inner screen and on tablets held upright, the skin is
+  split at the middle, where the hinge is. See
+  [Foldables & Large Screens](foldables.md#half-folded).
+
+<figure class="nx-phone" markdown>
+![Mario Kart DS on the Fold's cover screen in the DS pad skin: both screens, the SAVE and LOAD shortcut strip under the touch screen, and MIC, MENU and SWAP at the bottom](../assets/screenshots/mobile/pad-skin-ds.webp){ .nx-phone__screen }
+![](../assets/landing/mobile/zfold8.webp){ .nx-phone__frame }
+</figure>
+
+??? info "More detail"
+    - A one-screen console's glass takes the shape of the game's picture.
+    - On a console with an analog stick the skin draws the stick and the
+      d-pad. Where a layout has room for only one, a swap button on the
+      skin switches between them. The choice is kept for the game while the
+      app runs.
+    - A Nintendo DS or 3DS skin has **MIC** and **SWAP** buttons of its own.
+      On a portrait phone its in-game menu covers the top screen and runs
+      down to just above `L` and `R`.
 
 ### Landscape
 
-In landscape the pad splits into two halves, one either side of the game,
-and the game sits between them:
+In landscape the skin is one handheld held sideways: the screen in the
+middle, the d-pad or stick in the left grip and the face buttons in the
+right grip, with the shoulder buttons above them. The touch shortcuts sit
+under the screen. Where the window is tall enough, the small buttons
+(`MENU`, `SELECT`, `START` and the like) stack in a column on each side.
 
-- **Left half**, top to bottom: `L1` `L2`, the d-pad, then `MENU` and
-  `STICK`.
-- **Right half**: `R2` `R1`, the face buttons, then `SELECT` and `START`.
-- A second row under `MENU` and `START` holds the Nintendo DS and 3DS
-  **STYLUS** and **SWAP**, and your
-  [touch buttons](controls-settings.md#touch-buttons). When one half has it,
-  both do, so the two halves stay level.
-- Both halves keep clear of the camera cutout, on whichever side it is.
-- On the Nintendo DS and 3DS, the round
-  [mic button](emulators/nintendo-ds.md#microphone) sits right of `L`.
+![The landscape pad skin round Sonic & Knuckles: the screen in the middle with the SAVE and LOAD shortcuts under the game, and a grip of buttons either side](../assets/screenshots/mobile/pad-landscape.webp){ .nx-wide }
 
-![The landscape pad beside a Sega Genesis game: the two halves either side of the picture](../assets/screenshots/mobile/pad-landscape.webp){ .nx-wide }
+**Nintendo DS and 3DS:** on a regular phone in landscape the skin's screen
+follows the game's layout setting (**Single screen** by default), and
+`SELECT` + `Left` / `Right` changes it. A tip names the layout and swap
+buttons when the game starts, with **Don't show again**. On the Fold, on
+tablets and in portrait the skin places the two screens itself, and the
+game's layout rows read **The pad skin places the screens**. See
+[Nintendo DS](emulators/nintendo-ds.md) and
+[Nintendo 3DS](emulators/nintendo-3ds.md).
 
-The pad is drawn **solid** when its buttons clear the game, and
-**see-through** when they overlap it. **Pad Opacity (landscape)** sets how see-through (40%
-by default). It is in the in-game menu under **Options →
-[Frontend](in-game-menu.md#frontend)**, not in Settings, and is saved per
-game or console with Save Changes.
+### Pad skin off
 
-With [Screen Scaling](in-game-menu.md#frontend) on **Auto** (the default),
-the game keeps out of the pad's way: it may run under the inner half of each
-side's buttons at most, never past them. On a wide tablet it stays clear of
-the pad altogether. With a controller connected the pad goes away and the
-game is sized for the whole screen.
+With [**Pad skin**](appearance.md#pad-skin) set to **Off**, a game runs
+full screen and the skin's buttons alone are drawn over it, see-through.
+The menus have no on-screen pad: you use them by touch.
 
-??? info "More detail"
-    - The buttons are 11 mm across, whatever the screen, and shrink only
-      when the screen is too short for the rows. On a squarer phone screen,
-      such as the Galaxy Z Fold's cover screen, they are the portrait pad's
-      size instead, so the game keeps more room.
-    - On a tablet the d-pad and the face buttons sit at the screen's
-      mid-height.
-    - The room kept for the pad is measured from the buttons drawn: a
-      console with fewer buttons, or groups made smaller in
-      [Pad layout](controls-settings.md#pad-layout), gives the game more.
-    - **Pad Opacity (landscape)** offers 100%, 60%, 40% and 25%.
-    - With **Native**, **Aspect** or **Fullscreen** scaling, the game is
-      sized for the whole screen as before, and the pad lies over its edges,
-      see-through where it overlaps.
-
-### Hiding the portrait band
-
-In portrait, long-press the arrow in the band's bottom-right corner to hide
-it. The game gets the band's room, and one see-through pad lies across the
-bottom of the screen instead. Long-press the arrow again to bring the band
-back. The choice is **Portrait Pad** in **Options → Console Settings**, and
-the long-press saves it for the console.
-
-| Console | Games that can hide it |
-| --- | --- |
-| Nintendo DS, Nintendo 3DS | Every game. See [Nintendo DS](emulators/nintendo-ds.md#portrait-pad) |
-| Arcade, WonderSwan, Atari Lynx | Games taller than wide: vertical arcade boards and handheld games held upright. Wide games keep the band and show no arrow |
+- **Pad Opacity (landscape)** sets how see-through the buttons are, in
+  portrait and in landscape: **100%**, **60%** (the default), **40%** or
+  **25%**. It is in the in-game menu under **Options →
+  [Controls](in-game-menu.md#options)**, and is saved per game or console
+  with Save Changes.
+- The buttons are drawn solid while the game's picture doesn't reach them.
+  Once you move a button over the picture in portrait, they keep **Pad
+  Opacity (landscape)**.
+- The buttons take the touches that land on them; touches between them
+  reach the game.
+- The touch shortcuts show as see-through pills.
+- The buttons hide while the in-game menu is open.
 
 ??? info "More detail"
-    - The game may reach into the pad by a quarter of its height at most
-      (a third for the Nintendo DS and 3DS, so the unfolded Galaxy Z Fold
-      shows a DS game's top screen at 6×). A game that stops above it is centred in the room above, and the pad
-      is drawn solid.
-    - The pad's buttons take the touches that land on them; touches between
-      them reach the game.
-    - Your [touch buttons](controls-settings.md#touch-buttons) sit in the top
-      row, beside the shoulder buttons toward the middle (on the DS and 3DS,
-      beside **STYLUS** and **SWAP**). On the New 3DS, with `ZL` and `ZR`
-      there too, they narrow so the two sides don't meet.
-    - With a controller connected the pad hides, as in landscape.
+    - These buttons have a layout of their own. Until you move one, it sits
+      where the skin puts it. See
+      [Button layout](controls-settings.md#button-layout).
+    - In portrait the picture keeps its size however you move the buttons.
+
+### Touch shortcuts
+
+Up to four touch buttons sit in a row under the skin's screen, each for an
+action you choose in
+[**Shortcuts**](controls-settings.md#touch-buttons). Out of the box the row
+has **Save** and **Load**, for the save state slot you used last.
+
+- A hold action works while your finger stays on it; a toggle lights while
+  it is on.
+- The row hides while the in-game menu is open, and during a
+  [netplay](netplay.md) match.
+- While a game's [local wireless](local-wireless.md) is on, save, load,
+  fast forward, rewind and reset are hidden.
+
+### With a controller
+
+With a controller connected no pad is drawn, and the game is sized for the
+whole screen. Two things stay on screen, see-through, in the bottom corners:
+
+- **Bottom right:** the touch shortcuts you have set, as a row of pills.
+- **Bottom left:** on the Nintendo DS and 3DS, the round
+  [mic button](emulators/nintendo-ds.md#microphone).
+
+They hide while the in-game menu is open.
+
+![Mario Kart DS full screen with a controller connected: the round mic button at the bottom left and the Save and Load pills at the bottom right](../assets/screenshots/mobile/pad-corner-buttons.webp){ .nx-wide }
+
+??? info "More detail"
+    - The main menu's skin hides with any controller, in portrait and in
+      landscape.
+    - Without a pad skin the Nintendo DS and 3DS screens use the game's own
+      layout rows (see [Nintendo DS](emulators/nintendo-ds.md)).
 
 ### Each console's buttons
 
-The pad draws each console's own buttons, and leaves out the ones the console
-doesn't have:
+The skin draws each console's own buttons, and leaves out the ones the
+console doesn't have:
 
-| Console | What the pad shows |
+| Console | What the skin shows |
 | --- | --- |
-| Sega Genesis, Sega CD, 32X | The Sega pad: `A` `B` `C` on a 3-button pad, plus `X` `Y` `Z` and `Mode` on a 6-button pad |
-| Master System, Game Gear, SG-1000 | `1` and `2` |
-| TurboGrafx-16 | `I` to `VI`, `Run` and `Mode` |
-| PlayStation, PSP | `○` `×` `△` `□` |
-| Nintendo 64 | `A`, `B`, a yellow C-button diamond, and `Z` on `L2` |
-| Dreamcast | `A` `B` `X` `Y` in the Dreamcast's colours |
-| GameCube | A green `A`, a red `B`, `X`, `Y`, `Z`, `L` and `R` triggers, and a C-stick |
-| Wii | The game's Wii controller, with `HOME`, `Shake` and `MOTION`; see [Nintendo Wii & GameCube](emulators/wii-gamecube.md#wii) |
-
-The Sega pad follows the game's [Controller Type](emulators/sega.md#controller-type).
-On the 6-button pad, `Y` and `Z` are on the shoulder buttons, and `Mode` is
-in place of `SELECT`.
+| Game Boy, Game Boy Color, NES | The d-pad, `A` `B`, turbo `TA` `TB`, `SELECT` and `START`; no shoulder buttons |
+| Game Boy Advance | The same, with `L` `R` and turbo `TL` `TR` |
+| Famicom Disk System | The Game Boy set, with a `DISK` button that flips the disk |
+| Arcade (FBNeo), NAOMI, Atomiswave | The d-pad, `A` `B` `X` `Y`, `L` `R`, `COIN` and `START` |
+| PlayStation, PlayStation 2 | `△` `○` `×` `□`, `L1` `L2` `R1` `R2`, the right stick, `L3` and `R3` |
+| PSP | `△` `○` `×` `□`, `L` `R`, the analog nub, `SELECT` and `START` |
+| Nintendo 64 | The stick and d-pad, `A` `B`, the C buttons, `Z`, `L` and `R` |
+| Dreamcast | The stick and d-pad, `A` `B` `X` `Y`, the `L` `R` triggers and `START` |
+| GameCube | The stick and d-pad, `A` `B` `X` `Y`, `Z`, the `L` `R` triggers, the C-stick and `START` |
+| Wii | The game's Wii controller (Classic, Nunchuk, sideways or upright Remote), with `HOME`, `SHAKE` and `MOTION`; see [Nintendo Wii & GameCube](emulators/wii-gamecube.md#wii) |
+| Nintendo DS | Two screens, `A` `B` `X` `Y`, `L` `R`, **MIC** and **SWAP** |
+| Nintendo 3DS | The DS set with the Circle Pad; a New 3DS game adds `ZL` `ZR` and the C-stick |
+| PICO-8 | The d-pad, `O` `X` and `START` |
+| Atari 5200 | The joystick, two fire buttons, `*` `#`, `PAUSE`, `START` and `KEYPAD` |
+| Doom | The d-pad, `A` `B` `X` `Y`, `L` `R` `L2` `R2`, `L3` and `R3` |
+| Every other console | The shared layout: the d-pad, `A` `B` `X` `Y`, `L` `R`, `SELECT` and `START` |
 
 <div class="grid" markdown>
 
 <figure class="nx-phone" markdown>
-![The PlayStation pad with × ○ △ □](../assets/screenshots/mobile/pad-ps.webp){ .nx-phone__screen }
+![Marvel Super Heroes with the PlayStation pad skin: L1, L2, R1, R2, △ ○ × □, the right stick, L3 and R3](../assets/screenshots/mobile/pad-ps.webp){ .nx-phone__screen }
 ![](../assets/landing/mobile/zfold8.webp){ .nx-phone__frame }
 </figure>
 
 <figure class="nx-phone" markdown>
-![The Nintendo 64 pad with the C-button diamond and Z](../assets/screenshots/mobile/pad-n64.webp){ .nx-phone__screen }
+![Super Mario 64 with the Nintendo 64 pad skin: the stick, the C buttons, A, B, Z, L and R](../assets/screenshots/mobile/pad-n64.webp){ .nx-phone__screen }
 ![](../assets/landing/mobile/zfold8.webp){ .nx-phone__frame }
 </figure>
 
 <figure class="nx-phone" markdown>
-![The Dreamcast pad with coloured face buttons](../assets/screenshots/mobile/pad-dc.webp){ .nx-phone__screen }
+![Crazy Taxi 2 with the Dreamcast pad skin: the stick, A, B, X, Y and the L and R triggers](../assets/screenshots/mobile/pad-dc.webp){ .nx-phone__screen }
 ![](../assets/landing/mobile/zfold8.webp){ .nx-phone__frame }
 </figure>
 
 <figure class="nx-phone" markdown>
-![The Sega 6-button pad](../assets/landing/controls/pad-md6.webp){ .nx-phone__screen }
+![Streets of Rage 2 with the shared pad skin layout: the d-pad, A, B, X, Y, L, R, SELECT and START](../assets/landing/controls/pad-md6.webp){ .nx-phone__screen }
 ![](../assets/landing/mobile/zfold8.webp){ .nx-phone__frame }
 </figure>
 
@@ -150,31 +195,34 @@ in place of `SELECT`.
 
 ### Pad themes
 
-**Pad theme** in **Tools → Settings → [Appearance](appearance.md)** colours
-the portrait pad:
+**Pad theme** in **Tools → Settings → [Appearance](appearance.md#pad-theme)**
+picks the skin's colour, in portrait and landscape, in the menus and in
+games:
 
 | Theme | Look |
 | --- | --- |
-| **Charcoal** (default) | The dark pad |
-| **Retro** | A light grey body with magenta face buttons |
-| **Black** | A pure black body, with grey or outlined buttons ([Pad buttons](appearance.md#pad-buttons)) |
+| **NX Carbon** (default) | Smoke grey |
+| **NX Onyx** | Smoked black |
+| **NX Obsidian** | Translucent near-black |
+| **NX Plasma** | Translucent purple |
+| **NX Ember** | Translucent red |
+| **NX Volt** | Translucent green |
+| **NX Tide** | Translucent blue |
 
-The landscape halves always stay Charcoal.
-
-<div class="nx-phones" markdown>
+<div class="nx-phones nx-phones--three" markdown>
 <div markdown>
 <figure class="nx-phone" markdown>
-![Settings → Appearance with Pad theme set to Charcoal: the dark pad below](../assets/screenshots/mobile/pad-charcoal.webp){ .nx-phone__screen }
+![Streets of Rage 2 in portrait with Pad theme set to NX Carbon: the smoke grey skin round the game](../assets/screenshots/mobile/pad-theme-carbon.webp){ .nx-phone__screen }
 ![](../assets/landing/mobile/zfold8.webp){ .nx-phone__frame }
 </figure>
-<p class="nx-phones__caption">Charcoal</p>
+<p class="nx-phones__caption">NX Carbon</p>
 </div>
 <div markdown>
 <figure class="nx-phone" markdown>
-![Settings → Appearance with Pad theme set to Retro: a light grey pad with magenta face buttons](../assets/screenshots/mobile/pad-retro.webp){ .nx-phone__screen }
+![Streets of Rage 2 in portrait with Pad theme set to NX Plasma: the translucent purple skin round the game](../assets/screenshots/mobile/pad-theme-plasma.webp){ .nx-phone__screen }
 ![](../assets/landing/mobile/zfold8.webp){ .nx-phone__frame }
 </figure>
-<p class="nx-phones__caption">Retro</p>
+<p class="nx-phones__caption">NX Plasma</p>
 </div>
 </div>
 
@@ -189,7 +237,7 @@ on the right and `B` at the bottom, and any other pad is read as **Xbox
 layout**, with `A` at the bottom and `B` on the right.
 
 **Controller Layout**, in the in-game menu's
-**Options → [Console Settings](in-game-menu.md#console-settings)**, names
+**Options → [Controls](in-game-menu.md#options)**, names
 the letters printed on your controller. Every console has it. Save it for
 the console or the game with Save Changes.
 
@@ -237,6 +285,22 @@ The other buttons:
 On a controller without a mode button, hold `SELECT` and `START` together to
 open the in-game menu. In a multiplayer game only Player 1's `SELECT` +
 `START` does; see [Local Multiplayer](multiplayer.md#the-in-game-menu).
+
+Some controllers have no `SELECT`, `START` or mode button of their own, and
+send Android's Back or Menu key instead. The app reads those keys as the
+button the controller lacks:
+
+| The controller's key | NX Redux |
+| --- | --- |
+| Back, on a controller with no `SELECT` | `SELECT` |
+| Back, on a controller that has `SELECT` | `MENU` |
+| Menu, on a controller with no `START` | `START` |
+| Menu, on a controller that has `START` | `MENU` |
+| The small button beside the logo button on an AYANEO handheld | `MENU` |
+
+To use another button for `SELECT`, `START` or `MENU`, bind it in
+[**System buttons**](controls-settings.md#system-buttons). A button you
+bind there wins over this table.
 
 ??? info "More detail"
     On Nintendo DS the left stick is the d-pad, or moves the pen in stylus
@@ -290,6 +354,7 @@ These consoles rumble:
 | Dreamcast | Games that use the Vibration Pack. It is in each controller's second slot out of the box |
 | Pokémon mini | Games with rumble |
 | Doom (PrBoom) | Rumble is on out of the box |
+| Arcade (FBNeo) | Games with rumble. It is on out of the box |
 | Nintendo 64 | Only with the Rumble Pak inserted (see below) |
 
 Other consoles have no rumble.
@@ -299,7 +364,7 @@ saves). To feel a game's rumble:
 
 1. Open [Emulator Settings](emulator-settings.md) for the console, or **Game
    Settings** for one game.
-2. Under **Core settings → Pak/Controller Options**, set **Player 1 Pak** to
+2. Under **Emulator → Pak/Controller Options**, set **Player 1 Pak** to
    **rumble**. For more players, set **Player 2 Pak** to **Player 4 Pak** the
    same way.
 3. Start the game again for the change to take effect.
@@ -319,7 +384,7 @@ saves). To feel a game's rumble:
     - The rumble stops while the [in-game menu](in-game-menu.md) is open and
       picks up again when you close it. It also stops when you leave the app
       or quit the game.
-    - The emulators' own rumble options are in **Core settings** too, such
+    - The emulators' own rumble options are under **Emulator** too, such
       as **Rumble Effects** for PlayStation and Doom, **Device in Expansion
       Slot A2** for Dreamcast, and **Controller Rumble Strength** for Game
       Boy. Leave them as they are; **Game rumble** sets how strong it feels.
@@ -336,6 +401,7 @@ saves). To feel a game's rumble:
 | `START` | On the main menu, [search](main-menu.md#search) your games. In a game list, [search that list's games](main-menu.md#searching-a-game-list) |
 | `MENU`, or a long press | Open the context menu |
 | `L1` / `R1` | Switch main menu tabs. In a console's game list, jump to the previous or next letter |
+| `L2` / `R2` | On the [Games tab](main-menu.md#games-tab), jump to the previous or next letter |
 | `Left` / `Right` | In a game list drawn as a List, Minimal or a vertical Carousel or Backdrop, move a page. See [Game lists](main-menu.md#game-lists) |
 
 **Which button confirms:**
@@ -346,17 +412,25 @@ saves). To feel a game's rumble:
 - On the on-screen pad, the button drawn as `A` confirms and the one drawn as
   `B` goes back. On PlayStation and PSP, `×` confirms and `○` goes back.
 
-Menus show key hints you can tap when a controller or the on-screen pad is
+Menus show key hints you can tap when a controller or the pad skin is
 present.
+
+Text is typed on the [NX keyboard](about.md#keyboard), which the pad drives
+too.
+
+On a page with two panes side by side, `Left` / `Right` move between the
+panes. To change a row's value there, press `A` on it, step it with `Left` /
+`Right`, then press `A` or `B`. See
+[Two-pane screens](foldables.md#two-pane-screens).
 
 ??? info "More detail: hint order"
     **Options** (`MENU`) always comes first. The other hints follow the pad
     from left to right: the d-pad and left shoulders, `SELECT`, `START`, then
     `Y` `X` `B` `A`, then the right shoulders.
 
-With touch alone (no controller and no pad below the screen: in landscape,
-on the tools' pages in portrait, or with [Menu pad](controls-settings.md#menu-pad)
-Off), there is no hint bar:
+With touch alone (no controller and no pad skin: with
+[Pad skin](appearance.md#pad-skin) Off, or where no skin layout fits the
+window), there is no hint bar:
 
 - Tap an item to select it, tap it again to open it, and long-press for its
   menu. Android's Back gesture goes back.
@@ -370,8 +444,8 @@ Off), there is no hint bar:
 ## Game-list context menu
 
 Press `MENU`, or long-press a game, for its context menu: Pin Item, Hide
-Game, Rename Rom, Add to Collection, Game Settings, Netplay, Fetch art and
-Emulator. See [Context menus](main-menu.md#context-menus) for what each does
+Game, Rename Rom, Add to Collection, Game Settings, Netplay, Fetch art or
+Change art, and Emulator. See [Context menus](main-menu.md#context-menus) for what each does
 and where it shows.
 
 ??? info "More detail: menu order"
@@ -381,13 +455,16 @@ and where it shows.
     - With the
       [Achievements panel](layouts.md#layout-options-and-achievements-panel)
       row set to Hide, **Achievements** comes last.
+    - With [Kids Mode](kids-mode.md) on, the menu offers play items only.
 
 ## In-game menu
 
 Press `MENU`, hold `SELECT` + `START`, or use Android's Back gesture during a
-game. The menu has save states and Options: Console Settings, Shortcuts,
-Frontend, Shaders, Core Options, Cheats, Achievements and Save Changes. See
-[In-game Menu](in-game-menu.md).
+game. The menu has Continue, Save, Load, Reset, Options and Quit, with tabs
+for Achievements, Cheats and Players where they apply. **Options** holds
+Display, Controls, Gameplay, Multiplayer, Audio, Shortcuts, Shaders,
+Emulator and Save Changes. With a pad skin, the menu opens inside the
+skin's screen. See [In-game Menu](in-game-menu.md).
 
 For fast forward, rewind, reset and Save & Quit without the menu, bind
 [shortcuts](controls-settings.md#shortcuts) to your controller's buttons.
@@ -403,12 +480,14 @@ In a multiplayer game, `SELECT` + `START` works on Player 1's controller only.
 
 Some consoles have buttons and shortcuts of their own, and they win over
 the [shortcuts](controls-settings.md#shortcuts) you bind. They are on each
-console's page:
+console's page. On the Nintendo DS and 3DS, stylus mode moves the pen with
+the right stick, the left stick or the d-pad, and `R3` or `A` taps.
 
 | Console | Its own buttons |
 | --- | --- |
-| [Nintendo 3DS](emulators/nintendo-3ds.md#controls) | **SWAP** or `SELECT` + `R1` swaps screens, **STYLUS** or `SELECT` + `L1` turns stylus mode on, `SELECT` + `LEFT` / `RIGHT` changes the layout, `L2` / `R2` are `ZL` / `ZR`, the right stick is the C-stick |
-| [Nintendo DS](emulators/nintendo-ds.md#controls) | **SWAP** or `R2` swaps screens, `SELECT` + a direction changes the layout or inset, **STYLUS** or `L2` turns stylus mode on |
+| [Nintendo DS](emulators/nintendo-ds.md#controls) | **SWAP**, `L3` or `SELECT` + `L1` swaps screens (`L2` too), `SELECT` + `R1` turns stylus mode on or off (`R2` too), `SELECT` + `LEFT` / `RIGHT` changes the layout, `SELECT` + `UP` / `DOWN` moves the inset |
+| [Nintendo 3DS](emulators/nintendo-3ds.md#controls) | **SWAP**, `L3` or `SELECT` + `L1` swaps screens, `SELECT` + `R1` turns stylus mode on or off, `SELECT` + `LEFT` / `RIGHT` changes the layout, `L2` / `R2` are `ZL` / `ZR`, the right stick is the C-stick |
+| [Nintendo Wii](emulators/wii-gamecube.md#wii) | `L3` recentres motion, `R3` is `HOME` |
 | [Sega Dreamcast, NAOMI, Atomiswave](emulators/dreamcast.md#controls) | Analog `L2` / `R2`, and on the arcade boards `SELECT` for a coin, `L3` for Test and `R3` for Service |
 | [Arcade (FBNeo)](emulators/arcade.md#controls) | `SELECT` inserts a coin; the on-screen pad labels it **COIN** |
 | [Nintendo 64](emulators/nintendo-64.md#controls) | Buttons by letter, `Z` on `L2`, the C buttons on the right stick |

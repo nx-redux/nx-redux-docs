@@ -24,7 +24,7 @@ saves and BIOS.
 ## Controls
 
 <figure class="nx-phone" markdown>
-![Mega Man X4 on the Fold's cover screen, with the PlayStation pad: × ○ △ □](../../assets/screenshots/mobile/pad-ps.webp){ .nx-phone__screen }
+![Marvel Super Heroes on the Fold's cover screen, with the PlayStation pad skin: × ○ △ □](../../assets/screenshots/mobile/pad-ps.webp){ .nx-phone__screen }
 ![](../../assets/landing/mobile/zfold8.webp){ .nx-phone__frame }
 </figure>
 
@@ -45,8 +45,24 @@ The face buttons map to the PlayStation buttons **by position**:
 | `START`, `SELECT` | `START`, `SELECT` |
 
 - In the app's menus, `×` confirms and `○` goes back.
+- The on-screen pad is the PlayStation [pad skin](../controls.md#pad-skins),
+  a DualShock: the d-pad, the face buttons, all four shoulder buttons, the
+  right stick, and `L3` and `R3` as their own buttons. On a phone the left
+  stick shares the d-pad's place: **D-PAD** / **STICK** switches between
+  them. Roomier layouts, such as the unfolded Galaxy Z Fold's, show both.
 - `MENU`, or `SELECT` + `START`, opens the [in-game menu](../in-game-menu.md).
 - Games with [DualShock rumble](../controls.md#game-rumble) rumble.
+
+## Memory cards
+
+Each game has its own memory card in slot 1, saved in `Saves/PS/` and
+shared by both cores.
+
+??? info "More detail"
+    On PCSX-ReARMed, slot 2 is empty. **Memory Card 2 Type** under
+    **Emulator → System** puts a card there: **Game Code (Serial)** for one
+    per game, or **Shared Between All Games**. It is **No Memory Card** by
+    default.
 
 ## Multi-disc games
 

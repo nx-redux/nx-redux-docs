@@ -1,22 +1,24 @@
 # Controls settings
 
-**Tools → Settings → Controls** sets how strong the vibration is, whether the
-main menu has the on-screen pad, where the pad's buttons sit, your in-game
-shortcuts, and which controller buttons are `SELECT`, `START` and `MENU`. The rows
-work as on every [Settings](settings.md#buttons) page: `Left` / `Right` step
-a value, and `A` or a tap flips a switch or picks a choice.
+**Tools → Settings → Controls** sets how strong the vibration is, your
+in-game shortcuts, and which controller buttons are `SELECT`, `START` and
+`MENU`. The rows work as on every [Settings](settings.md#buttons) page:
+`Left` / `Right` step a value, and `A` or a tap flips a switch or picks a
+choice. Where Settings shows two panes, press `A` on a row first; see
+[Two-pane screens](foldables.md#settings).
 
 | Setting | What it does | Values | Default |
 | --- | --- | --- | --- |
 | [**Pad vibration**](#pad-vibration) | Tick when you press the on-screen pad | Off, Light, Medium, Strong | Light |
 | [**Game rumble**](#game-rumble) | Strength of the game's own rumble | Off, Light, Medium, Strong | Medium |
-| [**Menu pad**](#menu-pad) | On-screen pad below the main menu | On, Off | On |
-| [**Pad layout**](#pad-layout) | Move and resize the pad's buttons | Default, Custom | Default |
-| [**Shortcuts**](#shortcuts) | Controller buttons and touch buttons for fast forward, rewind, reset and Save & Quit | | |
+| [**Shortcuts**](#shortcuts) | Controller buttons and touch buttons for fast forward, rewind, save states and reset | | |
 | [**System buttons**](#system-buttons) | Which buttons on your controller are `SELECT`, `START` and `MENU` | | |
 | [**Reset to defaults**](#reset-to-defaults) | Puts this page back to its defaults | | |
 
-![Settings, with Controls open beside the sections: Pad vibration Light, Game rumble Medium, Menu pad On, Pad layout Default, Shortcuts and Reset to defaults](../assets/screenshots/mobile/settings-controls.webp){ .nx-wide }
+Moving and resizing the on-screen buttons is on the Appearance page: see
+[Button layout](#button-layout).
+
+![Settings, with Controls open beside the sections: Pad vibration Light, Game rumble Medium, Shortcuts, System buttons and Reset to defaults](../assets/screenshots/mobile/settings-controls.webp){ .nx-wide }
 
 ## Pad vibration
 
@@ -37,38 +39,26 @@ player.
 Which consoles rumble, and the Nintendo 64's Rumble Pak: see
 [Controls → Game rumble](controls.md#game-rumble).
 
-## Menu pad
+## Button layout
 
-The on-screen pad below the main menu in portrait. Set it to **Off** to take
-the pad away: the main menu, the game lists and the Game Switcher then run to
-the bottom of the screen, and you use them by touch or with a controller.
-Games keep their pad, whatever this says.
-
-??? info "More detail"
-    - With it on, the pad shows on the main menu, the game lists, the Game
-      Switcher and a game's Game Settings, and on the **Appearance** and
-      **Controls** pages. The tools never show it.
-    - With the pad off and no controller, the screens have no hint bar and
-      use touch controls instead. See
-      [Controls → In the menus](controls.md#in-the-menus).
-
-## Pad layout
-
-Moves and resizes the on-screen pad's buttons. The row reads **Custom** once
-you have changed a layout, and `A` opens its page:
+Moves and resizes the on-screen buttons, for one console at a time. Open it
+from **Tools → Settings → [Appearance](appearance.md#button-layout) → Button
+layout**, or during a game from the in-game menu's **Options → Controls →
+Adjust buttons**. The Appearance row reads **Custom** once any console has a
+change, and `A` opens its page:
 
 | Row | What it does |
 | --- | --- |
-| **Console** | Whose layout you edit: **Shared**, or one of the consoles in your library |
-| **Portrait band** | Opens the editor for the pad below the screen in portrait, in games and on the main menu |
-| **Landscape** | Opens the editor for the pad halves beside a landscape game |
-| **Half-folded** | Opens the editor for the Nintendo DS and 3DS pad beside the touch screen on a [half-folded](foldables.md#nintendo-ds-and-3ds-half-folded) foldable. Shows for **Shared**, Nintendo DS and Nintendo 3DS, on the inner screen of a foldable |
-| **Reset console** | Puts the chosen console's layouts on this screen back |
+| **Console** | Whose buttons you edit: any console, by name |
+| **Controller** | On the Wii, which controller: **Classic**, **Nunchuk**, **Sideways** or **Upright**. On the Nintendo 3DS, **Regular** or **New** (with `ZL`, `ZR` and the C-stick). Other consoles have no such row |
+| **Portrait** | Opens the editor for the console's portrait layout |
+| **Landscape** | Opens the editor for the console's landscape layout |
+| **Reset console** | Puts the chosen console's buttons back where the skin puts them, portrait and landscape. It asks first |
 
-![Controls → Pad layout beside the Settings sections: Console Shared, Portrait band Default, Landscape Default and Reset console](../assets/screenshots/mobile/settings-controls-pad-layout.webp){ .nx-wide }
+![Appearance → Button layout beside the Settings sections: Console on Arcade, Portrait, Landscape and Reset console](../assets/screenshots/mobile/settings-controls-pad-layout.webp){ .nx-wide }
 
-**Shared** is the layout every console uses. A console you give a layout of
-its own uses that instead.
+**Adjust buttons** skips this page: it opens the editor on the layout the
+game is showing.
 
 In the editor:
 
@@ -77,54 +67,78 @@ In the editor:
 - Press **Save** when you are done. Leaving with changes you haven't saved
   asks **Discard changes?** first.
 
+The editor edits what is drawn. With
+[Pad skin](appearance.md#pad-skin) on it edits the skin, and its title ends
+in **Pad skin**. With Pad skin off, or where no skin layout fits, it edits
+the see-through buttons, and its title ends in **Overlay**.
+
+| | Pad skin | Overlay |
+| --- | --- | --- |
+| Where a group can go | Anywhere in the window, and up to 10% into a screen from each edge. The rest of the screen is tinted red | Anywhere, over the game too |
+| Starts from | The skin's own layout | The skin's layout, with your Pad skin changes, until you move a button here |
+
+<figure class="nx-phone" markdown>
+![The editor on the Fold's cover screen for the Arcade skin in portrait: the face-button group selected with a corner handle, the screen tinted red, and the panel with Reset group, Reset all, Cancel and Save](../assets/screenshots/mobile/button-layout-editor.webp){ .nx-phone__screen }
+![](../assets/landing/mobile/zfold8.webp){ .nx-phone__frame }
+</figure>
+
+In both, a group can be made as small as a 32 dp touch area, buttons may
+overlap to the eye, and two buttons' touch areas never overlap.
+
 ??? info "More detail"
-    - Each layout row reads **Default** (the default pad), **Custom**, or
-      **Shared** (a console that follows Shared).
-    - The main menu's pad always uses the Shared portrait layout.
-    - Each screen size keeps its own layouts: a Fold's cover screen and its
-      inner screen, for example, are set up apart. The page edits the screen
-      you are on. A screen with no layout yet starts from the other screen's.
-    - The editor opens full screen, turned to the layout's orientation, with
-      a grey block where the game goes. In landscape the block and the pad
-      sit where a game of that console puts them, so the preview matches
-      the game. **Half-folded** shows the DS or 3DS top screen above a line
-      for the hinge, and the touch screen between the two halves below it.
-    - Landscape moves and sizes made before the pad moved beside the game
-      were cleared once, since they were made for the old spots. Portrait
-      layouts were kept.
-    - A group is the d-pad, the face buttons, a pair of shoulders or a pair
-      of system buttons. Dropped near its usual spot, a group snaps back
-      there.
-    - Groups resize from 70% to 150%. Groups that overlap are outlined in
-      red.
+    - Each console keeps its own layout, in portrait and in landscape, and
+      each Wii controller and the regular and New 3DS keep theirs.
+    - The editor opens full screen, turned to the layout's orientation, and
+      shows the layout a game would show on this screen. From **Adjust
+      buttons** the paused game is behind it.
+    - A group is the buttons drawn together on the skin, such as the d-pad,
+      the face buttons or a pair of shoulders: pieces join a group only
+      where they overlap by at least a quarter of the smaller one. The row
+      of touch shortcuts is a group too, and shows as **Shortcut 1** to
+      **Shortcut 4** so you can see it. On a Nintendo DS or 3DS skin whose
+      shortcut row hangs under the touch screen, that row is a group of its
+      own, so it can be moved.
+    - The editor draws every button at full opacity, whatever
+      **Pad Opacity (landscape)** is.
     - The panel names what you are editing, or the selected group's size,
-      over **Reset** (the selected group), **Reset all**, **Cancel** and
-      **Save**. Drag the panel aside when it covers a group.
+      over **Reset group**, **Reset all**, **Cancel** and **Save**. Drag the
+      panel aside when it covers a group.
+    - On the Overlay, **Reset group** and **Reset all** go back to the
+      skin's positions.
+    - A drag stops at a neighbouring group. To pass it, drag clear to the
+      far side in one movement.
+    - On a layout made for half-folding, the band round the hinge stays
+      clear.
+    - A window with no layout of its own, such as split screen, uses the
+      closest layout, scaled.
 
 ## Shortcuts
 
 Actions you can run during play: from a controller button or a `MENU` +
-button combination, or from up to two touch buttons on the on-screen pad.
-Nothing is bound by default. Every console and game uses these, unless its
-in-game [Options → Shortcuts](in-game-menu.md#shortcuts) page sets its own.
+button combination, or from up to four touch buttons on the on-screen pad.
+Out of the box no controller button is bound, and **Touch button 3** and
+**Touch button 4** are **Save State** and **Load State**. Every console and
+game uses these, unless its in-game
+[Options → Shortcuts](in-game-menu.md#shortcuts) page sets its own.
 
 | Shortcut | What it does |
 | --- | --- |
 | **Toggle FF** / **Hold FF** | Fast forward: on and off with each press, or only while held. |
-| **Toggle Rewind** / **Hold Rewind** | Rewind: on and off with each press, or only while held. Needs [Rewind](in-game-menu.md#console-settings) turned on for the console. |
+| **Toggle Rewind** / **Hold Rewind** | Rewind: on and off with each press, or only while held. Needs **Rewind** turned on for the console, under [Options → Gameplay](in-game-menu.md#options). |
 | **Reset Game** | Restart the game. It asks first. |
+| **Save State** / **Load State** | Save to, or load from, the save state slot you used last. |
 | **Save & Quit** | Save your place and leave the game, as the in-game menu's [Save & Quit](in-game-menu.md#quitting) does. A controller's only: it can't be a touch button. |
 | **Toggle mic** | Nintendo DS and 3DS only, as its row says: turn the game's [Mic](emulators/nintendo-ds.md#microphone) on or off. A controller's only: the pad has its own mic button. |
 
 Fast forward runs at the console's **Max FF Speed**, and turning on fast
 forward turns rewind off, and the other way round. See
-[Console Settings](in-game-menu.md#console-settings).
+[Options → Gameplay](in-game-menu.md#options).
 
 ### Binding a button
 
 - Press `A` on a shortcut, then press the button you want. For a
   combination, hold `MENU` and press another button.
-- `B` cancels the wait, and `X` sets the shortcut back to **None**.
+- `B` or Back cancels the wait, and `X` sets the shortcut back to **None**.
 - Each button or combination does one thing. Pressing one another shortcut
   already uses moves it to this shortcut, and the other one becomes
   **None**.
@@ -142,10 +156,12 @@ button to the game.
 ??? info "More detail"
     - `MENU` alone and `SELECT` + `START` open the in-game menu, and `SELECT`
       and `START` stay the game's, so `MENU` alone, `SELECT` and `START`
-      can't be bound, alone or in a combination.
+      can't be bound, alone or in a combination. `B` and Back alone cancel
+      the wait, so they bind only in a `MENU` combination.
     - A console's own hotkeys win over shortcuts. On the Nintendo DS, for
-      example, `R2` swaps the screens and `L2` is the stylus, so a shortcut
-      on either shows **Unavailable** in that console's games. See
+      example, `L3`, `R3`, `L2`, `R2`, `SELECT` + `L1` and `SELECT` + `R1`
+      are taken, so a shortcut on one of them shows **Unavailable** in that
+      console's games. See
       [Console shortcuts](controls.md#console-shortcuts).
     - With any `MENU` combination bound, `MENU` opens the menu when you let
       go of it, and only after a short press: holding it for a combination
@@ -153,68 +169,84 @@ button to the game.
     - Shortcuts are off during a [netplay](netplay.md) match, since they
       would put the players out of step.
     - Only the first player's controller runs shortcuts.
+    - If your `MENU` button does nothing, set it in
+      [System buttons](#system-buttons).
 
 ### Touch buttons
 
-**Touch button 1** and **Touch button 2** put a button on the on-screen pad
-for one action. **None**, the default, leaves it off the pad. A hold action
-works while your finger stays on it, and a toggle flips with each tap.
-Move them with the other buttons in [Pad layout](#pad-layout).
+**Touch button 1** to **Touch button 4** each put a button on the on-screen
+pad for one action. **None** leaves it off the pad. A hold action works
+while your finger stays on it, and a toggle flips with each tap.
+
+- With a [pad skin](controls.md#pad-skins), all four sit in the row under
+  the skin's screen.
+- With Pad skin off, they are see-through pills over the game.
+- With a controller connected, the ones you set show as pills in the
+  bottom-right corner of the screen.
+
+Move the row with the other buttons in [Button layout](#button-layout).
 
 ??? info "More detail"
     - A rewind button is hidden while the console's **Rewind** is off, or in
       a game that can't rewind.
     - **Save & Quit** and **Toggle mic** aren't offered for the touch buttons.
-    - The touch buttons are hidden during a netplay match.
+    - Two touch buttons can have the same action.
+    - The touch buttons are hidden during a netplay match. While a game's
+      [local wireless](local-wireless.md) is on, the save, load, fast
+      forward, rewind and reset buttons are hidden.
 
 ### Clear all
 
-Sets every shortcut to **None** and takes both touch buttons off the pad.
-With no controller connected, it still clears the hidden shortcut rows.
+Sets every shortcut to **None** and takes every touch button off the pad,
+**Save State** and **Load State** included. It asks first. With no
+controller connected, it still clears the hidden shortcut rows.
 
 ## System buttons
 
 Which buttons on your controller are `SELECT`, `START` and `MENU`. Most
-controllers need nothing here. Some handhelds' menu button sends a code
-Android doesn't name, such as the button under the logo on the AYANEO
-Pocket Air Mini, so NX Redux never sees a `MENU`. Pick the button to use
-for each, and it then acts only as that, in the menu and in games.
+controllers need nothing here: where a controller has no `SELECT`, `START`
+or mode button, the app already reads its Back or Menu key as the missing
+one (see [Controller buttons](controls.md#controller-buttons)). Use this
+page when a button still does nothing or does the wrong thing. Pick the
+button to use for each, and it then acts only as that, in the menu and in
+games.
 
 The page shows the controller you pressed last, with a row for each
 button:
 
 | Row | Value |
 | --- | --- |
-| **SELECT**, **START**, **MENU** | **Standard** (the button that sends it), or the button you picked |
-| **Reset to defaults** | Puts this controller's three buttons back to **Standard** |
+| **SELECT**, **START**, **MENU** | **Standard** (the controller's own button), or the button you picked |
+| **Reset to defaults** | Puts this controller's three buttons back to **Standard**. It asks first |
 
-Select a row and press `A`, then press the button to use. `B` or Back
-cancels. A button another row already had swaps with this one. Each
-controller model keeps its own buttons. With no controller connected, the
-page says to connect one.
+Select a row and press `A`, then press the button to use. `B` cancels. A
+button another row already had swaps with this one. Each controller model
+keeps its own buttons. With no controller connected, the page says to
+connect one.
 
-Setup asks for these when a controller is connected, and the page opens by
-itself over the main menu the first time a new controller model is used:
+While a row waits, it also takes a button from a device that isn't a
+gamepad, such as a handheld's own buttons that sit beside its pad. Volume
+and power are never bound.
 
-1. Press `SELECT`, `START` and `MENU`. Each ticks off once it's recognised;
-   any other button says it isn't one of the three.
-2. **I've pressed them all** then asks for each button it didn't see:
-   press the button to use for it.
-
-`SELECT` and `START` are needed. `MENU` can be skipped: without one,
-`SELECT` + `START` opens the menu.
+`MENU` is optional: without one, `SELECT` + `START` opens the menu.
 
 ??? info "More detail"
 
+    - A controller's Back key can be bound like any button.
     - A button Android has no key code for is kept by its scan code and
       shows as **Button** and a number.
+    - A button you bind wins over the Back and Menu stand-ins, and a role
+      you bind to another button no longer takes its stand-in.
+    - A second device that also reports itself as a gamepad counts as
+      another controller, so its buttons aren't taken while the first one's
+      row waits.
     - Some handhelds' own apps catch a button before any game does. On the
       AYANEO Pocket Air Mini, remove AYASpace's Custom Keys action for the
       button first, or NX Redux never receives it.
 
 ## Reset to defaults
 
-Puts **Pad vibration**, **Game rumble** and **Menu pad** back to their
-defaults, and every pad layout back to the default pad. It does not ask
-first. Your [shortcuts](#shortcuts) stay: **Clear all** on their page
-clears them.
+Puts **Pad vibration** and **Game rumble** back to their defaults. It asks
+first: `A` resets, `B` keeps everything. Your [shortcuts](#shortcuts),
+[system buttons](#system-buttons) and [button layouts](#button-layout)
+stay: each has its own reset.
