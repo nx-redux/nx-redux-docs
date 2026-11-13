@@ -24,6 +24,12 @@
               <li><a href="{{ 'reference/faq/handheld/' | url }}">FAQ</a></li>
             </ul>
             <p class="nx-screen__tagline">Clean, pick-up-and-play retro gaming for TrimUI handhelds and Android phones.</p>
+            <div class="nx-hints">
+              <a class="nx-hint" href="#features"><span class="nx-hint__button" aria-hidden="true">A</span>See what it does</a>
+              <a class="nx-hint" href="#get-it"><span class="nx-hint__button" aria-hidden="true">B</span>Download</a>
+              <a class="nx-hint" href="https://www.youtube.com/watch?v=l4iJBRgUe4U"><span class="nx-hint__button" aria-hidden="true">Y</span>Watch demo</a>
+              <a class="nx-hint" href="https://www.reddit.com/r/NXRedux/"><span class="nx-hint__button" aria-hidden="true">X</span>Reddit</a>
+            </div>
           </nav>
 
           <div class="nx-showcase">
@@ -51,16 +57,16 @@
                 <div class="nx-device__frame">
                   <div class="nx-device__screen" aria-hidden="true">
                     <img class="nx-slide is-active" src="{{ 'assets/landing/mobile/logo.webp' | url }}" alt="">
-                    <img class="nx-slide" src="{{ 'assets/landing/mobile/home-minimal.webp' | url }}" alt="">
-                    <img class="nx-slide" src="{{ 'assets/landing/mobile/home.webp' | url }}" alt="" loading="lazy">
-                    <img class="nx-slide" src="{{ 'assets/landing/mobile/home-list.webp' | url }}" alt="" loading="lazy">
-                    <img class="nx-slide" src="{{ 'assets/landing/mobile/consoles-carousel.webp' | url }}" alt="" loading="lazy">
-                    <img class="nx-slide" src="{{ 'assets/landing/mobile/game-list-carousel.webp' | url }}" alt="" loading="lazy">
-                    <img class="nx-slide" src="{{ 'assets/landing/mobile/game-list-backdrop-v.webp' | url }}" alt="" loading="lazy">
-                    <img class="nx-slide" src="{{ 'assets/landing/mobile/game-list-grid.webp' | url }}" alt="" loading="lazy">
-                  <img class="nx-slide" src="{{ 'assets/landing/controls/pad-n64.webp' | url }}" alt="" loading="lazy">
-                  <img class="nx-slide" src="{{ 'assets/landing/controls/pad-dc.webp' | url }}" alt="" loading="lazy">
-                  <img class="nx-slide" src="{{ 'assets/landing/controls/pad-md6.webp' | url }}" alt="" loading="lazy">
+                    <img class="nx-slide" src="{{ 'assets/landing/mobile/skin-home.webp' | url }}" alt="">
+                    <img class="nx-slide" src="{{ 'assets/landing/mobile/skin-consoles.webp' | url }}" alt="" loading="lazy">
+                    <img class="nx-slide" src="{{ 'assets/landing/mobile/skin-game-list.webp' | url }}" alt="" loading="lazy">
+                    <img class="nx-slide" src="{{ 'assets/landing/mobile/skin-games.webp' | url }}" alt="" loading="lazy">
+                    <img class="nx-slide" src="{{ 'assets/landing/mobile/skin-tools.webp' | url }}" alt="" loading="lazy">
+                    <img class="nx-slide" src="{{ 'assets/screenshots/mobile/pad-gba.webp' | url }}" alt="" loading="lazy">
+                    <img class="nx-slide" src="{{ 'assets/screenshots/mobile/pad-n64.webp' | url }}" alt="" loading="lazy">
+                    <img class="nx-slide" src="{{ 'assets/screenshots/mobile/pad-ps2.webp' | url }}" alt="" loading="lazy">
+                    <img class="nx-slide" src="{{ 'assets/screenshots/mobile/pad-ds.webp' | url }}" alt="" loading="lazy">
+                    <img class="nx-slide" src="{{ 'assets/screenshots/mobile/pad-gc.webp' | url }}" alt="" loading="lazy">
                   </div>
                   <img class="nx-device__photo" src="{{ 'assets/landing/mobile/zfold8.webp' | url }}"
                        alt="Galaxy Z Fold 8, folded, running NX Redux on its cover screen" width="537" height="800">
@@ -69,14 +75,27 @@
             </div>
           </div>
         </div>
-
-        <nav class="nx-hints" aria-label="Quick links">
-          <a class="nx-hint" href="{{ 'about/' | url }}"><span class="nx-hint__button" aria-hidden="true">A</span>Get started</a>
-          <a class="nx-hint" href="{{ 'reference/download/' | url }}"><span class="nx-hint__button" aria-hidden="true">B</span>Download</a>
-          <a class="nx-hint" href="https://www.youtube.com/watch?v=l4iJBRgUe4U"><span class="nx-hint__button" aria-hidden="true">Y</span>Watch demo</a>
-        </nav>
       </div>
     </section>
+
+    <nav class="nx-bar" aria-label="On this page">
+      <div class="nx-bar__inner">
+        <div class="nx-switch" role="group" aria-label="Show NX Redux for">
+          <button type="button" data-platform="handheld" aria-pressed="true">Handheld</button>
+          <button type="button" data-platform="mobile" aria-pressed="false">Mobile</button>
+        </div>
+        <ul class="nx-bar__links">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#systems">Systems</a></li>
+          <li><a href="#devices">Devices</a></li>
+          <li><a href="#get-it">Get it</a></li>
+          <li><a href="#whats-new">What's new</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#community">Community</a></li>
+          <li><a href="#try-it">Try it</a></li>
+        </ul>
+      </div>
+    </nav>
 
     {% set features = [
       {"title": "Play together, anywhere", "href": "handheld/netplay/", "more": "How netplay works", "shots": ["assets/landing/features/netplay-join.webp", "assets/landing/features/netplay-connection.webp", "assets/landing/features/netplay-connected.webp", "assets/landing/features/netplay-playing.webp"],
@@ -115,15 +134,41 @@
       {"title": "Hundreds of game ports", "href": "handheld/apps/portmaster/", "more": "Get PortMaster", "shot": "assets/screenshots/portmaster.png",
        "text": "Played everything already? Install PortMaster from the Xtras store and dig into hundreds of community game ports.",
        "platform": "Handheld"},
+      {"title": "A pad skin for every console", "href": "mobile/controls/#pad-skins", "more": "See the pad skins", "shots": ["assets/screenshots/mobile/pad-theme-carbon.webp", "assets/screenshots/mobile/pad-ps2.webp", "assets/screenshots/mobile/pad-n64.webp", "assets/screenshots/mobile/pad-skin-ds.webp"],
+       "text": "No controller? No problem. The on-screen pad is a rendered skin with its own layout for every console, in seven colour packs, and every button can be moved and resized.",
+       "platform": "Mobile"},
+      {"title": "Foldables and two screens", "href": "mobile/foldables/", "more": "Foldables and large screens", "shots": ["assets/screenshots/mobile/pad-fold-ds.webp", "assets/screenshots/mobile/dual-screen-ds-split.webp"],
+       "text": "Half-fold the phone and a DS game puts its top screen above the hinge and its touch screen below, like the real handheld. A handheld with a second screen, or a wired display, uses both.",
+       "platform": "Mobile"},
+      {"title": "Local wireless, nothing to set up", "href": "mobile/local-wireless/", "more": "How local wireless works", "shot": "assets/screenshots/mobile/netplay-sheet.webp",
+       "text": "Remember trading across the room? DS, 3DS and PSP games on the same Wi-Fi find each other in the game's own wireless menu, as real consoles side by side do.",
+       "platform": "Mobile"},
+      {"title": "Kids Mode", "href": "mobile/kids-mode/", "more": "Set up Kids Mode", "shots": ["assets/screenshots/mobile/kids-tiles.webp", "assets/screenshots/mobile/kids-settings.webp"],
+       "text": "Handing the phone over? Games open only in the play times a parent sets, and the rest stays behind a PIN.",
+       "platform": "Mobile"},
+      {"title": "Your phone's home screen", "href": "mobile/launcher/", "more": "Launcher Mode and Android games", "shots": ["assets/screenshots/mobile/android-console.webp", "assets/screenshots/mobile/settings-launcher.webp"],
+       "text": "Make NX Redux the home screen, and your Android games and apps sit right beside your retro library.",
+       "platform": "Mobile"},
     ] %}
-    <section class="nx-screen nx-features" aria-labelledby="nx-features-title">
+    {% set mobile_href = {
+      "Play together, anywhere": "mobile/netplay/",
+      "Emulators included": "mobile/emulators/",
+      "Resume any game": "mobile/game-switcher/",
+      "Achievements, even offline": "mobile/retroachievements/",
+      "Cheats, no computer needed": "mobile/cheats/",
+      "Sync your devices": "mobile/device-sync/",
+      "Artwork for your whole library": "mobile/artwork/",
+      "Track your play time": "mobile/game-tracker/",
+    } %}
+    <section id="features" class="nx-screen nx-features" aria-labelledby="nx-features-title">
       <div class="nx-screen__inner">
         <h2 id="nx-features-title" class="nx-features__title">Features</h2>
 
         <div class="nx-features__body">
           <ul class="nx-list" role="tablist" aria-orientation="vertical" aria-labelledby="nx-features-title">
             {% for f in features %}
-            <li class="nx-feature" role="presentation">
+            {% set on = "both" if " and " in f.platform else f.platform | lower %}
+            <li class="nx-feature" role="presentation" data-on="{{ on }}">
               <button type="button" role="tab" id="nx-tab-{{ loop.index }}" aria-controls="nx-panel-{{ loop.index }}"
                       aria-selected="{{ 'true' if loop.first else 'false' }}" tabindex="{{ '0' if loop.first else '-1' }}">{{ f.title }}</button>
             </li>
@@ -132,14 +177,22 @@
 
           <div class="nx-features__preview">
             {% for f in features %}
-            <div class="nx-features__pane{% if loop.first %} is-active{% endif %}" role="tabpanel"
+            {% set on = "both" if " and " in f.platform else f.platform | lower %}
+            <div class="nx-features__pane{% if loop.first %} is-active{% endif %}" role="tabpanel" data-on="{{ on }}"
                  id="nx-panel-{{ loop.index }}" aria-labelledby="nx-tab-{{ loop.index }}">
               <div class="nx-features__shots">
                 {% for shot in (f.shots or [f.shot]) %}
-                <img class="nx-features__shot{% if loop.first %} is-active{% endif %}" src="{{ shot | url }}" alt="" width="1024" height="768" loading="lazy">
+                <img class="nx-features__shot{% if loop.first %} is-active{% endif %}" src="{{ shot | url }}" alt="" loading="lazy">
                 {% endfor %}
               </div>
-              <p>{{ f.text }} <a class="nx-features__link" href="{{ f.href | url }}">{{ f.more }}</a></p>
+              <p>{{ f.text }}
+                {% if on == "both" %}
+                <a class="nx-features__link" data-on="handheld" href="{{ f.href | url }}">{{ f.more }}</a>
+                <a class="nx-features__link" data-on="mobile" href="{{ mobile_href[f.title] | url }}">{{ f.more }}</a>
+                {% else %}
+                <a class="nx-features__link" href="{{ f.href | url }}">{{ f.more }}</a>
+                {% endif %}
+              </p>
               <p class="nx-feature__platform">{{ f.platform }}</p>
             </div>
             {% endfor %}
@@ -148,7 +201,177 @@
       </div>
     </section>
 
-    <section class="nx-screen nx-demo" aria-labelledby="nx-demo-title">
+    {% set systems = {
+      "handheld": [
+        ["Nintendo", ["NES", "Famicom Disk System", "Super Nintendo", "Nintendo 64", "Game Boy", "Game Boy Color", "Game Boy Advance", "Nintendo DS", "Virtual Boy", "Pokémon mini"]],
+        ["Sony", ["PlayStation", "PlayStation Portable"]],
+        ["Sega", ["SG-1000", "Master System", "Game Gear", "Genesis / Mega Drive", "Sega CD", "32X", "Dreamcast", "NAOMI", "Atomiswave"]],
+        ["Atari", ["2600", "5200", "7800", "Lynx"]],
+        ["Computers", ["Amiga", "Amstrad CPC", "Commodore 64", "Commodore 128", "PET", "Plus/4", "VIC-20", "MSX"]],
+        ["More", ["Arcade", "Neo Geo Pocket / Color", "TurboGrafx-16", "WonderSwan / Color", "ColecoVision", "PICO-8", "Doom", "PortMaster ports"]],
+      ],
+      "mobile": [
+        ["Nintendo", ["NES", "Famicom Disk System", "Super Nintendo", "Nintendo 64", "GameCube", "Wii", "Game Boy", "Game Boy Color", "Game Boy Advance", "Super Game Boy", "Nintendo DS", "Nintendo 3DS", "Virtual Boy", "Pokémon mini"]],
+        ["Sony", ["PlayStation", "PlayStation 2", "PlayStation Portable"]],
+        ["Sega", ["SG-1000", "Master System", "Game Gear", "Genesis / Mega Drive", "Sega CD", "32X", "Dreamcast", "NAOMI", "Atomiswave"]],
+        ["Atari", ["2600", "5200", "7800", "Lynx"]],
+        ["More", ["Arcade", "Neo Geo Pocket / Color", "TurboGrafx-16", "WonderSwan Color", "ColecoVision", "PICO-8", "Doom, Heretic, Hexen", "Android games"]],
+      ],
+    } %}
+    {% set systems_note = {
+      "handheld": "Every emulator ships on the SD card. Home computers and PortMaster ports are handheld only.",
+      "mobile": "Every emulator is inside the app, so there is nothing else to download. GameCube, Wii, 3DS and PlayStation 2 are mobile only.",
+    } %}
+    {% set systems_href = {"handheld": "handheld/emulators/", "mobile": "mobile/emulators/"} %}
+    <section id="systems" class="nx-screen nx-sec" aria-labelledby="nx-systems-title">
+      <div class="nx-screen__inner">
+        <h2 id="nx-systems-title" class="nx-features__title">Systems</h2>
+        {% for p in ["handheld", "mobile"] %}
+        <div data-on="{{ p }}">
+          <p class="nx-sec__lead">{% set n = namespace(c=0) %}{% for g in systems[p] %}{% set n.c = n.c + (g[1] | length) %}{% endfor %}{{ n.c }} systems, ready to play</p>
+          <p class="nx-sec__text">{{ systems_note[p] }} BIOS files are not included.</p>
+          <dl class="nx-systems">
+            {% for g in systems[p] %}
+            <div class="nx-systems__group">
+              <dt>{{ g[0] }}</dt>
+              <dd><ul class="nx-chips">{% for s in g[1] %}<li>{{ s }}</li>{% endfor %}</ul></dd>
+            </div>
+            {% endfor %}
+          </dl>
+          <p class="nx-sec__more"><a class="nx-features__link" href="{{ systems_href[p] | url }}">Emulators, folders and BIOS files</a></p>
+        </div>
+        {% endfor %}
+      </div>
+    </section>
+
+    <section id="devices" class="nx-screen nx-sec" aria-labelledby="nx-devices-title">
+      <div class="nx-screen__inner">
+        <h2 id="nx-devices-title" class="nx-features__title">Devices</h2>
+        <div data-on="handheld">
+          <p class="nx-sec__lead">Custom firmware for TrimUI handhelds</p>
+          <p class="nx-sec__text">It runs from the SD card and replaces the stock interface. Update the stock firmware to the version shown before installing.</p>
+          <ul class="nx-cards">
+            <li><strong>Brick</strong><span>Stock firmware 1.1.1</span></li>
+            <li><strong>Brick Hammer</strong><span>Stock firmware 1.1.1</span></li>
+            <li><strong>Brick Pro</strong><span>Stock firmware 1.1.1 or 1.1.2</span></li>
+            <li><strong>Smart Pro S</strong><span>Stock firmware 1.0.1 or 1.0.2. The fastest for PSP, Dreamcast and N64.</span></li>
+            <li><strong>Smart Pro</strong><span>Stock firmware 1.1.1. Should work, but untested.</span></li>
+          </ul>
+        </div>
+        <div data-on="mobile">
+          <p class="nx-sec__lead">An app for Android 8.0 and later</p>
+          <p class="nx-sec__text">Any 64-bit ARM device. The layout follows the screen you play on.</p>
+          <ul class="nx-cards">
+            <li><strong>Phones</strong><span>A pad skin under the game in portrait, beside it in landscape.</span></li>
+            <li><strong>Tablets</strong><span>Skin layouts of their own for the bigger screen.</span></li>
+            <li><strong>Foldables</strong><span>Half-folded, the game sits above the hinge and the pad below.</span></li>
+            <li><strong>Android handhelds</strong><span>Built-in buttons just work. A second screen is used too.</span></li>
+            <li><strong>Controllers</strong><span>Any Android controller, Bluetooth or USB. Up to four at once.</span></li>
+            <li><strong>External displays</strong><span>Plug in a screen and the game moves to it.</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="get-it" class="nx-screen nx-sec" aria-labelledby="nx-get-title">
+      <div class="nx-screen__inner">
+        <h2 id="nx-get-title" class="nx-features__title">Get it</h2>
+        <div data-on="handheld">
+          <p class="nx-sec__lead">On the SD card in five steps</p>
+          <ol class="nx-steps">
+            <li><strong>Update the stock firmware</strong><span>To at least the version listed for your device above.</span></li>
+            <li><strong>Format a microSD card</strong><span>exFAT, on a card from a reputable brand.</span></li>
+            <li><strong>Copy the release</strong><span>Download the zip for your exact model, extract it and copy everything to the card. Leave MinUI.zip zipped.</span></li>
+            <li><strong>Add your games</strong><span>Into each system's folder under Roms, and BIOS files under Bios.</span></li>
+            <li><strong>Power on</strong><span>The installer runs by itself on first boot. Later updates install over Wi-Fi.</span></li>
+          </ol>
+          <p class="nx-sec__actions">
+            <a class="nx-btn" href="https://github.com/nx-redux/nx-handheld/releases">Download {{ config.extra.handheld_version }} on GitHub</a>
+            <a class="nx-features__link" href="{{ 'handheld/getting-started/' | url }}">Full install guide</a>
+          </p>
+        </div>
+        <div data-on="mobile">
+          <p class="nx-sec__lead">Playing in four steps</p>
+          <ol class="nx-steps">
+            <li><strong>Download the APK</strong><span>From the releases page, on the phone itself.</span></li>
+            <li><strong>Install it</strong><span>Android asks to allow installs from your browser the first time. Allow it, then Install.</span></li>
+            <li><strong>Follow the setup</strong><span>Pick a home folder, a layout and a colour. Sign-ins for achievements and artwork are optional.</span></li>
+            <li><strong>Add your games</strong><span>Into the home folder, or point the app at folders you already have.</span></li>
+          </ol>
+          <p class="nx-sec__actions">
+            <a class="nx-btn" href="https://github.com/nx-redux/nx-mobile/releases">Download {{ config.extra.mobile_version }} on GitHub</a>
+            <span class="nx-btn is-disabled">Google Play, coming soon</span>
+            <a class="nx-features__link" href="{{ 'mobile/getting-started/' | url }}">Full setup guide</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="whats-new" class="nx-screen nx-sec" aria-labelledby="nx-new-title">
+      <div class="nx-screen__inner">
+        <h2 id="nx-new-title" class="nx-features__title">What's new</h2>
+        <div data-on="handheld">
+          <p class="nx-sec__lead">v2.5 <span class="nx-sec__date">1 November 2026</span></p>
+          <ul class="nx-news">
+            <li><strong>New main menu look</strong><span>Tabs along the bottom, grey art around a coloured selection, and lists that fade at their edges.</span></li>
+            <li><strong>Your own PICO-8</strong><span>Run carts on the official PICO-8, with Splore to browse and download more.</span></li>
+            <li><strong>Game Boy Advance music</strong><span>Plays at the right speed.</span></li>
+            <li><strong>Pokémon clocks</strong><span>Keep real time across resumes.</span></li>
+          </ul>
+          <p class="nx-sec__more"><a class="nx-features__link" href="{{ 'reference/release-notes/handheld/' | url }}">All handheld release notes</a></p>
+        </div>
+        <div data-on="mobile">
+          <p class="nx-sec__lead">v0.6 <span class="nx-sec__date">13 November 2026</span></p>
+          <ul class="nx-news">
+            <li><strong>Pad skins</strong><span>Rendered pads in seven packs, with layouts for every console and a freer button editor.</span></li>
+            <li><strong>Local wireless</strong><span>DS, 3DS and PSP games find each other over Wi-Fi. GBA cable games link between two phones.</span></li>
+            <li><strong>Nintendo 64 netplay</strong><span>N64 joins the systems you can play online together.</span></li>
+            <li><strong>Kids Mode</strong><span>Games open only in the play times a parent sets.</span></li>
+            <li><strong>Its own keyboard</strong><span>Type with a controller anywhere the app asks for text.</span></li>
+            <li><strong>Games tab</strong><span>Every game in one place, with genre, year and publisher.</span></li>
+          </ul>
+          <p class="nx-sec__more"><a class="nx-features__link" href="{{ 'reference/release-notes/mobile/' | url }}">All mobile release notes</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="nx-screen nx-sec" aria-labelledby="nx-faq-title">
+      <div class="nx-screen__inner">
+        <h2 id="nx-faq-title" class="nx-features__title">FAQ</h2>
+        <div class="nx-faq" data-on="handheld">
+          <details><summary>Can I move my SD card between devices?</summary><p>No. A card is built for one model. Device Sync carries saves, save states and, if you like, ROMs from one device to another.</p></details>
+          <details><summary>How do I update?</summary><p>From Settings → About over Wi-Fi, or by copying the new MinUI.zip to the card. Emulators and tools update with it.</p></details>
+          <details><summary>Do I need to supply BIOS files?</summary><p>For some systems, yes. They are copyrighted and not included. The emulator pages list which file goes where.</p></details>
+          <details><summary>Is there a RetroAchievements hardcore mode?</summary><p>No, by design, to keep your account safe. Softcore unlocks work fully, offline too.</p></details>
+          <details><summary>A game won't launch. Where do I start?</summary><p>Check for a missing BIOS first, then the romset for arcade games, then the emulator's log on the SD card.</p></details>
+          <p class="nx-sec__more"><a class="nx-features__link" href="{{ 'reference/faq/handheld/' | url }}">All handheld questions</a></p>
+        </div>
+        <div class="nx-faq" data-on="mobile">
+          <details><summary>Do I need to download emulators or cores?</summary><p>No. Every emulator is bundled in the app.</p></details>
+          <details><summary>Can I use the same games folder as my handheld?</summary><p>Yes. A copy of your handheld's folders, BIOS files included, works as the app's home folder.</p></details>
+          <details><summary>Can two people play on one phone?</summary><p>Yes. Two to four people play one game, each on their own controller. Press a button on each controller to join.</p></details>
+          <details><summary>Does it work on foldables?</summary><p>Yes. Half-folded, the game moves above the fold and the controls go below it, automatically.</p></details>
+          <details><summary>Can it be my home screen?</summary><p>Yes. Turn on Use as home screen in Tools → Settings → System.</p></details>
+          <details><summary>Is there an iOS version?</summary><p>Not yet. NX Redux runs on Android only for now.</p></details>
+          <p class="nx-sec__more"><a class="nx-features__link" href="{{ 'reference/faq/mobile/' | url }}">All mobile questions</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="community" class="nx-screen nx-sec" aria-labelledby="nx-community-title">
+      <div class="nx-screen__inner">
+        <h2 id="nx-community-title" class="nx-features__title">Community</h2>
+        <p class="nx-sec__lead">Come and say hello</p>
+        <p class="nx-sec__text">Questions, setups, feature ideas and release news live on the official subreddit. Bugs go to GitHub, where they get tracked.</p>
+        <p class="nx-sec__actions">
+          <a class="nx-btn" href="https://www.reddit.com/r/NXRedux/">r/NXRedux on Reddit</a>
+          <a class="nx-features__link" data-on="handheld" href="https://github.com/nx-redux/nx-handheld/issues">Report a handheld bug</a>
+          <a class="nx-features__link" data-on="mobile" href="https://github.com/nx-redux/nx-mobile/issues">Report a mobile bug</a>
+        </p>
+      </div>
+    </section>
+
+    <section id="try-it" class="nx-screen nx-demo" aria-labelledby="nx-demo-title">
       <div class="nx-screen__inner">
         <h2 id="nx-demo-title" class="nx-features__title">Try the new main menu</h2>
         <p class="nx-demo__text">The same Home, tabs and layouts on TrimUI handhelds and Android phones. Pick a layout for each tab, switch between landscape and portrait, and move around with the pad or your keyboard.</p>
@@ -178,6 +401,28 @@
       });
     })();
 
+    // Platform switch: the page shows one platform's features, systems,
+    // devices, install steps, news and questions. Without this script both show.
+    (function () {
+      var home = document.querySelector(".nx-home");
+      var buttons = document.querySelectorAll(".nx-switch button");
+      if (!home || !buttons.length) return;
+      var stored = null;
+      try { stored = localStorage.getItem("nx-platform"); } catch (e) {}
+      var initial = stored === "handheld" || stored === "mobile" ? stored
+        : (/Android/.test(navigator.userAgent) ? "mobile" : "handheld");
+      function set(platform, save) {
+        home.dataset.platform = platform;
+        buttons.forEach(function (b) { b.setAttribute("aria-pressed", b.dataset.platform === platform ? "true" : "false"); });
+        if (save) { try { localStorage.setItem("nx-platform", platform); } catch (e) {} }
+        document.dispatchEvent(new CustomEvent("nx:platform"));
+      }
+      buttons.forEach(function (b) { b.addEventListener("click", function () { set(b.dataset.platform, true); }); });
+      home.classList.add("has-switch");
+      window.nxSetPlatform = set;
+      window.nxInitialPlatform = initial;
+    })();
+
     // Features: tabs laid out like the NX Redux game list. Clicking a row
     // selects it and shows its screenshot and description; UP/DOWN move the
     // selection as on the device. Without this script every panel shows.
@@ -202,6 +447,7 @@
           shots[(i + 1) % shots.length].classList.add("is-active");
         }, 3500);
       }
+      function shown(i) { return tabs[i].parentNode.offsetParent !== null; }
       function select(i, focus) {
         tabs.forEach(function (t, j) {
           var on = j === i;
@@ -211,16 +457,30 @@
         Array.prototype.forEach.call(panes, function (p, j) { p.classList.toggle("is-active", j === i); });
         if (focus) tabs[i].focus();
       }
+      function step(i, by) {
+        for (var n = 0; n < tabs.length; n++) {
+          i = (i + by + tabs.length) % tabs.length;
+          if (shown(i)) return i;
+        }
+        return i;
+      }
       tabs.forEach(function (tab, i) {
         tab.addEventListener("click", function () { select(i, false); });
         tab.addEventListener("keydown", function (e) {
-          var next = { ArrowDown: i + 1, ArrowUp: i - 1, Home: 0, End: tabs.length - 1 }[e.key];
+          var next = { ArrowDown: step(i, 1), ArrowUp: step(i, -1), Home: step(-1, 1), End: step(tabs.length, -1) }[e.key];
           if (next === undefined) return;
           e.preventDefault();
-          select((next + tabs.length) % tabs.length, true);
+          select(next, true);
         });
       });
+      // A platform's own features come and go with the switch; keep a shown one selected.
+      document.addEventListener("nx:platform", function () {
+        var current = tabs.findIndex(function (t) { return t.getAttribute("aria-selected") === "true"; });
+        if (current < 0 || !shown(current)) select(step(-1, 1), false);
+      });
     })();
+
+    if (window.nxSetPlatform) window.nxSetPlatform(window.nxInitialPlatform, false);
 
     // Main menu demo: the frame grows to its page, which changes height
     // with the orientation and the window width.
