@@ -8,9 +8,234 @@ What changed in each release of NX Redux for Android phones, tablets and
 Android handhelds. Download the APK from the
 [releases page](https://github.com/nx-redux/nx-mobile/releases).
 
+## v0.6.0
+
+*13 November 2026*
+
+The on-screen pad is now a rendered **pad skin**, with layouts of its own
+for every console and a freer button editor. DS, 3DS and PSP games find
+each other over Wi-Fi for local wireless play with nothing to set up, GBA
+cable games link between two phones with **Cable Link over Wi-Fi**, and
+N64 joins netplay. **Kids Mode** opens games only in the play times a
+parent sets. Text is typed on NX Redux's own keyboard, which a controller
+can drive. The main menu gains a **Games** tab, games show their genre,
+year and publisher, and on two screens the bottom one acts while the top
+one informs. Most bundled emulators are updated, and three rounds of
+review fixed crashes, lost play time and lost achievement unlocks.
+
+### New features
+
+- **Pad skins.** The drawn pad is replaced by rendered skins in seven
+  packs: **NX Carbon** (the default), Onyx, Obsidian, Plasma, Ember, Volt
+  and Tide. Every console has its own layouts, for phone portrait and
+  landscape, the folded and unfolded Fold, and tablets. The in-game menu
+  sits in the skin's screen glass. **Appearance → Pad skin** Off draws the
+  skin's buttons see-through over a full-screen game. The Charcoal, Retro
+  and Black pad themes, Menu pad, Flex mode and Portrait Pad are gone. The
+  main menu's skin hides while a controller is connected.
+- **Button layout editor.** Move and resize button groups per console,
+  from **Settings → Appearance → Button layout** or the in-game menu's
+  **Options → Controls → Adjust buttons**. A group goes anywhere in the
+  window and may reach a little into the screen; touch areas never stack.
+  With Pad skin off, the see-through buttons have a layout of their own.
+- **DS, 3DS and PSP local wireless.** Devices on the same Wi-Fi meet in a
+  game's own wireless or ad hoc menu, as real consoles side by side do:
+  start the game on each device and use its multiplayer mode. Nothing goes
+  on the network until the game turns its wireless on. Up to 8 players on
+  DS, 2 to 4 on PSP. DS and 3DS also use a USB cable between two phones
+  when one is plugged in. Each console has a **Local Wireless** option, on
+  by default, and DS, 3DS and PSP games can also host or join from the
+  Netplay menu. While a game's wireless is on, the in-game menu is
+  **Continue · Disconnect · Quit**, and save states, rewind, fast forward
+  and reset are off.
+- **Player name.** A new first row in **Settings → System**, up to 10
+  characters, defaulting to the device's name. It is the name other
+  players see on DS, 3DS and PSP.
+- **Cable Link over Wi-Fi.** A third connection in the Netplay menu for
+  GBA games: real link-cable play between two phones, for any two-player
+  Multi-Pak cable game, such as Mario Kart Super Circuit, Zelda Four
+  Swords and Pokémon Ruby ↔ Sapphire trades. A missing ROM is sent to the
+  other phone for the session, and saves are only written from moments
+  both phones agreed on. Phones only; the handheld can't join. Its
+  settings (**Input delay**, **Delay overlay**, **Clear link ROM cache**)
+  are on mGBA's page in **Settings → Emulation → Default settings**.
+- **mGBA over Wi-Fi.** mGBA links over Wi-Fi for games that use the
+  Wireless Adapter (Pokémon FireRed, LeafGreen and Emerald's Union Room)
+  or the Pokémon and Advance Wars cable protocols, and an mGBA player can
+  link with a gpSP player. See
+  [Game Boy Advance link](../../mobile/netplay.md#game-boy-advance-link).
+- **N64 netplay.** Two players, phone to phone or phone to an NX Redux
+  handheld. See [Netplay](../../mobile/netplay.md).
+- **Kids Mode.** A PIN-guarded play schedule for a device a young child
+  uses with NX Redux as the home screen. Set a play time per day; outside
+  it the child sees large tiles of the apps you allowed, and any other app
+  is sent back to the tiles. Ten minutes before the time ends a warning
+  shows, then a running game quits with its save written. A parent's PIN
+  gives a timed unlock or the full menu. Turn it on in **Settings → Kids
+  Mode**, or at the end of setup under **Who's this for?**
+- **NX keyboard.** Every text prompt (search, rename, new collection, new
+  folder, sign-ins, API keys) uses NX Redux's own keyboard, for touch or a
+  controller: the d-pad moves, `A` types, `X` deletes, `Y` is space, `L` /
+  `R` move the cursor, `SELECT` goes to the next field, `START` confirms
+  and `B` cancels. It has Paste and a Show / Hide for passwords. On two
+  screens it types on the bottom screen for a prompt on the top one.
+  **Settings → System → Keyboard** switches back to Android's keyboard,
+  for password managers and swipe typing.
+- **Games tab.** A new main-menu tab between Home and Consoles with every
+  game from every console and your Android games, A to Z. `L2` / `R2` jump
+  by letter. Hide it in Layouts or in setup.
+- **Game details.** Genre, year, publisher and a synopsis come from
+  ScreenScraper with the art, and are fetched in the background for the
+  game you rest on (**Artwork → Fetch art and info when browsing**, on by
+  default). Games show their genre and "year · publisher" under the play
+  time; **Layouts → Game info** switches that line back to achievements.
+- **Change art.** A game's menu has **Fetch art** or **Change art**: pick
+  any picture ScreenScraper, TheGamesDB, SteamGridDB and libretro
+  thumbnails offer, per kind (Screenshot, 2D box, 3D box, Wheel, Mix). A
+  picked picture stays until you pick another or reset it. With **Mix**
+  on, fetches download ScreenScraper's own mix where it has one. See
+  [Change art](../../mobile/artwork.md#change-art).
+- **Screen care.** For OLED screens, on by default in **Settings →
+  System**: everything on screen shifts by a tiny step every 2 minutes, a
+  game left alone dims after 5 minutes without input and lets the screen
+  sleep after 10. Netplay dims but never sleeps.
+- **RetroAchievements profile.** A new page sums your unlocks, games
+  played and mastered, the latest unlocks and the games nearest mastery.
+  New **Unlock sound** (on) and **Screenshot on unlock** (off) rows;
+  screenshots go to `Pictures/NX Redux/Achievements`.
+- **Fill Audio Gaps and Audio Buffer.** When a game runs below full speed
+  its sound is stretched at the same pitch instead of crackling. **Audio
+  Buffer** is Auto by default, longer on Wii, GameCube and PS2.
+- **Frame Skip for Wii and GameCube.** **Off**, the new default, shows
+  every frame and lets heavy scenes slow down a little; **Auto** holds the
+  game's speed by dropping frames, as before.
+- **Debug log file.** With **Settings → System → Debug log** on, the menu
+  and each game write a log file to `Logs/` in the home folder, so a
+  report needs no computer. The newest 20 sessions are kept. See
+  [Debug log](../../mobile/about.md#debug-log).
+
+### Improvements
+
+- **Two screens: the bottom acts, the top informs.** Tools, game lists,
+  Settings, prompts and the in-game menu open on the bottom screen. The
+  top screen shows the highlighted game's details (synopsis, play time,
+  achievements and a picture) or a console's or collection's stats. See
+  [Dual Screens](../../mobile/dual-screen.md).
+- **Second-screen game panel.** Shortcuts is a grid of tiles, your touch
+  buttons first, over a strip of save-state slots with their screenshots.
+  A new Settings tab has volume, Screen Scaling, Screen Sharpness and
+  Shader, applied live.
+- **Apps on the top screen.** Home takes the top screen back from an app.
+  A one-screen game leaves the app there so you can watch while playing,
+  and **Use top screen** in the in-game menu moves the game up anyway.
+  The Apps tile no longer fills the top screen with its list.
+- **Options by group.** Console Settings and Frontend become **Display**,
+  **Controls**, **Gameplay**, **Audio** and **Multiplayer**, and Core
+  Options is now **Emulator**. In two panes, `Left` / `Right` only move
+  between the panes; press `A` on a row to change its value.
+- **In-game menu.** A tab row runs across the menu: **Menu**,
+  **Achievements**, **Cheats** and **Players**. **Reset** is a row on the
+  first page, and the shortcut tiles are gone.
+- **Launch and quit.** A game opens straight from the menu and quits
+  straight back: no app-icon splash, no system slide in launcher mode, and
+  no launch sequence in Minimal.
+- **Netplay menu.** One card with **Connection** tabs (Wi-Fi · USB Cable ·
+  Cable Link) and **Emulator** tabs, and **Host Game** and **Join Game**
+  side by side. Every pop-up shares its look. A linked session (GB / GBA
+  cable, DS wireless) offers **Continue · Disconnect · Quit**, and
+  Disconnect lets the game play on from its own save.
+- **DS and 3DS shortcuts match.** `L3` or `SELECT` + `L1` swaps the
+  screens and `SELECT` + `R1` toggles stylus mode on both; in stylus mode
+  the right stick, left stick or d-pad moves the pen and `R3` or `A` taps.
+  On 3DS, `SELECT` + `L1` and `SELECT` + `R1` traded places.
+- **System buttons.** Setup no longer asks for your controller's buttons.
+  A pad's Back and Menu keys stand in for the `SELECT`, `START` or `MENU`
+  it lacks, and the small button beside an AYANEO's logo button is `MENU`.
+  **Controls → System buttons** binds a button from any device, such as a
+  handheld's own buttons beside its pad. See
+  [System buttons](../../mobile/controls-settings.md#system-buttons).
+- **Button hints** show by default again, unless you set them yourself.
+- **Home.** Most played is back on List and Minimal Home. Grid Home in
+  landscape puts pinned tools in a row under Continue. Pinned tools and
+  the Tools tab use one fixed tile on every screen.
+- **Game lists.** The horizontal Carousel draws the selected game's
+  details under its title, and Grid shows them on the selected tile.
+- **Tools.** RetroAchievements, Cheats & Patches, Device Sync and Artwork
+  use the Settings look. **Sync now** shows how many unlocks are waiting.
+- **Device Sync asks before it syncs.** After pairing it shows the other
+  device's address and your own; press `A` to sync. A search with no
+  answer gives up after 5 minutes. See
+  [Device Sync](../../mobile/device-sync.md).
+- **Updates.** An in-app update only downloads from GitHub and installs
+  only when its checksum matches.
+- **Screen sleep.** The menu never keeps the screen on, and a game does
+  only while it runs: a paused game sleeps on the device's timeout.
+- **GBA sound.** gpSP sounds like mGBA: clearer highs in sampled music,
+  such as Pokémon FireRed's, and the same volume.
+- **Wii and GameCube.** Each game's own fixes stay on after an option
+  change, frames are paced more evenly, and the emulator is updated with
+  an ARM64 texture decoder. **Wii Screen → Auto** picks 16:9 only on a
+  wide screen in landscape, and the touch pointer follows the shape a
+  resumed game really has.
+- **Nintendo DS.** melonDS DS 1.4.0 with its new OpenGL renderer: screen
+  captures and scaled 2D are drawn at the 3D Resolution. Shaders apply to
+  the top screen only, as a whole picture, on DS and 3DS.
+- **Nintendo 3DS.** Azahar 2126.2. Save states keep loading after an
+  emulator update, the OpenGL ES shader cache is kept between runs, and
+  Vulkan compiles new shaders in the background.
+- **PlayStation 2.** ARMSX2 2.9.2. With the picture on a second display,
+  3D Resolution measures that display instead of falling to 1x.
+- **Emulator updates.** FBNeo (8,510 sets), PPSSPP, Flycast,
+  Mupen64Plus-Next, PCSX ReARMed, SwanStation, PicoDrive, PrBoom (Heretic
+  and Hexen), Gearcoleco, Stella 2014, Beetle PCE Fast, Beetle VB, RACE,
+  ProSystem, A5200, PokeMini, FCEUmm, Supafaust, Gambatte, Genesis Plus
+  GX, Handy and Fake-08 move to their latest versions. Save states from
+  v0.5.1 still load, except FBNeo states whose size changed, such as Neo
+  Geo games', which are refused so the game starts fresh. 89 FBNeo sets
+  changed their ROMs and need updated zips, and a few were renamed (`alienaru` →
+  `alienar`, `gradiusb` → `bs_gradius`, `sailormnj` → `sailormn`).
+- **Vertical arcade and WonderSwan games** are turned correctly on a
+  second display and stay there.
+- **Speed and battery.** Pausing a game or pressing Home no longer waits
+  on the save, the menu rebuilds less while you move, art fetches make
+  fewer requests, and a paused game or a picture hidden behind the panel
+  costs less to draw.
+
+### Fixes
+
+- **Play time** is no longer cut short when the menu reads game time while
+  a game is running, and merging split ROM folders moves their play time
+  too.
+- **RetroAchievements** unlocks are no longer lost when the menu and a
+  game write at once, or when the server refuses the sign-in mid-game.
+  Refresh and Cancel no longer crash when storage can't be read.
+- **Save slots:** a slot saved over shows its new screenshot.
+- **Second display:** Wii and GameCube games no longer show half-drawn
+  frames and flicker there.
+- **DS:** some scenes drew warped textures with OpenGL, such as Mario Kart
+  DS's start-line flyover.
+- **3DS:** stylus mode moves its pointer again.
+- **Dreamcast:** the memory card is written out after every save.
+- **Disc games** whose `.cue`, `.m3u` or `.gdi` sheet uses an older text
+  encoding, a byte-order mark or different letter case now move, merge and
+  open.
+- **Artwork:** Replace no longer deletes the picture it just wrote on
+  storage that ignores letter case, and Pause, Cancel and Reset can't
+  hang a fetch.
+- **Device Sync** never sends the temporary files of an interrupted
+  write.
+- **Cheats & Patches** only removes files it installed itself.
+- **Half-folded launch:** a game started on a half-folded phone opens in
+  the hinge layout.
+- **Settings changed while a game is in the background** apply when it
+  comes back.
+- **Two-pane Settings:** holding `Left` or `Right` moves one level, not
+  page after page.
+- **Pause when unfocused:** the screen can sleep while it holds a game.
+
 ## v0.5.0
 
-*31 October 2026*
+*31 October 2026 · v0.5.1 on 2 November*
 
 The picture and the on-screen pad are now laid out together. In landscape the
 pad sits beside the game instead of over its edges, and pixel-art consoles
@@ -224,6 +449,10 @@ in a process of their own, so quitting one frees everything it used.
   that moved to another folder, such as an SD card, so its achievement line
   comes back. See
   [Downloading all game data](../../mobile/retroachievements.md#downloading-all-game-data).
+- **System buttons: Back can be bound.** Handhelds whose home button acts
+  as Back, such as the Retroid Pocket Classic, can bind it as `MENU` in
+  setup and in **Controls → System buttons**. Only `B` goes back now.
+  (v0.5.1)
 
 ## v0.4.0
 
