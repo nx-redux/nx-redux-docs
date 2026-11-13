@@ -15,12 +15,12 @@ other.
 
 - **Game saves** (`Saves/`)
 - **Save states**, with their slot pictures
-- **ROMs**, only when you turn them on (see [ROMs](#roms)), with their art and
-  RetroAchievements data
+- **ROMs**, only when you turn them on (see [ROMs](#roms)), with their art,
+  [game info](artwork.md#game-info) and RetroAchievements data
 - **BIOS** files, **collections** and game hashes
 
-Everything else stays on each device: settings, recently played, play time and
-your RetroAchievements login.
+Everything else stays on each device: settings, recently played, play time,
+your RetroAchievements login and the `Logs/` folder.
 
 Sync never deletes anything. When both devices have the same file, the newer
 one wins.
@@ -34,10 +34,14 @@ one wins.
    and no game starts while a sync runs.
 3. Open **Tools → Device Sync** on both devices.
 4. Pick **Sync via cable** (the default) or **Sync via Wi-Fi**, the same on
-   both devices, and press `A` **Start**. The devices find each other and
-   sync.
+   both devices, and press `A` **Start**. The devices look for each other.
+5. When they have found each other, the phone asks **Sync with the device
+   at 192.168.1.31?**, with **This device:** and its own address under it.
+   Check that the address is the other device's, which shows its own the
+   same way, then press `A` **Sync**. `B` **Cancel** goes back without
+   copying anything.
 
-![Tools → Device Sync: Sync ROMs Off, then Sync via cable and Sync via Wi-Fi](../assets/screenshots/mobile/device-sync.webp){ .nx-wide }
+![Tools → Device Sync: Sync with your handheld, the Sync ROMs switch Off, then Sync via cable and Sync via Wi-Fi](../assets/screenshots/mobile/device-sync.webp){ .nx-wide }
 
 While it runs, the page shows each step and file. When it ends, it shows how
 many files each side got, such as **Sync complete: 12 files received, 5
@@ -46,10 +50,11 @@ sent.**
 | Button | What it does |
 | --- | --- |
 | `A` **Start** | Start the sync |
-| `B` **Cancel** | Stop looking for the other device |
+| `B` **Cancel** | Stop looking for the other device, or turn down the device it found |
+| `A` **Sync** | Sync with the device whose address is shown |
 | `B` **Stop** | Stop a running sync. It asks **Stop the sync?** first. |
 | `A` **Sync again** / **Retry** | Run it again, after it ends or fails |
-| `A` on **Sync ROMs** | Switch ROMs **On** or **Off**. `LEFT` / `RIGHT` and `X` work too. |
+| `A` **Change** on **Sync ROMs** | Switch ROMs **On** or **Off**. `LEFT` / `RIGHT` and `X` work too. |
 | `B` **Back** | Go back |
 
 You can leave the page or switch apps: the sync goes on, with a **Device
@@ -57,9 +62,26 @@ Sync** notification. A stopped sync keeps the files it already copied.
 
 ??? info "More detail"
 
-    - The page's rows are **Sync ROMs**, where it is offered (see
-      [ROMs](#roms)), then **Sync via cable** and **Sync via Wi-Fi**. `UP` /
-      `DOWN` move round them.
+    - The page has the look of Settings: **Sync with your handheld** and
+      what will sync at the top, then **Sync ROMs**, where it is offered
+      (see [ROMs](#roms)), and **Sync via cable** and **Sync via Wi-Fi** as
+      large words. `UP` / `DOWN` move round them.
+    - While it looks for the other device, the page shows this phone's
+      address, such as **IP: 192.168.1.20 (Wi-Fi)**.
+    - Nothing is copied before you press `A` on the question, on either
+      device. The question itself has no time limit.
+    - A device on an older NX Redux doesn't ask, and waits only about 30
+      seconds for the phone. With one, press `A` on the phone within that
+      time.
+    - If the other device turns the question down, the phone says **The
+      other device cancelled the sync.** If it stops before any file moves,
+      the phone says **The other device cancelled the sync or couldn't
+      start it.**
+    - A search that finds no device gives up after 5 minutes with **No
+      device found. Open Device Sync on the other device, then sync
+      again.**
+    - If the other device goes quiet between steps, the phone gives up
+      after 5 minutes with **The other device stopped answering (5 min).**
     - The step reads like **2/7 Sending save files**, with the file count. A
       sync has 4 steps (states and saves), 7 with All files access (BIOS and
       collections too), and 9 with ROMs.
@@ -81,7 +103,9 @@ Sync** notification. A stopped sync keeps the files it already copied.
     - A file missing on one device is copied over.
     - Save states only work with the emulator that made them; states for an
       emulator the other device doesn't have are copied but unused.
-    - macOS leftovers (`._*` files, `.DS_Store`) are skipped.
+    - macOS leftovers (`._*` files, `.DS_Store`) are skipped, and so are
+      the temporary files an interrupted write leaves behind (`*.tmp`,
+      `*.part`).
     - Device Sync and [**Import saves**](library.md) don't run at the same
       time. Start during an import says **Wait for the import to finish,
       then sync.**
@@ -121,7 +145,7 @@ row: `A`, `X` or a tap switches it **On**.
           folders, the one named like the console. With none, the console's
           first emulator folder the handheld has. A handheld with only `Sony
           PlayStation (PSX)` gets the phone's PCSX ReARMed games there.
-    - Box art and screenshots only fill gaps.
+    - Art and game info only fill gaps.
     - Handheld folders that were renamed still match: by the console's name,
       ignoring case, spaces and punctuation (`Gameboy (GB)`, `Mastersystem
       (GPGX)`), by a console name inside the folder name (`Sega Mega-CD
@@ -140,8 +164,8 @@ row: `A`, `X` or a tap switches it **On**.
 ## In first-run setup
 
 When you tell first-run setup you also play on an NX Redux handheld, its
-**Sync with your handheld** step is this page. **Skip** at the top right
-moves on, and reads **Continue** once a sync has ended. See
+**Sync with your handheld** step is this page. **Skip**, the last of the
+page's words, moves on, and reads **Continue** once a sync has ended. See
 [Getting Started](getting-started.md).
 
 ??? info "More detail"

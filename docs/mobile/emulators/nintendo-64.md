@@ -15,7 +15,7 @@ Nintendo 64 games run on the bundled **Mupen64Plus-Next** core.
 ## Controls
 
 <figure class="nx-phone" markdown>
-![Super Mario 64 on the Fold's cover screen, with the Nintendo 64 pad: A, B, the yellow C buttons and Z](../../assets/screenshots/mobile/pad-n64.webp){ .nx-phone__screen }
+![Super Mario 64 on the Fold's cover screen, with the Nintendo 64 pad skin: A, B, the C buttons and Z](../../assets/screenshots/mobile/pad-n64.webp){ .nx-phone__screen }
 ![](../../assets/landing/mobile/zfold8.webp){ .nx-phone__frame }
 </figure>
 
@@ -34,13 +34,16 @@ Nintendo console: the button printed `A` is the N64's `A`.
 | Right stick | The C buttons |
 | `R2`, `SELECT` | Nothing |
 
-- The on-screen pad draws `A`, `B` and a yellow C-button diamond, with `Z` on
-  `L2`. It has no `SELECT`.
+- The on-screen pad is the Nintendo 64 [pad skin](../controls.md#pad-skins):
+  `A`, `B`, the four C buttons, `L`, `R`, `Z` and `START`. It has no
+  `SELECT`.
+- Where the layout has room for only one of them, the pad shows the analog
+  stick, and **D-PAD** / **STICK** switches between it and the d-pad.
 - `MENU`, or `SELECT` + `START`, still opens the
   [in-game menu](../in-game-menu.md).
 
 ??? info "More detail"
-    **Controller Layout** in **Options → Console Settings** names your
+    **Controller Layout** in **Options → Controls** names your
     controller's letters if it is read wrongly. Set it to the layout that
     isn't your controller's to swap `A`/`B` and `X`/`Y`; see
     [Controls](../controls.md#controller-buttons).
@@ -52,7 +55,7 @@ saves) instead. To turn it on:
 
 1. Open [Emulator Settings](../emulator-settings.md) for the console, or
    **Game Settings** for one game.
-2. Under **Core settings → Pak/Controller Options**, set **Player 1 Pak** to
+2. Under **Emulator → Pak/Controller Options**, set **Player 1 Pak** to
    **rumble**.
 3. Start the game again.
 
@@ -70,8 +73,8 @@ Mario Kart 64 doesn't. See [Vibration](../controls.md#game-rumble).
   **Vulkan**, it switches to the paraLLEl plugins: more accurate, and
   heavier.
 - Many video options, such as the resolution, only take effect when a game
-  starts. They are in [Emulator Settings](../emulator-settings.md), not in
-  the in-game **Core Options**.
+  starts. They are in [Emulator Settings](../emulator-settings.md), not on
+  the in-game menu's **Emulator** page.
 
 ## High-resolution texture packs
 
@@ -93,7 +96,7 @@ Extract the `.hts` and keep its name. When a pack offers HD and 4K, pick HD.
 1. Put the `.hts` file in `Textures/N64/` in your home folder. Create the
    folders if they aren't there.
 2. Open [Game Settings](../emulator-settings.md) for the game. Under
-   **Core settings → GLideN64**, turn on **Use High-Res textures**.
+   **Emulator → GLideN64**, turn on **Use High-Res textures**.
 3. Start the game.
 
 `<NAME>` is the game's internal header name, such as `MARIOKART64` or
@@ -131,18 +134,20 @@ Up to four players can play, each on their own controller; see
 [Netplay](../netplay.md) is for **2 players**, with another phone or an NX
 Redux handheld.
 
-- **Some core settings are fixed for the session.** Settings that change how
-  the game runs are set the same on both devices and show as locked. Your own
-  settings come back after the session.
+- **Some emulator options are fixed for the session.** Options that change
+  how the game runs are set the same on both devices. Your own settings come
+  back after the session.
 - **OpenGL ES only.** A netplay session runs on OpenGL ES whatever
   **Graphics API** says: on Vulkan the core runs the game differently from the
   other device.
 
 ??? info "More detail"
-    - **Copy Color / Depth To RDRAM** and **Threaded renderer** are off in
-      netplay. Left on, the two devices drift apart.
+    - **Color buffer to RDRAM**, **Depth buffer to RDRAM** and **Threaded
+      Renderer** are off in netplay. Left on, the two devices drift apart.
     - With those copies off, GLideN64 doesn't draw the time and lap counter in
       Mario Kart 64's two-player split screen. A handheld on Rice draws it.
+    - Every player's pak is fixed for the session: the Controller Pak for
+      Player 1, so there is no rumble.
     - 3 or 4 players over netplay isn't supported.
 
 ## Cheats and achievements

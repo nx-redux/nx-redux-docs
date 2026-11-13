@@ -1,94 +1,115 @@
 # Appearance
 
-**Tools → Settings → Appearance** sets the look of the app: the on-screen
-pad, the text size and the colours. The menu styles have their own category,
-[Layouts](layouts.md).
+**Tools → Settings → Appearance** sets the look of the app: the pad skin,
+the colours, the text size and where the on-screen buttons sit. The menu
+styles have their own category, [Layouts](layouts.md).
 
-- `Left` / `Right` step the highlighted row's value.
+- `Left` / `Right` step the highlighted row's value. Where Settings shows
+  two panes, press `A` on the row first; see
+  [Two-pane screens](foldables.md#settings).
 - **Accent** and **Secondary accent** show a circle per colour under the
   row's name, the current one ringed: tap one, or press `A` to step to the
-  next. **Pad theme**, **Pad buttons** and **Text size** show their choices
-  on the row the same way. See [Settings](settings.md#touch).
+  next. **Text size** shows its choices on the row the same way. See
+  [Settings](settings.md#touch).
 
-![Settings, with Appearance open beside the sections: Pad theme Charcoal, the Accent swatches with Teal ringed, the Secondary accent swatches with Auto ringed, Text size Large and Reset to defaults](../assets/screenshots/mobile/settings-appearance.webp){ .nx-wide }
+![Settings, with Appearance open beside the sections: Pad skin On, Pad theme NX Carbon, the Accent swatches with Teal ringed, the Secondary accent swatches with Auto ringed, Text size Large, Button layout and Reset to defaults](../assets/screenshots/mobile/settings-appearance.webp){ .nx-wide }
 
 | Setting | What it does | Values | Default |
 | --- | --- | --- | --- |
-| [**Pad theme**](#pad-theme) | Colours of the portrait pad | Charcoal, Retro, Black | Charcoal |
-| [**Pad buttons**](#pad-buttons) | How the Black pad's buttons look. Shows only with the Black theme | Grey, Outline | Grey |
+| [**Pad skin**](#pad-skin) | The handheld drawn around the game and the menus, or full screen | On, Off | On |
+| [**Pad theme**](#pad-theme) | The skin's colour. Shows only with Pad skin On | NX Carbon, NX Onyx, NX Obsidian, NX Plasma, NX Ember, NX Volt, NX Tide | NX Carbon |
 | [**Accent**](#accent) | The selection colour | White, Red, Orange, Amber, Lime, Teal, Sky, Violet, Pink | White |
-| [**Secondary accent**](#secondary-accent) | The bar behind a selected value | Auto, Teal, Red, Rust, Bronze, Moss, Navy, Plum, Wine, Graphite | Auto |
+| [**Secondary accent**](#secondary-accent) | Switches that are on, and the bar behind a selected value | Auto, Teal, Red, Rust, Bronze, Moss, Navy, Plum, Wine, Graphite | Auto |
 | [**Text size**](#text-size) | Size of the text across the app | Large, Small | Large |
+| [**Button layout**](#button-layout) | Move and resize the on-screen buttons, per console | Default, Custom | Default |
 | [**Reset to defaults**](#reset-to-defaults) | Puts this page back to its defaults | | |
+
+## Pad skin
+
+- **On** (default): the [pad skin](controls.md#pad-skins), a whole handheld
+  drawn around the game and the menus, with its buttons and its screen.
+- **Off**: a game runs full screen with see-through buttons over it, and
+  the menus have no on-screen pad. See
+  [Pad skin off](controls.md#pad-skin-off).
+
+With a controller connected, the game and the menus show no skin and no
+on-screen buttons either way.
+
+<figure class="nx-phone" markdown>
+![Sonic The Hedgehog 2's title with Pad skin Off: the game full width, the see-through buttons under it and the SAVE and LOAD pills](../assets/screenshots/mobile/pad-black-outline.webp){ .nx-phone__screen }
+![](../assets/landing/mobile/zfold8.webp){ .nx-phone__frame }
+</figure>
+
+??? info "More detail"
+    How see-through the buttons are is set per game or console with **Pad
+    Opacity (landscape)** in the in-game
+    [Options → Controls](in-game-menu.md#options), not here.
 
 ## Pad theme
 
-The colours of the on-screen pad in portrait, in the menus and in games.
+The colour of the pad skin, in portrait and landscape, in the menus and in
+games. The row shows only while **Pad skin** is **On**.
 
-- **Charcoal** (default): the dark pad.
-- **Retro**: a light grey body with magenta face buttons.
-- **Black**: a pure black body, its buttons set by [Pad buttons](#pad-buttons).
+- **NX Carbon** (default): smoke grey.
+- **NX Onyx**: smoked black.
+- **NX Obsidian**: translucent near-black.
+- **NX Plasma**, **NX Ember**, **NX Volt** and **NX Tide**: translucent
+  purple, red, green and blue.
 
-<div class="nx-phones" markdown>
+<div class="nx-phones nx-phones--three" markdown>
 <div markdown>
 <figure class="nx-phone" markdown>
-![Settings → Appearance with Pad theme set to Charcoal: the dark pad below](../assets/screenshots/mobile/pad-charcoal.webp){ .nx-phone__screen }
+![Streets of Rage 2 in portrait with Pad theme set to NX Carbon: the smoke grey skin round the game](../assets/screenshots/mobile/pad-theme-carbon.webp){ .nx-phone__screen }
 ![](../assets/landing/mobile/zfold8.webp){ .nx-phone__frame }
 </figure>
-<p class="nx-phones__caption">Charcoal</p>
-</div>
-<div markdown>
-<figure class="nx-phone" markdown>
-![Settings → Appearance with Pad theme set to Retro: a light grey pad with magenta face buttons](../assets/screenshots/mobile/pad-retro.webp){ .nx-phone__screen }
-![](../assets/landing/mobile/zfold8.webp){ .nx-phone__frame }
-</figure>
-<p class="nx-phones__caption">Retro</p>
+<p class="nx-phones__caption">NX Carbon</p>
 </div>
 <div markdown>
 <figure class="nx-phone" markdown>
-![Settings → Appearance with Pad theme set to Black and Pad buttons Grey: grey buttons on a pure black pad, a faint line along its top](../assets/screenshots/mobile/pad-black.webp){ .nx-phone__screen }
+![Streets of Rage 2 in portrait with Pad theme set to NX Onyx: the smoked black skin round the game](../assets/screenshots/mobile/pad-theme-onyx.webp){ .nx-phone__screen }
 ![](../assets/landing/mobile/zfold8.webp){ .nx-phone__frame }
 </figure>
-<p class="nx-phones__caption">Black</p>
-</div>
-</div>
-
-The landscape pad halves always stay Charcoal. See
-[Controls](controls.md) for the pad itself.
-
-??? info "More detail"
-    The landscape pad's opacity is set per game or console with **Pad
-    Opacity (landscape)** in the in-game [Frontend](in-game-menu.md#frontend)
-    options, not here.
-
-## Pad buttons
-
-How the buttons look on the **Black** pad theme. The row shows only while
-**Pad theme** is **Black**.
-
-- **Grey** (default): Charcoal's grey buttons on the black body.
-- **Outline**: each button drawn as a thin outline with its label, lit
-  faintly while you hold it.
-
-<div class="nx-phones" markdown>
-<div markdown>
-<figure class="nx-phone" markdown>
-![The Black pad with Pad buttons Grey](../assets/screenshots/mobile/pad-black.webp){ .nx-phone__screen }
-![](../assets/landing/mobile/zfold8.webp){ .nx-phone__frame }
-</figure>
-<p class="nx-phones__caption">Grey</p>
+<p class="nx-phones__caption">NX Onyx</p>
 </div>
 <div markdown>
 <figure class="nx-phone" markdown>
-![The Black pad with Pad buttons Outline: each button a thin grey outline with its label](../assets/screenshots/mobile/pad-black-outline.webp){ .nx-phone__screen }
+![Streets of Rage 2 in portrait with Pad theme set to NX Obsidian: the translucent near-black skin round the game](../assets/screenshots/mobile/pad-theme-obsidian.webp){ .nx-phone__screen }
 ![](../assets/landing/mobile/zfold8.webp){ .nx-phone__frame }
 </figure>
-<p class="nx-phones__caption">Outline</p>
+<p class="nx-phones__caption">NX Obsidian</p>
+</div>
+<div markdown>
+<figure class="nx-phone" markdown>
+![Streets of Rage 2 in portrait with Pad theme set to NX Plasma: the translucent purple skin round the game](../assets/screenshots/mobile/pad-theme-plasma.webp){ .nx-phone__screen }
+![](../assets/landing/mobile/zfold8.webp){ .nx-phone__frame }
+</figure>
+<p class="nx-phones__caption">NX Plasma</p>
+</div>
+<div markdown>
+<figure class="nx-phone" markdown>
+![Streets of Rage 2 in portrait with Pad theme set to NX Ember: the translucent red skin round the game](../assets/screenshots/mobile/pad-theme-ember.webp){ .nx-phone__screen }
+![](../assets/landing/mobile/zfold8.webp){ .nx-phone__frame }
+</figure>
+<p class="nx-phones__caption">NX Ember</p>
+</div>
+<div markdown>
+<figure class="nx-phone" markdown>
+![Streets of Rage 2 in portrait with Pad theme set to NX Volt: the translucent green skin round the game](../assets/screenshots/mobile/pad-theme-volt.webp){ .nx-phone__screen }
+![](../assets/landing/mobile/zfold8.webp){ .nx-phone__frame }
+</figure>
+<p class="nx-phones__caption">NX Volt</p>
+</div>
+<div markdown>
+<figure class="nx-phone" markdown>
+![Streets of Rage 2 in portrait with Pad theme set to NX Tide: the translucent blue skin round the game](../assets/screenshots/mobile/pad-theme-tide.webp){ .nx-phone__screen }
+![](../assets/landing/mobile/zfold8.webp){ .nx-phone__frame }
+</figure>
+<p class="nx-phones__caption">NX Tide</p>
 </div>
 </div>
 
-A faint line runs along the top of the Black pad, under a soft shadow on the
-screen above, so the pad stays apart from a black screen.
+Every theme has the same layouts and buttons. See
+[Controls](controls.md#pad-skins) for the skin itself.
 
 ## Accent
 
@@ -107,8 +128,8 @@ There are nine light colours, shown as swatches: **White** (default),
 
 ## Secondary accent
 
-The colour of the bar behind a selected setting's value, as in
-**< Charcoal >** above. It shows on the Settings pages, a game's
+The colour of a switch that is on, and of the bar behind a selected
+setting's value. It shows on the Settings pages, a game's
 [Game Settings](emulator-settings.md) and the
 [in-game menu](in-game-menu.md).
 
@@ -141,9 +162,17 @@ else.
       shapes, such as the pad's labels, the tab names and the hint bar, keeps
       its size there.
 
+## Button layout
+
+Moves and resizes the on-screen buttons, for one console at a time. The row
+reads **Custom** once any console has a change. `A` opens its page, where
+you pick the console and open the editor for portrait or landscape. See
+[Button layout](controls-settings.md#button-layout).
+
 ## Reset to defaults
 
-Puts **Pad theme**, **Pad buttons**, **Accent**, **Secondary accent** and
-**Text size** back to their defaults. It asks first: `A` resets, `B` keeps everything. It leaves the
-[Layouts](layouts.md) page alone: that page has its own **Reset to
-defaults**.
+Puts **Pad skin**, **Pad theme**, **Accent**, **Secondary accent** and
+**Text size** back to their defaults, and every console's
+[button layout](#button-layout) back where the skin puts it. It asks first:
+`A` resets, `B` keeps everything. It leaves the [Layouts](layouts.md) page
+alone: that page has its own **Reset to defaults**.

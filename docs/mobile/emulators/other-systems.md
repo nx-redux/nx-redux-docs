@@ -24,6 +24,12 @@ each one's games go and what is special about it. `MENU`, or `SELECT` +
 
 Saves go in `Saves/<tag>/`, such as `Saves/FC/`.
 
+ColecoVision plays cartridges only: the ADAM computer's disks and data
+packs aren't supported, and the emulator's ADAM options are hidden.
+**Mapper (restart)** and **Video Chip (restart)** are **Auto** by default: change them in
+[Game Settings](../emulator-settings.md#game-settings), under **Emulator →
+System**, only for a game that doesn't run right.
+
 ??? info "More detail: face buttons"
     A controller's face buttons work **by the printed letter** on the NES,
     Super Nintendo, Virtual Boy, Pokémon mini, Atari Lynx, WonderSwan and
@@ -36,13 +42,13 @@ Saves go in `Saves/<tag>/`, such as `Saves/FC/`.
 ### NES and Famicom Disk System
 
 When a Famicom Disk System game asks for the other side, press `L1` once. On
-the touch skin the **DISK** button does the same.
+the on-screen pad the **DISK** button does the same.
 
 | Control | What it does |
 | --- | --- |
 | `L1` | Turn the disk over (Famicom Disk System). One press ejects the disk and puts the next side in about a second later; a message shows the side. With the drive empty, it puts the next side in. |
 | `R1` | Insert or eject the disk by hand (Famicom Disk System) |
-| `X`, `Y` | Turbo `A`, turbo `B`. On by default; turn them off with **Turbo Enable** in the core options. |
+| `X`, `Y` | Turbo `A`, turbo `B` (`TA` and `TB` on the on-screen pad). On by default; turn them off with **Turbo Enable** under **Options → Emulator → Input**. |
 | `R2` | Insert a coin (Vs. System games) |
 
 ### Neo Geo Pocket / Color
@@ -51,6 +57,13 @@ the touch skin the **DISK** button does the same.
 | --- | --- |
 | `A`, `B` | `A`, `B` |
 | `START` | `OPTION` |
+
+A game with a clock counts its time from the game itself, and save states
+keep the clock, so rewind and states stay in step. To follow the phone's
+clock instead, set **Real-Time Clock** to **Real Time** under **Options →
+Emulator**. **Audio Quality (Restart)** (**Fast**, or the band-limited **Accurate**)
+applies when the game starts, so it is only in
+[Emulator Settings](../emulator-settings.md).
 
 ### TurboGrafx-16
 
@@ -61,6 +74,10 @@ the touch skin the **DISK** button does the same.
 | `START` | `RUN` |
 | `L2` | `Mode` |
 
+CD games have two more options under **Options → Emulator → PC Engine
+CD**, both off by default: **ADPCM Low-pass Filter** softens harsh ADPCM
+sound, and **CD Ignore EDC/L-EC Errors** is needed by some hacks.
+
 ### Virtual Boy
 
 | Control | Virtual Boy |
@@ -69,7 +86,9 @@ the touch skin the **DISK** button does the same.
 | Right stick | The right d-pad (controllers only) |
 | `X` | Low-battery toggle |
 
-Games show in anaglyph 3D out of the box.
+Games show in anaglyph 3D out of the box. **Allow Opposite Directions**,
+under **Options → Emulator**, lets a d-pad press left and right, or up and
+down, at once; it is off by default.
 
 ### Pokémon mini
 
@@ -82,16 +101,20 @@ Games show in anaglyph 3D out of the box.
 
 ### Atari
 
-- **Atari 2600:** the bottom face button is Fire.
+- **Atari 2600:** the bottom face button is Fire. **Color Palette**, under
+  **Options → Emulator**, picks the **Standard** colours or **Z26**'s.
+- **Atari 5200:** the on-screen pad has the two fire buttons, `*`, `#` and
+  **KEYPAD**, which shows the console's keypad on screen.
 - **Atari 7800:** the bottom and right face buttons are `1` and `2`.
 - **Atari Lynx:** `L1` and `R1` are `Option 1` and `Option 2`.
 
 ### Games held upright
 
 WonderSwan and Atari Lynx games made to be held upright show a picture
-taller than wide. In portrait you can hide the pad band for them, so the
-game gets its room: see
-[Hiding the portrait band](../controls.md#hiding-the-portrait-band).
+taller than wide. To give one the whole screen in portrait, turn
+[Pad skin](../appearance.md#pad-skin) off: the buttons are then drawn
+see-through over the game. On a [second display](../dual-screen.md), the
+picture is turned the right way up there.
 
 ### PICO-8
 
@@ -102,6 +125,8 @@ states, and don't resume where you left off.
 
 `SELECT` shows the automap and `START` opens Doom's own menu. Rumble is on
 out of the box.
+
+PrBoom also plays Heretic and Hexen from their own IWAD files.
 
 ## Multiplayer
 

@@ -29,25 +29,26 @@ Saves go in `Saves/<tag>/`, such as `Saves/MD/`.
 <div class="nx-phones" markdown>
 <div markdown>
 <figure class="nx-phone" markdown>
-![Sonic & Knuckles on the Fold's cover screen, with the Sega 3-button pad: A, B and C](../../assets/screenshots/mobile/pad-md.webp){ .nx-phone__screen }
+![Sonic & Knuckles on the Fold's cover screen, with the pad skin](../../assets/screenshots/mobile/pad-md.webp){ .nx-phone__screen }
 ![](../../assets/landing/mobile/zfold8.webp){ .nx-phone__frame }
 </figure>
-<p class="nx-phones__caption">3-button pad</p>
+<p class="nx-phones__caption">Sonic &amp; Knuckles</p>
 </div>
 <div markdown>
 <figure class="nx-phone" markdown>
-![Comix Zone on the Fold's cover screen, with the Sega 6-button pad: A, B, C, X, Y, Z and MODE](../../assets/screenshots/mobile/pad-md-6.webp){ .nx-phone__screen }
+![Comix Zone on the Fold's cover screen, with the pad skin](../../assets/screenshots/mobile/pad-md-6.webp){ .nx-phone__screen }
 ![](../../assets/landing/mobile/zfold8.webp){ .nx-phone__frame }
 </figure>
-<p class="nx-phones__caption">6-button pad</p>
+<p class="nx-phones__caption">Comix Zone</p>
 </div>
 </div>
 
-The on-screen pad draws the Sega pad the game gets: the 3-button pad, or the
-6-button pad for games made for it (see [Controller Type](#controller-type)).
-A controller plays the Genesis, Sega CD and 32X **by position**:
+The game gets a Sega 3-button pad, or the 6-button pad when it was made
+for one (see [Controller Type](#controller-type)). A controller plays the
+Genesis, Sega CD and 32X **by position**, and so do the buttons of the
+on-screen [pad skin](../controls.md#pad-skins):
 
-| Controller | 6-button pad | 3-button pad |
+| Button | 6-button pad | 3-button pad |
 | --- | --- | --- |
 | Left, top and right face buttons | `A`, `B`, `C` | `A`, `B`, `C` |
 | Bottom face button | `X` | Not used |
@@ -57,12 +58,12 @@ A controller plays the Genesis, Sega CD and 32X **by position**:
 On the Master System, Game Gear and SG-1000, the bottom and right face
 buttons are `1` and `2`.
 
-## Console Settings
+## Settings
 
-Genesis, Sega CD and 32X games have two rows in the in-game menu's
-**Options → Console Settings**, also set for the console in
-[Emulator Settings](../emulator-settings.md). Both take effect straight
-away; keep them for the game or the console with
+Genesis, Sega CD and 32X games have two rows on the **Controls** page of
+the in-game menu's [Options](../in-game-menu.md#options), also set for the
+console in [Emulator Settings](../emulator-settings.md). Both take effect
+straight away; keep them for the game or the console with
 [Save Changes](../in-game-menu.md#save-changes).
 
 | Row | Values | Default | See |
@@ -78,8 +79,16 @@ away; keep them for the game or the console with
 | **3 buttons** | A 3-button pad |
 | **6 buttons** | A 6-button pad |
 
-Some older games misbehave with a 6-button pad. The on-screen pad changes to
-match, and Player 2 gets the same pad.
+Some older games misbehave with a 6-button pad. Player 2 gets the same pad
+as Player 1.
+
+??? info "More detail"
+    - The emulator's own options are on the **Emulator** page of
+      [Options](../in-game-menu.md#options). Neither emulator has a pad
+      option of its own: **Controller Type** sets the pad for both.
+    - On PicoDrive, **Mega Drive FM chip type** under **Emulator → Audio**
+      picks the sound chip: **YM2612**, the first Mega Drive's, or
+      **YM3438**, the later models'.
 
 ## Multiplayer
 

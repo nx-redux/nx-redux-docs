@@ -34,6 +34,9 @@ The app never deletes a game. It moves games only while **Move them into
     (`<file><TAB><TAG>`). For extra folders this file lives in the home folder
     under `Roms/.sources/`, so the extra folder itself is never changed.
 
+    When a console's games were split over two folders and are merged into
+    one, their play time moves with them.
+
 ## Settings → Library
 
 **Tools → Settings → Library** shows what the library holds and every folder
@@ -121,13 +124,15 @@ the app.
 ![The app's folder picker at Internal storage's root: .. and the folders in one column with Alarms selected, Create new folder at the bottom, and the hints Actions, New folder, Back and Select](../assets/screenshots/mobile/file-picker.webp){ .nx-wide }
 
 - Open folders until you reach the one you want, then choose **Use this
-  folder** (or **Save here** for an export) at the bottom.
+  folder** (or **Save here** for an export) at the bottom. **New folder**
+  sits beside it.
 - `A` **Select** opens a folder, or picks the row. `B` **Back** goes up a
   level, and at the storage list cancels.
-- `Left` / `Right` jump between the folders and the actions at the bottom,
-  wrapping round. The hint names where they go: **Actions** or **Folders**.
-- `X` **New folder**, or **Create new folder**, asks for a name and opens the
-  new folder.
+- `Left` / `Right` jump from the folders to the actions at the bottom,
+  move between the two actions, and past either end go back to the folder
+  you left. The hint names where they go: **Actions** or **Folders**.
+  `Up` and `Down` take the two actions as one line.
+- `X` or **New folder** asks for a name and opens the new folder. The name is typed on the [NX keyboard](about.md#keyboard).
 
 ??? info "More detail"
     - It starts at your storage, **Internal storage** and any SD card, or
@@ -137,8 +142,10 @@ the app.
       then the folders, A–Z, then the files, dimmed: they show what a folder
       holds, but can't be picked. When importing a zip, the `.zip` files are
       the ones you pick. Hidden (dot) folders and files are not shown.
-    - **Use this folder** (or **Save here**) and **Create new folder** sit
-      at the bottom, in one column with the rest, in portrait and landscape.
+    - **Use this folder** (or **Save here**) and **New folder** sit side by
+      side at the bottom, as a pop-up's buttons: the first in your accent,
+      **New folder** outlined, and a ring where the controller is. Where
+      there is no **Use this folder**, **New folder** takes the accent.
     - When picking the home folder, a line under the title says what the
       folder is: **Empty folder**, **NX Redux folder**, or **Has other files:
       games found in it will be sorted into Roms**. An SD card's root can be
@@ -189,8 +196,11 @@ Roms/Dreamcast (DC)/
     [Dreamcast](emulators/dreamcast.md).
 
 ??? info "More detail"
-    Saves, states and the VMU are keyed by the sheet's name, so games whose
-    sheets share a name would share them.
+    - Saves, states and the VMU are keyed by the sheet's name, so games
+      whose sheets share a name would share them.
+    - A sheet saved in an older Windows text encoding, or with a byte-order
+      mark, is read too. So is one whose track names differ from the files
+      only in letter case.
 
 ## Android games as a console
 
@@ -334,6 +344,10 @@ there, and each file it skipped, with the reason.
 ??? info "More detail: where saves are kept"
     - Saves are kept in the handheld's card layout. The home folder holds
       `Roms/`, `Bios/`, `Collections/`, `Cheats/`, `Saves/` and `.userdata/`.
+      It can also hold `Shaders/`, `Textures/`, `Logs/` and, while
+      [Kids Mode](kids-mode.md#forgotten-pin) is on, a `kids-mode.flag`
+      file: see
+      [Choose a home folder](getting-started.md#choose-a-home-folder).
     - Saves, states and settings made in `Android/media` while All files
       access was off stay there. They are not merged with the saves in your
       home folder.
@@ -352,6 +366,17 @@ there, and each file it skipped, with the reason.
       GX. When two consoles' saves would meet under one name there, both keep
       their console folders (`Saves/MD/`, `Saves/SMS/`), so neither is
       dropped.
+
+## Art and game info
+
+Fetched art is kept next to the games, in a `.media/` folder inside each
+console's folder, one folder per kind of picture. A game's genre, year,
+publisher and synopsis are kept there too, in `.media/info/`. See
+[Artwork](artwork.md) and [Game info](artwork.md#game-info).
+
+`.media` is a hidden folder, and the app writes it only in the home folder.
+Art for games in an extra folder goes under `Roms/.sources/` in the home
+folder.
 
 ## Unpacked games cache
 

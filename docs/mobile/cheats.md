@@ -42,7 +42,7 @@ Dolphin's own codes instead. See
 With the cheats installed, the page offers **Check for updates** and
 **Remove**.
 
-![Tools → Cheats & Patches, installed: 28 systems, 29195 files, the last update's date, and Check for updates and Remove](../assets/screenshots/mobile/cheat-database.webp){ .nx-wide }
+![Tools → Cheats & Patches, installed: 28 systems, 29974 files, the last update's date, and Check for updates and Remove](../assets/screenshots/mobile/cheat-database.webp){ .nx-wide }
 
 - **Check for updates** downloads again only when libretro's cheats or
   PCSX2's patches have changed, or when the app now has cheats for systems
@@ -106,27 +106,30 @@ Nintendo 3DS and Atari 2600.
 
 ## Using cheats in a game
 
-1. Open the [in-game menu](in-game-menu.md). The game panel sits beside the
-   first page.
-2. Open its **Cheats** tab: tap it, or press `RIGHT` to move into the panel
-   and `L1` / `R1` to reach the tab.
+1. Open the [in-game menu](in-game-menu.md). A row of tabs runs under the
+   game's header.
+2. Open the **Cheats** tab: tap it, or press `L1` / `R1` to reach it.
 3. Tap a cheat to turn it **On** or **Off**, or move `DOWN` onto it and
    press `A`. It applies straight away.
 4. To keep your cheats for next time, use **Options → Save Changes → Save
    for game**.
 
-![The in-game Cheats page on Alleyway, with Infinite time in bonus room turned On](../assets/screenshots/mobile/in-game-cheats.webp){ .nx-wide }
+![The in-game menu's Cheats tab on Alleyway, with Infinite time in bonus room turned On](../assets/screenshots/mobile/in-game-cheats.webp){ .nx-wide }
 
 If no cheat file matches the game, the tab says **No cheats for this game.**
 and how to add some: download them with **Tools → Cheats & Patches**, or add a
 RetroArch `.cht` file to the game's `Cheats/<TAG>/` folder.
+
+The tab is hidden while the game is linked to another device: in a netplay
+or Cable Link session, and while a game's local wireless is on. See
+[In a multiplayer session](in-game-menu.md#in-a-multiplayer-session).
 
 !!! tip "Variants are merged"
     Some games have cheats from several sources, such as GameShark or Action
     Replay. They all show in one list, and each cheat names its source under
     its name, such as **GameShark**.
 
-![Contra - Hard Corps (USA, Korea) in the game panel's Cheats tab: the Action Replay file's cheats, each with Action Replay under its name](../assets/screenshots/mobile/in-game-cheats-merged.webp){ .nx-wide }
+![Contra - Hard Corps (USA, Korea) in the in-game menu's Cheats tab: the Action Replay file's cheats, each with Action Replay under its name](../assets/screenshots/mobile/in-game-cheats-merged.webp){ .nx-wide }
 
 ??? info "More detail: how a game's cheats are found"
 
@@ -150,12 +153,12 @@ RetroArch `.cht` file to the game's `Cheats/<TAG>/` folder.
 ## PlayStation 2
 
 The PS2 core reads cheats and patches itself, so PS2 games have no list on the
-**Cheats** tab. Turn them on in **Core Options** in
+**Cheats** tab. Turn them on under **Emulator** in
 [Game Settings](emulator-settings.md#game-settings) or
 [Emulator Settings](emulator-settings.md); they need the game restarted, so
 the in-game menu doesn't list them.
 
-| What | Where | Core Option |
+| What | Where | Emulator option |
 | --- | --- | --- |
 | PCSX2's widescreen and no-interlacing patches | `Cheats/PS2/Patches/`, from the download | **Widescreen Patches**, **No-Interlacing Patches** |
 | Your own `.pnach` cheats | `Cheats/PS2/`, named after the game's serial and CRC, such as `SLUS-21678_428113C2.pnach` | **Cheats** |

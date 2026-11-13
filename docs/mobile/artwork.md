@@ -1,8 +1,9 @@
 # Artwork
 
-**Tools → Artwork** fetches box art and screenshots for your games. It works
-through your whole library in the background, and you can keep playing while
-it runs.
+**Tools → Artwork** fetches box art and screenshots for your games, and
+each game's [info](#game-info): its synopsis, genre, year and publisher. It
+works through your whole library in the background, and you can keep playing
+while it runs.
 
 ![Tools → Artwork: a small Artwork label with Fetch missing art, Fetch by console and Settings as large words at the bottom left](../assets/screenshots/mobile/artwork.webp){ .nx-wide }
 
@@ -17,7 +18,7 @@ a word and `B` goes back to Tools. The words are:
 | **Fetch missing art** | Fetches art for every game that has none. Reads **Fetch all art** when **Replace existing art** is on. |
 | **Fetch by console** | Fetches art for one console. |
 | **Progress** | Shows the current or last fetch. Only shown while there is a fetch, until you choose **Done** there. |
-| **Settings** | What to fetch, your ScreenScraper login, the SteamGridDB and TheGamesDB keys, and **Reset artwork**. See [Settings](#settings). |
+| **Settings** | What to fetch, your ScreenScraper login, the SteamGridDB and TheGamesDB keys, **Clear unused images** and **Reset artwork**. See [Settings](#settings). |
 
 ??? info "More detail"
 
@@ -62,7 +63,7 @@ Choose **Fetch missing art** for everything, or **Fetch by console** to pick
 one. Fetch by console lists each console with how many of its games lack
 art, such as **Dreamcast 6 missing**. Press `A` **Fetch** on one.
 
-![Artwork → Fetch by console beside the Artwork page, listing each console with its missing count, such as Game Boy 1 missing](../assets/screenshots/mobile/artwork-fetch-by-console.webp){ .nx-wide }
+![Artwork → Fetch by console beside the Artwork page, listing each console with its missing count, such as Doom 2 missing](../assets/screenshots/mobile/artwork-fetch-by-console.webp){ .nx-wide }
 
 First-run setup can start the same fetch for you. See
 [Getting Started](getting-started.md).
@@ -81,7 +82,7 @@ Starting a fetch opens **Progress**. It shows how far it is and the time
 left, such as **1 / 2 · ~1 min left**, and each game's status, such as
 **Done**, **Partial** or **Not found**.
 
-![Artwork → Progress during a one-game fetch: 0 / 1 · ~1 min left, Pause and Cancel, and Zelda Links Awakening Searching](../assets/screenshots/mobile/artwork-progress.webp){ .nx-wide }
+![Artwork → Progress during a Doom fetch: Fetching 0 / 2 … at the top left, 0 / 2 · ~1 min left, freedoom1 Searching and freedoom2 Waiting](../assets/screenshots/mobile/artwork-progress.webp){ .nx-wide }
 
 | Button | What it does |
 | --- | --- |
@@ -133,6 +134,8 @@ on the Artwork page carries on from where it stopped.
 
 In landscape on a wide screen, such as an unfolded Fold, Artwork works like
 [Settings](settings.md): the page of the highlighted word shows on the right.
+With a [pad skin](controls.md#pad-skins) on the menu, the skin's screen
+decides, not the whole window.
 **Fetch missing art** and **Resume art fetch** have no page, so they show
 nothing. See
 [Foldables & Large Screens](foldables.md#two-pane-screens).
@@ -148,7 +151,8 @@ nothing. See
 ### One game
 
 Open a game's context menu with `MENU` in a game list, and choose **Fetch
-art**. The app fetches that game straight away. `B` cancels. See
+art**. A panel opens on the right and the app fetches that game straight
+away, then shows the pictures it found. `B` closes the panel. See
 [Context menus](main-menu.md#context-menus) for the rest of the menu.
 
 A game that already has art shows **Change art** there instead. See
@@ -156,10 +160,14 @@ A game that already has art shows **Change art** there instead. See
 
 ??? info "More detail"
 
-    - While it works, **Fetching art…** shows. It then says **Art fetched**,
-      **No art found**, or **Already has art (Replace existing art is off)**.
+    - While it works, the panel says **Fetching art…**, then **Looking for
+      pictures…**. Pictures show as each source answers, under **Still
+      looking…** until the search ends.
+    - With nothing to show it says **No pictures found**.
     - **Fetch art** and **Change art** are only offered for games in a console
       an art source knows.
+    - You don't have to fetch a game by hand: resting on a game fetches its
+      missing art too. See [Game info](#game-info).
 
 ## Change art
 
@@ -172,6 +180,8 @@ shows **Change art**.
 Both open a panel on the right. **Fetch art** fetches the game first, then
 shows what it found. **Change art** opens straight on the pictures the app
 already knows about.
+
+![Bomberman Tournament's Change art panel over the Game Boy Advance list: Still looking… at the top, then the Screenshot section and the 2D box pictures](../assets/screenshots/mobile/artwork-change-art.webp){ .nx-wide }
 
 The panel has one section for each kind of art, in this order. A section with
 nothing to pick is left out, and the picture in use is marked.
@@ -188,6 +198,14 @@ Choose a picture to use it. It replaces the file in that kind's folder, and
 you can pick in several sections at once. **Search again**, at the end, asks
 the sources for more pictures.
 
+| Button | What it does |
+| --- | --- |
+| D-pad | Move over the pictures, then to **Search again** |
+| `A` | Use the highlighted picture, or search again |
+| `B` | Close the panel |
+
+On touch, tap a picture to use it, and tap beside the panel to close it.
+
 ??? info "More detail: small previews, and picks that stay"
 
     - The panel shows small previews. The full picture is only downloaded
@@ -201,6 +219,10 @@ the sources for more pictures.
       **Reset artwork**.
     - The panel uses **Replace existing art** for the pictures you did not
       pick.
+    - A picture whose link no longer works leaves the list. A preview that
+      would not load reads **Couldn't load**.
+    - The panel takes 60% of the screen's width in portrait and 45% in
+      landscape, never under 320 dp and never over 80%.
 
 ### Which layout shows it
 
@@ -239,6 +261,48 @@ app's name.
     [List art](layouts.md#list-art) → **Mix**, and deleted by
     [Reset artwork](#reset-artwork).
 
+## Game info { #game-info }
+
+Beside the pictures, the app keeps a few facts about each game: its
+**synopsis**, **genre**, **year** and **publisher**. They come from
+ScreenScraper, in the same answer as the art, so they cost no extra
+requests.
+
+- **With the art:** every fetch on this page, and a game's **Fetch art**,
+  store the info of the games they look up.
+- **When browsing:** rest on a game in a list for a moment and the app
+  fetches its info in the background, along with any art it lacks. This is
+  **Fetch art and info when browsing** in [Settings](#settings), on by
+  default.
+
+The genre, year and publisher show under a game's play time in the menus,
+or the game's achievements where it has some, as
+[Layouts → Game info](layouts.md#game-info) picks (achievements by
+default). On two screens, the top screen shows them with the synopsis.
+See [Dual Screens](dual-screen.md).
+
+![Astro Boy - Omega Factor's caption in Backdrop: its play time and a Platform pill, then 2003 · THQ](../assets/screenshots/mobile/game-info-caption.webp){ .nx-wide }
+
+??? info "More detail"
+
+    - The info is kept next to the art, in `.media/info/<game>.json`.
+      [Reset artwork](#reset-artwork) deletes it with the art, and
+      [Device Sync](device-sync.md) carries it with the art.
+    - The browsing fetch is quiet: no notification, no progress and no
+      message. It looks up one game at a time, only the game you rest on,
+      and never while a fetch from this page runs.
+    - When ScreenScraper's daily allowance runs out, the browsing fetch
+      stops until the next day. When ScreenScraper can't be reached, it
+      tries again a few minutes later.
+    - A game that already has all its art is skipped by **Fetch missing
+      art**, so its info comes from the browsing fetch, or from a fetch with
+      **Replace existing art** on.
+    - A game ScreenScraper has no info for is remembered and not asked for
+      again while browsing. A fetch with **Replace existing art** on asks
+      again.
+    - Android games and unassigned games have no info. An Android game shows
+      **Game** as its genre.
+
 ## Settings
 
 **Artwork → Settings** holds what to fetch, your accounts and keys, Clear
@@ -247,7 +311,7 @@ unused images and Reset artwork, on one page, in groups: **Art to fetch**,
 work like [Settings](settings.md#buttons): the On/Off rows are switches, and
 the ? icon or `X` **Info** shows a row's full description.
 
-![Artwork → Settings beside the Artwork page: the Art to fetch group with Replace existing art, 2D box art, Wheel and a mix switch, then the Accounts group with ScreenScraper login and the SteamGridDB API key](../assets/screenshots/mobile/artwork-settings.webp){ .nx-wide }
+![Artwork → Settings beside the Artwork page: the Art to fetch group with Replace existing art, 2D box art, Wheel and Mix off and Fetch art and info when browsing on, then the Accounts label](../assets/screenshots/mobile/artwork-settings.webp){ .nx-wide }
 
 | Row | Default | What it does |
 | --- | --- | --- |
@@ -255,6 +319,7 @@ the ? icon or `X` **Info** shows a row's full description.
 | **2D box art** | Off | Also fetch the flat 2D cover, beside the 3D box. A SteamGridDB grid is saved as 2D box art either way. |
 | **Wheel** | Off | Also fetch the game's logo. |
 | **Mix** | Off | Also fetch the handheld's mix picture, or make it on the phone. See [Wheel and mix](#wheel-and-mix). |
+| **Fetch art and info when browsing** | On | Fetch a game's missing art and its info when you rest on it in a list. See [Game info](#game-info). |
 | **ScreenScraper login** / **ScreenScraper logout** | — | Log in to ScreenScraper, or log out. |
 | **SteamGridDB API key** | Not set | `A` asks for the key. Once a key is set, the row is replaced by **Remove SteamGridDB key**. |
 | **TheGamesDB API key** | Not set | `A` asks for the key. Once a key is set, the row is replaced by **Remove TheGamesDB key**. |
@@ -279,14 +344,16 @@ the ? icon or `X` **Info** shows a row's full description.
 | **SteamGridDB** | Only used with your own free key from [SteamGridDB](https://www.steamgriddb.com/). |
 | **TheGamesDB** | Only used with your own free key from [TheGamesDB](https://thegamesdb.net/). |
 
-Choose **ScreenScraper login** to sign in, or a key row to enter a key.
+Choose **ScreenScraper login** to sign in, or a key row to enter a key. You
+type them on the [NX keyboard](about.md#keyboard), which a controller can
+drive.
 
 ??? info "More detail"
 
-    - **ScreenScraper login** opens **Sign in to ScreenScraper**. Once you are
-      in, the row reads **ScreenScraper logout** with your requests used
-      today. Logout asks first: fetches then use the anonymous allowance
-      again.
+    - **ScreenScraper login** opens **Sign in to ScreenScraper**, with a
+      **Username** and a **Password** field. Once you are in, the row reads
+      **ScreenScraper logout** with your requests used today. Logout asks
+      first: fetches then use the anonymous allowance again.
     - A key is checked before it is saved. If the source turns it down, the
       app says so and does not save it.
     - Login and logout are dimmed while art is downloading.
@@ -305,6 +372,7 @@ yourself stay.
     - A fetch running for the same games is paused first.
     - It also forgets the pictures you picked in Change art for those games,
       along with their saved links and previews.
+    - The games' [info](#game-info) files are deleted too.
 
 ### Clear unused images
 
@@ -316,9 +384,10 @@ download again the next time you open **Change art**.
 ### Wheel and mix
 
 The NX Redux handheld shows a game's **wheel** (its logo) and a **mix**: one
-picture of the screenshot, the box and the wheel. The app can make both, so a
-card shared with a handheld has them ready. The app itself doesn't show
-either yet.
+picture of the screenshot, the box and the wheel. The app can fetch both, so
+a card shared with a handheld has them ready. The app shows them too:
+[List art](layouts.md#list-art) can be **Mix** or **Wheel**, and
+[Backdrop art](layouts.md#backdrop-art) can be **Wheel**.
 
 ??? info "More detail"
 
@@ -332,9 +401,8 @@ either yet.
       ScreenScraper is paused or out of quota, it waits.
     - A game needs a screenshot or a box for a built mix. A wheel alone makes
       none. **Wheel** is never locked: it stays your own choice.
-    - Turning **Mix** on no longer turns **Wheel** on. If you had
-      **Generate mix** on, **Wheel** is switched on once for you, so nothing
-      changes until you turn it off.
+    - **Mix** and **Wheel** are separate switches: turning **Mix** on does
+      not turn **Wheel** on.
     - With **Mix** on, a game counts as missing art until it has its mix. A
       downloaded or picked mix is never rebuilt. When a later fetch brings a
       new screenshot, box or wheel, an app-made mix is made again, and
@@ -374,6 +442,8 @@ Roms/Game Boy Advance (GBA)/.media/screenshot/Golden Sun.png
     - Each image is named after the game's file without its extension, as a
       `.png` or `.jpg`. The app uses your own images like fetched art.
     - The handheld's old untyped mix image (`.media/<game>.png`) is ignored.
+    - `.media/info/` holds each game's [info](#game-info) as a `.json` file,
+      not a picture.
     - **Multi-disc games** kept in their own folder: the art goes in the
       `.media` of the folder above it, named after the game's folder.
     - **Extra ROM folders:** the app writes only inside your home folder. Art

@@ -19,7 +19,7 @@ one folder.
 ## Controls
 
 <figure class="nx-phone" markdown>
-![Crazy Taxi 2 on the Fold's cover screen, with the Dreamcast pad: A, B, X and Y in the Dreamcast's colours](../../assets/screenshots/mobile/pad-dc.webp){ .nx-phone__screen }
+![Crazy Taxi 2 on the Fold's cover screen, with the Dreamcast pad skin: A, B, X and Y](../../assets/screenshots/mobile/pad-dc.webp){ .nx-phone__screen }
 ![](../../assets/landing/mobile/zfold8.webp){ .nx-phone__frame }
 </figure>
 
@@ -47,14 +47,20 @@ is the Dreamcast's `A`. The Dreamcast pad is lettered like an Xbox pad:
   [in-game menu](../in-game-menu.md). On NAOMI and Atomiswave the game sees
   the `SELECT` press first, so it may count a coin.
 - On a Nintendo-layout pad, set **Controller Layout** to **Xbox** in
-  **Options → Console Settings** to play with the Dreamcast's positions (see
+  **Options → Controls** to play with the Dreamcast's positions (see
   [Controls](../controls.md#controller-buttons)).
 
 ??? info "More detail"
-    - The on-screen pad draws `A` `B` `X` `Y` in the Dreamcast's colours, in
-      the positions above. With it, the in-game menu follows the drawn
-      letters: the bottom button (`A`) confirms and the right one (`B`) goes
-      back.
+    - The on-screen pad is the Dreamcast
+      [pad skin](../controls.md#pad-skins): `A` `B` `X` `Y` in the positions
+      above, the triggers and `START`. With it, the in-game menu follows
+      its letters: the bottom button (`A`) confirms and the right one (`B`)
+      goes back.
+    - Where the layout has room for only one of them, the pad shows the
+      analog stick, and **D-PAD** / **STICK** switches between it and the
+      d-pad.
+    - NAOMI and Atomiswave games get the arcade pad skin instead: the
+      d-pad, `A` `B` `X` `Y`, `L` `R`, **COIN** and `START`.
     - On a controller, a "Press A" prompt means the button printed `A`. If a
       controller is read wrongly, set **Controller Layout** to match it.
     - `L3` and `R3` are on controllers only: the on-screen pad has no stick
@@ -118,6 +124,9 @@ Every game gets **its own memory card**:
 Saves/DC/<game>.A1.bin
 ```
 
+The card is written to its file after every save the game makes, so a
+save is kept even if the app is closed straight after.
+
 !!! warning "Renaming a ROM file"
     Renaming the game's file leaves its card behind under the old name, as
     with any save. **Rename Rom** in the app only changes the name the list
@@ -133,12 +142,20 @@ Saves/DC/<game>.A1.bin
     - The arcade games keep their high scores and cabinet settings in
       `Saves/DC/reicast/`, with the other saves.
 
-## Core options
+## Emulator options { #core-options }
 
-Change Dreamcast's settings in the in-game menu under **Options → Core
-Options**, or outside a game in [Emulator Settings](../emulator-settings.md).
-The internal resolution starts at 640×480, the Dreamcast's own. Higher values
-look sharper but cost speed.
+Change Flycast's settings on the **Emulator** page of the in-game menu's
+[Options](../in-game-menu.md#options), or outside a game under **Emulator**
+in [Emulator Settings](../emulator-settings.md). **Internal Resolution**,
+under **Emulator → Video**, starts at 640×480, the Dreamcast's own. Higher
+values look sharper but cost speed.
+
+??? info "More detail"
+    - **Vblank Pacing** (**Emulator → Performance**) works only with
+      **Threaded Rendering** off. The app keeps Threaded Rendering on, so
+      leave Vblank Pacing off.
+    - **Discard Video and Animated Textures** (**Emulator → Emulation
+      Hacks**) only filters textures being dumped to files. Leave it off.
 
 ## NAOMI and Atomiswave
 
@@ -192,7 +209,8 @@ Player 1's memory card.
       and only Player 1's has a memory card.
     - To give Players 2 to 4 a card, set **Device in Expansion Slot B1**,
       **C1** or **D1** to **VMU** in
-      [Emulator Settings](../emulator-settings.md) under **Core settings**.
+      [Emulator Settings](../emulator-settings.md) under **Emulator →
+      Controller Expansion Slots**.
 
 ## Cheats and achievements
 

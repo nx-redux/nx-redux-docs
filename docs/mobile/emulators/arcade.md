@@ -25,9 +25,15 @@ Arcade games run on the bundled **FinalBurn Neo** core.
   The game sees the `SELECT` press first, so it may count a coin.
 - Some games put extra buttons, such as Service, on `L3` and `R3` (pressing
   the sticks), on controllers only.
-- Vertical games, such as many shoot-'em-ups, show a tall picture. In
-  portrait you can hide the pad band for them: see
-  [Hiding the portrait band](../controls.md#hiding-the-portrait-band).
+- The on-screen pad is the arcade [pad skin](../controls.md#pad-skins).
+- Games with rumble shake the controller or the phone; see
+  [Vibration](../controls.md#game-rumble).
+- Vertical games, such as many shoot-'em-ups, show a tall picture. To give
+  one the whole screen in portrait, turn
+  [Pad skin](../appearance.md#pad-skin) off: the buttons are then drawn
+  see-through over the game.
+- On a [second display](../dual-screen.md), a vertical game is turned the
+  right way up there, like any other game.
 
 ## Adding games
 
@@ -43,11 +49,41 @@ Arcade games run on the bundled **FinalBurn Neo** core.
     - BIOS sets are not listed as games.
     - Games show their arcade titles, with bracketed text dropped as on the
       handheld.
+    - FinalBurn Neo knows 8,510 sets, and each zip must match its ROM list.
+      A zip from an older collection may be missing files or carry a name
+      the core no longer uses. 89 sets changed their ROMs and need updated
+      zips. Some sets were renamed: `alienaru` is now `alienar`, `gradiusb`
+      `bs_gradius`, `sailormnj` `sailormn`, `sailormnn` `sailormnne` and
+      `sailormno` `sailormnoe`. `marioe`, `tigeroadb2` and `twinbeeb` are
+      gone.
 
 !!! warning "Don't rename the zips"
     FBNeo finds a game by its short zip name (`sf2.zip`). The game list shows
     the readable title anyway. To pick your own name, use **Rename Rom** or a
     `map.txt` alias.
+
+## Options
+
+FinalBurn Neo's own options are on the **Emulator** page of the in-game
+menu's [Options](../in-game-menu.md#options), and outside a game under
+**Emulator** in [Emulator Settings](../emulator-settings.md). Two of them:
+
+| Option | Under | What it does |
+| --- | --- | --- |
+| **Rumble** | **Emulator → Input Settings** | Game rumble. On by default. |
+| **Resolution** | **Emulator → Video Settings** | The size vector games are drawn at. 640x480 by default. |
+
+![1942's in-game Options at Emulator → Input Settings: Analog Speed, SOCD Mode, Crosshair emulation, and Rumble on](../../assets/screenshots/mobile/arcade-options.webp){ .nx-wide }
+
+**Vertical mode** is fixed and not listed: the app turns vertical games
+itself.
+
+## Save states
+
+Save states work as on the other consoles. A state made by another version
+of FinalBurn Neo, such as one synced from a handheld, is refused when its
+size doesn't match this version's. Neo Geo games' states changed size, so
+an older one is refused and the game starts fresh instead of resuming.
 
 ## Multiplayer
 

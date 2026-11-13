@@ -49,13 +49,23 @@ Pocket's `Option`, are on [Other Systems](other-systems.md).
 | Pokémon Mini | `PKM` | PokeMini |
 | WonderSwan Color | `WSC` | Beetle WonderSwan |
 | PICO-8 | `P8` | fake-08 |
-| Doom | `PRBOOM` | PrBoom |
+| Doom, Heretic, Hexen | `PRBOOM` | PrBoom |
 | ColecoVision | `COLECO` | Gearcoleco |
 | [Arcade](arcade.md) | `FBN` | FinalBurn Neo |
 | Android | none | The game's own app (see [Launcher Mode & Android Games](../launcher.md)) |
 
 **Android** shows as a console once you add Android games: apps on your
 phone that the app starts for you. They have no core and no folder.
+
+??? info "More detail: emulator versions"
+    - The emulators are updated with the app. Where an emulator has a
+      release of its own, the app carries melonDS DS 1.4.0, Azahar 2126.2,
+      ARMSX2 2.9.2 and Gearcoleco 1.7.6 with later fixes. The others are
+      builds of their projects' code rather than a numbered release.
+    - Save states made by an older version of an emulator still load, with
+      one exception: a [FinalBurn Neo](arcade.md#save-states) state whose
+      size changed, such as a Neo Geo game's, is refused and the game
+      starts fresh.
 
 ## Choosing an emulator
 
@@ -117,13 +127,12 @@ To switch a game to Vulkan:
 1. In the game list, press `MENU` on the game, or long-press it, and choose
    **Game Settings**.
 
-    ![A Wii game's context menu with Game Settings selected](../../assets/screenshots/mobile/wii-context-menu.webp)
+    ![New Super Mario Bros. Wii's context menu in search results, with Game Settings selected](../../assets/screenshots/mobile/wii-context-menu.webp)
 
-2. Move to **Graphics API** and set it to **Vulkan** with `LEFT` / `RIGHT`.
-   On a touchscreen with no controller, tap the row and pick **Vulkan** from
-   the list.
+2. Move to **Graphics API**, under **Display**, and set it to **Vulkan**
+   with `LEFT` / `RIGHT`, or tap **Vulkan**.
 
-    ![Game Settings for New Super Mario Bros. Wii, with Graphics API set to Vulkan](../../assets/screenshots/mobile/wii-game-settings-vulkan.webp)
+    ![Game Settings for New Super Mario Bros. Wii under Display: Wii Screen, Graphics API highlighted on Auto with OpenGL ES and Vulkan beside it, and Bottom screen](../../assets/screenshots/mobile/wii-game-settings-vulkan.webp)
 
 3. Start the game.
 
@@ -136,6 +145,8 @@ If your phone can't run Vulkan, the game plays on OpenGL ES instead.
 ??? info "More detail"
     - A phone without a Vulkan GPU that the app can use stays on OpenGL ES,
       whatever the setting.
+    - A Nintendo 64 [netplay](nintendo-64.md#netplay) session always runs on
+      OpenGL ES.
     - If Vulkan can't start on your phone, the game starts again on OpenGL ES,
       with a notice: **Vulkan couldn't start on this device, so this game is
       using OpenGL ES.** The app remembers it for that emulator, so later

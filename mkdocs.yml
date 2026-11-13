@@ -201,11 +201,13 @@ nav:
           - Controls: mobile/controls.md
           - Local Multiplayer: mobile/multiplayer.md
           - Netplay: mobile/netplay.md
+          - Local Wireless: mobile/local-wireless.md
           - In-game Menu: mobile/in-game-menu.md
           - Game Switcher: mobile/game-switcher.md
           - Foldables & Large Screens: mobile/foldables.md
           - Dual Screens & External Displays: mobile/dual-screen.md
           - Launcher Mode & Android Games: mobile/launcher.md
+          - Kids Mode: mobile/kids-mode.md
       - Apps & Features:
           - Artwork: mobile/artwork.md
           - Cheats & Patches: mobile/cheats.md

@@ -1,19 +1,20 @@
 # Settings
 
-Open **Tools → Settings** for the app's settings. They are split into six
-sections, or seven while a second screen is connected.
+Open **Tools → Settings** for the app's settings. They are split into seven
+sections, or eight while a second screen is connected.
 
-![Settings: the sections as a block of words at the bottom left, Library in the accent, with Library's rows previewed on the right](../assets/screenshots/mobile/settings.webp){ .nx-wide }
+![Settings: the sections Library, Emulation, Appearance, Layouts, Controls, Second screen, Kids Mode and System as a block of words at the bottom left, Library in the accent, with Library's rows previewed on the right](../assets/screenshots/mobile/settings.webp){ .nx-wide }
 
 | Section | What it holds |
 | --- | --- |
 | [**Library**](library.md#settings-library) | Your games and consoles with **Rescan**, the home folder, your ROM folders, All files access, **Saves**, Android games, and the Unassigned and Hidden games |
 | [**Emulation**](emulator-settings.md) | **Default emulators**, and **Default settings** for each emulator's options |
-| [**Appearance**](appearance.md) | Pad theme, Pad buttons, Accent, Secondary accent and Text size |
+| [**Appearance**](appearance.md) | Pad skin, Pad theme, Accent, Secondary accent, Text size and Button layout |
 | [**Layouts**](layouts.md) | The style of each main menu tab and of the game lists, the page title and hints, and the Game Switcher |
-| [**Controls**](controls-settings.md) | Pad vibration, Game rumble, Menu pad and Pad layout |
+| [**Controls**](controls-settings.md) | Pad vibration, Game rumble, Shortcuts and System buttons |
 | [**Second screen**](dual-screen.md#settings) | **Enable** and **Bottom screen**. Shows only while a second screen is connected |
-| [**System**](about.md) | Pause when unfocused, Use as home screen, Debug log, the app's version and your device's details, and the licenses |
+| [**Kids Mode**](kids-mode.md) | A PIN-guarded play schedule and the apps a young child may open. See [Kids Mode](#kids-mode) |
+| [**System**](about.md) | Player name, Pause when unfocused, Screen care, Use as home screen, Keyboard, Debug log, the app's version and your device's details, and the licenses |
 
 - The sections sit as a block of words at the bottom left, the current one
   in your accent and the others grey. The top of the screen stays empty.
@@ -27,11 +28,12 @@ sections, or seven while a second screen is connected.
   leave. See [Touch](#touch).
 - On a wide landscape screen, Settings shows the sections and the open page
   side by side: the rows start at the same height on every page, and grow
-  down from there. See [Foldables & Large Screens](foldables.md#two-pane-screens).
+  down from there. `Left` and `Right` then move between the two panes. See
+  [Foldables & Large Screens](foldables.md#two-pane-screens).
 - A reset row (**Reset to defaults**, **Clear all**, **Reset console**) asks
   first: `A` resets, `B` keeps everything.
 
-![Appearance's Reset to defaults asking first: Pad theme, Pad buttons, Accent, Secondary accent and Text size go back to their defaults, with B Cancel and A Reset](../assets/screenshots/mobile/settings-reset-confirm.webp){ .nx-wide }
+![Appearance's Reset to defaults asking first: Pad theme, Pad buttons, Accent, Secondary accent, Text size and Button layout go back to their defaults, with Cancel and Reset](../assets/screenshots/mobile/settings-reset-confirm.webp){ .nx-wide }
 
 Held upright, Settings shows one level at a time: first the section words,
 then the open section's rows in their place. `B` goes back up a level.
@@ -39,7 +41,7 @@ then the open section's rows in their place. `B` goes back up a level.
 <div class="nx-phones" markdown>
 <div markdown>
 <figure class="nx-phone" markdown>
-![Settings held upright on the Fold's cover screen: the section words at the bottom left, Layouts in the accent, the NX mark faint at the top right](../assets/screenshots/mobile/settings-upright.webp){ .nx-phone__screen }
+![Settings held upright on the Fold's cover screen: the section words at the bottom left with Kids Mode between Controls and System, Layouts in the accent, the NX mark faint at the top right](../assets/screenshots/mobile/settings-upright.webp){ .nx-phone__screen }
 ![](../assets/landing/mobile/zfold8.webp){ .nx-phone__frame }
 </figure>
 <p class="nx-phones__caption">Upright</p>
@@ -52,10 +54,23 @@ then the open section's rows in their place. `B` goes back up a level.
 | --- | --- |
 | `A` **Toggle** | On a switch: turn it on or off |
 | `A` **Choose** | On a value with `›`: open the list of its values. `Up` / `Down` move, `A` picks, `B` closes |
-| `A` | On a row of choices: step to the next one |
+| `A` | On a row of choices, on one page: step to the next one |
+| `A` **Change** | On a row of choices, swatches or a stepped value, in two panes: start changing it |
 | `A` **Select** | On any other row: open its page or run it |
-| `Left` / `Right` **Change** | Step a value to the previous or next choice, on every kind of setting |
+| `Left` / `Right` **Change** | On one page: step a value to the previous or next choice, on every kind of setting |
 | `X` **Info** | Show the row's full description, when it has more to say |
+
+Where Settings shows two panes, `Left` and `Right` only move between them:
+`Left` goes back to the sections, and `Right` opens the highlighted row's
+page. They never change a value there. To change a row of choices, press
+`A` on it: the hints read **Change** and **Done**, `Left` / `Right` step
+the value, and `A` or `B` finish. `Up` / `Down` finish and move to the next
+row. See [Two-pane screens](foldables.md#two-pane-screens).
+
+??? info "More detail"
+    - Holding `Left` in two panes goes up one level, and holding `Right`
+      opens one page, however long you hold it.
+    - In two panes, the open section's word is grey, with a `›` after it.
 
 ## Touch
 
@@ -74,8 +89,13 @@ then the open section's rows in their place. `B` goes back up a level.
       where the row's line is cut off or there is more to read. Rows whose
       name says it all have no line.
     - There are no double taps anywhere in Settings.
-    - Where rows run past the screen, they fade out at that edge a whole row
-      at a time, and the selected row stays in view.
+    - Where rows run past the screen, they fade out under a thin fade at
+      that edge, with the next row peeking in, and the selected row stays in
+      view.
+    - On a short screen, such as a pad skin's screen on the unfolded Fold,
+      the section words of Settings, RetroAchievements, Artwork, Cheats &
+      Patches and Device Sync scroll when they don't all fit, keeping the
+      current one in view.
     - A row of choices too wide for its line becomes a value with `›`.
     - The list of values opens with the current value highlighted and marked
       with a dot. A long list scrolls.
@@ -83,9 +103,14 @@ then the open section's rows in their place. `B` goes back up a level.
       it.
     - The rows in the **About** group of [System](about.md#about) only show
       information.
-    - In portrait, the on-screen pad shows on the **Appearance** and
-      **Controls** pages only (while
-      [Menu pad](controls-settings.md#menu-pad) is On), so you can see the
-      pad you are changing. The other Settings pages use the full height.
+    - With a [pad skin](controls.md#pad-skins), Settings sits in the skin's
+      screen glass, as the rest of the menu does. Whether it shows two panes
+      depends on the glass, not the whole screen.
     - The side-by-side view shows on screens such as an unfolded Fold held
       sideways or most phones turned sideways.
+
+## Kids Mode
+
+**Kids Mode** sits just above **System**. It holds the switch that turns
+Kids Mode on, the PIN, the play time for each day and the allowed apps. It
+is off until you turn it on. See [Kids Mode](kids-mode.md).

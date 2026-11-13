@@ -10,16 +10,17 @@ It has two layouts, picked in
 
 ??? info "More detail"
 
-    The **Recent** icon shows in a game list on any touchscreen, and on the
-    main menu whenever the hint bar doesn't show **Recent**.
+    The **Recent** icon always shows: at the top right of the main menu, and
+    at the right of a game list's title.
 
 ## Full screen
 
-![The Game Switcher showing Comix Zone, Sega Genesis 1 / 3](../assets/screenshots/mobile/game-switcher.webp)
+![The Game Switcher showing Mario Kart DS, Nintendo DS 2 / 15, with its time and achievements over the Remove, Back and Resume hints](../assets/screenshots/mobile/game-switcher.webp)
 
 Each game fills the screen with its picture, with its name, console and place
 in the list, such as **1 / 23**. The info line above the hints shows when you
-last played it and for how long, and its achievements.
+last played it and for how long, then its achievements, or its genre, year
+and publisher, as [Game info](layouts.md#game-info) picks.
 
 - `LEFT` / `RIGHT`, or a swipe, move between games.
 - `A` **Resume**, or a tap on the picture, continues the game.
@@ -28,7 +29,10 @@ last played it and for how long, and its achievements.
 
 ??? info "More detail"
 
-    - The info line also names the next achievement to unlock.
+    - With [**Game info**](layouts.md#game-info) on **Achievements** (the
+      default), the info line shows your achievement progress and the next
+      achievement to unlock, for games that have achievements. Other games,
+      and every game with **Details**, show the genre and release.
     - **Remove** asks **Remove "‹name›" from recents?**; choose **Remove** to
       confirm.
     - On a touchscreen with no controller there is no hint bar: **Remove** is
@@ -52,8 +56,9 @@ rows.
     - `UP` on the first game wraps to the last and `DOWN` on the last to the
       first, on a fresh press only: holding the button stops at the end.
       `LEFT` and `RIGHT` do nothing.
-    - The line at the bottom gives the selected game's info, as in a List game
-      list.
+    - The selected game's info sits under the **Recent** title, as in a List
+      game list. With **Page title** hidden it moves to the bottom row,
+      while Button hints is hidden or with touch alone.
     - Two games with the same name from different consoles show the
       console's tag, such as **Tetris (GB)**, or their whole file names when
       those differ only by extension, such as **Tetris.nes (FC)**. A copy of a
@@ -87,15 +92,19 @@ art comes from.
 
 ## Play time and achievements
 
-The info line follows [**Extra info**](layouts.md#extra-info) and
+The info line follows [**Extra info**](layouts.md#extra-info),
+[**Game info**](layouts.md#game-info) and
 [**Button hints**](layouts.md#page-title-and-button-hints) in
 **Tools → Settings → Layouts**, in both layouts.
 
 ??? info "More detail"
 
     - With **Extra info** hidden, the info line is left out.
-    - With **Button hints** hidden, the hint bar's row stays, without hints,
-      and the info line moves into it. In Full screen the row keeps its dark
+    - **Game info** picks what follows the play time: the game's genre, year
+      and publisher (**Details**) or its achievements (**Achievements**,
+      the default).
+    - With **Button hints** hidden, the hint bar's row stays, without hints.
+      In Full screen the info line moves into it, and the row keeps its dark
       shade so the line reads over a light picture.
 
 ## Always resumable
