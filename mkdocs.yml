@@ -28,6 +28,8 @@ theme:
 extra:
   handheld_version: v2.5.1   # shown beside Handheld on the landing page; bump with each release
   mobile_version: v0.6.2     # shown beside Mobile on the landing page; bump with each release
+  mobile_repo_url: https://github.com/nx-redux/nx-mobile
+  mobile_repo_name: nx-redux/nx-mobile
   social:
     - icon: fontawesome/brands/reddit
       link: https://www.reddit.com/r/NXRedux/
@@ -45,6 +47,7 @@ extra_css:
 
 extra_javascript:
   - javascripts/sidebar-sections.js
+  - javascripts/source-mobile.js
   - javascripts/vendor/img-comparison-slider/index.js
 
 plugins:
