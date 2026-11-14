@@ -273,6 +273,10 @@
 .md-typeset .nx-phones--three { gap: 0 1.2rem; }
 .md-typeset .nx-phones--three .nx-phone { width: 10rem; }
 
-/* Header: the handheld and mobile repositories side by side. */
-.md-header__source { display: flex; width: auto; max-width: none; }
-.md-header__source .md-source { width: 10.6rem; }
+/* Header: the handheld and mobile repositories side by side. Below 60em the
+   theme hides them (the navigation drawer shows them instead); showing them
+   there would make the page wider than a phone's screen. */
+@media screen and (min-width: 60em) {
+  .md-header__source { display: flex; width: auto; max-width: none; }
+  .md-header__source .md-source { width: 10.6rem; }
+}
