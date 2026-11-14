@@ -4,6 +4,16 @@
 
 .md-main { display: none; }
 
+/* On narrow screens the navigation drawer behind the header's menu button
+   lives inside .md-main, so keep that in the page, taking no room, with only
+   the drawer showing. */
+@media screen and (max-width: 76.234375em) {
+  .md-main { display: block; flex-grow: 0; height: 0; }
+  .md-main__inner { margin: 0; height: 0; }
+  .md-content,
+  .md-sidebar--secondary { display: none; }
+}
+
 .nx-home {
   --nx-black: #000;
   --nx-white: #fff;
