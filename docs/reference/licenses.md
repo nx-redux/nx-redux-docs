@@ -65,13 +65,6 @@ commercial product.
 Where the projects change an emulator's source, the changes are published in
 their repositories as patch files under that emulator's license.
 
-### No donations
-
-FB Neo's license forbids asking for donations to support work on any project
-that uses FB Neo's source code. NX Redux ships FB Neo, so **NX Redux does
-not ask for donations** anywhere: no sponsor buttons, no donation links, no
-in-app requests. It is free and stays free.
-
 ## Libraries
 
 On mobile, NX Redux is built on open-source libraries, including:
