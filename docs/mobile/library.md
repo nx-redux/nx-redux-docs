@@ -14,14 +14,15 @@ The app matches the files in an extra folder to a console by the folder's
 name or the file's extension. Anything left over lands in
 [Unassigned games](#unassigned-games) until you pick its console.
 
-The app never deletes a game. It moves games only while **Move them into
-<home>/Roms** is on during setup.
+The app never deletes a game. It moves games only inside the home folder,
+while **Move them into <home>/Roms** is on during setup. It never moves games
+out of an extra folder.
 
 ??? info "More detail"
-    During [first-run setup](getting-started.md#first-run-setup), the page
-    that says what a folder holds offers **Move them into <home>/Roms**: on
-    by default for the home folder's games outside `Roms/`, off for an extra
-    folder.
+    During [first-run setup](getting-started.md#first-run-setup), the home
+    folder's page offers **Move them into <home>/Roms** (on by default) when
+    some of its games are outside `Roms/`. An extra folder's page only says
+    what it found.
 
     Files in an extra folder are matched to a console:
 
