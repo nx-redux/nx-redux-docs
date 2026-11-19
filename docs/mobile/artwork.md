@@ -436,9 +436,10 @@ Roms/Game Boy Advance (GBA)/.media/screenshot/Golden Sun.png
     | `.media/mix/` | The mix, with **Mix** on |
 
     - SteamGridDB grids are saved as 2D box art and heroes as screenshots.
-      Older `grid/` and `hero/` folders are moved there once, the first time
-      the library is scanned; a file is left where it is when its new folder
-      already has one you placed yourself.
+      In the home folder, older `grid/` and `hero/` folders are moved there
+      once, the first time the library is scanned; a file is left where it is
+      when its new folder already has one you placed yourself. In an extra
+      folder they are read where they are, and nothing is moved.
     - Each image is named after the game's file without its extension, as a
       `.png` or `.jpg`. The app uses your own images like fetched art.
     - The handheld's old untyped mix image (`.media/<game>.png`) is ignored.
