@@ -11,7 +11,8 @@ Wii and GameCube games run on the bundled **Dolphin** core.
 
 - A GameCube disc in the Wii folder plays as GameCube.
 - Save states are large, about 100 MB each.
-- **Graphics API** can switch a game to Vulkan. See
+- **Graphics API** can switch a game to Vulkan. On a phone with an Arm Mali
+  GPU, **Auto** already uses Vulkan. See
   [Graphics API](index.md#graphics-api).
 
 ??? info "More detail"
@@ -161,6 +162,7 @@ Emulator Settings for the console. They apply at the next start.
 | --- | --- | --- | --- | --- |
 | **Wii Screen** (Wii) | Display | Auto, 4:3, 16:9 | Auto | [Wii Screen](#wii-screen) |
 | **Graphics API** | Display | Auto, OpenGL ES, Vulkan | Auto | [Graphics API](index.md#graphics-api) |
+| **GPU driver** | Display | Default, System driver, then each driver you added (shown on Vulkan) | Default | [GPU driver](index.md#gpu-driver) |
 | **Pointer Width**, **Pointer Height**, **Pointer Offset** (Wii) | Controls | 50% to 150%, 50% to 150%, −20 to +20 | 100%, 100%, 0 | [Pointing](#pointing) |
 | **Audio Buffer** | Audio | Auto, 50 ms, 75 ms, 100 ms | Auto | [Frame Skip](#frame-skip) |
 

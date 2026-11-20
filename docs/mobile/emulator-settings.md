@@ -4,8 +4,9 @@
 sets each emulator's options for a whole console, without starting a game
 first.
 
-The **Emulation** section holds two rows: **Default emulators** (see
-[below](#default-emulators)) and **Default settings**.
+The **Emulation** section holds three rows: **Default emulators** (see
+[below](#default-emulators)), **Default settings**, and **GPU driver** (see
+[GPU driver](emulators/index.md#gpu-driver)).
 
 ![Settings with Emulation highlighted in the sections: its pages Default emulators and Default settings beside them, in the same large words](../assets/screenshots/mobile/settings-emulators.webp){ .nx-wide }
 
@@ -31,7 +32,7 @@ The page is titled with the emulator, the console and the tag, such as
 
 | Group | What it holds |
 | --- | --- |
-| **Display** | The picture: the Nintendo DS and 3DS screen rows, **3D Resolution**, **Graphics API**, **Wii Screen** and **Bottom screen**. See [Display](in-game-menu.md#display). |
+| **Display** | The picture: the Nintendo DS and 3DS screen rows, **3D Resolution**, **Graphics API**, **GPU driver**, **Wii Screen** and **Bottom screen**. See [Display](in-game-menu.md#display). |
 | **Controls** | **Controller Layout**, **Controller Type**, and the Nintendo 3DS and Wii controls. See [Controls](in-game-menu.md#controls). |
 | **Gameplay** | Fast forward, rewind, **Frame Skip** and **PS2 BIOS**. See [Gameplay](in-game-menu.md#gameplay). |
 | **Multiplayer** | **Local Wireless**, on Nintendo DS, 3DS and PSP. See [Local Wireless](local-wireless.md). |
@@ -70,7 +71,8 @@ What you set here is the console's setting, the same as the in-game menu's
 ??? info "More detail"
 
     - The rows read only when a game starts are **Graphics API**
-      ([Graphics API](emulators/index.md#graphics-api)), **Audio Buffer**,
+      ([Graphics API](emulators/index.md#graphics-api)), **GPU driver**
+      ([GPU driver](emulators/index.md#gpu-driver)), **Audio Buffer**,
       **Local Wireless**, **PS2 BIOS**, and the Wii's **Wii Screen** and
       **Pointer** rows
       ([Nintendo Wii & GameCube](emulators/wii-gamecube.md#console-settings)).

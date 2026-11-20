@@ -241,7 +241,8 @@ To set these before a game starts, for a whole emulator or one game, use
 
     - The game's cheats are on the [Cheats](#cheats) tab.
     - Settings the game reads only when it starts aren't here: **Graphics
-      API** ([Graphics API](emulators/index.md#graphics-api)), **Audio
+      API** ([Graphics API](emulators/index.md#graphics-api)), **GPU
+      driver** ([GPU driver](emulators/index.md#gpu-driver)), **Audio
       Buffer**, **Local Wireless** in the **Multiplayer** group, **PS2
       BIOS**, and the Wii's **Wii Screen** and **Pointer** rows. Changing
       them here would do nothing until the next launch. Set them for one

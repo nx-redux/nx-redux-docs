@@ -114,7 +114,7 @@ PlayStation 2, PSP and Nintendo 3DS. **Graphics API** picks:
 
 | Value | What it does |
 | --- | --- |
-| **Auto** (default) | OpenGL ES. |
+| **Auto** (default) | OpenGL ES. On a phone with an Arm Mali GPU, PlayStation 2, Wii and GameCube use Vulkan instead: it is faster there. |
 | **OpenGL ES** | OpenGL ES. |
 | **Vulkan** | Vulkan. On Nintendo 64 it also switches to the ParaLLEl-RDP renderer: more accurate, and heavier. |
 
@@ -145,6 +145,10 @@ If your phone can't run Vulkan, the game plays on OpenGL ES instead.
 ??? info "More detail"
     - A phone without a Vulkan GPU that the app can use stays on OpenGL ES,
       whatever the setting.
+    - Where **Auto** uses Vulkan, the row's note says **Auto is Vulkan**.
+      On a Mali phone that is PlayStation 2, Wii and GameCube. The other
+      consoles stay on OpenGL ES in **Auto**: Vulkan was no faster for them
+      there, and less smooth. Pick **OpenGL ES** to go back.
     - A Nintendo 64 [netplay](nintendo-64.md#netplay) session always runs on
       OpenGL ES.
     - If Vulkan can't start on your phone, the game starts again on OpenGL ES,
@@ -153,6 +157,59 @@ If your phone can't run Vulkan, the game plays on OpenGL ES instead.
       launches go straight to OpenGL ES, and the **Graphics API** row says
       **Vulkan didn't work on this phone; using OpenGL ES.** An app update
       tries Vulkan again.
+
+## GPU driver
+
+A game on Vulkan can use a GPU driver you add, in place of the phone's own:
+for example Turnip on a Qualcomm Adreno GPU, or malisx2 on an Arm Mali GPU.
+Another driver can fix a broken picture or run a game faster. It can also be
+slower, or not start, so it is something to try.
+
+!!! warning
+    A driver is third-party code that runs inside the app. Install only
+    drivers you trust.
+
+To add a driver and use it for every Vulkan game:
+
+1. Open **Tools → Settings → Emulation → GPU driver**.
+2. Choose **Add driver** and pick the driver's `.zip` file.
+3. Press `A` on the driver, or tap it, and choose **Use this driver**. Its
+   row now says **In use**.
+
+**System driver** on the same page goes back to the phone's own driver.
+**Remove**, in a driver's options, deletes it from the phone.
+
+For one console or one game, use the **GPU driver** row under **Display** in
+[Emulator Settings](../emulator-settings.md) or
+[Game Settings](../emulator-settings.md#game-settings):
+
+| Value | What it does |
+| --- | --- |
+| **Default** | The driver in use on the **GPU driver** page. |
+| **System driver** | The phone's own driver. |
+| A driver's name | That driver, for this console or game. |
+
+The row shows while **Graphics API** is **Vulkan**, and on **Auto** where
+Auto is Vulkan. Like **Graphics API**, it is read when the game starts.
+
+??? info "More detail"
+    - A driver only replaces the Vulkan driver. A game on OpenGL ES always
+      uses the phone's own.
+    - A driver package is a `.zip` holding a `meta.json` file and the
+      driver, built for 64-bit ARM. Anything else is refused with the
+      reason, such as **This zip has no meta.json, so it isn't a driver
+      package.**
+    - The app can't tell which GPU a driver is for. One made for another
+      GPU fails to start, and the game starts on the phone's driver with a
+      notice naming the driver, such as **Turnip couldn't start, so this
+      game is using the system driver.**
+    - If a driver crashes in a game, that game goes back to the phone's
+      driver, and its **GPU driver** row says so: **Turnip crashed in this
+      game; using the system driver.**
+    - Custom drivers need Android 9 or later. On an older phone the
+      **GPU driver** row is greyed out and says so.
+    - Removing a driver puts the consoles and games set to it back on the
+      driver in use for the whole app.
 
 ## BIOS files
 
