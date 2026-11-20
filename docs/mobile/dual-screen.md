@@ -297,7 +297,7 @@ The tab is a grid of tiles. Your
 | **Swap disc** | A game with more than one disc | Puts the next disc in. The tile shows the disc in use, such as `1/2`. |
 | **Fast forward** | Always | Turns fast forward on or off. Filled while on. |
 | **Rewind** | The console's [Rewind](in-game-menu.md#options) is on | Turns rewind on or off. Filled while on. |
-| **Mic** | A Nintendo DS or 3DS game | Lets the game hear the microphone, or stops it. Filled while on. See [Microphone](emulators/nintendo-ds.md#microphone). |
+| **Mic** | A Nintendo DS or 3DS game | Shows or hides the pad's mic button, for every DS and 3DS game. Filled while shown. See [Microphone](emulators/nintendo-ds.md#microphone). |
 | **Reset** | Always | Restarts the game. It asks first. |
 
 Under the tiles, a strip shows your save-state slots, each with its
@@ -312,7 +312,8 @@ use.
       other off.
     - A touch button set to **Toggle FF**, **Toggle Rewind** or **Reset**
       gets no tile of its own: the panel's tile does the same.
-    - **Mic** is the same switch as the pad's mic button.
+    - The mic itself is turned on and off with the mic button the tile
+      shows. Hiding the button turns the mic off.
     - In a [netplay](netplay.md) match, the tiles and the save-state strip
       are hidden. While a game's [local wireless](local-wireless.md) is
       on, only **Swap disc** and **Mic** stay.
@@ -333,7 +334,7 @@ Each applies straight away.
 To keep a change for next time, save it from **All options**. A row the
 game's layout holds is dimmed.
 
-![The game panel's Settings tab: Volume at 20%, Screen Scaling, Screen Sharpness and Shader None, then “Changes apply now. Save them from All options.” and All options](../assets/screenshots/mobile/dual-screen-panel-settings.webp){ .nx-wide }
+![The game panel's Settings tab in Batman Returns: Volume at 33%, Screen Scaling, Screen Sharpness and Shader None, then “Changes apply now. Save them from All options.” and All options](../assets/screenshots/mobile/dual-screen-panel-settings.webp){ .nx-wide }
 
 ### Achievements
 

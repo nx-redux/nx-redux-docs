@@ -90,6 +90,62 @@ as Player 1.
       picks the sound chip: **YM2612**, the first Mega Drive's, or
       **YM3438**, the later models'.
 
+## Sega CD BIOS
+
+The Sega CD is region-locked: a US disc boots only with the US BIOS,
+`bios_CD_U.bin`, a European disc with `bios_CD_E.bin`, and a Japanese disc
+with `bios_CD_J.bin`. Before a disc starts, the app reads its region and
+checks for that BIOS. When it's missing, the message says which file to add,
+and where your other BIOS files are:
+
+> This game is a US disc: put bios_CD_U.bin in Bios/SEGACD/. Bios/MD/ has
+> bios_CD_E.bin and bios_CD_J.bin, which only boot European and Japanese
+> discs.
+
+[Import BIOS](../library.md#import-bios) puts each file under the right
+name, whatever it's called.
+
+??? info "More detail"
+    - The region is read from `.cue` / `.bin`, `.iso`, `.chd` and `.m3u`
+      discs, and from a zipped disc once it's unpacked.
+    - PicoDrive also accepts the redump names, such as `us_scd2_9306.bin`
+      (or `.zip`).
+    - On Genesis Plus GX, a region forced in its Emulator settings decides
+      the BIOS, as it does in the emulator.
+    - A disc whose header can't be read gets the general check: any of the
+      three files.
+
+## MSU-MD
+
+MSU-MD games are Mega Drive cartridges patched to play CD-quality music
+from a set of audio tracks. They show an **MSU-MD** badge by their name.
+
+Put the set in `Roms/Sega Genesis (MD)/`: the cartridge, and a `.cue` of the
+same name with the tracks it lists. A set in a folder of its own lists as one
+game, named after the folder.
+
+```text
+Roms/Sega Genesis (MD)/
+└── Sonic 3D Blast MSU/
+    ├── Sonic 3D Blast MSU.md
+    ├── Sonic 3D Blast MSU.cue
+    ├── Sonic 3D Blast MSU-01.wav
+    └── …
+```
+
+- **PicoDrive** (the default) needs no BIOS for MSU-MD.
+- **Genesis Plus GX** needs the Sega CD BIOS of the cartridge's region in
+  `Bios/MD/`; the message names it if it's missing.
+
+??? info "More detail"
+    - The cue and its tracks are hidden from the game list; the cartridge
+      stands for the set.
+    - A track the cue lists that is missing is named in the error.
+    - Moves and [Device Sync](../device-sync.md) take the set's files along.
+    - Art is looked up by the folder's name, and
+      [RetroAchievements](../retroachievements.md) treats the game as its
+      Mega Drive cartridge.
+
 ## Multiplayer
 
 - Two players can play on the Genesis, Sega CD, 32X, Master System and

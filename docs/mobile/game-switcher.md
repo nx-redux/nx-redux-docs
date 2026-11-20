@@ -120,18 +120,24 @@ PICO-8 is the exception for now (see [Emulators](emulators/index.md#limits)).
 ??? info "More detail"
 
     The resume point is a hidden resume state. This works with nearly every
-    core.
+    core. With
+    [Save on quit](emulator-settings.md#save-on-quit-and-a-resumes) off, no
+    resume state is saved and games start fresh, unless you load a save slot.
 
 ## Only resumable games are listed
 
 The switcher lists only recent games that can be resumed. With none, it shows
 **No Recents** and **Play a game to see it here**. Android games are never
-listed.
+listed. With [Save on quit](emulator-settings.md#save-on-quit-and-a-resumes)
+off, it lists every recent game instead, and `A` starts them fresh.
 
 In a game list, `A` **Resume** resumes the highlighted game when it can. To
-start it fresh instead, choose **Play from start** in its `MENU` menu.
+start it fresh instead, choose **Play from start** in its `MENU` menu. With
+[A resumes](emulator-settings.md#save-on-quit-and-a-resumes) off, `A`
+**Play** starts it fresh and **Resume** in its `MENU` menu continues it.
 
 ??? info "More detail"
 
-    Unlike the handheld, there is no setting to list every recent game
-    instead.
+    Turning **Save on quit** off is the way to list every recent game. With
+    [A resumes](emulator-settings.md#save-on-quit-and-a-resumes) off, `A`
+    starts the game fresh (the hint reads **Start**).

@@ -213,7 +213,9 @@ Auto is Vulkan. Like **Graphics API**, it is read when the game starts.
 
 ## BIOS files
 
-Put BIOS files in `Bios/<TAG>/`.
+Put BIOS files in `Bios/<TAG>/`, or let
+[Import BIOS](../library.md#import-bios) find and copy them for you from a
+folder, a zip or RetroArch.
 
 - These systems need their BIOS: Famicom Disk System, Sega CD, PC Engine CD,
   ColecoVision (`Bios/COLECO/colecovision.rom`) and Dreamcast
@@ -226,7 +228,9 @@ Put BIOS files in `Bios/<TAG>/`.
 
 ??? info "More detail"
     - The message looks like **Sega CD needs a BIOS: put bios_CD_U.bin (or
-      bios_CD_E.bin, bios_CD_J.bin) in Bios/SEGACD/**.
+      bios_CD_E.bin, bios_CD_J.bin) in Bios/SEGACD/**. Sega CD discs are
+      region-locked, so a disc asks for its own region's BIOS; see
+      [Sega CD BIOS](sega.md#sega-cd-bios).
     - PCSX-ReARMed uses a real BIOS when present. Dolphin's system files are
       bundled, which is why Wii and GameCube need none.
     - A launch also reads the folders of tags that share its core. So a

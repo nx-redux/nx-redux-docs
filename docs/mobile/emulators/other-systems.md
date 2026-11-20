@@ -128,6 +128,36 @@ out of the box.
 
 PrBoom also plays Heretic and Hexen from their own IWAD files.
 
+## MSU-1
+
+MSU-1 games are Super Nintendo games patched to play CD-quality music. They
+show an **MSU-1** badge by their name, and play on **Snes9x**, the default.
+
+Put the ROM in `Roms/Super Nintendo ES (SFC)/` with its MSU-1 files beside
+it, all named after the ROM: a `.msu` data file and the `-1.pcm`, `-2.pcm`…
+tracks. A pack in a folder of its own lists as one game, named after the
+folder.
+
+![Contra III - The Alien Wars with its MSU-1 badge in the Super Nintendo carousel, the plain Contra III beside it](../../assets/screenshots/mobile/msu-badge.webp){ .nx-wide }
+
+```text
+Roms/Super Nintendo ES (SFC)/
+└── Contra III MSU1/
+    ├── contra3_msu1.sfc
+    ├── contra3_msu1.msu
+    ├── contra3_msu1-1.pcm
+    ├── contra3_msu1-2.pcm
+    └── …
+```
+
+??? info "More detail"
+    - Loose sets in the console folder work too. The badge marks which of
+      two games of the same name has the soundtrack; both keep the clean
+      name.
+    - Art is looked up by the pack folder's name, since MSU ROMs are often
+      renamed copies.
+    - Moves and [Device Sync](../device-sync.md) take the set's files along.
+
 ## Multiplayer
 
 - **Up to four players:** TurboGrafx-16.

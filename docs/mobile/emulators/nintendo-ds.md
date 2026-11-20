@@ -97,6 +97,7 @@ row, so you can set up each orientation there.
 | **Inset Corner** | Top left, Top right, Bottom left, Bottom right | Top right | [Big screen and inset](#big-screen-and-inset) |
 | **Inset Size** | Small, Medium, Large | Medium | [Big screen and inset](#big-screen-and-inset) |
 | **Inset Opacity** | 100%, 75%, 50% | 100% | [Big screen and inset](#big-screen-and-inset) |
+| **Shader Screens** | Top screen, Both screens | Top screen | [Shaders](#shaders) |
 
 Two more rows are in other groups:
 
@@ -247,18 +248,23 @@ screen together.
 ## Microphone
 
 Some games ask you to blow or shout into the DS's microphone: Fossil Fighters,
-Zelda Spirit Tracks and Nintendogs, for example. Turn the **Mic** on when the
-game asks, and off again afterwards:
+Zelda Spirit Tracks and Nintendogs, for example.
 
-- tap **MIC** on the on-screen pad,
-- or, with a controller, tap the round **mic button** in the screen's
-  bottom-left corner,
-- or tap **Mic** in the game panel's
-  [Shortcuts](../dual-screen.md#shortcuts) tab on a second screen,
+The mic button is hidden until you want it. Tap the **Mic** tile in the game
+panel's [Shortcuts](../dual-screen.md#shortcuts) tab to show it: **MIC** on
+the on-screen pad, or with a controller the round **mic button** in the
+screen's bottom-left corner. The choice is kept for every DS and 3DS game;
+tap the tile again to hide it.
+
+Then turn the **Mic** on when the game asks, and off again afterwards:
+
+- tap **MIC** on the pad, or the round mic button,
 - or bind **Toggle mic** to a controller button in
   [Shortcuts](../controls-settings.md#shortcuts).
 
-All of them flip the same switch.
+Both flip the same switch. While the button is hidden, the Mic stays off,
+the pad's button row closes up without **MIC**, and **Toggle mic** asks you
+to show the button first.
 
 The first time you turn it on, Android asks whether NX Redux may use the
 microphone:
@@ -394,7 +400,7 @@ room. See [Local Wireless](../local-wireless.md).
 scale is sharper but slower: if a game stutters, try Performance at a lower
 **Scale**.
 
-In a game the row reads like **Auto · 6x now** in Auto and Quality, the scale in use (Performance shows its **Scale**). It follows
+In a game the row reads like **Auto · 6x now** in Auto and Quality, the scale in use (Performance shows its **Scale**). Auto drops to 1x while a [shader](#shaders) is on. It follows
 turning the phone, folding it and changing the layout, straight away.
 
 ??? info "More detail"
@@ -418,6 +424,21 @@ turning the phone, folding it and changing the layout, straight away.
     - If the GPU renderer can't start, the game runs in software and the app
       shows **GPU renderer unavailable — using software** once. The next
       launch tries the GPU again.
+
+## Shaders
+
+A [shader](../in-game-menu.md#shaders) is drawn on the top screen only, so
+the touch screen stays plain. **Shader Screens** in
+[Console Settings](#console-settings) set to **Both screens** shades the
+bottom screen too.
+
+Each shaded screen is drawn at the DS's own size (256x192) before the shader
+runs, as shaders are written for a console's own pixels. So a scanline
+shader draws one line per real row, at any 3D Resolution.
+
+While a shader is on, **3D Resolution** on **Auto** draws at 1x (the row
+reads **Auto · 1x now**), since the shader sees the native picture anyway.
+**Quality** and **Performance** keep their scale.
 
 ## Cheats and achievements
 

@@ -54,6 +54,7 @@ it reads, in one list.
 | **All files access** | Android 11 and later. A switch: a tap, or `A`, opens Android's page for the app. See [All files access](#all-files-access). |
 | **Microphone access** | On phones with a microphone. On or Off: a tap, or `A`, asks for it, or opens Android's page for the app when Android won't ask again. See [Microphone access](#microphone-access). |
 | **Saves** | Save formats, and export or import your saves. See [Saves](#saves). |
+| **Import BIOS** | Copy BIOS files in from a folder, files, a zip or RetroArch. See [Import BIOS](#import-bios). |
 | **Android games** | How many apps are in the Android console. Opens the picker. See [Launcher Mode & Android Games](launcher.md#android-games). |
 | **Unassigned games** | Only when some games have no console. Shows how many, and opens their list. See [Unassigned games](#unassigned-games). |
 | **Hidden games** | Only when some games are hidden. Shows how many, and opens their list: `A` on a game shows it again. |
@@ -122,11 +123,12 @@ With All files access, every folder or file pick (home folder, extra
 folder, import, export) uses the app's own picker, a list like the rest of
 the app.
 
-![The app's folder picker at Internal storage's root: .. and the folders in one column with Alarms selected, Create new folder at the bottom, and the hints Actions, New folder, Back and Select](../assets/screenshots/mobile/file-picker.webp){ .nx-wide }
+![The app's folder picker at the NovaBlack SD card's root: .. and the folders in one column with Alarms selected, Use NovaBlack and New folder at the bottom, and the hints Actions, New folder, Back and Open](../assets/screenshots/mobile/file-picker.webp){ .nx-wide }
 
-- Open folders until you reach the one you want, then choose **Use this
-  folder** (or **Save here** for an export) at the bottom. **New folder**
-  sits beside it.
+- Open folders until you reach the one you want, then choose the button
+  at the bottom that names it, such as **Use NXRedux** (or **Save in
+  Exports** for an export). A storage's root goes by its name: **Use SD
+  card**. **New folder** sits beside it.
 - `A` **Select** opens a folder, or picks the row. `B` **Back** goes up a
   level, and at the storage list cancels.
 - `Left` / `Right` jump from the folders to the actions at the bottom,
@@ -143,16 +145,68 @@ the app.
       then the folders, A–Z, then the files, dimmed: they show what a folder
       holds, but can't be picked. When importing a zip, the `.zip` files are
       the ones you pick. Hidden (dot) folders and files are not shown.
-    - **Use this folder** (or **Save here**) and **New folder** sit side by
-      side at the bottom, as a pop-up's buttons: the first in your accent,
+    - **Use <folder>** (or **Save in <folder>**) and **New folder** sit side
+      by side at the bottom, as a pop-up's buttons: the first in your accent,
       **New folder** outlined, and a ring where the controller is. Where
-      there is no **Use this folder**, **New folder** takes the accent.
+      there is no **Use** button, **New folder** takes the accent. A folder
+      name too long for the button ends in "…".
+    - The button always takes the folder you are in, not the one
+      highlighted in the list.
     - When picking the home folder, a line under the title says what the
       folder is: **Empty folder**, **NX Redux folder**, or **Has other files:
       games found in it will be sorted into Roms**. An SD card's root can be
-      the home folder; the phone's storage root has no **Use this folder**
-      row.
+      the home folder; the phone's storage root has no **Use** button.
     - An export over a file of the same name asks **Replace <name>?** first.
+
+## Import BIOS
+
+**Tools → Settings → Library → Import BIOS** copies BIOS files into your
+home folder's `Bios/<CONSOLE>/` folders, each under the name its emulator
+reads. You can still put them in `Bios/` by hand; see
+[BIOS files](emulators/index.md#bios-files).
+
+| Row | Copies from |
+| --- | --- |
+| **From a folder** | A folder you pick, and the folders inside it. |
+| **From files** | The files you pick. |
+| **From a zip file** | A zip you pick. |
+| **From RetroArch** | RetroArch's `system` folder. With All files access, every one found is read; without it, pick RetroArch's folder (the one with `system` inside). |
+
+Each file is recognised however it is named:
+
+- **By checksum** first: `[BIOS] Sega CD (USA).bin` goes to
+  `Bios/SEGACD/bios_CD_U.bin`, and `SCPH-39001.bin` to `Bios/PS2/`.
+- **Then by name and size:** a known name at a size that file can have is
+  copied too, marked **not verified**. A known name at a size it can't have
+  is skipped.
+- A file several consoles use is copied into each of their folders.
+
+Nothing is fetched from the internet, and the files you pick are never
+changed. A file already in place with the same bytes is left alone, and a
+**not verified** file never replaces a BIOS you already have.
+
+![The Import BIOS results page: Imported 22 BIOS, then a line per file such as Atari 5200: 5200.rom (verified), Dreamcast: awbios.zip (not verified) and Game Boy: gb_bios.bin (verified, changes boot), and Done](../assets/screenshots/mobile/import-bios.webp){ .nx-wide }
+
+The results page sums it up, such as **Imported 3 BIOS, 1 already there, 1
+kept**, with a line per file (**verified**, **not verified**, **renamed
+from …**, **already there** or **kept yours**) and the files skipped, with
+why. `A` or `B` on **Done** goes back to Library.
+
+??? info "More detail"
+    - Optional boot files (the Game Boy, Super Game Boy and Master System /
+      Game Gear boot ROMs, the Genesis TMSS) are imported too, noted
+      **changes boot**: the game then starts with the console's boot screen.
+    - For PS2, any 4 MB console dump is recognised, under its own name. The
+      same PS2 BIOS under another name counts as already there.
+    - Arcade BIOS sets (`neogeo.zip`, `naomi.zip` and others) are matched by
+      name at any size, since their size changes between romset versions.
+    - Not imported: game data (Doom IWADs, Stella samples), Dolphin's
+      GameCube IPL, and an emulator's own data files (Dreamcast's
+      `dc_nvmem.bin`, PS2's memory card files).
+    - Import BIOS can't run while Device Sync is running, or without a home
+      folder. A pick with no BIOS in it ends with **No BIOS found**.
+    - A BIOS you later delete or rename in `Bios/` stops being used: the
+      app removes its own copy at the next launch.
 
 ## Unassigned games
 

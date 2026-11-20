@@ -153,6 +153,9 @@ does the same without opening the menu. It is unbound until you set it.
 ??? info "More detail"
 
     - **Save & Quit** saves a hidden resume state.
+    - With [Save on quit](emulator-settings.md#save-on-quit-and-a-resumes)
+      off, no resume state is saved: the menu's **Quit** just quits, and the
+      **Save & Quit** shortcut is named **Quit**.
     - A tap on **Quit** opens the **Quit Game** dialog with the same two
       choices, **Save & Quit** and **Quit**, and the line **Save & Quit keeps
       your place for next time. Quit keeps the last resume point.** Tap
@@ -421,29 +424,62 @@ As with every Options page, keep your changes with
 
 | Row | What it does |
 | --- | --- |
-| **Shader** | The shader preset to run, or None (the default). |
+| **Shader** | The shader preset to run, or None (the default). `A` opens the [shader picker](#the-shader-picker). |
 | **Shader Parameters** | The settings the active shader exposes. |
 | **Reset Parameters** | Restore the shader's default parameter values. |
 
-Shaders come bundled with the app, and you can add your own.
+Shaders come bundled with the app, and you can add your own. The app runs
+RetroArch's **slang** presets (`.slangp`) and its older **GLSL** presets
+(`.glslp`).
+
+### The shader picker
+
+**Shader** opens a list:
+
+| Entry | What's in it |
+| --- | --- |
+| **None** | No shader. |
+| **CRT** | An old tube TV: scanlines, a phosphor mask and glow. For home consoles and arcade games. |
+| **Handheld** | A handheld's LCD: a visible pixel grid, and the Game Boy's green screen. |
+| **Smoothing** | No retro look: sharper pixels without shimmer, jagged edges rounded off, dithering blended. |
+| **NTSC** | The analogue video signal: colour bleed and blur, as through a composite cable or off a tape. |
+| **Effects** | Other looks: motion blur, colour controls, a curved screen, a painted picture. |
+| **Personal** | Presets from the `Shaders/` folder in your home folder, a folder at a time. Only shown when it has some. See [Your own shaders](#your-own-shaders). |
+
+![The shader picker in Batman Returns: None, ticked, then the CRT, Handheld, Smoothing and NTSC groups, each with a line on what its shaders do](../assets/screenshots/mobile/shader-picker.webp){ .nx-wide }
+
+Each group's line shows on its row and again over its list once it is open.
+
+- `A` on a preset uses it and shows the live preview strip over the game.
+- `Left` / `Right` then step through the presets of that group or folder
+  only.
+- `B` goes back to the list, with the preset in use marked.
+
+The second screen's Settings tab **Shader** row shows the preset by name and
+opens the same picker. See [Dual Screens](dual-screen.md#panel-settings).
 
 ### Your own shaders
 
-Put RetroArch GLSL shaders in a `Shaders/` folder in your
-[home folder](getting-started.md#choose-a-home-folder). They appear at the
-end of the **Shader** list, after the bundled ones, as `User/` and their
-path: `Shaders/handheld/PT_SkyWalker541.glslp` shows as
-`User/handheld/PT_SkyWalker541.glslp`.
+Put RetroArch shaders in a `Shaders/` folder in your
+[home folder](getting-started.md#choose-a-home-folder). They appear under
+**Personal** in the [shader picker](#the-shader-picker), in the same folders
+as on disk: `Shaders/handheld/PT_SkyWalker541.glslp` is
+**Personal → handheld → PT_SkyWalker541**. A folder copied from RetroArch's
+`slang-shaders` or `glsl-shaders` works as it is.
 
 | File | Listed |
 | --- | --- |
-| A `.glslp` preset anywhere in `Shaders/` | Yes |
+| A `.slangp` or `.glslp` preset anywhere in `Shaders/` | Yes |
 | A single `.glsl` directly in `Shaders/` or in `Shaders/glsl/` | Yes |
-| A preset's own passes and textures (`.glsl`, images in its folders) | No, the preset loads them |
-| Anything else, such as a NextUI `.cfg` | No |
+| A preset's own passes and textures (`.slang`, `.glsl`, images in its folders) | No, the preset loads them |
+| Anything else, such as a NextUI `.cfg` or a Cg preset | No |
 
 ```text
 Shaders/
+├── crt/
+│   ├── crt-royale.slangp
+│   └── shaders/
+│       └── crt-royale/…
 ├── handheld/
 │   ├── PT_SkyWalker541.glslp
 │   └── shaders/
@@ -464,8 +500,12 @@ folder.
 
 ??? info "More detail"
 
-    - Shaders use RetroArch's GLSL format, the `shaders_glsl` set. Slang
-      (`.slangp`) and Cg presets aren't read.
+    - Slang presets (the `slang-shaders` set) and GLSL presets (the
+      `glsl-shaders` set) are read; Cg presets aren't. A slang preset's
+      `#reference` chains, `#include`s, lookup textures, frame history and
+      parameter overrides all work.
+    - Two presets of one name in a folder (`x.glslp` beside `x.slangp`) are
+      listed with their extensions.
     - A user preset's passes and lookup textures are read from inside
       `Shaders/`, relative to the preset.
     - A shader's parameters start from its own defaults. Values you tuned on
@@ -479,12 +519,17 @@ folder.
     - **Shader Parameters** and **Reset Parameters** show only while a
       shader is picked. **Shader Parameters** shows **No settings for this
       shader.** when it has none.
-    - On Nintendo DS and 3DS, the shader is drawn on the top screen only.
-    - The bundled presets include `crt/crt-geom`, `crt/zfast-crt`,
-      `crt/crt-pi`, `crt/crt-easymode`, `handheld/dot`, `handheld/lcd3x`,
-      `handheld/gameboy`, `interpolation/sharp-bilinear`,
-      `xbrz/xbrz-freescale`, `nx/line` and `nx/grid`, plus the single shaders
-      in `glsl/` (such as `lcd-perfect`, `crt-perfect` and `pixel-perfect`).
+    - On Nintendo DS and 3DS, the shader is drawn on the top screen only,
+      unless **Shader Screens** is **Both screens**. Each screen is
+      shaded at the console's own size, so scanlines fall one per real row
+      at any 3D Resolution. See
+      [Nintendo DS](emulators/nintendo-ds.md#shaders).
+    - 50 slang presets are bundled from libretro's `slang-shaders`, such as
+      CRT Geom, zFast CRT, CRT Easymode, CRT Royale, Dot, LCD3x, Game Boy,
+      Sharp Bilinear, ScaleFX and xBRZ, plus 18 GLSL shaders that have no
+      slang version (Line, Grid, and the "mini" and "perfect" sets). A game
+      or console that used a bundled GLSL shader now replaced by its slang
+      version switches over by itself.
 
 ## Adjust mode
 
