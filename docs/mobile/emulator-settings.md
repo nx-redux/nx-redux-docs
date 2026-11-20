@@ -9,7 +9,7 @@ The **Emulation** section holds **Default emulators** (see
 [GPU driver](emulators/index.md#gpu-driver)), and the
 [Save on quit and A resumes](#save-on-quit-and-a-resumes) switches.
 
-![Settings with Emulation highlighted in the sections: its pages Default emulators and Default settings beside them, in the same large words](../assets/screenshots/mobile/settings-emulators.webp){ .nx-wide }
+![Settings with Emulation open beside the sections: Default emulators (selected), Default settings, GPU driver at System driver, and the Save on quit and A resumes switches, both on](../assets/screenshots/mobile/settings-emulators.webp){ .nx-wide }
 
 For one game, use **Game Settings** in the game's context menu instead. See
 [Game Settings](#game-settings).

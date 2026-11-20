@@ -446,6 +446,8 @@ RetroArch's **slang** presets (`.slangp`) and its older **GLSL** presets
 | **Effects** | Other looks: motion blur, colour controls, a curved screen, a painted picture. |
 | **Personal** | Presets from the `Shaders/` folder in your home folder, a folder at a time. Only shown when it has some. See [Your own shaders](#your-own-shaders). |
 
+![The shader picker in Batman Returns: None, ticked, then the CRT, Handheld, Smoothing and NTSC groups, each with a line on what its shaders do](../assets/screenshots/mobile/shader-picker.webp){ .nx-wide }
+
 Each group's line shows on its row and again over its list once it is open.
 
 - `A` on a preset uses it and shows the live preview strip over the game.

@@ -123,7 +123,7 @@ With All files access, every folder or file pick (home folder, extra
 folder, import, export) uses the app's own picker, a list like the rest of
 the app.
 
-![The app's folder picker at Internal storage's root: .. and the folders in one column with Alarms selected, Create new folder at the bottom, and the hints Actions, New folder, Back and Select](../assets/screenshots/mobile/file-picker.webp){ .nx-wide }
+![The app's folder picker at the NovaBlack SD card's root: .. and the folders in one column with Alarms selected, Use NovaBlack and New folder at the bottom, and the hints Actions, New folder, Back and Open](../assets/screenshots/mobile/file-picker.webp){ .nx-wide }
 
 - Open folders until you reach the one you want, then choose the button
   at the bottom that names it, such as **Use NXRedux** (or **Save in
@@ -184,6 +184,8 @@ Each file is recognised however it is named:
 Nothing is fetched from the internet, and the files you pick are never
 changed. A file already in place with the same bytes is left alone, and a
 **not verified** file never replaces a BIOS you already have.
+
+![The Import BIOS results page: Imported 22 BIOS, then a line per file such as Atari 5200: 5200.rom (verified), Dreamcast: awbios.zip (not verified) and Game Boy: gb_bios.bin (verified, changes boot), and Done](../assets/screenshots/mobile/import-bios.webp){ .nx-wide }
 
 The results page sums it up, such as **Imported 3 BIOS, 1 already there, 1
 kept**, with a line per file (**verified**, **not verified**, **renamed

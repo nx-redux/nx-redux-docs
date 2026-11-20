@@ -334,7 +334,7 @@ Each applies straight away.
 To keep a change for next time, save it from **All options**. A row the
 game's layout holds is dimmed.
 
-![The game panel's Settings tab: Volume at 20%, Screen Scaling, Screen Sharpness and Shader None, then “Changes apply now. Save them from All options.” and All options](../assets/screenshots/mobile/dual-screen-panel-settings.webp){ .nx-wide }
+![The game panel's Settings tab in Batman Returns: Volume at 33%, Screen Scaling, Screen Sharpness and Shader None, then “Changes apply now. Save them from All options.” and All options](../assets/screenshots/mobile/dual-screen-panel-settings.webp){ .nx-wide }
 
 ### Achievements
 

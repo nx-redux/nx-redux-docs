@@ -138,6 +138,8 @@ it, all named after the ROM: a `.msu` data file and the `-1.pcm`, `-2.pcm`…
 tracks. A pack in a folder of its own lists as one game, named after the
 folder.
 
+![Contra III - The Alien Wars with its MSU-1 badge in the Super Nintendo carousel, the plain Contra III beside it](../../assets/screenshots/mobile/msu-badge.webp){ .nx-wide }
+
 ```text
 Roms/Super Nintendo ES (SFC)/
 └── Contra III MSU1/
