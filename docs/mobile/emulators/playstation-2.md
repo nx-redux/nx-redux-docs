@@ -15,10 +15,13 @@ PCSX2 build for Android phones.
   dumps have no standard name, so any `.bin` file in that folder counts. With
   more than one, pick which in [Settings](#settings).
 - Games open in place: a 4 GB ISO is never copied.
-- **Graphics API** can switch a game to Vulkan. See
+- **Graphics API** can switch a game to Vulkan. On a phone with an Arm Mali
+  GPU, **Auto** already uses Vulkan: it is much faster there. See
   [Graphics API](index.md#graphics-api).
 - PS2 games need a fast phone. They run at full speed on a Snapdragon 8 Elite
   class phone such as the Galaxy Z Fold.
+- Fast forward runs the game as fast as the phone can, up to
+  **Max FF Speed**.
 
 ??? info "More detail"
     - A loose `.cso` file belongs to the [PSP](psp.md), which uses the same
@@ -100,6 +103,7 @@ Emulator Settings for the console.
 | Row | Group | Values | Default | See |
 | --- | --- | --- | --- | --- |
 | **Graphics API** | Display | Auto, OpenGL ES, Vulkan | Auto | [Graphics API](index.md#graphics-api) |
+| **GPU driver** | Display | Default, System driver, then each driver you added (shown on Vulkan) | Default | [GPU driver](index.md#gpu-driver) |
 | **PS2 BIOS** | Gameplay | Auto, then each `.bin` file in `Bios/PS2/` (shown when there is more than one) | Auto | [BIOS](#bios) |
 | **Audio Buffer** | Audio | Auto, 50 ms, 75 ms, 100 ms | Auto | How much sound is kept ready. **Auto** keeps 50 ms on PS2, more than the 33 ms of lighter consoles, so slow moments don't crackle. |
 
@@ -156,6 +160,14 @@ game.
     - Dragon Ball Z: Budokai Tenkaichi 3 holds 60 fps at 4x on the Galaxy Z
       Fold, with Vulkan. Heavier games may not, which is why Auto stops at 2x
       unless you raise **Max Scale**.
+    - On a Mali phone, Vulkan is the fast way to draw PS2 games. Dragon Ball
+      Z: Budokai Tenkaichi 3 runs at 55 to 58 fps on the AYANEO Pocket Air
+      Mini with Vulkan, against 22 to 28 on OpenGL ES. The malisx2
+      [GPU driver](index.md#gpu-driver) works there too.
+    - Fast forward gains little where the phone is already at its limit. On
+      the AYANEO Pocket Air Mini the same game reaches about twice its speed
+      with **3D Resolution** on **Performance**, and barely more than full
+      speed at 2x.
     - ARMSX2's own **GS Renderer**, **Internal Resolution** and **BIOS**
       options don't appear on the **Emulator** page: **Graphics API**, **3D
       Resolution** and **PS2 BIOS** set them. **Software Renderer Threads**

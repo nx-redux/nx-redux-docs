@@ -8,7 +8,7 @@ sections, or eight while a second screen is connected.
 | Section | What it holds |
 | --- | --- |
 | [**Library**](library.md#settings-library) | Your games and consoles with **Rescan**, the home folder, your ROM folders, All files access, **Saves**, Android games, and the Unassigned and Hidden games |
-| [**Emulation**](emulator-settings.md) | **Default emulators**, and **Default settings** for each emulator's options |
+| [**Emulation**](emulator-settings.md) | **Default emulators**, **Default settings** for each emulator's options, and **GPU driver** |
 | [**Appearance**](appearance.md) | Pad skin, Pad theme, Accent, Secondary accent, Text size and Button layout |
 | [**Layouts**](layouts.md) | The style of each main menu tab and of the game lists, the page title and hints, and the Game Switcher |
 | [**Controls**](controls-settings.md) | Pad vibration, Game rumble, Shortcuts and System buttons |
