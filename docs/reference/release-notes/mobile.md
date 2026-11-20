@@ -8,6 +8,118 @@ What changed in each release of NX Redux for Android phones, tablets and
 Android handhelds. Download the APK from the
 [releases page](https://github.com/nx-redux/nx-mobile/releases).
 
+## v0.7.0
+
+*21 November 2026*
+
+RetroArch's **slang shaders** now run in the app, with 50 bundled and a
+picker to choose them by effect. Vulkan games can run on a **GPU driver**
+you pick, such as Turnip on Adreno. **MSU-1** and **MSU-MD** games play
+their CD-quality music, and **Import BIOS** puts BIOS files where each
+emulator looks for them. PS2 runs much faster on Mali GPUs. Every pad
+skin is rebuilt so the pad stays put going from the main menu into a
+game, and the Galaxy Z Fold 8 Ultra gets its own board. Two new switches
+decide whether games are saved on quit and whether `A` resumes them.
+
+### New features
+
+- **Slang shaders.** RetroArch `.slangp` presets run on the app's own
+  renderer: multi-pass, lookup textures, frame history and parameters. A
+  folder copied from RetroArch into the home's `Shaders/` works as it is.
+  50 presets are bundled; the GLSL shaders that have a slang version are
+  replaced by it, and a game or console that used one switches over by
+  itself. See [Shaders](../../mobile/in-game-menu.md#shaders).
+- **Shader picker.** **Options → Shaders → Shader** opens a list: None,
+  the bundled presets in groups (CRT, Handheld, Smoothing, NTSC, Effects)
+  with a line on what each group does, and **Personal**, your own
+  `Shaders/` folder. `A` uses a preset and shows its live preview;
+  `Left` / `Right` step through that group. The second screen's Settings
+  tab opens the same picker.
+- **GPU driver.** Add a driver package (the adrenotools `.zip` format,
+  such as Mesa Turnip) in **Settings → Emulation → GPU driver**, and pick
+  it for the whole app, a console or a game while Graphics API is Vulkan.
+  A package that can't be used is refused with the reason. A driver that
+  fails to start falls back to the system driver for that launch, and one
+  that crashes a game is set aside for it, with a note in the menu.
+  Drivers that can't share a frame directly, such as malisx2 on Mali, run
+  too. Android 9 or later, 64-bit. See
+  [GPU driver](../../mobile/emulators/index.md#gpu-driver).
+- **MSU-1 and MSU-MD.** SNES MSU-1 and Mega Drive MSU-MD games play their
+  CD-quality music, and show an **MSU-1** / **MSU-MD** badge by their
+  name. A pack in its own folder lists as one game named after the
+  folder; loose sets work too. MSU-MD needs no BIOS on PicoDrive; on
+  Genesis Plus GX it needs the Sega CD BIOS of the cartridge's region.
+- **Import BIOS.** **Settings → Library → Import BIOS** copies BIOS from a
+  folder, some files, a zip or RetroArch's `system` folder into the home's
+  `Bios/<CONSOLE>/`, under the name each emulator reads. Files are
+  identified by checksum whatever they are called, then by name and size
+  (marked **not verified**). A file you already have is never replaced by
+  an unverified one. A results page lists what was imported, already
+  there, kept or skipped.
+- **Save on quit** and **A resumes** in **Settings → Emulation**, both on
+  by default. With Save on quit off, quitting just quits: no hidden save
+  state is written and games start fresh, unless you load a slot. With A
+  resumes off, `A` starts a game fresh and **MENU → Resume** continues it;
+  the Game Switcher follows the same rule.
+- **Shader Screens** (Display, DS and 3DS): shade the top screen only (the
+  default) or both screens.
+
+### Improvements
+
+- **PS2** is updated to a newer ARMSX2 build, compiled the way upstream
+  builds its own app. On Mali GPUs Vulkan now works: Budokai Tenkaichi 3
+  went from about 25 fps on OpenGL ES to 55–58 fps on a Mali-G76 handheld,
+  and close to 60 at 2x on the malisx2 driver. Save states from v0.6 load.
+- **Pad skins** are rebuilt from fixed-size control boxes for every
+  console, matched to the main menu's pad, so the pad no longer jumps
+  going into a game. Screens have one slim bezel and the top screens are
+  larger. Skin packs move to format 2; a broken pack is skipped instead of
+  losing its layout.
+- **Galaxy Z Fold 8 Ultra.** The inner screen gets the fold board, drawn
+  smaller where it is dense, upright and sideways. The hinge is drawn
+  only half-folded; flat, the board is one piece. See
+  [Foldables](../../mobile/foldables.md).
+- **DS and 3DS shaders** get the console's own pixels, so scanline shaders
+  draw one line per real row at any 3D Resolution. Auto 3D Resolution
+  draws at 1x while a shader is on.
+- **DS / 3DS mic button.** The panel's Mic tile shows or hides the pad's
+  mic button, hidden by default; the button row closes up without it.
+- **In-game panel on small screens.** The header shrinks with the panel,
+  values show side by side only where they fit, the volume is a bar, and
+  fast forward shows its speed.
+- **Panel over the touch screen.** With the panel open on the touch
+  screen's display, the other display keeps its game screen at full size.
+- **Sega CD** asks for the disc's own region BIOS by name ("This game is
+  a US disc: put bios_CD_U.bin in Bios/SEGACD/") instead of failing inside
+  the emulator, and accepts the redump BIOS names.
+- **Sega CD and MSU-MD** discs are read in place on PicoDrive, no longer
+  copied to the cache first.
+- **`A` before `Left` / `Right`** on every layout: on a value row, `A`
+  starts a change, `Left` / `Right` step it, and `A` or `B` end it. One-page
+  layouts (phone portrait, the Fold cover) used to change values at once.
+- **Folder picker** buttons name the folder they take: **Use NovaBlack**,
+  **Save in Exports**.
+- **Extra ROM folders are only read.** First setup no longer offers to
+  move games out of an added folder, and nothing inside one is renamed or
+  moved. See [Library](../../mobile/library.md).
+- **Kids Mode** hides game settings in game (the menu's Options and the
+  second screen's Settings tab) until Parent mode is on. Kids setup and
+  the PIN screen fit the Fold cover better.
+
+### Fixes
+
+- **PS2:** quitting a game no longer aborts now and then, and resuming no
+  longer sometimes boots from the disc instead of the save state.
+- **Controllers:** a phone's built-in input with no gamepad buttons (seen
+  on a Redmi Note 12 Pro) no longer counts as a controller, which hid the
+  pad skin.
+- **BIOS:** a BIOS you delete or rename from `Bios/` no longer keeps
+  loading from an old copy.
+- **Vulkan → OpenGL ES fallback** now happens when a Vulkan game can't
+  start; before, every start failure showed a generic error.
+- **Settings:** choosing **None** for a touch button did nothing; a value
+  change no longer jumps to another row when rows above it appear or go.
+
 ## v0.6.0
 
 *13 November 2026 · v0.6.1 and v0.6.2 on 14 November*
