@@ -4,9 +4,10 @@
 sets each emulator's options for a whole console, without starting a game
 first.
 
-The **Emulation** section holds three rows: **Default emulators** (see
-[below](#default-emulators)), **Default settings**, and **GPU driver** (see
-[GPU driver](emulators/index.md#gpu-driver)).
+The **Emulation** section holds **Default emulators** (see
+[below](#default-emulators)), **Default settings**, **GPU driver** (see
+[GPU driver](emulators/index.md#gpu-driver)), and the
+[Save on quit and A resumes](#save-on-quit-and-a-resumes) switches.
 
 ![Settings with Emulation highlighted in the sections: its pages Default emulators and Default settings beside them, in the same large words](../assets/screenshots/mobile/settings-emulators.webp){ .nx-wide }
 
@@ -137,6 +138,36 @@ the game, and choose **Game Settings**. The same page opens over the list, for t
       settings. `A` on it deletes them, so the game follows the console's
       again.
     - `B` returns to the game list on the same game.
+
+## Save on quit and A resumes
+
+Two switches in **Tools → Settings → Emulation**, both **On** by default,
+decide how games pick up where you left them.
+
+| Row | On (the default) | Off |
+| --- | --- | --- |
+| **Save on quit** | Quitting or leaving a game saves a hidden save state, so it carries on where you left off. | Quit just quits: no hidden save state is written. Games start fresh from the shelves, **Continue** and the Game Switcher, unless you load a save slot. |
+| **A resumes** | `A` on a game with a save state continues from it. | `A` starts games fresh. **MENU → Resume** still continues from the save. |
+
+With **Save on quit** off, the in-game menu's **Save & Quit** and its
+shortcut are named **Quit**, and the Game Switcher lists every recent
+game, not only those it can resume. Your battery saves are kept either way.
+
+??? info "More detail"
+    - Turning **Save on quit** off doesn't delete the hidden save state: the
+      file stays on disk, but games stop resuming from it, and Home stops
+      showing its picture. A game that stops while it's off drops its link
+      to the old state, so turning the switch back on never resumes a
+      weeks-old state over newer in-game saves.
+    - With **A resumes** off, the Game Switcher also starts games fresh on
+      `A` (its hint reads **Start**). With it on, `A` resumes from the latest
+      save state, or starts fresh when there is none.
+    - A fresh start replaces a game still suspended in the background
+      instead of bringing it back. A game whose emulator can't save states
+      still comes back on `A` while **A resumes** is on, so its progress isn't
+      lost.
+    - If Android closes the app in the background while **Save on quit** is
+      off, the game starts fresh when you come back.
 
 ## Pause when unfocused
 

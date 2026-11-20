@@ -49,20 +49,25 @@ decide whether games are saved on quit and whether `A` resumes them.
   name. A pack in its own folder lists as one game named after the
   folder; loose sets work too. MSU-MD needs no BIOS on PicoDrive; on
   Genesis Plus GX it needs the Sega CD BIOS of the cartridge's region.
+  See [MSU-1](../../mobile/emulators/other-systems.md#msu-1) and
+  [MSU-MD](../../mobile/emulators/sega.md#msu-md).
 - **Import BIOS.** **Settings → Library → Import BIOS** copies BIOS from a
   folder, some files, a zip or RetroArch's `system` folder into the home's
   `Bios/<CONSOLE>/`, under the name each emulator reads. Files are
   identified by checksum whatever they are called, then by name and size
   (marked **not verified**). A file you already have is never replaced by
   an unverified one. A results page lists what was imported, already
-  there, kept or skipped.
+  there, kept or skipped. See
+  [Import BIOS](../../mobile/library.md#import-bios).
 - **Save on quit** and **A resumes** in **Settings → Emulation**, both on
   by default. With Save on quit off, quitting just quits: no hidden save
   state is written and games start fresh, unless you load a slot. With A
   resumes off, `A` starts a game fresh and **MENU → Resume** continues it;
-  the Game Switcher follows the same rule.
+  the Game Switcher follows the same rule. See
+  [Save on quit and A resumes](../../mobile/emulator-settings.md#save-on-quit-and-a-resumes).
 - **Shader Screens** (Display, DS and 3DS): shade the top screen only (the
-  default) or both screens.
+  default) or both screens. See
+  [Nintendo DS](../../mobile/emulators/nintendo-ds.md#shaders).
 
 ### Improvements
 

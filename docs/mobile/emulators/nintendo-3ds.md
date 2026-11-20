@@ -151,6 +151,7 @@ and Game Settings list every row, so you can set up each orientation there.
 | **3D Resolution** | Auto, Quality, Performance | Auto | [3D rendering](#3d-rendering) |
 | **Max Scale** | 1x up to what the display can show (shown in Auto only) | 3x | [3D rendering](#3d-rendering) |
 | **Scale** | 1x up to half of the most the display can show, rounded up (shown in Performance only) | 2x | [3D rendering](#3d-rendering) |
+| **Shader Screens** | Top screen, Both screens | Top screen | [Shaders](#shaders) |
 
 Three more rows are in other groups:
 
@@ -243,7 +244,8 @@ scale is sharper but slower: if a game stutters, try Performance at a lower
 **Scale**.
 
 In a game the row reads like **Auto · 3x now** in Auto and Quality, the scale
-in use (Performance shows its **Scale**). It follows turning the phone,
+in use (Performance shows its **Scale**). Auto drops to 1x while a
+[shader](#shaders) is on. It follows turning the phone,
 folding it and changing the layout, straight away. These rows show no
 preview strip.
 
@@ -315,10 +317,11 @@ big one.
 ## Microphone
 
 Games that listen for a blow, a shout or your voice hear your phone's
-microphone while the **Mic** is on. Turn it on with **MIC** on the pad
-skin, with a controller the round **mic button** in the screen's
-bottom-left corner, the **Mic** tile in the game panel's
-[Shortcuts](../dual-screen.md#shortcuts) tab, or a **Toggle mic**
+microphone while the **Mic** is on. The mic button is hidden until you show
+it with the **Mic** tile in the game panel's
+[Shortcuts](../dual-screen.md#shortcuts) tab. Then turn the Mic on with
+**MIC** on the pad skin, with a controller the round **mic button** in the
+screen's bottom-left corner, or a **Toggle mic**
 [shortcut](../controls-settings.md#shortcuts) on a controller. It works as on
 the [Nintendo DS](nintendo-ds.md#microphone): Android asks the first time,
 and without the permission the game hears a made-up blow. The Mic is off
@@ -418,6 +421,15 @@ on each phone and use the game's own local play menu. See
 ??? info "More detail"
     - A Mii you made or imported yourself keeps its name.
     - A game that saved a name in its own save keeps showing that one.
+
+## Shaders
+
+As on the [Nintendo DS](nintendo-ds.md#shaders), a
+[shader](../in-game-menu.md#shaders) is drawn on the top screen only unless
+**Shader Screens** is **Both screens**. Each screen is drawn at the 3DS's
+own size (400x240 on top) before the shader runs, so scanlines fall one per
+real row. While a shader is on, **Auto** 3D Resolution draws at 1x;
+**Quality** and **Performance** keep their scale.
 
 ## Save states
 
