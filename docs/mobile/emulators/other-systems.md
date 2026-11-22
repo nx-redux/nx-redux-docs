@@ -136,7 +136,7 @@ show an **MSU-1** badge by their name, and play on **Snes9x**, the default.
 Put the ROM in `Roms/Super Nintendo ES (SFC)/` with its MSU-1 files beside
 it, all named after the ROM: a `.msu` data file and the `-1.pcm`, `-2.pcm`…
 tracks. A pack in a folder of its own lists as one game, named after the
-folder.
+folder. Unzip the pack first: music can't stream from inside a zip.
 
 ![Contra III - The Alien Wars with its MSU-1 badge in the Super Nintendo carousel, the plain Contra III beside it](../../assets/screenshots/mobile/msu-badge.webp){ .nx-wide }
 

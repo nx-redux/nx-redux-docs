@@ -122,7 +122,8 @@ from a set of audio tracks. They show an **MSU-MD** badge by their name.
 
 Put the set in `Roms/Sega Genesis (MD)/`: the cartridge, and a `.cue` of the
 same name with the tracks it lists. A set in a folder of its own lists as one
-game, named after the folder.
+game, named after the folder. Unzip the set first: music can't stream from
+inside a zip.
 
 ```text
 Roms/Sega Genesis (MD)/
