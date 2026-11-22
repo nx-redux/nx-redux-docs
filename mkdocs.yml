@@ -1,5 +1,5 @@
 site_name: NX Redux
-site_description: User documentation for NX Redux — retro gaming for TrimUI handhelds and Android phones
+site_description: Clean retro gaming for TrimUI handhelds and Android with emulators built in - no RetroArch tinkering, no extra apps, just add games and play.
 site_url: https://nxredux.com/
 repo_url: https://github.com/nx-redux/nx-handheld
 repo_name: nx-redux/nx-handheld
@@ -37,9 +37,24 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/nx-redux
       name: NX Redux on GitHub
+    - icon: simple/kofi
+      link: https://ko-fi.com/nxredux
+      name: Support NX Redux on Ko-fi
   analytics:
     provider: google
     property: G-PJ9F1Q2YLL
+  consent:
+    title: Cookie consent
+    description: >-
+      This website uses Google Analytics for anonymous traffic stats. The NX Redux
+      app and handheld firmware collect no analytics.
+    actions:
+      - accept
+      - reject
+      - manage
+    cookies:
+      analytics: Google Analytics
+      github: false
 
 extra_css:
   - stylesheets/extra.css

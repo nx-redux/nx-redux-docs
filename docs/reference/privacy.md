@@ -81,6 +81,14 @@ data from them.
 
 If this policy changes, the new version is posted on this page with a new date.
 
+## This website
+
+This documentation and landing site (`nxredux.com`) uses Google Analytics to
+measure anonymous page views and traffic, only if you accept analytics cookies
+in the consent prompt. You can update your choice anytime via **Change cookie
+settings** in the footer. The NX Redux Android app and TrimUI handheld firmware
+themselves do not include Google Analytics or any other telemetry.
+
 ## Contact
 
 Questions about privacy: open an issue on

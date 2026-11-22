@@ -11,7 +11,7 @@
 {% block extrahead %}
   {{ super() }}
   {% if page and page.is_homepage %}
-    {% set og_title = config.site_name %}
+    {% set og_title = config.site_name ~ " - Emulators Built In. Just Add Games." %}
   {% elif page and page.title %}
     {% set og_title = page.title ~ " - " ~ config.site_name %}
   {% else %}

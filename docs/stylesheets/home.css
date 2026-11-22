@@ -1,12 +1,10 @@
 /* Landing page. Loaded only by overrides/home.html.
-   Styled after the NX Redux UI: a black screen, MiSans Semibold, a white pill
-   on the selected row, and round button hints along the bottom. */
+   Styled strictly after the NX Redux UI: pure black (#000), crisp white (#fff),
+   MiSans Semibold, white selection pills, and restrained cyan accents only on
+   primary download actions and links. */
 
 .md-main { display: none; }
 
-/* On narrow screens the navigation drawer behind the header's menu button
-   lives inside .md-main, so keep that in the page, taking no room, with only
-   the drawer showing. */
 @media screen and (max-width: 76.234375em) {
   .md-main { display: block; flex-grow: 0; height: 0; }
   .md-main__inner { margin: 0; height: 0; }
@@ -19,55 +17,79 @@
   --nx-white: #fff;
   --nx-grey: #8c8c8c;
   --nx-soft: #c8c8c8;
-  --nx-outline: #3a3a3a;
+  --nx-outline: #333;
+  --nx-accent: var(--md-accent-fg-color);
   font-family: "MiSans NX", var(--md-text-font-family), sans-serif;
   font-weight: 600;
+  background: var(--nx-black);
+  color: var(--nx-white);
 }
 
-/* The screen: always black, like the device, in both colour schemes. */
 .nx-screen {
   background: var(--nx-black);
   color: var(--nx-white);
-  overflow-x: clip;  /* the glow and tilted devices never widen the page */
+  overflow-x: clip;
 }
-
-/* The first screen sits above the second so the devices can hang over the
-   boundary into the features. */
-.nx-screen:not(.nx-features) { position: relative; z-index: 2; }
-.nx-features { position: relative; z-index: 1; }
 
 .nx-screen__inner {
   max-width: 61rem;
   margin: 0 auto;
-  padding: 1.6rem 1.2rem 1.4rem;
+  padding: 1.8rem 1.2rem 1.6rem;
+}
+
+.nx-home section[id] { scroll-margin-top: 5.2rem; }
+
+.nx-home[data-platform="handheld"] [data-on="mobile"],
+.nx-home[data-platform="mobile"] [data-on="handheld"] { display: none !important; }
+
+/* ── HERO ─────────────────────────────────────────────────────────────────── */
+.nx-hero .nx-screen__inner {
+  padding-top: 4.2rem;
+  padding-bottom: 4.6rem;
 }
 
 .nx-screen__body {
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto;
-  align-items: end;
-  gap: 2rem;
-  padding: 1.2rem 0 2.2rem;
+  align-items: center;
+  gap: 3.2rem;
+  padding: 0;
 }
 
-/* Menu rows. The first row carries the pill until the pointer or keyboard
-   focus moves into the menu; then the pill follows it. */
-.nx-menu {
+.nx-hero__title {
   margin: 0;
+  font-size: clamp(1.9rem, 3.6vw, 2.55rem);
+  font-weight: 600;
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+  color: var(--nx-white);
+}
+
+.nx-screen__tagline {
+  max-width: 26rem;
+  margin: 1rem 0 0;
+  font-size: 0.86rem;
+  line-height: 1.55;
+  color: var(--nx-grey);
+}
+
+/* Signature NX Redux menu list with white pill selection */
+.nx-menu {
+  margin: 1.8rem 0 0;
   padding: 0;
   list-style: none;
 }
 
-.nx-menu li { margin: 0; }
+.nx-menu li { margin: 0.1rem 0; }
 
 .nx-menu a {
   display: inline-flex;
   align-items: center;
   gap: 0.5em;
   margin-left: -0.55em;
-  padding: 0.18em 0.55em;
+  padding: 0.2em 0.6em;
   border-radius: 999px;
-  font-size: 1.7rem;
+  font-size: 1.45rem;
   line-height: 1.3;
   color: var(--nx-white);
   transition: background-color 120ms ease, color 120ms ease;
@@ -80,19 +102,12 @@
   color: var(--nx-black);
 }
 
-.nx-menu a:focus-visible,
-.nx-hint:focus-visible {
-  outline: 0.1rem solid var(--md-accent-fg-color);
-  outline-offset: 0.15rem;
-}
-
-/* A row's badge (the Handheld version, Mobile's Coming soon): a small accent pill, black on the selected row's white pill. */
 .nx-menu__badge {
   padding: 0.3em 0.7em;
   border-radius: 999px;
-  background: var(--md-accent-fg-color);
+  background: var(--nx-accent);
   color: var(--nx-black);
-  font-size: 0.38em;
+  font-size: 0.42em;
   line-height: 1;
   letter-spacing: 0.02em;
   transition: background-color 120ms ease, color 120ms ease;
@@ -105,38 +120,51 @@
   color: var(--nx-white);
 }
 
-.nx-screen__tagline {
-  max-width: 24rem;
-  margin: 1.4rem 0 0;
-  font-size: 0.8rem;
-  line-height: 1.5;
-  color: var(--nx-grey);
+/* Button hints along the bottom of the hero */
+.nx-hints {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem 1.4rem;
+  margin-top: 1.6rem;
 }
 
-/* Devices: posed together like a product shot. The Brick Pro stands behind
-   on the left, tilted back; the phone stands in front on the right, lower
-   and tilted the other way, covering only the Brick's artwork side so its
-   menu stays readable. Everything is sized in em so the whole pose scales
-   with one font-size per breakpoint. */
+.nx-hint {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35em;
+  font-size: 0.78rem;
+  color: var(--nx-white);
+  text-transform: uppercase;
+}
+
+.nx-hint:hover { color: var(--nx-accent); }
+
+.nx-hint__button {
+  display: inline-grid;
+  place-items: center;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  background: var(--nx-white);
+  color: var(--nx-black);
+  font-size: 0.85em;
+}
+
+/* Posed device product renders */
 .nx-showcase { justify-self: end; text-align: center; }
 
 .nx-devices {
   position: relative;
   width: 20em;
   height: 19.4em;
-  font-size: clamp(0.8rem, 1.9vw, 1.25rem);
-  /* Overhang the bottom of the screen: the hint row and padding below the
-     devices (about 5.3rem), plus 3rem into the next section. */
-  margin-bottom: -8.3rem;
+  font-size: clamp(0.8rem, 1.9vw, 1.22rem);
 }
 
-/* A faint pool of light behind the pair, so their shadows have something
-   to fall on against the black. */
 .nx-devices::before {
   content: "";
   position: absolute;
   inset: -3em -4em -2em;
-  background: radial-gradient(closest-side, rgba(255, 255, 255, 0.09), transparent);
+  background: radial-gradient(closest-side, rgba(255, 255, 255, 0.08), transparent);
   pointer-events: none;
 }
 
@@ -150,8 +178,6 @@
 .nx-device--handheld { --nx-pose: rotate(-5deg); left: 0.4em; top: 0.3em; }
 .nx-device--mobile { --nx-pose: rotate(4deg); right: 0.2em; bottom: 0; animation-delay: 90ms; }
 
-/* The one moment of motion: on load, each device settles from upright into
-   its pose. */
 @keyframes nx-settle {
   from { opacity: 0; transform: translateY(0.8em) rotate(0deg); }
   to { opacity: 1; transform: var(--nx-pose); }
@@ -163,16 +189,12 @@
   filter: drop-shadow(0 1.2em 1.4em rgba(0, 0, 0, 0.7));
 }
 
-/* Product renders. The Brick Pro and the folded Z Fold 8 are about the same
-   size in hand (and their renders share almost the same proportions), so both
-   frames get one width. Each screen box is the screen's position in its
-   render, in percent. */
 .nx-device__photo { position: relative; display: block; width: 100%; height: auto; }
 
 .nx-device__screen {
   position: absolute;
   z-index: 0;
-  isolation: isolate;  /* slide z-indexes stay inside, so the Fold's photo (camera, bezel) always sits on top */
+  isolation: isolate;
   display: grid;
   background: #000;
 }
@@ -183,255 +205,21 @@
   height: 100%;
 }
 
-/* Brick Pro: the screenshots sit on top of the render's screen. It is a
-   touch taller than 4:3, so screenshots fit its width and the thin bands
-   above and below stay black. */
 .nx-device--handheld .nx-device__screen { left: 2.765%; top: 1.089%; width: 94.355%; height: 50%; }
 .nx-device--handheld .nx-slide { object-fit: contain; }
 
-/* Z Fold 8: the render's screen is cut out, so the capture shows through
-   from behind and the real bezel, corners and camera stay on top. */
-.nx-device--mobile .nx-device__screen { left: 6.231%; top: 3.183%; width: 88.468%; height: 93.634%; }  /* measured hole + a hairline overlap under the bezel */
+.nx-device--mobile .nx-device__screen { left: 6.231%; top: 3.183%; width: 88.468%; height: 93.634%; }
 .nx-device--mobile .nx-slide { object-fit: cover; }
 
-/* Crossfade without a dip: the incoming image fades in on top while the
-   outgoing one stays fully opaque underneath, and only drops once covered. */
 .nx-slide { opacity: 0; transition: opacity 0s linear 0.7s; }
 .nx-slide.is-active { opacity: 1; z-index: 1; transition: opacity 0.7s ease; }
 
-/* Button hints, as along the bottom of every NX Redux screen. */
-.nx-hints {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.6rem 1.4rem;
-}
-
-.nx-hint {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.35em;
-  font-size: 0.8rem;
-  color: var(--nx-white);
-  text-transform: uppercase;
-}
-
-.nx-hint:hover { color: var(--md-accent-fg-color); }
-
-.nx-hint__button {
-  display: inline-grid;
-  place-items: center;
-  width: 1.5em;
-  height: 1.5em;
-  border-radius: 50%;
-  background: var(--nx-white);
-  color: var(--nx-black);
-  font-size: 0.85em;
-}
-
-/* Features: a second screen laid out like the NX Redux game list. Rows are
-   tabs: clicking one moves the pill to it and shows its screenshot and text
-   on the right, the way a game's artwork does on the device. */
-
-
-.nx-features__title {
-  margin: 0;
-  font-size: 0.9rem;
-  font-weight: 600;
-  line-height: 1.3;
-  color: var(--nx-grey);
-}
-
-.nx-features__body {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 26rem);
-  align-items: start;
-  gap: 2.4rem;
-  padding: 1.2rem 0 2rem;
-}
-
-/* Clear space for the devices hanging down from the first screen. */
-.nx-features .nx-screen__inner { padding-top: 6.4rem; }
-
-.nx-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.nx-feature { margin: 0; }
-
-.nx-list button {
-  margin: 0 0 0 -0.55em;
-  padding: 0.18em 0.55em;
-  border: 0;
-  border-radius: 999px;
-  background: none;
-  font: inherit;
-  font-size: 1.15rem;
-  line-height: 1.35;
-  text-align: left;
-  color: var(--nx-white);
-  cursor: pointer;
-  transition: background-color 120ms ease, color 120ms ease;
-}
-
-.nx-list button:hover { background: rgba(255, 255, 255, 0.12); }
-
-.nx-list button[aria-selected="true"] {
-  background: var(--nx-white);
-  color: var(--nx-black);
-}
-
-.nx-list button:focus-visible,
-.nx-features__link:focus-visible {
-  outline: 0.1rem solid var(--md-accent-fg-color);
-  outline-offset: 0.15rem;
-}
-
-/* With the script, panes share one cell and only the selected one shows;
-   without it they stack so every description stays readable. */
-.nx-features__preview { display: grid; gap: 2rem; }
-
-.nx-features.is-enhanced .nx-features__pane { grid-area: 1 / 1; visibility: hidden; }
-.nx-features.is-enhanced .nx-features__pane.is-active { visibility: visible; }
-
-/* Only the incoming screenshot fades in, so two descriptions never overlap. */
-/* Switching features fades the new pane's screenshot in once; cycling
-   within a pane uses the crossfade below instead. */
-.nx-features.is-enhanced .nx-features__pane.is-active .nx-features__shots { animation: nx-shot-in 180ms ease; }
-
-/* Several screenshots share one cell and crossfade; single ones just show. */
-.nx-features__shots { display: grid; }
-.nx-features__shots .nx-features__shot { grid-area: 1 / 1; opacity: 0; transition: opacity 0s linear 0.7s; }
-.nx-features__shots .nx-features__shot.is-active { opacity: 1; z-index: 1; transition: opacity 0.7s ease; }
-
-@keyframes nx-shot-in {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-.nx-features__shot {
-  display: block;
-  width: 100%;
-  height: auto;
-  border-radius: 0.3rem;
-  outline: 1px solid var(--nx-outline);
-}
-
-.nx-features__pane p {
-  max-width: 26rem;
-  margin: 0.9rem 0 0;
-  font-size: 0.75rem;
-  line-height: 1.55;
-  color: var(--nx-soft);
-}
-
-.nx-features__pane .nx-feature__platform {
-  margin-top: 0.4rem;
-  font-size: 0.6rem;
-  color: var(--nx-grey);
-}
-
-.nx-features__link {
-  color: var(--md-accent-fg-color);
-  white-space: nowrap;
-}
-
-.nx-features__link:hover { text-decoration: underline; }
-
-.nx-features kbd {
-  display: inline-grid;
-  place-items: center;
-  min-width: 1.4em;
-  padding: 0 0.35em;
-  border-radius: 999px;
-  font-family: inherit;
-  font-size: 0.85em;
-  background: var(--nx-white);
-  color: var(--nx-black);
-}
-
-/* 404: an NX Redux dialog. The screen fills the window below the header,
-   with the message and its button hints centred. */
-.nx-error__inner {
-  display: flex;
-  flex-direction: column;
-  min-height: calc(100vh - 6rem);
-}
-
-.nx-error__message .nx-error__label {
-  margin: 0 0 0.5rem;
-  font-size: 0.9rem;
-  color: var(--nx-grey);
-}
-
-.nx-error__message {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem 0;
-  text-align: center;
-}
-
-.nx-error__message h1 {
-  margin: 0;
-  font-size: 1.7rem;
-  font-weight: 600;
-  line-height: 1.3;
-  color: var(--nx-white);
-}
-
-.nx-error__message p {
-  max-width: 30rem;
-  text-wrap: balance;
-  margin: 0.8rem 0 0;
-  font-size: 0.85rem;
-  line-height: 1.5;
-  color: var(--nx-soft);
-}
-
-.nx-error__hints { justify-content: center; margin-top: 1.8rem; }
-.nx-error__hints label { cursor: pointer; }
-
-/* Mobile main menu demo: the nx-mobile mockup in a frame (tools/menu_demo.py),
-   its options above the phone screen and the pad below. */
-.nx-demo .nx-screen__inner { padding-top: 2.4rem; padding-bottom: 3rem; }
-.nx-demo__text { margin: 0.4rem 0 1.4rem; color: var(--nx-soft); font-size: 0.8rem; line-height: 1.5; max-width: 40rem; }
-.nx-demo__frame { display: block; width: 100%; height: 70rem; border: 0; background: var(--nx-black); color-scheme: dark; }
-
-@media (prefers-reduced-motion: reduce) {
-  .nx-slide,
-  .nx-slide.is-active,
-  .nx-menu a,
-  .nx-list button { transition: none; }
-  .nx-device { animation: none; }
-  .nx-features.is-enhanced .nx-features__pane.is-active .nx-features__shots { animation: none; }
-  .nx-features__shots .nx-features__shot,
-  .nx-features__shots .nx-features__shot.is-active { transition: none; }
-}
-
-@media screen and (max-width: 44.9375em) {
-  .nx-screen__body { grid-template-columns: 1fr; gap: 2.2rem; }
-  .nx-menu a { font-size: 1.3rem; }
-  .nx-showcase { justify-self: center; }
-  .nx-devices { font-size: 0.72rem; margin-bottom: 0; }
-  .nx-features .nx-screen__inner { padding-top: 3.2rem; }
-  .nx-features__body { grid-template-columns: 1fr; gap: 1.6rem; }
-  .nx-list button { font-size: 1.05rem; }
-}
-
-/* One-page landing: a bar under the header switches platform and jumps to
-   a section; each section shows the chosen platform's block. */
-.nx-home[data-platform="handheld"] [data-on="mobile"],
-.nx-home[data-platform="mobile"] [data-on="handheld"] { display: none !important; }
-
+/* ── STICKY BAR ───────────────────────────────────────────────────────────── */
 .nx-bar {
   position: sticky;
   top: 2.4rem;
   z-index: 3;
-  background: rgba(0, 0, 0, 0.88);
+  background: rgba(0, 0, 0, 0.9);
   backdrop-filter: blur(8px);
   border-block: 1px solid var(--nx-outline);
   color: var(--nx-white);
@@ -470,49 +258,44 @@
   transition: background-color 120ms ease, color 120ms ease;
 }
 
-.nx-switch button[aria-pressed="true"] { background: var(--nx-white); color: var(--nx-black); }
+.nx-switch button[aria-pressed="true"] {
+  background: var(--nx-white);
+  color: var(--nx-black);
+}
 
 .nx-bar__links {
   display: flex;
-  gap: 1.1rem;
+  gap: 1.15rem;
   margin: 0;
-  padding: 0;
+  padding: 0 1rem 0 0;
   list-style: none;
   overflow-x: auto;
   scrollbar-width: none;
   white-space: nowrap;
+  -webkit-mask-image: linear-gradient(to right, #000 calc(100% - 1.5rem), transparent);
+  mask-image: linear-gradient(to right, #000 calc(100% - 1.5rem), transparent);
 }
 
 .nx-bar__links li { margin: 0; }
 .nx-bar__links a { font-size: 0.75rem; color: var(--nx-soft); }
 .nx-bar__links a:hover { color: var(--nx-white); }
 
-.nx-switch button:focus-visible,
-.nx-bar__links a:focus-visible,
-.nx-btn:focus-visible,
-.nx-faq summary:focus-visible {
-  outline: 0.1rem solid var(--md-accent-fg-color);
-  outline-offset: 0.15rem;
+/* ── SECTIONS ─────────────────────────────────────────────────────────────── */
+.nx-sec { border-top: 1px solid var(--nx-outline); }
+.nx-sec .nx-screen__inner { padding-top: 4.4rem; padding-bottom: 4.8rem; }
+
+.nx-features__title {
+  margin: 0;
+  font-size: 0.88rem;
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--nx-grey);
 }
 
-/* The devices stay inside the first screen, clear of the bar. */
-.nx-home .nx-devices { margin-bottom: 0; }
-/* The menu, tagline and hints sit as one block, centred beside the devices. */
-.nx-home .nx-screen__body { align-items: center; }
-.nx-screen__menu .nx-hints { margin-top: 1.6rem; }
-.nx-home .nx-features .nx-screen__inner { padding-top: 2.4rem; }
-
-.nx-home section[id] { scroll-margin-top: 5.2rem; }
-
-.nx-features__shot { width: auto; max-width: 100%; max-height: 21rem; }
-
-.nx-sec { border-top: 1px solid var(--nx-outline); }
-.nx-sec .nx-screen__inner { padding-top: 2.4rem; padding-bottom: 2.8rem; }
-
 .nx-sec__lead {
-  margin: 0.5rem 0 0;
+  margin: 0.45rem 0 0;
   font-size: 1.7rem;
-  line-height: 1.25;
+  line-height: 1.22;
   text-wrap: balance;
 }
 
@@ -520,26 +303,274 @@
 
 .nx-sec__text,
 .nx-sec__more {
-  max-width: 34rem;
-  margin: 0.6rem 0 0;
+  max-width: 38rem;
+  margin: 0.65rem 0 0;
+  font-size: 0.84rem;
+  line-height: 1.58;
+  color: var(--nx-soft);
+}
+
+.nx-sec__more {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem 1.4rem;
+  margin-top: 1.4rem;
+}
+
+.nx-features__link {
+  color: var(--nx-accent);
+  white-space: nowrap;
+}
+
+.nx-features__link:hover { text-decoration: underline; }
+
+.nx-switch-inline {
+  padding: 0;
+  border: 0;
+  background: none;
+  font: inherit;
+  font-size: 0.82rem;
+  color: var(--nx-grey);
+  cursor: pointer;
+}
+
+.nx-switch-inline:hover { color: var(--nx-white); text-decoration: underline; }
+
+/* ── HOW IT WORKS (FRAMELESS 3-COLUMN FLOW) ───────────────────────────────── */
+.nx-flow {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.8rem;
+  margin: 2rem 0 0;
+  padding: 1.6rem 0 0;
+  border-top: 1px solid var(--nx-outline);
+  list-style: none;
+}
+
+.nx-flow li { margin: 0; }
+
+.nx-flow__num {
+  display: inline-grid;
+  place-items: center;
+  width: 1.6rem;
+  height: 1.6rem;
+  margin-bottom: 0.75rem;
+  border-radius: 50%;
+  background: var(--nx-white);
+  color: var(--nx-black);
+  font-size: 0.78rem;
+}
+
+.nx-flow strong {
+  display: block;
+  font-size: 1rem;
+  line-height: 1.3;
+  color: var(--nx-white);
+}
+
+.nx-flow span:not(.nx-flow__num) {
+  display: block;
+  margin-top: 0.35rem;
   font-size: 0.8rem;
   line-height: 1.55;
   color: var(--nx-soft);
 }
 
-.nx-sec__more { margin-top: 1.4rem; }
+/* ── FEATURES (FRAMELESS, SELF-CONTAINED) ─────────────────────────────────── */
+.nx-features__head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 1rem;
+}
 
+.nx-cat-pills,
+.nx-model-pills,
+.nx-shot-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.nx-cat-pills button,
+.nx-model-pills button,
+.nx-shot-tabs button {
+  margin: 0;
+  padding: 0.32em 0.82em;
+  border: 1px solid var(--nx-outline);
+  border-radius: 999px;
+  background: none;
+  font: inherit;
+  font-size: 0.74rem;
+  color: var(--nx-soft);
+  cursor: pointer;
+  transition: background-color 120ms ease, color 120ms ease, border-color 120ms ease;
+}
+
+.nx-cat-pills button:hover,
+.nx-model-pills button:hover,
+.nx-shot-tabs button:hover {
+  border-color: var(--nx-white);
+  color: var(--nx-white);
+}
+
+.nx-cat-pills button[aria-pressed="true"],
+.nx-model-pills button[aria-pressed="true"],
+.nx-shot-tabs button.is-active {
+  background: var(--nx-white);
+  border-color: var(--nx-white);
+  color: var(--nx-black);
+}
+
+.nx-features__body {
+  display: grid;
+  grid-template-columns: minmax(15rem, 1fr) minmax(0, 1.25fr);
+  align-items: start;
+  gap: 2.6rem;
+  padding: 1.8rem 0 0.4rem;
+}
+
+.nx-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nx-feature { margin: 0.05rem 0; }
+.nx-feature.is-filtered-out { display: none !important; }
+
+.nx-feature > button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.6rem;
+  margin: 0 0 0 -0.55em;
+  padding: 0.2em 0.6em;
+  border: 0;
+  border-radius: 999px;
+  background: none;
+  font: inherit;
+  font-size: 1.1rem;
+  line-height: 1.38;
+  text-align: left;
+  color: var(--nx-white);
+  cursor: pointer;
+  transition: background-color 120ms ease, color 120ms ease;
+}
+
+.nx-feature > button:hover { background: rgba(255, 255, 255, 0.12); }
+
+.nx-feature > button[aria-selected="true"] {
+  background: var(--nx-white);
+  color: var(--nx-black);
+}
+
+.nx-feature__chev { display: none; opacity: 0.6; }
+.nx-feature__inline { display: none; }
+
+/* Frameless preview column (sticks alongside the feature list while scrolling) */
+.nx-features__preview {
+  display: grid;
+  position: sticky;
+  top: 5.8rem;
+}
+
+.nx-features.is-enhanced .nx-features__pane { grid-area: 1 / 1; visibility: hidden; pointer-events: none; }
+.nx-features.is-enhanced .nx-features__pane.is-active { visibility: visible; pointer-events: auto; }
+
+.nx-features__shots { display: grid; }
+.nx-features__shots .nx-features__shot { grid-area: 1 / 1; opacity: 0; transition: opacity 0s linear 0.6s; }
+.nx-features__shots .nx-features__shot.is-active { opacity: 1; z-index: 1; transition: opacity 0.6s ease; }
+
+.nx-features__shot {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  max-height: 21rem;
+  height: auto;
+  border-radius: 0.35rem;
+  outline: 1px solid var(--nx-outline);
+  cursor: zoom-in;
+}
+
+.nx-shot-tabs { margin-top: 0.8rem; }
+
+.nx-dots {
+  display: flex;
+  gap: 0.38rem;
+  margin-top: 0.75rem;
+}
+
+.nx-dot {
+  width: 0.42rem;
+  height: 0.42rem;
+  padding: 0;
+  border: 0;
+  border-radius: 999px;
+  background: var(--nx-outline);
+  cursor: pointer;
+  transition: width 140ms ease, background-color 140ms ease;
+}
+
+.nx-dot.is-active {
+  width: 1.2rem;
+  background: var(--nx-white);
+}
+
+.nx-features__desc {
+  max-width: 28rem;
+  margin: 1rem 0 0;
+  font-size: 0.84rem;
+  line-height: 1.55;
+  color: var(--nx-soft);
+}
+
+.nx-pane-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem 1.1rem;
+  margin: 0.9rem 0 0;
+  font-size: 0.78rem;
+}
+
+.nx-feature__platform {
+  font-size: 0.72rem;
+  color: var(--nx-grey);
+}
+
+/* ── LIVE DEMO (FRAMELESS) ────────────────────────────────────────────────── */
+.nx-demo__text {
+  margin: 0.55rem 0 1.4rem;
+  color: var(--nx-soft);
+  font-size: 0.84rem;
+  line-height: 1.55;
+  max-width: 40rem;
+}
+
+.nx-demo__frame {
+  display: block;
+  width: 100%;
+  height: 44rem;
+  border: 0;
+  background: var(--nx-black);
+  color-scheme: dark;
+}
+
+/* ── SYSTEMS ──────────────────────────────────────────────────────────────── */
 .nx-systems { margin: 1.6rem 0 0; }
 
 .nx-systems__group {
   display: grid;
   grid-template-columns: 6.5rem minmax(0, 1fr);
   gap: 0.6rem 1rem;
-  padding: 0.7rem 0;
+  padding: 0.75rem 0;
   border-top: 1px solid var(--nx-outline);
 }
 
-.nx-systems dt { padding-top: 0.25rem; font-size: 0.75rem; color: var(--nx-grey); }
+.nx-systems dt { padding-top: 0.25rem; font-size: 0.76rem; color: var(--nx-grey); }
 .nx-systems dd { margin: 0; }
 
 .nx-chips {
@@ -556,15 +587,16 @@
   padding: 0.25em 0.8em;
   border-radius: 999px;
   outline: 1px solid var(--nx-outline);
-  font-size: 0.75rem;
+  font-size: 0.76rem;
   line-height: 1.4;
 }
 
+/* ── DEVICES & NEWS ───────────────────────────────────────────────────────── */
 .nx-tiles,
 .nx-news {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
-  gap: 0.8rem;
+  gap: 0.85rem;
   margin: 1.6rem 0 0;
   padding: 0;
   list-style: none;
@@ -573,10 +605,29 @@
 .nx-tiles li,
 .nx-news li {
   margin: 0;
-  padding: 0.9rem 1rem;
+  padding: 0.95rem 1.05rem;
   border-radius: 0.5rem;
   outline: 1px solid var(--nx-outline);
 }
+
+.nx-tiles li:has(.nx-tile-btn) { padding: 0; }
+
+.nx-tile-btn {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0.95rem 1.05rem;
+  border: 0;
+  border-radius: 0.5rem;
+  background: none;
+  font: inherit;
+  text-align: left;
+  color: inherit;
+  cursor: pointer;
+}
+
+.nx-tile-btn:hover { background: rgba(255, 255, 255, 0.05); }
+.nx-tile-btn.is-selected { outline: 1px solid var(--nx-white); }
 
 .nx-tiles strong,
 .nx-news strong,
@@ -587,14 +638,81 @@
 .nx-steps span {
   display: block;
   margin-top: 0.3rem;
-  font-size: 0.72rem;
+  font-size: 0.76rem;
   line-height: 1.5;
   color: var(--nx-soft);
 }
 
-.nx-steps {
-  max-width: 36rem;
+/* ── GET IT (DOWNLOAD) ────────────────────────────────────────────────────── */
+.nx-model-bar { margin-top: 1.35rem; }
+
+.nx-model-note {
+  margin: 0.65rem 0 0;
+  font-size: 0.78rem;
+  color: var(--nx-grey);
+}
+
+.nx-model-note strong { color: var(--nx-white); }
+
+.nx-sec__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem 1.2rem;
   margin: 1.4rem 0 0;
+  font-size: 0.82rem;
+}
+
+.nx-btn {
+  display: inline-block;
+  padding: 0.55em 1.25em;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  background: var(--nx-white);
+  color: var(--nx-black);
+  font: inherit;
+  font-size: 0.86rem;
+  cursor: pointer;
+  transition: background-color 120ms ease, color 120ms ease, border-color 120ms ease;
+}
+
+.nx-btn:hover { background: var(--nx-accent); color: var(--nx-black); }
+
+/* Primary download CTA: clean cyan accent */
+.nx-btn--primary {
+  background: var(--nx-accent);
+  color: var(--nx-black);
+}
+
+.nx-btn--primary:hover {
+  background: var(--nx-white);
+  color: var(--nx-black);
+}
+
+.nx-btn--ghost {
+  background: none;
+  border-color: var(--nx-outline);
+  color: var(--nx-white);
+}
+
+.nx-btn--ghost:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: var(--nx-white);
+  color: var(--nx-white);
+}
+
+.nx-dl-trust {
+  margin: 0.85rem 0 0;
+  font-size: 0.74rem;
+  color: var(--nx-grey);
+}
+
+.nx-dl-trust a { color: var(--nx-soft); text-decoration: underline; }
+.nx-dl-trust a:hover { color: var(--nx-accent); }
+
+.nx-steps {
+  max-width: 38rem;
+  margin: 1.8rem 0 0;
   padding: 0;
   list-style: none;
   counter-reset: nx-step;
@@ -603,7 +721,7 @@
 .nx-steps li {
   position: relative;
   margin: 0;
-  padding: 0.7rem 0 0.7rem 2.6rem;
+  padding: 0.75rem 0 0.75rem 2.6rem;
   border-top: 1px solid var(--nx-outline);
   counter-increment: nx-step;
 }
@@ -612,7 +730,7 @@
   content: counter(nx-step);
   position: absolute;
   left: 0;
-  top: 0.7rem;
+  top: 0.75rem;
   display: grid;
   place-items: center;
   width: 1.6rem;
@@ -623,55 +741,180 @@
   font-size: 0.8rem;
 }
 
-.nx-sec__actions {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 0.8rem 1.2rem;
-  margin: 1.4rem 0 0;
-  font-size: 0.8rem;
-}
-
-.nx-btn {
-  display: inline-block;
-  padding: 0.5em 1.2em;
-  border-radius: 999px;
-  background: var(--nx-white);
-  color: var(--nx-black);
-  font-size: 0.85rem;
-}
-
-a.nx-btn:hover { background: var(--md-accent-fg-color); color: var(--nx-black); }
-.nx-btn.is-disabled { background: none; outline: 1px solid var(--nx-outline); color: var(--nx-grey); }
-
-.nx-faq { max-width: 40rem; margin-top: 1rem; }
-
+/* ── FAQ ──────────────────────────────────────────────────────────────────── */
+.nx-faq { max-width: 42rem; margin-top: 1rem; }
 .nx-faq details { border-bottom: 1px solid var(--nx-outline); }
 
 .nx-faq summary {
-  padding: 0.75rem 0;
+  padding: 0.8rem 0;
   font-size: 0.95rem;
   line-height: 1.35;
   cursor: pointer;
 }
 
 .nx-faq details p {
-  margin: 0 0 0.9rem;
-  font-size: 0.78rem;
-  line-height: 1.55;
+  margin: 0 0 0.95rem;
+  font-size: 0.82rem;
+  line-height: 1.58;
   color: var(--nx-soft);
 }
 
-.nx-demo { border-top: 1px solid var(--nx-outline); }
+/* ── MODAL (SCREENSHOT ZOOM) ──────────────────────────────────────────────── */
+.nx-modal[hidden] { display: none; }
 
-@media (prefers-reduced-motion: reduce) {
-  .nx-switch button { transition: none; }
+.nx-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: grid;
+  place-items: center;
+  padding: 1.5rem;
 }
 
-@media screen and (max-width: 44.9375em) {
-  .nx-bar__inner { gap: 0.9rem; padding-inline: 0.8rem; }
-  .nx-home .nx-devices { margin-bottom: 0; }
-  .nx-home .nx-features .nx-screen__inner { padding-top: 2rem; }
-  .nx-sec__lead { font-size: 1.3rem; }
-  .nx-systems__group { grid-template-columns: 1fr; gap: 0.4rem; }
+.nx-modal__backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.nx-modal__dialog {
+  position: relative;
+  z-index: 1;
+  max-width: min(56rem, 94vw);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nx-modal__close {
+  align-self: flex-end;
+  margin-bottom: 0.6rem;
+  width: 2.1rem;
+  height: 2.1rem;
+  border: 1px solid var(--nx-outline);
+  border-radius: 50%;
+  background: var(--nx-black);
+  color: var(--nx-white);
+  cursor: pointer;
+}
+
+.nx-modal__close:hover { border-color: var(--nx-white); }
+
+.nx-modal__body { width: 100%; display: flex; justify-content: center; }
+
+.nx-modal__img {
+  max-width: 100%;
+  max-height: 82vh;
+  width: auto;
+  height: auto;
+  border-radius: 0.35rem;
+  outline: 1px solid var(--nx-outline);
+}
+
+/* ── 404 PAGE (SHARED WITH overrides/404.html) ────────────────────────────── */
+.nx-error__inner {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 6rem);
+}
+
+.nx-error__message {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.nx-error__message .nx-error__label { margin: 0 0 0.5rem; font-size: 0.9rem; color: var(--nx-grey); }
+.nx-error__message h1 { margin: 0; font-size: 1.7rem; font-weight: 600; line-height: 1.3; color: var(--nx-white); }
+.nx-error__message p { max-width: 30rem; text-wrap: balance; margin: 0.8rem 0 0; font-size: 0.85rem; line-height: 1.5; color: var(--nx-soft); }
+.nx-error__hints { justify-content: center; margin-top: 1.8rem; }
+.nx-error__hints label { cursor: pointer; }
+
+/* ── FOCUS & MOTION ───────────────────────────────────────────────────────── */
+.nx-home a:focus-visible,
+.nx-home button:focus-visible,
+.nx-home summary:focus-visible {
+  outline: 0.1rem solid var(--nx-accent);
+  outline-offset: 0.15rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .nx-home * { animation: none !important; transition: none !important; }
+}
+
+/* ── RESPONSIVE ───────────────────────────────────────────────────────────── */
+/* Tablet and smaller (<= 992px; note Material sets 1rem = 20px) */
+@media screen and (max-width: 62em) {
+  .nx-hero .nx-screen__inner { padding-top: 3rem; padding-bottom: 3.4rem; }
+  .nx-sec .nx-screen__inner { padding-top: 3.2rem; padding-bottom: 3.6rem; }
+  .nx-screen__body { gap: 2rem; }
+  .nx-devices { font-size: clamp(0.7rem, 1.65vw, 0.96rem); }
+
+  /* Features: switch to full-width inline accordion on tablet & phone so
+     titles never squash into narrow columns and previews open right in place. */
+  .nx-features__head {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  .nx-features__body { grid-template-columns: 1fr; gap: 0; padding-top: 1.4rem; }
+  .nx-features__preview { display: none; }
+  .nx-feature { border-bottom: 1px solid var(--nx-outline); margin: 0; }
+  .nx-feature > button {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    padding: 0.78rem 0;
+    border-radius: 0;
+    font-size: 1rem;
+  }
+  .nx-feature > button:hover,
+  .nx-feature > button[aria-selected="true"] { background: none; color: var(--nx-white); }
+  .nx-feature__chev { display: inline-block; flex: none; transition: transform 140ms ease; }
+  .nx-feature.is-open .nx-feature__chev { transform: rotate(45deg); }
+  .nx-feature.is-open .nx-feature__inline { display: block; padding: 0.25rem 0 1.4rem; }
+  .nx-feature__inline .nx-features__shot { max-height: 19rem; }
+  .nx-inline-desc {
+    max-width: 36rem;
+    margin: 0.9rem 0 0;
+    font-size: 0.84rem;
+    line-height: 1.55;
+    color: var(--nx-soft);
+  }
+  .nx-inline-more { margin: 0.7rem 0 0; font-size: 0.82rem; }
+}
+
+/* Portrait tablet & narrow screens (<= 864px) */
+@media screen and (max-width: 54em) {
+  .nx-screen__body { grid-template-columns: 1fr; gap: 2.6rem; }
+  .nx-showcase { justify-self: center; }
+  .nx-devices { font-size: 0.82rem; }
+  .nx-flow { grid-template-columns: 1fr; gap: 1.4rem; }
+}
+
+/* Phone (<= 768px) */
+@media screen and (max-width: 48em) {
+  .nx-hero .nx-screen__inner { padding-top: 2.2rem; padding-bottom: 2.6rem; }
+  .nx-sec .nx-screen__inner { padding-top: 2.6rem; padding-bottom: 2.8rem; }
+  .nx-menu a { font-size: 1.2rem; }
+  .nx-devices { font-size: 0.72rem; }
+  .nx-bar__inner { gap: 0.8rem; padding-inline: 0.8rem; }
+  .nx-sec__lead { font-size: 1.35rem; }
+  .nx-systems__group { grid-template-columns: 1fr; gap: 0.45rem; }
+  .nx-tiles,
+  .nx-news { grid-template-columns: repeat(auto-fill, minmax(11.5rem, 1fr)); }
+  .nx-feature__inline .nx-features__shot { max-height: 16rem; }
+}
+
+/* Small phone (<= 480px) */
+@media screen and (max-width: 30em) {
+  .nx-devices { font-size: 0.62rem; }
+  .nx-hero__title { font-size: 1.65rem; }
+  .nx-tiles,
+  .nx-news { grid-template-columns: 1fr; }
 }

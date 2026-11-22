@@ -1,0 +1,17 @@
+<div class="md-copyright">
+  <div class="nx-footer-meta">
+    <p>NX Redux does not include, host, or provide games, ROMs, or BIOS files. Not affiliated with TrimUI, NextUI, MinUI, Google, Nintendo, Sony, Sega, Atari, or any hardware maker or game publisher. All trademarks, games, box art, and screenshots belong to their respective owners.</p>
+    <p>This website uses Google Analytics for anonymous traffic stats. The NX Redux app and firmware collect no analytics.</p>
+    <p class="nx-footer-links">
+      <span class="nx-footer-gen">&copy; {{ build_date_utc.strftime('%Y') }} NX Redux</span>
+      <a href="{{ 'reference/privacy/' | url }}">Privacy Policy</a>
+      <a href="{{ 'reference/licenses/' | url }}">Licenses</a>
+      <a href="{{ 'reference/credits/' | url }}">Credits</a>
+      <a href="{{ 'reference/disclaimer/' | url }}">Disclaimer</a>
+      <a href="#__consent">Change cookie settings</a>
+      {% if not config.extra.generator == false %}
+        <span class="nx-footer-gen">Made with <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">Material for MkDocs</a></span>
+      {% endif %}
+    </p>
+  </div>
+</div>
