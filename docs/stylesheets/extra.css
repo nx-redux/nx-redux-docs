@@ -281,3 +281,32 @@
   .md-header__source { display: flex; width: auto; max-width: none; }
   .md-header__source .md-source { width: 10.6rem; }
 }
+
+/* Footer legal & analytics notice inside MkDocs Material's copyright area. */
+.md-footer-meta__inner {
+  padding-top: 1.6rem;
+  padding-bottom: 1.8rem;
+}
+
+.nx-footer-meta {
+  max-width: 46rem;
+  display: grid;
+  gap: 0.55rem;
+  font-size: 0.64rem;
+  line-height: 1.55;
+  color: var(--md-footer-fg-color--lighter);
+}
+
+.nx-footer-meta p { margin: 0; }
+
+.nx-footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem 1rem;
+  padding-top: 0.2rem;
+}
+
+.nx-footer-links a { color: var(--md-footer-fg-color--light); }
+.nx-footer-links a:hover { color: var(--md-accent-fg-color); }
+.nx-footer-gen { color: var(--md-footer-fg-color--lighter); }
