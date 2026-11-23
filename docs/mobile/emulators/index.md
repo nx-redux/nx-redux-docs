@@ -114,7 +114,7 @@ PlayStation 2, PSP and Nintendo 3DS. **Graphics API** picks:
 
 | Value | What it does |
 | --- | --- |
-| **Auto** (default) | OpenGL ES. On a phone with an Arm Mali GPU, PlayStation 2, Wii and GameCube use Vulkan instead: it is faster there. |
+| **Auto** (default) | OpenGL ES. On a phone with an Arm Mali GPU, PlayStation 2 and PSP use Vulkan instead: it is faster there. Nintendo 3DS, Wii and GameCube do too, once a custom [GPU driver](#gpu-driver) is in use for them. |
 | **OpenGL ES** | OpenGL ES. |
 | **Vulkan** | Vulkan. On Nintendo 64 it also switches to the ParaLLEl-RDP renderer: more accurate, and heavier. |
 
@@ -146,9 +146,11 @@ If your phone can't run Vulkan, the game plays on OpenGL ES instead.
     - A phone without a Vulkan GPU that the app can use stays on OpenGL ES,
       whatever the setting.
     - Where **Auto** uses Vulkan, the row's note says **Auto is Vulkan**.
-      On a Mali phone that is PlayStation 2, Wii and GameCube. The other
-      consoles stay on OpenGL ES in **Auto**: Vulkan was no faster for them
-      there, and less smooth. Pick **OpenGL ES** to go back.
+      On a Mali phone that is PlayStation 2 and PSP, plus Nintendo 3DS, Wii
+      and GameCube with a custom GPU driver: on the phone's own driver some
+      of their games crash or draw wrongly. The other consoles stay on
+      OpenGL ES in **Auto**: Vulkan was no faster for them there, and less
+      smooth. Pick **OpenGL ES** to go back.
     - A Nintendo 64 [netplay](nintendo-64.md#netplay) session always runs on
       OpenGL ES.
     - If Vulkan can't start on your phone, the game starts again on OpenGL ES,
@@ -164,6 +166,12 @@ A game on Vulkan can use a GPU driver you add, in place of the phone's own:
 for example Turnip on a Qualcomm Adreno GPU, or malisx2 on an Arm Mali GPU.
 Another driver can fix a broken picture or run a game faster. It can also be
 slower, or not start, so it is something to try.
+
+!!! note "Arm Mali GPUs"
+    On a Mali GPU the phone's own Vulkan driver can crash some games, such as
+    Mario Kart 7. Add a custom driver such as malisx2, or set that game's
+    **Graphics API** to **OpenGL ES**. After such a crash the app says so:
+    **On a Mali GPU the system Vulkan driver can't run some games.**
 
 !!! warning
     A driver is third-party code that runs inside the app. Install only
