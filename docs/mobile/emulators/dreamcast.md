@@ -238,8 +238,7 @@ once, and the game corrects itself when the other player's arrives late.
     - Each player's controller has the Vibration Pack. Only Player 1's has
       a memory card.
     - Pausing (your menu open, or the app in the background) for more than
-      30 seconds ends the match. With an NX Redux handheld, a pause past 25
-      seconds can end the match as a lost connection instead.
+      30 seconds ends the match, with another phone or an NX Redux handheld.
     - 3 or 4 players over netplay isn't supported.
 
 ## Cheats and achievements
