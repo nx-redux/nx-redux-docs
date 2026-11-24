@@ -202,4 +202,6 @@ scene at the sides.
 
 ## Achievements
 
-RetroAchievements: not available for PS2 games in the app.
+[RetroAchievements](../retroachievements.md) works for PS2 games in `.iso`
+and `.chd`. `.zso` games aren't recognised. See
+[File types](../retroachievements.md#file-types).
