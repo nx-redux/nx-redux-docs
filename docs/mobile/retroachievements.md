@@ -109,7 +109,9 @@ or `X` **Info** for a row's full description. The page also has:
 Start a recognised game and unlocks are tracked as you play.
 
 - When the game loads, a notice shows its name and how many achievements you
-  have, or **No achievements for this game**.
+  have, or **No achievements for this game**. For a `.wbfs` Wii game
+  RetroAchievements doesn't know, it adds **WBFS files are often not
+  recognised: try RVZ or ISO**. See [File types](#file-types).
 - An **Achievement Unlocked** notice with the badge pops up when you earn
   one, with a chime. See **Unlock sound** and **Screenshot on unlock**
   [above](#setting-up).
@@ -141,6 +143,50 @@ Start a recognised game and unlocks are tracked as you play.
       [local wireless](local-wireless.md). In
       [Cable Link over Wi-Fi](netplay.md#cable-link-over-wi-fi) they count
       for your own game only.
+
+## File types
+
+RetroAchievements identifies a game from its file, so the file type matters.
+A game in a type it can't read still plays, just without achievements.
+
+| Console | Recognised | Not recognised |
+| --- | --- | --- |
+| Game Boy, Game Boy Color, Game Boy Advance | The ROM | — |
+| NES, Famicom Disk System, Super Nintendo | The ROM | — |
+| Nintendo 64 | `z64` `n64` `v64` | — |
+| Nintendo DS | `nds` | — |
+| Nintendo 3DS | — | Every file: achievements aren't available for 3DS in the app |
+| Genesis, Master System, Game Gear, SG-1000, 32X | The ROM | — |
+| Sega CD | `chd` `cue` `iso` `m3u` | — |
+| TurboGrafx-16 | The ROM; CD games in `chd` `cue` `m3u` | CD games in `ccd` `toc` |
+| PlayStation | `chd` `cue` (with its `bin`) `iso` `m3u` | `pbp` |
+| PlayStation 2 | `iso` `chd` | `zso` |
+| PSP | `iso` `chd` `pbp` | `cso` |
+| Dreamcast | `chd` `gdi` `cue` `m3u` | `cdi`; NAOMI and Atomiswave games |
+| GameCube | `iso` `gcm` `gcz` `ciso` | — |
+| Wii | `rvz` `iso` `wia` | Most `wbfs` (see below) |
+| Arcade | The FinalBurn Neo set (`zip` `7z`) | — |
+| Neo Geo Pocket / Color, Virtual Boy, WonderSwan, Atari 2600 / 5200 / 7800, Atari Lynx, Pokémon mini, ColecoVision | The ROM | — |
+| PICO-8, Doom | — | Not on RetroAchievements |
+
+**If a game isn't recognised**, convert it to a recognised type. For disc
+games, `chd` is the safest choice on the consoles that take it.
+
+??? info "More detail"
+
+    - **The ROM** means the console's own file. A ROM inside a `.zip` or `.7z`
+      is unpacked and identified the same way.
+    - **WBFS:** RetroAchievements matches a Wii disc against a full copy, and
+      most WBFS files leave out the disc's update partition, which is part of
+      what it reads. The same game as RVZ or ISO is recognised. A split WBFS
+      (`.wbf1` and on) isn't either.
+    - Other PlayStation image types, such as `img`, `mdf` or `cbn`, may not be
+      recognised. CHD or CUE + BIN are.
+    - A zipped Dreamcast disc is identified once it is unpacked to play.
+      Compressed GameCube or Wii discs listed in an `.m3u` aren't identified.
+    - Even in a recognised type, a different version, a hack or a bad dump
+      may be unknown to RetroAchievements. The [achievements
+      panel](#on-game-lists) then shows the file's hash.
 
 ## On the Home tab
 

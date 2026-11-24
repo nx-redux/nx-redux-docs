@@ -276,8 +276,10 @@ Up to four players can play, each on their own controller; see
 
 - [Cheats](../cheats.md): Dolphin's own codes for the game are listed after
   the game's first start. The cheat download has no Wii or GameCube codes.
-- [RetroAchievements](../retroachievements.md) works for Wii and GameCube
-  in every file type above.
+- [RetroAchievements](../retroachievements.md) works for Wii games in
+  `.rvz`, `.iso` and `.wia`, and for GameCube games in every file type above.
+  Most `.wbfs` files aren't recognised: convert them to RVZ or ISO. See
+  [File types](../retroachievements.md#file-types).
 
 ??? info "More detail"
     A game is identified once, then remembered. Compressed discs listed in
