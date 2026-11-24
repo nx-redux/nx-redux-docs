@@ -308,7 +308,7 @@ the other player's game waits while it's open.
 | `A` | Leave the session |
 
 !!! warning "You leave automatically"
-    If you don't answer within **20 seconds**, you leave automatically.
+    If you don't answer within **30 seconds**, you leave automatically.
     Putting the device to sleep also leaves the session. The other player
     sees **Netplay ended** straight away.
 

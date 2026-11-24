@@ -286,5 +286,5 @@ Pressing `MENU` doesn't open the full in-game menu. It asks **Leave netplay?**:
   link survives the pause. The question counts down and you leave
   automatically after 20 seconds.
 - On **Dreamcast** the other player's game waits for you. The question counts
-  down and you leave automatically after 20 seconds. The other player sees
+  down and you leave automatically after 30 seconds. The other player sees
   **Netplay ended** right away.
