@@ -175,7 +175,7 @@ play the Game Boy Advance's real link cable.
 ## Supported systems
 
 Netplay works only for games in these folders. Every other system, such as
-Dreamcast, has no `Y` **Netplay**.
+the Virtual Boy, has no `Y` **Netplay**.
 
 | System | `Roms` folder | Emulator for the match | Netplay type |
 | --- | --- | --- | --- |
@@ -189,6 +189,7 @@ Dreamcast, has no `Y` **Netplay**.
 | PlayStation | `PSX` | SwanStation, or PCSX-ReARMed | Lockstep |
 | Arcade | `FBN` | FinalBurn Neo | Lockstep |
 | Nintendo 64 | `N64` | Mupen64Plus-Next | Lockstep, 2 players ([details](emulators/nintendo-64.md#netplay)) |
+| Sega Dreamcast, NAOMI, Atomiswave | `DC` | Flycast | **Rollback**, 2 players ([details](emulators/dreamcast.md#netplay)) |
 | Game Boy / Game Boy Color | `GB`, `GBC` | Gambatte | **GB Link** |
 | Game Boy Advance | `GBA` | gpSP, or mGBA (for games with a Wi-Fi mode, or over the USB Cable) | **GBA Link**, or [Cable Link](#cable-link-over-wi-fi) between two phones |
 | Game Boy Advance | `MGBA` | mGBA, or gpSP | **GBA Link**, Wi-Fi for [games with a Wi-Fi mode](#game-boy-advance-link), or [Cable Link](#cable-link-over-wi-fi) between two phones |
@@ -199,6 +200,7 @@ Dreamcast, has no `Y` **Netplay**.
 | Netplay type | What it means |
 | --- | --- |
 | **Lockstep** | Both devices run the same game and swap controller input every frame. For games with a two-player mode. |
+| **Rollback** | Both devices run the same game, but your own input shows at once. When the other player's input arrives late, the game quickly corrects itself. For games with a two-player mode. |
 | **GB Link** / **GBA Link** | The link cable between two Game Boys. Trades and versus battles in single-player cartridges work between the two devices. |
 | **Local wireless** | The console's own wireless play. Host on one phone and join on the other, then use the game's own wireless or ad hoc menu. These games also meet without the Netplay menu: see [Local Wireless](local-wireless.md). |
 
@@ -345,6 +347,7 @@ Your own save is never overwritten by the other player's.
 | Netplay type | Whose save is used |
 | --- | --- |
 | **Lockstep** | The host's. Its save is copied to the joiner, so both start from the host's progress. |
+| **Rollback** | The host's. Its memory card and console settings are copied to the joiner. |
 | **GB Link** and **GBA Link** | Each player's own. Nothing is copied. |
 | **Cable Link** | Each player's own. The other player's save is borrowed for the session and never written. Yours is saved up to the last moment both phones agreed on. |
 | **Local wireless** | Each player's own. Nothing is copied. |
@@ -377,13 +380,13 @@ Your own save is never overwritten by the other player's.
 ![The in-game menu during a match with the Brick Pro: Continue and Leave](../assets/screenshots/mobile/netplay-in-game.webp)
 
 A match has no save states, rewind, fast forward, cheats, reset, options
-or disc changes. A lockstep match has no achievements either. A link
+or disc changes. A lockstep or rollback match has no achievements either. A link
 session and a Cable Link session do earn
 [achievements](retroachievements.md), as each player plays their own game.
 Each device is one player: every controller on the phone, and the
 on-screen pad, play as that player.
 
-In a lockstep match the in-game menu shows only two rows, under **Leave
+In a lockstep or rollback match the in-game menu shows only two rows, under **Leave
 netplay?**, with no game panel beside them:
 
 | Row | What it does |
@@ -407,6 +410,9 @@ A Cable Link session shows **Continue** and **Leave**.
     player sees **Other player paused (30 s)** counting down. Come back
     before it runs out, or the match ends.
 
+In a Dreamcast match the other player sees no countdown: their game
+waits, and the match ends after 30 seconds.
+
 A DS, 3DS or PSP game keeps running under your menu instead, and leaves
 the room after 60 seconds: see
 [Local Wireless → In a session](local-wireless.md#in-a-session).
@@ -425,7 +431,9 @@ the room after 60 seconds: see
       session it reads **Disconnect ends the link. You keep playing on your
       own save.** While the menu is open, your input stops.
     - Notices show at the top of the screen.
-    - After **Netplay ended** in a match (not a link session) the menu is
+    - After **Netplay ended** in a Dreamcast match the game closes and
+      you go back to the game list.
+    - After **Netplay ended** in a lockstep match the menu is
       **Continue** / **Quit**. On a copy the notice reads **Netplay ended -
       progress here won't be saved.**
     - After a Cable Link session ends the menu is **Quit** alone, and reads
@@ -467,7 +475,6 @@ plays on. What happens next is on the
 - DS, 3DS and PSP sessions, and Cable Link, with an NX Redux handheld:
   they are between phones.
 - The handheld's **Hotspot** mode.
-- Rollback netplay, such as the handheld's Dreamcast GGPO.
 - Systems outside the [table above](#supported-systems).
 - The Super Game Boy (`SGB`): put Game Boy games in `GB` or `GBC` for link
   play.

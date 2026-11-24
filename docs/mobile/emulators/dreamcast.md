@@ -212,6 +212,36 @@ Player 1's memory card.
       [Emulator Settings](../emulator-settings.md) under **Emulator →
       Controller Expansion Slots**.
 
+## Netplay
+
+[Netplay](../netplay.md) is for **2 players**, with another phone or an NX
+Redux handheld. Dreamcast matches use **rollback**: your own input shows at
+once, and the game corrects itself when the other player's arrives late.
+
+- **Connecting happens while the game loads.** Each device waits up to a
+  minute for the other. If they don't meet, **Could not reach the other
+  device.** shows and you go back to the game list.
+- **The BIOS.** If both devices have the same `dc_boot.bin`, the match uses
+  it. Otherwise both use Flycast's built-in BIOS, so the two still match.
+- **Memory cards.** The host's card for the game and its console settings
+  are copied to the joiner, who plays on a copy. For NAOMI and Atomiswave
+  games, the high scores and cabinet settings are copied instead.
+- **Input delay.** **Netplay Input Delay**, under **Emulator** in
+  [Emulator Settings](../emulator-settings.md), adds frames of delay to your
+  own input (1 by default). More delay means fewer corrections on a slow
+  connection, but more input lag. Each player sets their own.
+
+??? info "More detail"
+    - Some settings are fixed for the match so both devices run the game
+      the same way: region, language and broadcast on Default, no
+      widescreen hack, and free play in the arcade games.
+    - Each player's controller has the Vibration Pack. Only Player 1's has
+      a memory card.
+    - Pausing (your menu open, or the app in the background) for more than
+      30 seconds ends the match. With an NX Redux handheld, a pause past 25
+      seconds can end the match as a lost connection instead.
+    - 3 or 4 players over netplay isn't supported.
+
 ## Cheats and achievements
 
 - [Cheats](../cheats.md): the cheat download has codes for Dreamcast games.
