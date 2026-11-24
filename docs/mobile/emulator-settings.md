@@ -121,6 +121,8 @@ the game, and choose **Game Settings**. The same page opens over the list, for t
 
 ![Game Settings for Tetris, over the Game Boy list: the Controls label in the accent with Controller Layout, then Gameplay with Max FF Speed selected and Fast Forward Audio](../assets/screenshots/mobile/game-settings.webp)
 
+- For a game set to open in another [emulator app](main-menu.md#emulator-apps),
+  a line at the top says which app it opens in.
 - The first change gives the game its own settings, starting from the
   console's.
 - To go back to the console's settings, press `A` on **Use emulator

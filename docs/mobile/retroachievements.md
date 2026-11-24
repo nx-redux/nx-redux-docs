@@ -144,6 +144,9 @@ Start a recognised game and unlocks are tracked as you play.
       [Cable Link over Wi-Fi](netplay.md#cable-link-over-wi-fi) they count
       for your own game only.
 
+A game opened in another [emulator app](main-menu.md#emulator-apps) shows its
+achievements, but never unlocks them through NX Redux.
+
 ## File types
 
 RetroAchievements identifies a game from its file, so the file type matters.

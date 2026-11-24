@@ -859,6 +859,31 @@ where the game is listed.
       **Play from start**, **Netplay**, **Pin Item** / **Unpin Item** and
       **Achievements**.
 
+### Emulator apps
+
+After NX Redux's own emulators, **Emulator** also lists any compatible
+emulator apps installed on your phone, each marked **(app)**. Pick one and
+that game opens in that app from then on. The choice is per game, and only
+on this device. Pick one of NX Redux's own emulators to go back. Its own
+emulators stay the default.
+
+Some consoles have no built-in emulator and open their games in an
+installed emulator app. If none is installed, a notice says so.
+
+!!! note "A game opened in another app"
+    NX Redux only starts the game. The other app runs it, so these don't
+    apply: save states, resume, Save on quit, the in-game menu, skins,
+    shaders, cheats and netplay.
+
+    - The other app keeps its own saves. [Device Sync](device-sync.md)
+      doesn't carry them.
+    - [Achievements](retroachievements.md) are shown but never unlocked
+      through NX Redux.
+    - Play time is counted for consoles NX Redux has emulators for.
+    - [Kids Mode](kids-mode.md) blocks opening games in other apps.
+    - The game's [Game Settings](emulator-settings.md#game-settings) page
+      says which app it opens in.
+
 ### Hidden tabs
 
 When you hide a tab in [Layouts](layouts.md#showing-and-hiding-tabs), `MENU`
