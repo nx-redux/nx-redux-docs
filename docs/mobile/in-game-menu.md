@@ -451,12 +451,26 @@ RetroArch's **slang** presets (`.slangp`) and its older **GLSL** presets
 Each group's line shows on its row and again over its list once it is open.
 
 - `A` on a preset uses it and shows the live preview strip over the game.
+  On a folder, `A` opens it. The hint bar reads **Use** on a preset and
+  **Open** on a folder, and only folders show `›`.
 - `Left` / `Right` then step through the presets of that group or folder
   only.
-- `B` goes back to the list, with the preset in use marked.
+- `B` goes back to the list, with the preset in use marked and highlighted.
 
 The second screen's Settings tab **Shader** row shows the preset by name and
 opens the same picker. See [Dual Screens](dual-screen.md#panel-settings).
+
+If a preset can't load, a notice starting **Shader:** gives the reason, such
+as `Shader: not found: …`, and the game plays without a shader. This happens
+when a preset in `Shaders/` was moved or deleted, or a game's settings came
+from another device that had it. The shader is a setting, not part of a save
+state, so save states load either way.
+
+!!! tip "Heavy presets"
+    Some presets run many passes, such as CRT Royale or the Mega Bezel
+    presets from `slang-shaders`. On some phones the game then runs below
+    full speed, because the GPU is busy with the shader. A lighter preset,
+    such as zFast CRT or CRT Geom, keeps full speed.
 
 ### Your own shaders
 
@@ -526,10 +540,12 @@ folder.
       [Nintendo DS](emulators/nintendo-ds.md#shaders).
     - 50 slang presets are bundled from libretro's `slang-shaders`, such as
       CRT Geom, zFast CRT, CRT Easymode, CRT Royale, Dot, LCD3x, Game Boy,
-      Sharp Bilinear, ScaleFX and xBRZ, plus 18 GLSL shaders that have no
-      slang version (Line, Grid, and the "mini" and "perfect" sets). A game
-      or console that used a bundled GLSL shader now replaced by its slang
-      version switches over by itself.
+      Sharp Bilinear, ScaleFX and xBRZ, plus **LCD3x Classic** (the older
+      LCD3x look: strong scanlines and a faint stripe) and 18 GLSL shaders
+      that have no slang version (Line, Grid, and the "mini" and "perfect"
+      sets). A game or console that used a bundled GLSL shader now replaced
+      by its slang version switches over by itself. The single-file
+      `lcd3x.glsl` becomes LCD3x Classic, which keeps its look.
 
 ## Adjust mode
 
