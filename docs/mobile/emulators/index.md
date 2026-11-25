@@ -226,8 +226,10 @@ Put BIOS files in `Bios/<TAG>/`, or let
 folder, a zip or RetroArch.
 
 - These systems need their BIOS: Famicom Disk System, Sega CD, PC Engine CD,
-  ColecoVision (`Bios/COLECO/colecovision.rom`) and Dreamcast
+  ColecoVision (`Bios/COLECO/colecovision.rom`), and NAOMI and Atomiswave
   ([Sega Dreamcast](dreamcast.md#bios)).
+- Dreamcast discs start without a BIOS, on Flycast's built-in one, but some
+  games may not work; `dc_boot.bin` is recommended.
 - PlayStation on PCSX-ReARMed (`PS`) has a BIOS built in. SwanStation
   (`PSX`) needs a real one; see [PlayStation](playstation.md).
 - Wii and GameCube need no BIOS.
