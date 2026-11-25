@@ -49,9 +49,10 @@ network options are hidden: the app sets them for
 
 ## Ad hoc multiplayer
 
-A game's ad hoc mode links two to four phones on the same Wi-Fi, with
-nothing to set up: start the game on each phone and open its ad hoc
-multiplayer menu. See [Local Wireless](../local-wireless.md).
+A game's ad hoc mode links two to four phones on the same Wi-Fi, or two
+phones on a USB cable, with nothing to set up: start the game on each
+phone and open its ad hoc multiplayer menu. See
+[Local Wireless](../local-wireless.md).
 
 - **Local Wireless**, in the **Multiplayer** group of
   [Emulator Settings](../emulator-settings.md) and Game Settings, is **On**
@@ -61,7 +62,9 @@ multiplayer menu. See [Local Wireless](../local-wireless.md).
 - The other players see your
   [Player name](../about.md#player-name).
 - A save state can't be loaded while the game is in ad hoc mode.
-- Wi-Fi only: there is no USB cable link for PSP.
+- Over a [USB cable](../local-wireless.md#psp-over-the-cable) between two
+  phones, plug it in before entering the game's ad hoc menu. No Wi-Fi is
+  needed.
 
 ## Cheats and achievements
 

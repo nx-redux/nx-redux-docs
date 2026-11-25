@@ -71,8 +71,7 @@ it.
 
     - **Connection** is remembered for next time. It only shows when the
       game has more than Wi-Fi to choose from: **USB Cable** on phones that
-      can use the cable, **Cable Link** for Game Boy Advance games. PSP
-      games have no **USB Cable**.
+      can use the cable, **Cable Link** for Game Boy Advance games.
     - **Emulator** only shows for systems with more than one, and not on
       **Cable Link**, which reads **Cable Link runs mGBA on both devices**.
     - **Wi-Fi settings** shows with the line **Connect to Wi-Fi first**.
@@ -168,7 +167,6 @@ play the Game Boy Advance's real link cable.
     - Pull the cable out mid-game and plug it back in before the countdown
       ends (about 28 seconds), and the match carries on.
     - A phone that can't use the cable has no **USB Cable** tab.
-    - PSP games have no **USB Cable** tab: they link over Wi-Fi only.
     - If the other phone took control of the USB connection, the phone says
       so and points to **USB controlled by**.
 
@@ -195,7 +193,7 @@ the Virtual Boy, has no `Y` **Netplay**.
 | Game Boy Advance | `MGBA` | mGBA, or gpSP | **GBA Link**, Wi-Fi for [games with a Wi-Fi mode](#game-boy-advance-link), or [Cable Link](#cable-link-over-wi-fi) between two phones |
 | Nintendo DS | `NDS` | melonDS DS | [Local wireless](local-wireless.md), between phones |
 | Nintendo 3DS | `3DS` | Azahar | [Local wireless](local-wireless.md), between phones |
-| PSP | `PSP` | PPSSPP | [Local wireless](local-wireless.md) (ad hoc), between phones, Wi-Fi only |
+| PSP | `PSP` | PPSSPP | [Local wireless](local-wireless.md) (ad hoc), between phones, over Wi-Fi or the USB Cable |
 
 | Netplay type | What it means |
 | --- | --- |

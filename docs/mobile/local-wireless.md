@@ -5,15 +5,15 @@ title: Local Wireless
 # Local Wireless
 
 Nintendo DS, Nintendo 3DS and PSP games play their own wireless
-multiplayer between phones on the same Wi-Fi, the way real consoles side
-by side do. There is nothing to set up and no address to type: start the
+multiplayer between phones on the same Wi-Fi, or between two phones on a
+USB cable, the way real consoles side by side do. There is nothing to set up and no address to type: start the
 game on each phone and use the game's own multiplayer menu.
 
 | Console | The game's mode | Players | Links over |
 | --- | --- | --- | --- |
 | [Nintendo DS](emulators/nintendo-ds.md) | DS wireless play | Up to 8 in a room | Wi-Fi, or a USB cable between two phones |
 | [Nintendo 3DS](emulators/nintendo-3ds.md) | Local play, including Download Play | Set by the game | Wi-Fi, or a USB cable between two phones |
-| [PSP](emulators/psp.md) | Ad hoc | 2 to 4 | Wi-Fi |
+| [PSP](emulators/psp.md) | Ad hoc | 2 to 4 | Wi-Fi, or a USB cable between two phones |
 
 Local wireless is between phones and other Android devices running NX
 Redux. An NX Redux handheld can't join. For every other system, and for
@@ -21,7 +21,8 @@ Game Boy link cables, see [Netplay](netplay.md).
 
 ## Starting a game
 
-1. Put every phone on the same Wi-Fi.
+1. Put every phone on the same Wi-Fi, or join two phones with a
+   [USB cable](#usb-cable).
 2. Start the same game on each phone, the normal way.
 3. Use the game's own multiplayer menu on each: one player creates or
    hosts, the others search and join, as on the real console.
@@ -56,7 +57,7 @@ when a game starts.
 
 | Value | What it does |
 | --- | --- |
-| **On** | A game's wireless finds other NX Redux devices on the same Wi-Fi by itself. |
+| **On** | A game's wireless finds other NX Redux devices on the same Wi-Fi, or on the USB cable, by itself. |
 | **Off** | Games don't look for other devices. You can still host or join from the [Netplay menu](#from-the-netplay-menu). |
 
 Turn it off on a network you share with people you don't want to play
@@ -70,20 +71,33 @@ Then use the game's own multiplayer menu as above. See
 [Netplay → Starting a session](netplay.md#starting-a-session).
 
 This works with **Local Wireless** off. On DS and 3DS, a game hosted this
-way is also found by phones that just started the game.
+way is also found by phones that just started the game. A PSP game hosted
+over **USB Cable** is only found by the phone on the cable.
 
 ### USB cable
 
-Two phones can link a DS or 3DS game over a USB-C to USB-C cable instead
-of Wi-Fi. Plug the cable in and play as usual: when the game turns its
-wireless on and another phone is on the USB port, the game starts the
-cable link itself.
+Two phones can link a DS, 3DS or PSP game over a USB-C to USB-C cable
+instead of Wi-Fi. Plug the cable in and play as usual: with another phone
+on the USB port, the game starts the cable link itself. A DS or 3DS game
+starts it when it turns its wireless on, a PSP game as soon as it starts.
 
 - **Android asks once to allow a VPN.** It only carries the cable link.
+- **Android may ask to allow the USB device.** Allow it on both phones.
 - **Host first.** Create the game's room on one phone, then search on the
   other.
 - **Two phones only.** Three or more players use Wi-Fi.
-- **Not for PSP.** PSP games link over Wi-Fi only.
+- **No Wi-Fi needed.** The cable alone is enough.
+
+#### PSP over the cable
+
+A PSP game is on one network at a time: the cable or the Wi-Fi, never
+both.
+
+- **Plug in before you enter ad hoc.** Both phones then meet over the
+  cable.
+- **A cabled pair plays alone.** A third phone on Wi-Fi can't join them.
+- **Pull the cable** and both games drop out of ad hoc and go back to
+  Wi-Fi. Enter the game's ad hoc menu again to meet there.
 
 ??? info "More detail"
 
@@ -91,9 +105,15 @@ cable link itself.
       room. Answer it, then enter the game's wireless menu again.
     - A computer on the USB port doesn't start the cable.
     - From the Netplay menu, set **Connection** to
-      [**USB Cable**](netplay.md#usb-cable) for a DS or 3DS game.
-    - A room joined over Wi-Fi stays on Wi-Fi when a cable is plugged in
-      later.
+      [**USB Cable**](netplay.md#usb-cable).
+    - A DS or 3DS room joined over Wi-Fi stays on Wi-Fi when a cable is
+      plugged in later.
+    - Plug a cable in while a PSP game is in its ad hoc lobby and the game
+      drops out of the lobby. Enter it again and it uses the cable.
+    - Starting a PSP game with a phone on the cable switches the other
+      phone to the cable too, and can bring NX Redux to the front there.
+    - A PSP game entering ad hoc while the cable is still coming up waits
+      up to 6 seconds for it.
 
 ## In a session
 
@@ -141,9 +161,7 @@ until you quit it.
 ## Limits
 
 - Phones only: no NX Redux handheld, and no real DS, 3DS or PSP.
-- No USB cable for PSP.
-- A PSP game started with no Wi-Fi stays offline until you start it
-  again.
-- Every phone needs to be on the same Wi-Fi network, or, for two phones
-  on DS and 3DS, on the USB cable.
+- Every phone needs to be on the same Wi-Fi network, or, for two phones,
+  on the USB cable.
+- PSP players on the cable and players on Wi-Fi can't share a game.
 - No save states, rewind or fast forward while a game's wireless is on.
