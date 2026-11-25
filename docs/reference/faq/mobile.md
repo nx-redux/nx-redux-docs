@@ -74,8 +74,9 @@ Game Boy Advance games link for trades and battles. See
 
 ## Can I play DS, 3DS or PSP games wirelessly with a friend?
 
-Yes. Put both devices on the same Wi-Fi, start the game on each, and use the
-game's own wireless or ad hoc menu, as with two real consoles side by side.
+Yes. Put both devices on the same Wi-Fi, or join two phones with a USB-C
+cable, start the game on each, and use the game's own wireless or ad hoc
+menu, as with two real consoles side by side.
 There is nothing to set up. See
 [Local Wireless](../../mobile/local-wireless.md).
 
