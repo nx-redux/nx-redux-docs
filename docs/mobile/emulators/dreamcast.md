@@ -8,7 +8,7 @@ one folder.
 | --- | --- |
 | Folder | `Roms/Dreamcast (DC)/` |
 | Saves | `Saves/DC/`: a memory card per game (see [Memory cards](#memory-cards-vmu)) |
-| BIOS | `Bios/DC/`: `dc_boot.bin` for discs, `naomi.zip` / `awbios.zip` for the arcade games (see [BIOS](#bios)) |
+| BIOS | `Bios/DC/`: `dc_boot.bin` for discs (recommended), `naomi.zip` / `awbios.zip` for the arcade games (see [BIOS](#bios)) |
 | [File types](index.md) | `chd` `cdi` `gdi` `cue` `m3u`, a zip or 7z holding one disc, and NAOMI / Atomiswave zips |
 
 - **Graphics API** can switch a game to Vulkan. See
@@ -70,21 +70,24 @@ is the Dreamcast's `A`. The Dreamcast pad is lettered like an Xbox pad:
 
 ## BIOS
 
-Put the BIOS files in `Bios/DC/`. Without the right one, the game doesn't
-start and the app names the missing file.
+Put the BIOS files in `Bios/DC/`.
 
 | File | For |
 | --- | --- |
-| `dc_boot.bin` | Dreamcast discs |
-| `naomi.zip` | NAOMI games |
-| `awbios.zip` | Atomiswave games |
+| `dc_boot.bin` | Dreamcast discs (recommended) |
+| `naomi.zip` | NAOMI games (required) |
+| `awbios.zip` | Atomiswave games (required) |
 
-The arcade games don't need `dc_boot.bin`; see
-[NAOMI and Atomiswave](#naomi-and-atomiswave).
+Without `dc_boot.bin`, Dreamcast discs start on Flycast's built-in BIOS.
+Most games play, but some may not work. The first time, the app says:
+**Running without a Dreamcast BIOS: some games may not work. Put
+dc_boot.bin in Bios/DC/.** It says this once.
 
-!!! warning "Coming from the handheld"
-    The handheld can run Dreamcast discs without a BIOS. The app can't: add
-    `dc_boot.bin` even if your handheld played the games without it.
+The arcade games don't need `dc_boot.bin`, but they can't start without
+their board's BIOS zip; see [NAOMI and Atomiswave](#naomi-and-atomiswave).
+
+!!! tip "If a game doesn't work"
+    Add `dc_boot.bin` to `Bios/DC/`. The next launch uses it.
 
 ## Adding games
 
@@ -223,6 +226,7 @@ once, and the game corrects itself when the other player's arrives late.
   device.** shows and you go back to the game list.
 - **The BIOS.** If both devices have the same `dc_boot.bin`, the match uses
   it. Otherwise both use Flycast's built-in BIOS, so the two still match.
+  A device with no `dc_boot.bin` can host or join too.
 - **Memory cards.** The host's card for the game and its console settings
   are copied to the joiner, who plays on a copy. For NAOMI and Atomiswave
   games, the high scores and cabinet settings are copied instead.
