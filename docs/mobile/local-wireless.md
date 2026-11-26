@@ -135,6 +135,8 @@ Some DS games play together from one copy: the host runs the game, and
 each guest downloads it from the host, with no copy of their own. Mario
 Party DS plays together only this way.
 
+![The Nintendo DS list on a Retroid Pocket Nova with DS Download Play selected: its box reads Play together from one Game Card, and the line under it reads System, 2004 · Nintendo](../assets/screenshots/mobile/ds-download-play-row.webp){ .nx-wide }
+
 1. On the host's phone, start the game and pick its DS Download Play mode
    (in Mario Party DS, **Multiplayer**).
 2. On each guest's phone, open the **Nintendo DS** console and start
