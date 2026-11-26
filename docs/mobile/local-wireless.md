@@ -11,7 +11,7 @@ game on each phone and use the game's own multiplayer menu.
 
 | Console | The game's mode | Players | Links over |
 | --- | --- | --- | --- |
-| [Nintendo DS](emulators/nintendo-ds.md) | DS wireless play | Up to 8 in a room | Wi-Fi, or a USB cable between two phones |
+| [Nintendo DS](emulators/nintendo-ds.md) | DS wireless play, including [DS Download Play](#ds-download-play) | Up to 8 in a room | Wi-Fi, or a USB cable between two phones |
 | [Nintendo 3DS](emulators/nintendo-3ds.md) | Local play, including Download Play | Set by the game | Wi-Fi, or a USB cable between two phones |
 | [PSP](emulators/psp.md) | Ad hoc | 2 to 4 | Wi-Fi, or a USB cable between two phones |
 
@@ -22,13 +22,24 @@ Game Boy link cables, see [Netplay](netplay.md).
 ## Starting a game
 
 1. Put every phone on the same Wi-Fi, or join two phones with a
-   [USB cable](#usb-cable).
+   [USB cable](#usb-cable). For DS games, one phone's hotspot works too.
 2. Start the same game on each phone, the normal way.
 3. Use the game's own multiplayer menu on each: one player creates or
    hosts, the others search and join, as on the real console.
 
 The phones find each other when the game turns its wireless on. Until
 then nothing is sent on the network.
+
+!!! tip "Less lag: a USB cable, or a hotspot for DS"
+    A home router adds delay between phones, and DS and 3DS games wait for
+    each other's answers many times a second. For the smoothest game:
+
+    - **Two phones:** join them with a [USB cable](#usb-cable).
+    - **DS games:** or put the others on one phone's hotspot, instead of
+      the home Wi-Fi.
+
+    With two phones playing Mario Party DS, the home Wi-Fi ran at about 21
+    fps, the host's hotspot at 50 to 54, and the cable at nearly full speed.
 
 !!! tip "Other players see your Player name"
     Set it in **Settings → System →
@@ -47,6 +58,8 @@ then nothing is sent on the network.
       apart. A DS `firmware.bin` of your own is never changed.
     - A game keeps the name stored in its own save, so an old save can
       show an old name.
+    - A DS game also finds rooms on a phone's own hotspot, with that
+      phone's Wi-Fi on or off.
 
 ### The Local Wireless option
 
@@ -101,8 +114,9 @@ both.
 
 ??? info "More detail"
 
-    - Android's VPN question shows over the game and takes it out of the
-      room. Answer it, then enter the game's wireless menu again.
+    - Android's VPN and USB questions show over the game and take it out
+      of the room. Answer them: a DS or 3DS game then looks for the room
+      again by itself. On PSP, enter the game's ad hoc menu again.
     - A computer on the USB port doesn't start the cable.
     - From the Netplay menu, set **Connection** to
       [**USB Cable**](netplay.md#usb-cable).
@@ -114,6 +128,41 @@ both.
       phone to the cable too, and can bring NX Redux to the front there.
     - A PSP game entering ad hoc while the cable is still coming up waits
       up to 6 seconds for it.
+
+## DS Download Play
+
+Some DS games play together from one copy: the host runs the game, and
+each guest downloads it from the host, with no copy of their own. Mario
+Party DS plays together only this way.
+
+![The Nintendo DS list on a Retroid Pocket Nova with DS Download Play selected: its box reads Play together from one Game Card, and the line under it reads System, 2004 · Nintendo](../assets/screenshots/mobile/ds-download-play-row.webp){ .nx-wide }
+
+1. On the host's phone, start the game and pick its DS Download Play mode
+   (in Mario Party DS, **Multiplayer**).
+2. On each guest's phone, open the **Nintendo DS** console and start
+   **DS Download Play**, its first row. The DS menu opens, as on a DS with
+   no game card.
+3. Pick the host's game from the list. It downloads, then starts.
+
+!!! note "Needs a real DS's BIOS and firmware"
+    Copy `bios7.bin`, `bios9.bin` and `firmware.bin` from your own DS into
+    `Bios/NDS/`. **DS Download Play** shows only when they are there. With
+    no DS games in your library, a **Nintendo DS** console then shows with
+    just that row.
+
+!!! tip "Smoothest on the cable or a hotspot"
+    The host waits for each guest's answer several times a frame, so
+    [less lag](#starting-a-game) matters most here: use a
+    [USB cable](#usb-cable) or the host's hotspot rather than the home
+    Wi-Fi.
+
+??? info "More detail"
+    - The guest's game is gone when it ends, as on a DS: start
+      **DS Download Play** again for the next session.
+    - DS Download Play has no save states, resume point or achievements,
+      and makes no Recents entry. Its in-game menu has no **Save** or
+      **Load**.
+    - Quitting from the DS menu closes it, as **Quit** does.
 
 ## In a session
 
@@ -143,7 +192,8 @@ Switched off while the wireless is on:
 Their touch shortcuts and second-screen tiles hide too.
 
 Pressing Home, turning the screen off or switching to another app leaves
-the room.
+the room. Back in a DS or 3DS game, with **Local Wireless** on, your phone
+looks for the room again.
 
 ### Disconnect
 
@@ -162,6 +212,6 @@ until you quit it.
 
 - Phones only: no NX Redux handheld, and no real DS, 3DS or PSP.
 - Every phone needs to be on the same Wi-Fi network, or, for two phones,
-  on the USB cable.
+  on the USB cable. DS games also link on one phone's hotspot.
 - PSP players on the cable and players on Wi-Fi can't share a game.
 - No save states, rewind or fast forward while a game's wireless is on.
