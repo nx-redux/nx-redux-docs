@@ -401,7 +401,8 @@ shortcut, then **Touch button 1** to **Touch button 4**. A row ending in
 game's own.
 
 - Press `A` on a shortcut, then the button you want. For a combination, hold
-  `MENU` and press another button. `B` cancels the wait.
+  `MENU` and press another button. A D-pad direction binds only with `MENU`
+  held. `B` cancels the wait.
 - `X` sets the row to **None** here, and `Y` puts it back to the default.
 - On a touch button, pick its action as on any [options row](#options-rows).
 
