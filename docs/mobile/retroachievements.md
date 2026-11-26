@@ -156,6 +156,7 @@ A game in a type it can't read still plays, just without achievements.
 | Nintendo 64 | `z64` `n64` `v64` | — |
 | Nintendo DS | `nds` | — |
 | Nintendo 3DS | — | Every file: achievements aren't available for 3DS in the app |
+| Nintendo Wii U | — | Every file: achievements aren't available for Wii U in the app |
 | Genesis, Master System, Game Gear, SG-1000, 32X | The ROM | — |
 | Sega CD | `chd` `cue` `iso` `m3u` | — |
 | TurboGrafx-16 | The ROM; CD games in `chd` `cue` `m3u` | CD games in `ccd` `toc` |

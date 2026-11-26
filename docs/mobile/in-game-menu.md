@@ -263,8 +263,8 @@ The picture. The rows work as described in [Options rows](#options-rows).
 
 | Option | Values | Default | What it does |
 | --- | --- | --- | --- |
-| **Layout** and the other screen rows | See [Nintendo DS](emulators/nintendo-ds.md) and [Nintendo 3DS](emulators/nintendo-3ds.md) | | How the two screens are arranged. Nintendo DS and 3DS only. |
-| **3D Resolution** | See [Nintendo DS](emulators/nintendo-ds.md), [Nintendo 3DS](emulators/nintendo-3ds.md) and [PlayStation 2](emulators/playstation-2.md) | | Nintendo DS, 3DS and PlayStation 2 only. |
+| **Layout** and the other screen rows | See [Nintendo DS](emulators/nintendo-ds.md), [Nintendo 3DS](emulators/nintendo-3ds.md) and [Nintendo Wii U](emulators/wii-u.md#screen-layouts) | | How the two screens are arranged. Nintendo DS, 3DS and Wii U only. |
+| **3D Resolution** | See [Nintendo DS](emulators/nintendo-ds.md), [Nintendo 3DS](emulators/nintendo-3ds.md), [PlayStation 2](emulators/playstation-2.md) and [Nintendo Wii U](emulators/wii-u.md#3d-resolution) | | Nintendo DS, 3DS, PlayStation 2 and Wii U only. |
 | **Bottom screen** | System default, Main screen, Second screen | System default | Picks the touch screen for this console, while a second screen is connected. See [Dual Screens & External Displays](dual-screen.md#for-one-console). |
 | **Screen Scaling** | Auto, Native, Aspect, Fullscreen | Auto | **Auto**: fills the room the game has, at its shape (see below). **Native**: integer scaling. **Aspect**: the core's aspect ratio. **Fullscreen**: fills the screen. |
 | **Screen Sharpness** | NEAREST, LINEAR, SHARP | NEAREST | **LINEAR** smooths lines. **SHARP** keeps pixels crisp and even when the picture isn't a whole multiple of the game's size. |
@@ -319,6 +319,7 @@ The controller, the console's own controls and the on-screen buttons.
 | **Controller Layout** | Every console | Auto-detect, Xbox (A at the bottom), Nintendo (A on the right) | Auto-detect |
 | **New 3DS Controls** | Nintendo 3DS | Auto, On, Off | Auto |
 | **Wii Controller**, **Motion Controls** | Nintendo Wii | See [Nintendo Wii & GameCube](emulators/wii-gamecube.md#wii) | Auto |
+| **Motion Controls** | Nintendo Wii U | On, Off. See [Motion](emulators/wii-u.md#motion) | On |
 | **Pad Opacity (landscape)** | Every console, with **Pad skin** off | 100%, 60%, 40%, 25% | 60% |
 | **Adjust buttons** | Every console, while the on-screen buttons are drawn and no controller is connected | | |
 

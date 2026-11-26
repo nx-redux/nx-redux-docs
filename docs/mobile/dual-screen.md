@@ -195,6 +195,9 @@ screen.
   `L2` works too.
 - In [stylus mode](emulators/nintendo-ds.md#stylus-mode) the DS stylus dot
   follows the bottom screen to whichever screen shows it.
+- **Wii U** games split the same way: the TV on one screen and the GamePad,
+  which takes the touches, on the other. **SWAP** or `SELECT` + `L1` swaps
+  them. See [Nintendo Wii U](emulators/wii-u.md#foldables-and-second-screens).
 
 ### The Panel and Game pills
 
