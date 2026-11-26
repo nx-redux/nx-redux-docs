@@ -30,6 +30,17 @@ Game Boy link cables, see [Netplay](netplay.md).
 The phones find each other when the game turns its wireless on. Until
 then nothing is sent on the network.
 
+!!! tip "Less lag: a USB cable, or a hotspot for DS"
+    A home router adds delay between phones, and DS and 3DS games wait for
+    each other's answers many times a second. For the smoothest game:
+
+    - **Two phones:** join them with a [USB cable](#usb-cable).
+    - **DS games:** or put the others on one phone's hotspot, instead of
+      the home Wi-Fi.
+
+    With two phones playing Mario Party DS, the home Wi-Fi ran at about 21
+    fps, the host's hotspot at 50 to 54, and the cable at nearly full speed.
+
 !!! tip "Other players see your Player name"
     Set it in **Settings → System →
     [Player name](about.md#player-name)**. It is the DS nickname, the
@@ -137,11 +148,11 @@ Party DS plays together only this way.
     no DS games in your library, a **Nintendo DS** console then shows with
     just that row.
 
-!!! tip "Smoothest on a hotspot or the cable"
-    The host waits for each guest's answer several times a frame, so the
-    network's delay sets the speed. With two phones, home Wi-Fi ran Mario
-    Party DS at about 21 fps, the host's hotspot at 50 to 54, and a
-    [USB cable](#usb-cable) at nearly full speed.
+!!! tip "Smoothest on the cable or a hotspot"
+    The host waits for each guest's answer several times a frame, so
+    [less lag](#starting-a-game) matters most here: use a
+    [USB cable](#usb-cable) or the host's hotspot rather than the home
+    Wi-Fi.
 
 ??? info "More detail"
     - The guest's game is gone when it ends, as on a DS: start
