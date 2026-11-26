@@ -22,7 +22,7 @@ Game Boy link cables, see [Netplay](netplay.md).
 ## Starting a game
 
 1. Put every phone on the same Wi-Fi, or join two phones with a
-   [USB cable](#usb-cable). For DS games, one phone's hotspot works too.
+   [USB cable](#usb-cable). For DS and 3DS games, one phone's hotspot works too.
 2. Start the same game on each phone, the normal way.
 3. Use the game's own multiplayer menu on each: one player creates or
    hosts, the others search and join, as on the real console.
@@ -30,16 +30,20 @@ Game Boy link cables, see [Netplay](netplay.md).
 The phones find each other when the game turns its wireless on. Until
 then nothing is sent on the network.
 
-!!! tip "Less lag: a USB cable, or a hotspot for DS"
+!!! tip "Less lag: a USB cable or a hotspot"
     A home router adds delay between phones, and DS and 3DS games wait for
     each other's answers many times a second. For the smoothest game:
 
     - **Two phones:** join them with a [USB cable](#usb-cable).
-    - **DS games:** or put the others on one phone's hotspot, instead of
-      the home Wi-Fi.
+    - **DS and 3DS games:** or turn on one phone's hotspot, turn that
+      phone's own Wi-Fi off, and put the others on the hotspot. With its
+      Wi-Fi still on, the phone shares one radio between the two networks
+      and the game slows down.
 
     With two phones playing Mario Party DS, the home Wi-Fi ran at about 21
     fps, the host's hotspot at 50 to 54, and the cable at nearly full speed.
+    Mario Kart 7 on the hotspot ran at about 50 fps with the host's Wi-Fi
+    on and close to 60 with it off.
 
 !!! tip "Other players see your Player name"
     Set it in **Settings → System →
@@ -58,7 +62,7 @@ then nothing is sent on the network.
       apart. A DS `firmware.bin` of your own is never changed.
     - A game keeps the name stored in its own save, so an old save can
       show an old name.
-    - A DS game also finds rooms on a phone's own hotspot, with that
+    - DS and 3DS games also find rooms on a phone's own hotspot, with that
       phone's Wi-Fi on or off.
 
 ### The Local Wireless option
@@ -153,8 +157,8 @@ Party DS plays together only this way.
 !!! tip "Smoothest on the cable or a hotspot"
     The host waits for each guest's answer several times a frame, so
     [less lag](#starting-a-game) matters most here: use a
-    [USB cable](#usb-cable) or the host's hotspot rather than the home
-    Wi-Fi.
+    [USB cable](#usb-cable) or the host's hotspot (its own Wi-Fi off)
+    rather than the home Wi-Fi.
 
 ??? info "More detail"
     - The guest's game is gone when it ends, as on a DS: start
@@ -212,6 +216,6 @@ until you quit it.
 
 - Phones only: no NX Redux handheld, and no real DS, 3DS or PSP.
 - Every phone needs to be on the same Wi-Fi network, or, for two phones,
-  on the USB cable. DS games also link on one phone's hotspot.
+  on the USB cable. DS and 3DS games also link on one phone's hotspot.
 - PSP players on the cable and players on Wi-Fi can't share a game.
 - No save states, rewind or fast forward while a game's wireless is on.
