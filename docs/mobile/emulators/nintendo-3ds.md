@@ -422,6 +422,13 @@ on each phone and use the game's own local play menu. See
     - A Mii you made or imported yourself keeps its name.
     - A game that saved a name in its own save keeps showing that one.
 
+### 3DS Download Play
+
+**3DS Download Play**, the first row of the Nintendo 3DS console, joins a
+game a friend hosts with Download Play, such as Mario Kart 7, without a copy
+of your own. It needs no system files. See
+[Local Wireless → 3DS Download Play](../local-wireless.md#3ds-download-play).
+
 ## Shaders
 
 As on the [Nintendo DS](nintendo-ds.md#shaders), a

@@ -89,7 +89,8 @@ There is nothing to set up. See
     - A DS game that shares one copy, such as Mario Party DS, works too:
       your friend joins from
       [DS Download Play](../../mobile/local-wireless.md#ds-download-play)
-      without a copy of their own.
+      without a copy of their own; a 3DS game such as Mario Kart 7 from
+      [3DS Download Play](../../mobile/local-wireless.md#3ds-download-play).
 
 ## Can I sync saves with my handheld?
 
