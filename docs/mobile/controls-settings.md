@@ -138,6 +138,8 @@ forward turns rewind off, and the other way round. See
 
 - Press `A` on a shortcut, then press the button you want. For a
   combination, hold `MENU` and press another button.
+- A D-pad direction binds only in a `MENU` combination, such as `MENU` +
+  `Right`, so the game keeps its D-pad.
 - `B` or Back cancels the wait, and `X` sets the shortcut back to **None**.
 - Each button or combination does one thing. Pressing one another shortcut
   already uses moves it to this shortcut, and the other one becomes
@@ -157,7 +159,11 @@ button to the game.
     - `MENU` alone and `SELECT` + `START` open the in-game menu, and `SELECT`
       and `START` stay the game's, so `MENU` alone, `SELECT` and `START`
       can't be bound, alone or in a combination. `B` and Back alone cancel
-      the wait, so they bind only in a `MENU` combination.
+      the wait, so they bind only in a `MENU` combination. A D-pad direction
+      alone shows **Hold MENU with the D-pad**.
+    - With a `MENU` combination bound, `MENU` opens the in-game menu when you
+      let go of it, and only after a quick press: holding it for a
+      combination opens nothing.
     - A console's own hotkeys win over shortcuts. On the Nintendo DS, for
       example, `L3`, `R3`, `L2`, `R2`, `SELECT` + `L1` and `SELECT` + `R1`
       are taken, so a shortcut on one of them shows **Unavailable** in that
