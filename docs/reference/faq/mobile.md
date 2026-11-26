@@ -86,6 +86,10 @@ There is nothing to set up. See
     - While a game's wireless is on, the in-game menu is **Continue**,
       **Disconnect** and **Quit**, and save states, rewind and fast forward
       are off.
+    - A DS game that shares one copy, such as Mario Party DS, works too:
+      your friend joins from
+      [DS Download Play](../../mobile/local-wireless.md#ds-download-play)
+      without a copy of their own.
 
 ## Can I sync saves with my handheld?
 
