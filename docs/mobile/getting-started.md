@@ -17,11 +17,12 @@ New to NX Redux? See [About NX Redux](../about.md) first.
 
 ## What's different from the handheld
 
-- **Emulators:** the app adds Nintendo 3DS and Nintendo Wii & GameCube, which
-  the handheld doesn't have. Nintendo DS runs melonDS DS (DraStic is not
+- **Emulators:** the app adds Nintendo 3DS, Nintendo Wii & GameCube and
+  Nintendo Wii U, which the handheld doesn't have. Nintendo DS runs melonDS DS (DraStic is not
   available). See [Emulators](emulators/index.md),
-  [Nintendo 3DS](emulators/nintendo-3ds.md) and
-  [Wii & GameCube](emulators/wii-gamecube.md).
+  [Nintendo 3DS](emulators/nintendo-3ds.md),
+  [Wii & GameCube](emulators/wii-gamecube.md) and
+  [Wii U](emulators/wii-u.md).
 - **Library:** besides the home folder, the app can scan extra folders in
   place. See [Library & ROM folders](library.md).
 - **Controls:** an on-screen pad drawn as a [pad skin](controls.md#pad-skins)

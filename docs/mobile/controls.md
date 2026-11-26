@@ -164,6 +164,7 @@ console doesn't have:
 | Wii | The game's Wii controller (Classic, Nunchuk, sideways or upright Remote), with `HOME`, `SHAKE` and `MOTION`; see [Nintendo Wii & GameCube](emulators/wii-gamecube.md#wii) |
 | Nintendo DS | Two screens, `A` `B` `X` `Y`, `L` `R`, **MIC** and **SWAP** |
 | Nintendo 3DS | The DS set with the Circle Pad; a New 3DS game adds `ZL` `ZR` and the C-stick |
+| Nintendo Wii U | Two screens and the GamePad's controls, laid out like the New 3DS pad, with **SWAP** in the touch shortcuts |
 | PICO-8 | The d-pad, `O` `X` and `START` |
 | Atari 5200 | The joystick, two fire buttons, `*` `#`, `PAUSE`, `START` and `KEYPAD` |
 | Doom | The d-pad, `A` `B` `X` `Y`, `L` `R` `L2` `R2`, `L3` and `R3` |
@@ -261,7 +262,8 @@ own pad: the bottom button is the PlayStation's `×` on every controller.
     - These consoles go by the printed letter: Super Nintendo, NES and
       Famicom Disk System, Game Boy, Game Boy Color, Game Boy Advance,
       Nintendo DS, Nintendo 3DS, Virtual Boy, Atari Lynx, Pokémon mini,
-      WonderSwan, Nintendo 64, Nintendo Wii, Nintendo GameCube, Sega
+      WonderSwan, Nintendo 64, Nintendo Wii, Nintendo GameCube, Nintendo
+      Wii U, Sega
       Dreamcast, NAOMI, Atomiswave and Neo Geo Pocket.
     - The Sega consoles that go by position are Genesis, Sega CD, 32X, Master
       System, Game Gear and SG-1000. These consoles' buttons have no letters,
@@ -488,6 +490,7 @@ the right stick, the left stick or the d-pad, and `R3` or `A` taps.
 | [Nintendo DS](emulators/nintendo-ds.md#controls) | **SWAP**, `L3` or `SELECT` + `L1` swaps screens (`L2` too), `SELECT` + `R1` turns stylus mode on or off (`R2` too), `SELECT` + `LEFT` / `RIGHT` changes the layout, `SELECT` + `UP` / `DOWN` moves the inset |
 | [Nintendo 3DS](emulators/nintendo-3ds.md#controls) | **SWAP**, `L3` or `SELECT` + `L1` swaps screens, `SELECT` + `R1` turns stylus mode on or off, `SELECT` + `LEFT` / `RIGHT` changes the layout, `L2` / `R2` are `ZL` / `ZR`, the right stick is the C-stick |
 | [Nintendo Wii](emulators/wii-gamecube.md#wii) | `L3` recentres motion, `R3` is `HOME` |
+| [Nintendo Wii U](emulators/wii-u.md#controls) | **SWAP** or `SELECT` + `L1` swaps screens, `SELECT` + `LEFT` / `RIGHT` changes the layout, `L2` / `R2` are `ZL` / `ZR` |
 | [Sega Dreamcast, NAOMI, Atomiswave](emulators/dreamcast.md#controls) | Analog `L2` / `R2`, and on the arcade boards `SELECT` for a coin, `L3` for Test and `R3` for Service |
 | [Arcade (FBNeo)](emulators/arcade.md#controls) | `SELECT` inserts a coin; the on-screen pad labels it **COIN** |
 | [Nintendo 64](emulators/nintendo-64.md#controls) | Buttons by letter, `Z` on `L2`, the C buttons on the right stick |

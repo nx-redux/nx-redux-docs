@@ -9,7 +9,7 @@ Systems with their own controls or settings have a page each:
 [PlayStation 2](playstation-2.md), [PlayStation Portable](psp.md),
 [Nintendo DS](nintendo-ds.md), [Nintendo 3DS](nintendo-3ds.md),
 [Nintendo Wii & GameCube](wii-gamecube.md),
-the [Sega consoles](sega.md) and the
+[Nintendo Wii U](wii-u.md), the [Sega consoles](sega.md) and the
 [Game Boy & Game Boy Advance](game-boy.md). The rest, such as the Neo Geo
 Pocket's `Option`, are on [Other Systems](other-systems.md).
 
@@ -24,6 +24,7 @@ Pocket's `Option`, are on [Other Systems](other-systems.md).
 | [Nintendo 3DS](nintendo-3ds.md) | `3DS` | Azahar |
 | [Nintendo Wii](wii-gamecube.md) | `WII` | Dolphin |
 | [Nintendo GameCube](wii-gamecube.md) | `GC` | Dolphin |
+| [Nintendo Wii U](wii-u.md) | `WIIU` | Cemu |
 | [Nintendo 64](nintendo-64.md) | `N64` | Mupen64Plus-Next |
 | [PlayStation 2](playstation-2.md) | `PS2` | ARMSX2 |
 | [PlayStation Portable](psp.md) | `PSP` | PPSSPP |
@@ -117,6 +118,9 @@ PlayStation 2, PSP and Nintendo 3DS. **Graphics API** picks:
 | **Auto** (default) | OpenGL ES. On a phone with an Arm Mali GPU, PlayStation 2 and PSP use Vulkan instead: it is faster there. Nintendo 3DS, Wii and GameCube do too, once a custom [GPU driver](#gpu-driver) is in use for them. |
 | **OpenGL ES** | OpenGL ES. |
 | **Vulkan** | Vulkan. On Nintendo 64 it also switches to the ParaLLEl-RDP renderer: more accurate, and heavier. |
+
+Nintendo Wii U has no **Graphics API** row: Cemu draws with Vulkan only.
+See [Nintendo Wii U](wii-u.md#graphics).
 
 Which is faster depends on the game and the phone. Try Vulkan on a game that
 runs slowly, and go back if it doesn't help.
@@ -233,6 +237,8 @@ folder, a zip or RetroArch.
 - PlayStation on PCSX-ReARMed (`PS`) has a BIOS built in. SwanStation
   (`PSX`) needs a real one; see [PlayStation](playstation.md).
 - Wii and GameCube need no BIOS.
+- Wii U needs no BIOS. Encrypted discs (`.wud`, `.wux`) need their disc
+  key in `Bios/WIIU/keys.txt`; see [Disc keys](wii-u.md#disc-keys).
 - If a BIOS is missing, the game doesn't start and the app names the file it
   needs.
 
@@ -273,3 +279,5 @@ such as `1/2`). `LEFT` / `RIGHT` swap the disc. The choice is not saved.
 
 - **PlayStation `.exe` homebrew** doesn't load.
 - **PICO-8** games have no save states, and don't resume where you left off.
+- **Wii U** games have no save states either: they save in-game. See
+  [Nintendo Wii U](wii-u.md#saves).
