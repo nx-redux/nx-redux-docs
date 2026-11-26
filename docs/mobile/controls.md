@@ -160,6 +160,7 @@ console doesn't have:
 | PSP | `△` `○` `×` `□`, `L` `R`, the analog nub, `SELECT` and `START` |
 | Nintendo 64 | The stick and d-pad, `A` `B`, the C buttons, `Z`, `L` and `R` |
 | Dreamcast | The stick and d-pad, `A` `B` `X` `Y`, the `L` `R` triggers and `START` |
+| Sega Saturn | The d-pad, `A` `B` `C` below `X` `Y` `Z`, `L` `R` and `START` |
 | GameCube | The stick and d-pad, `A` `B` `X` `Y`, `Z`, the `L` `R` triggers, the C-stick and `START` |
 | Wii | The game's Wii controller (Classic, Nunchuk, sideways or upright Remote), with `HOME`, `SHAKE` and `MOTION`; see [Nintendo Wii & GameCube](emulators/wii-gamecube.md#wii) |
 | Nintendo DS | Two screens, `A` `B` `X` `Y`, `L` `R`, **MIC** and **SWAP** |
@@ -265,7 +266,7 @@ own pad: the bottom button is the PlayStation's `×` on every controller.
       WonderSwan, Nintendo 64, Nintendo Wii, Nintendo GameCube, Nintendo
       Wii U, Sega
       Dreamcast, NAOMI, Atomiswave and Neo Geo Pocket.
-    - The Sega consoles that go by position are Genesis, Sega CD, 32X, Master
+    - The Sega consoles that go by position are Genesis, Sega CD, 32X, Saturn, Master
       System, Game Gear and SG-1000. These consoles' buttons have no letters,
       or, on the Sega pad, `C` and `Z` would end up on the shoulders by
       letter.
@@ -496,5 +497,6 @@ the right stick, the left stick or the d-pad, and `R3` or `A` taps.
 | [Nintendo 64](emulators/nintendo-64.md#controls) | Buttons by letter, `Z` on `L2`, the C buttons on the right stick |
 | [PlayStation](emulators/playstation.md#controls), [PSP](emulators/psp.md#controls) | `×` `○` `△` `□` by position |
 | [Sega consoles](emulators/sega.md) | The Sega pad, `Mode` and **Controller Type** |
+| [Sega Saturn](emulators/saturn.md#controls) | `A` `B` `C` and `X` `Y` `Z` by position, `L2` / `R2` are `L` / `R`, no `Mode` |
 | [Game Boy & Game Boy Advance](emulators/game-boy.md) | Turbo buttons and the link cable |
 | [Other systems](emulators/other-systems.md) | NES disk and coin buttons, Neo Geo Pocket `Option` and more |
