@@ -5,7 +5,7 @@ download. Folder and tag names match NX Redux on the handheld.
 
 Systems with their own controls or settings have a page each:
 [Arcade (FBNeo)](arcade.md), [Nintendo 64](nintendo-64.md),
-[Sega Dreamcast](dreamcast.md), [PlayStation](playstation.md),
+[Sega Dreamcast](dreamcast.md), [Sega Saturn](saturn.md), [PlayStation](playstation.md),
 [PlayStation 2](playstation-2.md), [PlayStation Portable](psp.md),
 [Nintendo DS](nintendo-ds.md), [Nintendo 3DS](nintendo-3ds.md),
 [Nintendo Wii & GameCube](wii-gamecube.md),
@@ -38,6 +38,7 @@ Pocket's `Option`, are on [Other Systems](other-systems.md).
 | Genesis / Mega Drive, Master System, Game Gear, SG-1000, Sega CD | `GPGX` | Genesis Plus GX |
 | Sega 32X | `32X` | PicoDrive |
 | [Dreamcast, NAOMI, Atomiswave](dreamcast.md) | `DC` | Flycast |
+| [Sega Saturn](saturn.md) | `SATURN` | YabaSanshiro |
 | [PlayStation](playstation.md) | `PS` | PCSX-ReARMed |
 | [PlayStation](playstation.md) | `PSX` | SwanStation |
 | Neo Geo Pocket / Color | `NGP`, `NGPC` | RACE |
@@ -120,7 +121,8 @@ PlayStation 2, PSP and Nintendo 3DS. **Graphics API** picks:
 | **Vulkan** | Vulkan. On Nintendo 64 it also switches to the ParaLLEl-RDP renderer: more accurate, and heavier. |
 
 Nintendo Wii U has no **Graphics API** row: Cemu draws with Vulkan only.
-See [Nintendo Wii U](wii-u.md#graphics).
+See [Nintendo Wii U](wii-u.md#graphics). Sega Saturn has none either:
+YabaSanshiro draws with OpenGL ES only.
 
 Which is faster depends on the game and the phone. Try Vulkan on a game that
 runs slowly, and go back if it doesn't help.
@@ -234,6 +236,8 @@ folder, a zip or RetroArch.
   ([Sega Dreamcast](dreamcast.md#bios)).
 - Dreamcast discs start without a BIOS, on Flycast's built-in one, but some
   games may not work; `dc_boot.bin` is recommended.
+- Saturn discs start without a BIOS too, on YabaSanshiro's built-in one;
+  `saturn_bios.bin` is recommended. See [Sega Saturn](saturn.md#bios).
 - PlayStation on PCSX-ReARMed (`PS`) has a BIOS built in. SwanStation
   (`PSX`) needs a real one; see [PlayStation](playstation.md).
 - Wii and GameCube need no BIOS.
@@ -281,3 +285,5 @@ such as `1/2`). `LEFT` / `RIGHT` swap the disc. The choice is not saved.
 - **PICO-8** games have no save states, and don't resume where you left off.
 - **Wii U** games have no save states either: they save in-game. See
   [Nintendo Wii U](wii-u.md#saves).
+- **A zipped disc** must be one file, such as a `.chd` or `.iso`: a zip
+  holding a `.cue` and its tracks is refused.

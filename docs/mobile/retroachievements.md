@@ -164,6 +164,7 @@ A game in a type it can't read still plays, just without achievements.
 | PlayStation 2 | `iso` `chd` | `zso` |
 | PSP | `iso` `chd` `pbp` | `cso` |
 | Dreamcast | `chd` `gdi` `cue` `m3u` | `cdi`; NAOMI and Atomiswave games |
+| Sega Saturn | `chd` `cue` `iso` `m3u` | `ccd` |
 | GameCube | `iso` `gcm` `gcz` `ciso` | — |
 | Wii | `rvz` `iso` `wia` | Most `wbfs` (see below) |
 | Arcade | The FinalBurn Neo set (`zip` `7z`) | — |

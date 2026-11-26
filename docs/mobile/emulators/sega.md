@@ -3,7 +3,9 @@
 Sega Genesis, Sega CD, 32X, Master System, Game Gear and SG-1000 games run on
 the bundled **PicoDrive** core by default. All but the 32X can run on
 **Genesis Plus GX** instead; see
-[Choosing an emulator](index.md#choosing-an-emulator).
+[Choosing an emulator](index.md#choosing-an-emulator). The Sega Saturn and
+Dreamcast have their own pages: [Sega Saturn](saturn.md) and
+[Sega Dreamcast](dreamcast.md).
 
 | | Folder | BIOS | [File types](index.md) |
 | --- | --- | --- | --- |

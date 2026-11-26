@@ -264,7 +264,7 @@ The picture. The rows work as described in [Options rows](#options-rows).
 | Option | Values | Default | What it does |
 | --- | --- | --- | --- |
 | **Layout** and the other screen rows | See [Nintendo DS](emulators/nintendo-ds.md), [Nintendo 3DS](emulators/nintendo-3ds.md) and [Nintendo Wii U](emulators/wii-u.md#screen-layouts) | | How the two screens are arranged. Nintendo DS, 3DS and Wii U only. |
-| **3D Resolution** | See [Nintendo DS](emulators/nintendo-ds.md), [Nintendo 3DS](emulators/nintendo-3ds.md), [PlayStation 2](emulators/playstation-2.md) and [Nintendo Wii U](emulators/wii-u.md#3d-resolution) | | Nintendo DS, 3DS, PlayStation 2 and Wii U only. |
+| **3D Resolution** | See [Nintendo DS](emulators/nintendo-ds.md), [Nintendo 3DS](emulators/nintendo-3ds.md), [PlayStation 2](emulators/playstation-2.md), [Nintendo Wii U](emulators/wii-u.md#3d-resolution) and [Sega Saturn](emulators/saturn.md#3d-resolution) | | Nintendo DS, 3DS, PlayStation 2, Wii U and Saturn only. |
 | **Bottom screen** | System default, Main screen, Second screen | System default | Picks the touch screen for this console, while a second screen is connected. See [Dual Screens & External Displays](dual-screen.md#for-one-console). |
 | **Screen Scaling** | Auto, Native, Aspect, Fullscreen | Auto | **Auto**: fills the room the game has, at its shape (see below). **Native**: integer scaling. **Aspect**: the core's aspect ratio. **Fullscreen**: fills the screen. |
 | **Screen Sharpness** | NEAREST, LINEAR, SHARP | NEAREST | **LINEAR** smooths lines. **SHARP** keeps pixels crisp and even when the picture isn't a whole multiple of the game's size. |
