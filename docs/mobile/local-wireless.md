@@ -139,7 +139,7 @@ Some DS games play together from one copy: the host runs the game, and
 each guest downloads it from the host, with no copy of their own. Mario
 Party DS plays together only this way.
 
-![DS Download Play listing a nearby game: on the top screen Mario Party DS's icon, name, host KotakNova, 1 of 4 players, its description and the A Download and START Quit hints; on the bottom screen the game's row](../assets/screenshots/mobile/ds-download-play-client.webp){ .nx-wide }
+![DS Download Play listing a nearby game: Mario Party DS hosted by KotakNova, with the A Download and START Quit hints](../assets/screenshots/mobile/ds-download-play-client.webp){ .nx-wide }
 
 1. On the host's phone, start the game and pick its DS Download Play mode
    (in Mario Party DS, **Multiplayer**).
