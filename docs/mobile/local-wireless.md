@@ -139,7 +139,7 @@ Some DS games play together from one copy: the host runs the game, and
 each guest downloads it from the host, with no copy of their own. Mario
 Party DS plays together only this way.
 
-![DS Download Play listing a nearby game: Mario Party DS hosted by KotakNova, with the A Download hint](../assets/screenshots/mobile/ds-download-play-client.webp){ .nx-wide }
+![Download Play: two handhelds with a wireless signal between them](../assets/screenshots/mobile/download-play.webp){ .nx-wide }
 
 1. On the host's phone, start the game and pick its DS Download Play mode
    (in Mario Party DS, **Multiplayer**).
@@ -175,7 +175,7 @@ no DS games gets a **Nintendo DS** console with just that row.
 game join from one copy: the host plays the full game, and each guest
 receives a smaller version of it for the session.
 
-![3DS Download Play listing a nearby game: Mario Kart 7, 25 MB, with the A Download hint](../assets/screenshots/mobile/3ds-download-play-client.webp){ .nx-wide }
+![Download Play: two handhelds with a wireless signal between them](../assets/screenshots/mobile/download-play.webp){ .nx-wide }
 
 1. On the host's phone, start the game and go to its local multiplayer
    (in Mario Kart 7, **Local Multiplayer**).
