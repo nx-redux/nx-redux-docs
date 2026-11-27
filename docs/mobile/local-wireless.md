@@ -139,20 +139,18 @@ Some DS games play together from one copy: the host runs the game, and
 each guest downloads it from the host, with no copy of their own. Mario
 Party DS plays together only this way.
 
-![The Nintendo DS list on a Retroid Pocket Nova with DS Download Play selected: its box reads Play together from one Game Card, and the line under it reads System, 2004 · Nintendo](../assets/screenshots/mobile/ds-download-play-row.webp){ .nx-wide }
+![DS Download Play listing a nearby game: on the top screen Mario Party DS's icon, name, host KotakNova, 1 of 4 players, its description and the A Download and START Quit hints; on the bottom screen the game's row](../assets/screenshots/mobile/ds-download-play-client.webp){ .nx-wide }
 
 1. On the host's phone, start the game and pick its DS Download Play mode
    (in Mario Party DS, **Multiplayer**).
 2. On each guest's phone, open the **Nintendo DS** console and start
-   **DS Download Play**, its first row. The DS menu opens, as on a DS with
-   no game card.
-3. Pick the host's game from the list. It downloads, then starts.
+   **DS Download Play**, its first row. It lists the games hosted nearby.
+3. Tap the host's game, or pick it and press `A`. It downloads, then
+   starts.
 
-!!! note "Needs a real DS's BIOS and firmware"
-    Copy `bios7.bin`, `bios9.bin` and `firmware.bin` from your own DS into
-    `Bios/NDS/`. **DS Download Play** shows only when they are there. With
-    no DS games in your library, a **Nintendo DS** console then shows with
-    just that row.
+Nothing of the player's is needed: no game, no BIOS, no firmware.
+**DS Download Play** is always in the Nintendo DS list, and a library with
+no DS games gets a **Nintendo DS** console with just that row.
 
 !!! tip "Smoothest on the cable or a hotspot"
     The host waits for each guest's answer several times a frame, so
@@ -163,10 +161,13 @@ Party DS plays together only this way.
 ??? info "More detail"
     - The guest's game is gone when it ends, as on a DS: start
       **DS Download Play** again for the next session.
+    - When the host leaves, the guest's game closes a few seconds later.
+    - It is our own app in place of the DS menu's Download Play, so a
+      guest needs no files from a DS.
     - DS Download Play has no save states, resume point or achievements,
       and makes no Recents entry. Its in-game menu has no **Save** or
       **Load**.
-    - Quitting from the DS menu closes it, as **Quit** does.
+    - `START` in the list closes it, as **Quit** does.
 
 ## 3DS Download Play
 
