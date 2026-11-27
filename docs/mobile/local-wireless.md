@@ -139,14 +139,13 @@ Some DS games play together from one copy: the host runs the game, and
 each guest downloads it from the host, with no copy of their own. Mario
 Party DS plays together only this way.
 
-![DS Download Play listing a nearby game: Mario Party DS hosted by KotakNova, with the A Download and START Quit hints](../assets/screenshots/mobile/ds-download-play-client.webp){ .nx-wide }
+![DS Download Play listing a nearby game: Mario Party DS hosted by KotakNova, with the A Download hint](../assets/screenshots/mobile/ds-download-play-client.webp){ .nx-wide }
 
 1. On the host's phone, start the game and pick its DS Download Play mode
    (in Mario Party DS, **Multiplayer**).
 2. On each guest's phone, open the **Nintendo DS** console and start
    **DS Download Play**, its first row. It lists the games hosted nearby.
-3. Tap the host's game, or pick it and press `A`. It downloads, then
-   starts.
+3. Pick the host's game and press `A`. It downloads, then starts.
 
 Nothing of the player's is needed: no game, no BIOS, no firmware.
 **DS Download Play** is always in the Nintendo DS list, and a library with
@@ -167,7 +166,8 @@ no DS games gets a **Nintendo DS** console with just that row.
     - DS Download Play has no save states, resume point or achievements,
       and makes no Recents entry. Its in-game menu has no **Save** or
       **Load**.
-    - `START` in the list closes it, as **Quit** does.
+    - It shows the top screen alone until the game starts, then your
+      layout. Leave it with **Quit** in the in-game menu.
 
 ## 3DS Download Play
 
@@ -175,7 +175,7 @@ no DS games gets a **Nintendo DS** console with just that row.
 game join from one copy: the host plays the full game, and each guest
 receives a smaller version of it for the session.
 
-![3DS Download Play looking for games: Looking for games nearby, Ask the other player to start local multiplayer in their game, and the START Quit hint](../assets/screenshots/mobile/3ds-download-play-client.webp){ .nx-wide }
+![3DS Download Play listing a nearby game: Mario Kart 7, 25 MB, with the A Download hint](../assets/screenshots/mobile/3ds-download-play-client.webp){ .nx-wide }
 
 1. On the host's phone, start the game and go to its local multiplayer
    (in Mario Kart 7, **Local Multiplayer**).
@@ -206,7 +206,8 @@ with no 3DS games gets a **Nintendo 3DS** console with just that row.
       Game Settings apply to the downloaded game, except the graphics, 3D resolution, layout and controls, which
       come from **3DS Download Play**'s own Game Settings.
     - No save states, resume point or achievements, and no Recents entry.
-    - `START` in the list closes it, as **Quit** does.
+    - It shows the top screen alone until the game starts, then your
+      layout. Leave it with **Quit** in the in-game menu.
     - It is our own app in place of the 3DS's Download Play, so a guest
       needs no files from a 3DS. Its downloads are kept for this phone only.
 
