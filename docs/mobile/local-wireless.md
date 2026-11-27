@@ -160,7 +160,9 @@ no DS games gets a **Nintendo DS** console with just that row.
 ??? info "More detail"
     - The downloaded game is kept for next time: joining the same game
       again skips the download, unless the host's game is another version.
-      Start **DS Download Play** again for each session.
+      One copy is kept per game; Settings → Library → **Clear Download
+      Play data** deletes them. Start **DS Download Play** again for each
+      session.
     - When the host leaves, the guest's game closes a few seconds later.
     - It is our own app in place of the DS menu's Download Play, so a
       guest needs no files from a DS. Its downloads are kept for this
@@ -198,6 +200,8 @@ with no 3DS games gets a **Nintendo 3DS** console with just that row.
 ??? info "More detail"
     - The downloaded game is kept for next time: joining the same game
       again skips the download, unless the host's game is another version.
+      Settings → Library → **Clear Download Play data** deletes the kept
+      games.
     - When the host leaves, the guest's game closes a few seconds later.
     - A system message over the game, such as the USB prompt, keeps the
       session. Switching to another app ends it: the downloaded game can't

@@ -55,6 +55,7 @@ it reads, in one list.
 | **Microphone access** | On phones with a microphone. On or Off: a tap, or `A`, asks for it, or opens Android's page for the app when Android won't ask again. See [Microphone access](#microphone-access). |
 | **Saves** | Save formats, and export or import your saves. See [Saves](#saves). |
 | **Import BIOS** | Copy BIOS files in from a folder, files, a zip or RetroArch. See [Import BIOS](#import-bios). |
+| **Clear Download Play data** | Shows the space the games kept from DS and 3DS Download Play take. `A` asks, then deletes them; each downloads again the next time you join it. See [DS Download Play](local-wireless.md#ds-download-play). |
 | **Android games** | How many apps are in the Android console. Opens the picker. See [Launcher Mode & Android Games](launcher.md#android-games). |
 | **Unassigned games** | Only when some games have no console. Shows how many, and opens their list. See [Unassigned games](#unassigned-games). |
 | **Hidden games** | Only when some games are hidden. Shows how many, and opens their list: `A` on a game shows it again. |
