@@ -197,9 +197,12 @@ with no 3DS games gets a **Nintendo 3DS** console with just that row.
     - The downloaded game is kept for next time: joining the same game
       again skips the download, unless the host's game is another version.
     - When the host leaves, the guest's game closes a few seconds later.
+    - A system message over the game, such as the USB prompt, keeps the
+      session. Switching to another app ends it: the downloaded game can't
+      rejoin its host.
     - **Local Wireless** has to be on (Game Settings → Multiplayer).
-    - If you own the game too, its Game Settings apply to the downloaded
-      game, except the graphics, 3D resolution, layout and controls, which
+    - If you own the game too and have played it once on this phone, its
+      Game Settings apply to the downloaded game, except the graphics, 3D resolution, layout and controls, which
       come from **3DS Download Play**'s own Game Settings.
     - No save states, resume point or achievements, and no Recents entry.
     - `START` in the list closes it, as **Quit** does.
