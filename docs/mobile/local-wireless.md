@@ -164,10 +164,9 @@ no DS games gets a **Nintendo DS** console with just that row.
     - It is our own app in place of the DS menu's Download Play, so a
       guest needs no files from a DS.
     - DS Download Play has no save states, resume point or achievements,
-      and makes no Recents entry. Its in-game menu has no **Save** or
-      **Load**.
+      and makes no Recents entry.
     - It shows the top screen alone until the game starts, then your
-      layout. Leave it with **Quit** in the in-game menu.
+      layout. Until then its in-game menu is **Continue** and **Quit**.
 
 ## 3DS Download Play
 
@@ -207,7 +206,7 @@ with no 3DS games gets a **Nintendo 3DS** console with just that row.
       come from **3DS Download Play**'s own Game Settings.
     - No save states, resume point or achievements, and no Recents entry.
     - It shows the top screen alone until the game starts, then your
-      layout. Leave it with **Quit** in the in-game menu.
+      layout. Until then its in-game menu is **Continue** and **Quit**.
     - It is our own app in place of the 3DS's Download Play, so a guest
       needs no files from a 3DS. Its downloads are kept for this phone only.
 
