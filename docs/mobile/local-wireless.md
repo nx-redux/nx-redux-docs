@@ -12,7 +12,7 @@ game on each phone and use the game's own multiplayer menu.
 | Console | The game's mode | Players | Links over |
 | --- | --- | --- | --- |
 | [Nintendo DS](emulators/nintendo-ds.md) | DS wireless play, including [DS Download Play](#ds-download-play) | Up to 8 in a room | Wi-Fi, or a USB cable between two phones |
-| [Nintendo 3DS](emulators/nintendo-3ds.md) | Local play, including Download Play | Set by the game | Wi-Fi, or a USB cable between two phones |
+| [Nintendo 3DS](emulators/nintendo-3ds.md) | Local play, including [3DS Download Play](#3ds-download-play) | Set by the game | Wi-Fi, or a USB cable between two phones |
 | [PSP](emulators/psp.md) | Ad hoc | 2 to 4 | Wi-Fi, or a USB cable between two phones |
 
 Local wireless is between phones and other Android devices running NX
@@ -168,6 +168,47 @@ Party DS plays together only this way.
       **Load**.
     - Quitting from the DS menu closes it, as **Quit** does.
 
+## 3DS Download Play
+
+3DS games with Download Play, such as Mario Kart 7, let friends without the
+game join from one copy: the host plays the full game, and each guest
+receives a smaller version of it for the session.
+
+![3DS Download Play looking for games: Looking for games nearby, Ask the other player to start local multiplayer in their game, and the START Quit hint](../assets/screenshots/mobile/3ds-download-play-client.webp){ .nx-wide }
+
+1. On the host's phone, start the game and go to its local multiplayer
+   (in Mario Kart 7, **Local Multiplayer**).
+2. On each guest's phone, open the **Nintendo 3DS** console and start
+   **3DS Download Play**, its first row.
+3. Pick the host's game and press `A`. When the host starts the game, it
+   downloads and starts.
+
+Nothing of the player's is needed: no game, no BIOS, no system files.
+**3DS Download Play** is always in the Nintendo 3DS list, and a library
+with no 3DS games gets a **Nintendo 3DS** console with just that row.
+
+!!! tip "Smoothest on the cable or a hotspot"
+    A slow guest pulls the race out of sync. Use a [USB cable](#usb-cable)
+    or the host's hotspot (its own Wi-Fi off), and keep the guest at full
+    speed: on a phone with a Mali GPU, 3DS Download Play starts on Vulkan
+    with your custom GPU driver, or at 1x 3D resolution without one.
+
+??? info "More detail"
+    - The downloaded game is kept for next time: joining the same game
+      again skips the download, unless the host's game is another version.
+    - When the host leaves, the guest's game closes a few seconds later.
+    - A system message over the game, such as the USB prompt, keeps the
+      session. Switching to another app ends it: the downloaded game can't
+      rejoin its host.
+    - **Local Wireless** has to be on (Game Settings → Multiplayer).
+    - If you own the game too and have played it once on this phone, its
+      Game Settings apply to the downloaded game, except the graphics, 3D resolution, layout and controls, which
+      come from **3DS Download Play**'s own Game Settings.
+    - No save states, resume point or achievements, and no Recents entry.
+    - `START` in the list closes it, as **Quit** does.
+    - It is our own app in place of the 3DS's Download Play, so a guest
+      needs no files from a 3DS. Its downloads are kept for this phone only.
+
 ## In a session
 
 While the game's wireless is on, the in-game menu shows only three rows:
@@ -197,7 +238,7 @@ Their touch shortcuts and second-screen tiles hide too.
 
 Pressing Home, turning the screen off or switching to another app leaves
 the room. Back in a DS or 3DS game, with **Local Wireless** on, your phone
-looks for the room again.
+looks for the room again. **Reset** does the same.
 
 ### Disconnect
 
