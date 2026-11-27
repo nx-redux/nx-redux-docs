@@ -158,11 +158,13 @@ no DS games gets a **Nintendo DS** console with just that row.
     rather than the home Wi-Fi.
 
 ??? info "More detail"
-    - The guest's game is gone when it ends, as on a DS: start
-      **DS Download Play** again for the next session.
+    - The downloaded game is kept for next time: joining the same game
+      again skips the download, unless the host's game is another version.
+      Start **DS Download Play** again for each session.
     - When the host leaves, the guest's game closes a few seconds later.
     - It is our own app in place of the DS menu's Download Play, so a
-      guest needs no files from a DS.
+      guest needs no files from a DS. Its downloads are kept for this
+      phone only.
     - DS Download Play has no save states, resume point or achievements,
       and makes no Recents entry.
     - It shows the top screen alone until the game starts, then your
