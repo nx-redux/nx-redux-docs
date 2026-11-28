@@ -366,7 +366,8 @@ how to add some. See [Cheats](cheats.md).
 
 Each row shows a PS2 patch's name and its switch. Tap a row to turn it **On**
 or **Off**. A patch that only applies as the game starts shows a note under
-its name, and **Reset game** at the bottom restarts the game for it. See
+its name, and a **Reset game** row appears at the bottom to restart the game
+for it. See
 [Patches](in-game-menu.md#patches) for the notes. To keep them for next time,
 use [Save Changes → Save for game](in-game-menu.md#save-changes).
 

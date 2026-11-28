@@ -658,9 +658,11 @@ PCSX2's widescreen, no-interlacing, 60 FPS and fix patches for that game, from
 **Tools → Cheats & Patches**. Each patch has a switch: tap the row, or press
 `A` on it with a controller, to turn it **On** or **Off**.
 
-Most patches apply straight away. Some only apply as the game starts. Those
-show a note under the name, and the **Reset game** row at the bottom of the
-list restarts the game for them, after asking:
+![The in-game menu's Patches tab on Ace Combat 5, with Widescreen 16:9 and No-Interlacing turned On](../assets/screenshots/mobile/in-game-patches.webp){ .nx-wide }
+
+Most patches apply as soon as you go back to the game. Some only apply as the
+game starts. Those show a note under the name, and a **Reset game** row
+appears at the bottom of the list to restart the game for them, after asking:
 
 | Note | What it means |
 | --- | --- |

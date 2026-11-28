@@ -182,9 +182,9 @@ widescreen, no-interlacing, 60 FPS, and fixes such as skipping cutscenes.
 
 Turn them on in the in-game menu's **Patches** tab, which lists the running
 game's patches, each with a switch (see [Patches](../in-game-menu.md#patches)).
-Most apply straight away. A patch that only applies as the game starts says
-**Takes effect after Reset**, and the tab's **Reset game** row restarts the
-game for it. To keep them for the game, use
+Most apply as soon as you go back to the game. A patch that only applies as
+the game starts says **Takes effect after Reset**, and a **Reset game** row
+appears to restart the game for it. To keep them for the game, use
 [Save Changes → Save for game](../in-game-menu.md#save-changes).
 
 | Patch | What it does |
