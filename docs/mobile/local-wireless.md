@@ -139,20 +139,17 @@ Some DS games play together from one copy: the host runs the game, and
 each guest downloads it from the host, with no copy of their own. Mario
 Party DS plays together only this way.
 
-![The Nintendo DS list on a Retroid Pocket Nova with DS Download Play selected: its box reads Play together from one Game Card, and the line under it reads System, 2004 · Nintendo](../assets/screenshots/mobile/ds-download-play-row.webp){ .nx-wide }
+![DS Download Play's picture in the list: a soft gradient with translucent shapes](../assets/screenshots/mobile/ds-download-play.webp){ .nx-wide }
 
 1. On the host's phone, start the game and pick its DS Download Play mode
    (in Mario Party DS, **Multiplayer**).
 2. On each guest's phone, open the **Nintendo DS** console and start
-   **DS Download Play**, its first row. The DS menu opens, as on a DS with
-   no game card.
-3. Pick the host's game from the list. It downloads, then starts.
+   **DS Download Play**, its first row. It lists the games hosted nearby.
+3. Pick the host's game and press `A`. It downloads, then starts.
 
-!!! note "Needs a real DS's BIOS and firmware"
-    Copy `bios7.bin`, `bios9.bin` and `firmware.bin` from your own DS into
-    `Bios/NDS/`. **DS Download Play** shows only when they are there. With
-    no DS games in your library, a **Nintendo DS** console then shows with
-    just that row.
+Nothing of the player's is needed: no game, no BIOS, no firmware.
+**DS Download Play** is always in the Nintendo DS list, and a library with
+no DS games gets a **Nintendo DS** console with just that row.
 
 !!! tip "Smoothest on the cable or a hotspot"
     The host waits for each guest's answer several times a frame, so
@@ -161,12 +158,19 @@ Party DS plays together only this way.
     rather than the home Wi-Fi.
 
 ??? info "More detail"
-    - The guest's game is gone when it ends, as on a DS: start
-      **DS Download Play** again for the next session.
+    - The downloaded game is kept for next time: joining the same game
+      again skips the download, unless the host's game is another version.
+      One copy is kept per game; Settings → Library → **Clear Download
+      Play data** deletes them. Start **DS Download Play** again for each
+      session.
+    - When the host leaves, the guest's game closes a few seconds later.
+    - It is our own app in place of the DS menu's Download Play, so a
+      guest needs no files from a DS. Its downloads are kept for this
+      phone only.
     - DS Download Play has no save states, resume point or achievements,
-      and makes no Recents entry. Its in-game menu has no **Save** or
-      **Load**.
-    - Quitting from the DS menu closes it, as **Quit** does.
+      and makes no Recents entry.
+    - It shows the top screen alone until the game starts, then your
+      layout. Until then its in-game menu is **Continue** and **Quit**.
 
 ## 3DS Download Play
 
@@ -174,7 +178,7 @@ Party DS plays together only this way.
 game join from one copy: the host plays the full game, and each guest
 receives a smaller version of it for the session.
 
-![3DS Download Play looking for games: Looking for games nearby, Ask the other player to start local multiplayer in their game, and the START Quit hint](../assets/screenshots/mobile/3ds-download-play-client.webp){ .nx-wide }
+![3DS Download Play's picture in the list: a soft gradient with translucent shapes](../assets/screenshots/mobile/3ds-download-play.webp){ .nx-wide }
 
 1. On the host's phone, start the game and go to its local multiplayer
    (in Mario Kart 7, **Local Multiplayer**).
@@ -196,6 +200,8 @@ with no 3DS games gets a **Nintendo 3DS** console with just that row.
 ??? info "More detail"
     - The downloaded game is kept for next time: joining the same game
       again skips the download, unless the host's game is another version.
+      Settings → Library → **Clear Download Play data** deletes the kept
+      games.
     - When the host leaves, the guest's game closes a few seconds later.
     - A system message over the game, such as the USB prompt, keeps the
       session. Switching to another app ends it: the downloaded game can't
@@ -205,7 +211,8 @@ with no 3DS games gets a **Nintendo 3DS** console with just that row.
       Game Settings apply to the downloaded game, except the graphics, 3D resolution, layout and controls, which
       come from **3DS Download Play**'s own Game Settings.
     - No save states, resume point or achievements, and no Recents entry.
-    - `START` in the list closes it, as **Quit** does.
+    - It shows the top screen alone until the game starts, then your
+      layout. Until then its in-game menu is **Continue** and **Quit**.
     - It is our own app in place of the 3DS's Download Play, so a guest
       needs no files from a 3DS. Its downloads are kept for this phone only.
 

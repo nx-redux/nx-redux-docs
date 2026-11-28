@@ -8,7 +8,7 @@ lays out the two screens. Games with DS wireless play link with other phones: se
 | --- | --- |
 | Folder | `Roms/Nintendo DS (NDS)/` |
 | Saves | `Saves/NDS/`. Saves from other DS emulators carry over (see [below](#saves-from-other-ds-emulators)). |
-| BIOS | Not needed: free BIOS and firmware are built in. Real ones in `Bios/NDS/` are used when present. [DS Download Play](#ds-download-play) needs real ones. |
+| BIOS | Not needed: free BIOS and firmware are built in. Real ones in `Bios/NDS/` are used when present. |
 | [File types](index.md) | `nds` (also inside a zip or 7z) |
 
 ## Controls
@@ -381,11 +381,9 @@ room. See [Local Wireless](../local-wireless.md).
 
 ### DS Download Play
 
-**DS Download Play**, the first row of the Nintendo DS console, opens the
-DS menu with no game, so you can join a game that a friend hosts over DS
-Download Play, such as Mario Party DS, without a copy of your own. It needs
-`bios7.bin`, `bios9.bin` and `firmware.bin` from a real DS in `Bios/NDS/`,
-and shows only when they are there. See
+**DS Download Play**, the first row of the Nintendo DS console, joins a
+game that a friend hosts over DS Download Play, such as Mario Party DS,
+without a copy of your own. It needs no BIOS or firmware. See
 [Local Wireless → DS Download Play](../local-wireless.md#ds-download-play).
 
 ??? info "More detail"
