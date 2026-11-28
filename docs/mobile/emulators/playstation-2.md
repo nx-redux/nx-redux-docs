@@ -177,21 +177,30 @@ game.
 
 **Cheats & Patches** ([Cheats & Patches](../cheats.md)) downloads PCSX2's
 `patches.zip` for PS2 alongside libretro's cheats for the other consoles. It
-holds widescreen and no-interlacing patches for many games, matched to each
-game by the game itself. Turn them on under **Emulator** in
-[Game Settings](../emulator-settings.md#game-settings) for one game, or in
-[Emulator Settings](../emulator-settings.md) for every PS2 game. They need the
-game restarted, so the in-game menu doesn't list them:
+holds patches for many games, matched to each game by the game itself:
+widescreen, no-interlacing, 60 FPS, and fixes such as skipping cutscenes.
 
-| Option | What it does |
+Turn them on in the in-game menu's **Patches** tab, which lists the running
+game's patches, each with a switch (see [Patches](../in-game-menu.md#patches)).
+Most apply straight away. A patch that only applies as the game starts says
+**Takes effect after Reset**, and the tab's **Reset game** row restarts the
+game for it. To keep them for the game, use
+[Save Changes → Save for game](../in-game-menu.md#save-changes).
+
+| Patch | What it does |
 | --- | --- |
-| **Widescreen Patches** | Draws supported games in 16:9. Set **Aspect Ratio** to 16:9 alongside it. |
-| **No-Interlacing Patches** | Draws supported games progressive, sharper than any deinterlacer. |
-| **Enable Cheats** | Loads your own `.pnach` cheat files from `Cheats/PS2/`. Every cheat in the game's files is turned on. |
+| **Widescreen 16:9** | Draws the game in 16:9. Leave **Aspect Ratio** on Auto: the patch switches the picture itself. |
+| **No-Interlacing** | Draws the game progressive, sharper than any deinterlacer. |
+| **60 FPS** | Runs a 30 fps game at 60. Some need a faster phone to hold it. |
 
-Leave **Aspect Ratio** on Auto: the widescreen patch switches the picture to
-16:9 itself. The picture gets wider without stretching: you see more of the
-scene at the sides.
+The widescreen picture gets wider without stretching: you see more of the
+scene at the sides. Each game's patches have their own names, and many games
+have only some of these.
+
+Your own `.pnach` cheats are separate: turn on **Enable Cheats** under
+**Emulator** in [Game Settings](../emulator-settings.md#game-settings). It
+loads the cheat files from `Cheats/PS2/`, and every cheat in the game's files
+is turned on.
 
 ??? info "More detail"
     - libretro's cheat collection has no PS2 cheats, so the in-game menu's
@@ -199,6 +208,9 @@ scene at the sides.
       files, each named after the game's CRC: put them in `Cheats/PS2/`.
     - The patches come from the PCSX2 project and are downloaded to your
       phone when you ask; the app doesn't include them.
+    - **Widescreen Patches** and **No-Interlacing Patches** were emulator
+      options before the **Patches** tab. If you had them on, they start on
+      in the tab for games without saved patches.
 
 ## Achievements
 

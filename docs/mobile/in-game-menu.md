@@ -98,6 +98,7 @@ apply.
 | **Menu** | Always | The rows of [the first page](#the-first-page). |
 | **Achievements** | The game has a RetroAchievements set | The game's [achievements](#achievements). |
 | **Cheats** | The emulator takes cheats | The game's [cheats](#cheats), each with a switch. |
+| **Patches** | A PlayStation 2 game | The game's [PCSX2 patches](#patches), each with a switch. |
 | **Players** | The game has more than one player | Which controller is which player. See [Players](multiplayer.md#the-players-page). |
 
 ![The in-game menu's tab row under the game's header: Menu, Achievements and Cheats, with the Menu tab's rows below and Continue selected](../assets/screenshots/mobile/in-game-menu-panel.webp){ .nx-wide }
@@ -108,14 +109,14 @@ With a controller:
 - `UP` from **Continue** moves onto the tab row. There `LEFT` / `RIGHT`
   step the tabs, and `DOWN` goes into the tab.
 - In a tab, `UP` / `DOWN` move between its rows, and `A` presses the
-  highlighted one: it turns a cheat on or off, or changes a player's
-  controller.
+  highlighted one: it turns a cheat or a patch on or off, or changes a
+  player's controller.
 - `A` on the **Achievements** or **Players** tab name opens its full page:
   [Achievements](#achievements) or
   [Players](multiplayer.md#the-players-page).
 - `B` on another tab goes back to **Menu**.
 
-By touch, tap a tab, a cheat or a player row.
+By touch, tap a tab, a cheat, a patch or a player row.
 
 ??? info "More detail"
 
@@ -650,6 +651,38 @@ To keep the cheats you turned on, use **Save Changes → Save for game**. See
       [Cheats → Where the files go](cheats.md#where-the-files-go) for the
       list.
 
+## Patches
+
+A PlayStation 2 game's patches are on the **Patches** [tab](#the-game-panel):
+PCSX2's widescreen, no-interlacing, 60 FPS and fix patches for that game, from
+**Tools → Cheats & Patches**. Each patch has a switch: tap the row, or press
+`A` on it with a controller, to turn it **On** or **Off**.
+
+Most patches apply straight away. Some only apply as the game starts. Those
+show a note under the name, and the **Reset game** row at the bottom of the
+list restarts the game for them, after asking:
+
+| Note | What it means |
+| --- | --- |
+| **Takes effect after Reset** | You turned on a patch that only applies as the game starts. |
+| **Fully off after Reset** | You turned off a patch that already ran: parts of it stay in the game until it restarts. |
+
+To keep the patches you turned on, use
+**Save Changes → Save for game**. See
+[PlayStation 2](emulators/playstation-2.md#cheats-patches).
+
+??? info "More detail"
+
+    - With no patches for the game, the tab says **No patches for this game.**
+      and to download them with **Tools → Cheats & Patches**.
+    - Until the game's own code has started, the tab says **Loading the
+      game's patches…**. On a fresh start, that's a few seconds after the PS2
+      logo.
+    - Widescreen and no-interlacing used to be the **Widescreen Patches** and
+      **No-Interlacing Patches** emulator options. If you had them on, they
+      start on here for games without saved patches.
+    - The tab is hidden [in a multiplayer session](#in-a-multiplayer-session).
+
 ## Achievements
 
 The game's [RetroAchievements](retroachievements.md) are on the
@@ -681,7 +714,7 @@ Shaders and Emulator.
 | Choice | What it does |
 | --- | --- |
 | **Save for console** | Save for every game on this console. |
-| **Save for game** | Save for this game only, including the cheats you turned on. |
+| **Save for game** | Save for this game only, including the cheats and PS2 patches you turned on. |
 | **Restore defaults** | Delete the saved settings the game uses now and go back one level: from game to console, or from console to the defaults. |
 
 A game with its own settings uses only those; the console's settings apply
@@ -689,8 +722,8 @@ to the other games.
 
 !!! warning "Save for console removes this game's own settings"
     If this game had its own settings, **Save for console** removes them, so
-    it follows the console again. That also removes the cheats kept with
-    **Save for game** and any DS layout hotkey changes.
+    it follows the console again. That also removes the cheats and patches
+    kept with **Save for game** and any DS layout hotkey changes.
 
 ## Notifications
 

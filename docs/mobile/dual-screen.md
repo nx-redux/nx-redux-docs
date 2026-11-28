@@ -269,7 +269,7 @@ Across the top, the game's header shows:
   **Achievements 3 / 40**;
 - the time and the battery level, since the game hides Android's status bar.
 
-Below it are up to five tabs. A tab shows only when it applies.
+Below it are up to six tabs. A tab shows only when it applies.
 
 | Tab | Shows when | What it holds |
 | --- | --- | --- |
@@ -277,6 +277,7 @@ Below it are up to five tabs. A tab shows only when it applies.
 | **Settings** | Always | Volume and a few picture settings. See [below](#panel-settings). |
 | **Achievements** | The game has a RetroAchievements set | The game's achievements, in your **Achievement sort order**. |
 | **Cheats** | The game's emulator takes cheats | The game's cheats, each with a switch. See [below](#cheats). |
+| **Patches** | A PlayStation 2 game | The game's PCSX2 patches, each with a switch. See [below](#patches). |
 | **Players** | The game has more than one player | Which controller is which player. See [Local Multiplayer](multiplayer.md#the-players-page). |
 
 ??? info "More detail"
@@ -360,6 +361,14 @@ how to add some. See [Cheats](cheats.md).
     - When a game's cheats come from several files, each row names its
       source under the cheat, such as **GameShark**.
     - In a [netplay](netplay.md) match, the tab is hidden.
+
+### Patches
+
+Each row shows a PS2 patch's name and its switch. Tap a row to turn it **On**
+or **Off**. A patch that only applies as the game starts shows a note under
+its name, and **Reset game** at the bottom restarts the game for it. See
+[Patches](in-game-menu.md#patches) for the notes. To keep them for next time,
+use [Save Changes → Save for game](in-game-menu.md#save-changes).
 
 ### Players
 
