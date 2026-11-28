@@ -144,7 +144,7 @@ the console in [Emulator Settings](../emulator-settings.md) under the same
 group names. Keep a change for the game or the console with
 [Save Changes](../in-game-menu.md#save-changes).
 
-![The Controls page of New Super Mario Bros. Wii's in-game Options: Wii Controller, Motion Controls, Controller Layout and Pad Opacity (landscape)](../../assets/screenshots/mobile/wii-console-settings.webp){ .nx-wide }
+![The Controls page of New Super Mario Bros. Wii's in-game Options: Wii Controller, Motion Controls, Pad Opacity (landscape) and Button Mapping](../../assets/screenshots/mobile/wii-console-settings.webp){ .nx-wide }
 
 | Row | Group | Values | Default | See |
 | --- | --- | --- | --- | --- |

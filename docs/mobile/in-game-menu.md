@@ -312,7 +312,7 @@ screens have their own
 
 The controller, the console's own controls and the on-screen buttons.
 
-![The Controls page of a Game Boy game, Alleyway, with a controller connected: Controller Layout and Pad Opacity (landscape), and no Adjust buttons](../assets/screenshots/mobile/in-game-console-settings.webp){ .nx-wide }
+![The Controls page of a Game Boy game, Alleyway, with a controller connected: Pad Opacity (landscape) and Button Mapping, and no Adjust buttons](../assets/screenshots/mobile/in-game-console-settings.webp){ .nx-wide }
 
 | Row | Consoles | Values | Default |
 | --- | --- | --- | --- |

@@ -277,6 +277,8 @@ The page has a row for each console button, by the console's own name, such
 as `×` `○` `□` `△` on PlayStation or **C-Left** on Nintendo 64, with the
 controller key that does it.
 
+![Settings, Emulation, Sony PlayStation (PS) › Button Mapping at its defaults: × on A, ○ on B, □ on X, △ on Y, then L1, R1 and L2 on their own keys](../assets/screenshots/mobile/button-mapping-ps.webp){ .nx-wide }
+
 - Select a row, then press the key to bind to it. These keys can be bound:
   `A`, `B`, `X`, `Y`, `L1`, `R1`, `L2`, `R2`, `L3` and `R3`.
 - Binding swaps: the key that had the job takes the row's old key, so every
@@ -298,6 +300,8 @@ be bound, and no other row can take them:
 | Nintendo 3DS | `L3` Swap screens, `R3` Touch |
 | Nintendo Wii | `L3` Recenter, `R3` `HOME` |
 | Dreamcast, GameCube | `L` and `R`, the analog triggers |
+
+![Mario Party DS's in-game Button Mapping: R on R1 selected, then the dimmed Swap screens (L2), Stylus (R2), Swap screens 2 (L3) and Touch (R3) rows, and the first built-in combo, Menu on SELECT + START](../assets/screenshots/mobile/button-mapping.webp){ .nx-wide }
 
 **Built-in combos** are listed dimmed after the buttons:
 

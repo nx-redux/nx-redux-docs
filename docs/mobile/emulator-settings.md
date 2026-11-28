@@ -121,7 +121,7 @@ Advance: a Cable Link session always runs mGBA.
 Open a game's context menu with `MENU` in a game list, or a long press on
 the game, and choose **Game Settings**. The same page opens over the list, for that one game.
 
-![Game Settings for Tetris, over the Game Boy list: the Controls label in the accent with Controller Layout, then Gameplay with Max FF Speed selected and Fast Forward Audio](../assets/screenshots/mobile/game-settings.webp)
+![Game Settings for Tetris, over the Game Boy list: the Controls group with Button Mapping selected, then Gameplay with Max FF Speed and Fast Forward Audio](../assets/screenshots/mobile/game-settings.webp)
 
 - The first change gives the game its own settings, starting from the
   console's.
