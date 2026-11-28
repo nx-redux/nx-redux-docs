@@ -153,17 +153,14 @@ or Cable Link session, and while a game's local wireless is on. See
 ## PlayStation 2
 
 The PS2 core reads cheats and patches itself, so PS2 games have no list on the
-**Cheats** tab. Turn them on under **Emulator** in
-[Game Settings](emulator-settings.md#game-settings) or
-[Emulator Settings](emulator-settings.md); they need the game restarted, so
-the in-game menu doesn't list them.
+**Cheats** tab. PCSX2's patches have a tab of their own instead.
 
-| What | Where | Emulator option |
+| What | Where | Turned on with |
 | --- | --- | --- |
-| PCSX2's widescreen and no-interlacing patches | `Cheats/PS2/Patches/`, from the download | **Widescreen Patches**, **No-Interlacing Patches** |
-| Your own `.pnach` cheats | `Cheats/PS2/`, named after the game's serial and CRC, such as `SLUS-21678_428113C2.pnach` | **Cheats** |
+| PCSX2's patches: widescreen, no-interlacing, 60 FPS and fixes | `Cheats/PS2/Patches/`, from the download | The in-game menu's **Patches** tab ([Patches](in-game-menu.md#patches)) |
+| Your own `.pnach` cheats | `Cheats/PS2/`, named after the game's serial and CRC, such as `SLUS-21678_428113C2.pnach` | **Enable Cheats** under **Emulator** in [Game Settings](emulator-settings.md#game-settings) |
 
-With **Cheats** on, every cheat in the game's file is on: delete the lines for
+With **Enable Cheats** on, every cheat in the game's file is on: delete the lines for
 the ones you don't want. See
 [PlayStation 2](emulators/playstation-2.md#cheats-patches).
 
