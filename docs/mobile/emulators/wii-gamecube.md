@@ -144,13 +144,13 @@ the console in [Emulator Settings](../emulator-settings.md) under the same
 group names. Keep a change for the game or the console with
 [Save Changes](../in-game-menu.md#save-changes).
 
-![The Controls page of New Super Mario Bros. Wii's in-game Options: Wii Controller, Motion Controls, Controller Layout and Pad Opacity (landscape)](../../assets/screenshots/mobile/wii-console-settings.webp){ .nx-wide }
+![The Controls page of New Super Mario Bros. Wii's in-game Options: Wii Controller, Motion Controls, Pad Opacity (landscape) and Button Mapping](../../assets/screenshots/mobile/wii-console-settings.webp){ .nx-wide }
 
 | Row | Group | Values | Default | See |
 | --- | --- | --- | --- | --- |
 | **Wii Controller** (Wii) | Controls | Auto, Sideways Wiimote, Wiimote, Wiimote + Nunchuk, Classic Controller | Auto | [Wii](#wii) |
 | **Motion Controls** (Wii) | Controls | Auto, On, Off | Auto | [Motion controls](#motion-controls) |
-| **Controller Layout** | Controls | Auto-detect, Xbox (A at the bottom), Nintendo (A on the right) | Auto-detect | [Controls](../controls.md#controller-buttons) |
+| **Button Mapping** | Controls | Opens a page: which controller key does each button | Each button on its own key | [Button Mapping](../controls.md#button-mapping) |
 | **Frame Skip** | Gameplay | Auto, Off | Off | [Frame Skip](#frame-skip) |
 | **Fill Audio Gaps** | Audio | Auto, On, Off | Auto | [Frame Skip](#frame-skip) |
 

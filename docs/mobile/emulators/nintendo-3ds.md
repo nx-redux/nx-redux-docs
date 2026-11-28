@@ -64,11 +64,12 @@ A controller adds:
 | Left stick | The Circle Pad |
 | Right stick | The C-stick |
 
-A controller's face buttons work as printed: its `A` is the 3DS's `A`. To
-use the 3DS's positions on an Xbox pad (`A` on the right), set
-**Controller Layout** to **Nintendo** in **Options →
-[Controls](../in-game-menu.md#controls)**; see
-[Controls](../controls.md#controller-buttons).
+A controller's face buttons go by letter: the key that sends `A` is the
+3DS's `A`. To use the 3DS's positions on an Xbox pad (`A` at the bottom),
+swap `A` and `B`, and `X` and `Y`, in **Options →
+[Controls](../in-game-menu.md#controls) → Button Mapping**; see
+[Button Mapping](../controls.md#button-mapping). `L3` (swap screens) and
+`R3` (touch) can't be bound there.
 
 !!! tip "The layout tip"
     When a game starts, a notice reads **SELECT + Left / Right changes the
@@ -158,7 +159,7 @@ Three more rows are in other groups:
 | Row | Group | Values | Default | See |
 | --- | --- | --- | --- | --- |
 | **New 3DS Controls** | Controls | Auto, On, Off | Auto | [New 3DS controls](#new-3ds-controls) |
-| **Controller Layout** | Controls | Auto-detect, Xbox (A at the bottom), Nintendo (A on the right) | Auto-detect | [Controls](../controls.md#controller-buttons) |
+| **Button Mapping** | Controls | Opens a page: which controller key does each button | Each button on its own key | [Button Mapping](../controls.md#button-mapping) |
 | **Local Wireless** | Multiplayer | On, Off | On | [Local wireless](#local-wireless) |
 
 Every Display and Controls row takes effect straight away; none needs the

@@ -29,8 +29,9 @@ While a game is linked to another device, the menu is shorter. See
 
     - Some consoles have shortcuts of their own; see their pages under
       [Emulators](emulators/index.md).
-    - On a controller, `A` and `B` are the letters printed on it, as
-      [Controller Layout](#controls) names them, on every console.
+    - On a controller, `A` confirms and `B` goes back, by the letter each
+      key sends, on every console. See
+      [Controller buttons](controls.md#controller-buttons).
     - The menu uses your **Accent** and **Secondary accent** from
       [Appearance](appearance.md): the highlighted word is in the accent,
       and the value bar on the secondary accent. Its rows, the save slot's
@@ -311,12 +312,12 @@ screens have their own
 
 The controller, the console's own controls and the on-screen buttons.
 
-![The Controls page of a Game Boy game, Alleyway, with a controller connected: Controller Layout and Pad Opacity (landscape), and no Adjust buttons](../assets/screenshots/mobile/in-game-console-settings.webp){ .nx-wide }
+![The Controls page of a Game Boy game, Alleyway, with a controller connected: Pad Opacity (landscape) and Button Mapping, and no Adjust buttons](../assets/screenshots/mobile/in-game-console-settings.webp){ .nx-wide }
 
 | Row | Consoles | Values | Default |
 | --- | --- | --- | --- |
 | **Controller Type** | Sega Genesis, Sega CD, 32X | Auto, 3 buttons, 6 buttons | Auto |
-| **Controller Layout** | Every console | Auto-detect, Xbox (A at the bottom), Nintendo (A on the right) | Auto-detect |
+| **Button Mapping** | Every console | Opens a page: which controller key does each console button | Each button on its own key |
 | **New 3DS Controls** | Nintendo 3DS | Auto, On, Off | Auto |
 | **Wii Controller**, **Motion Controls** | Nintendo Wii | See [Nintendo Wii & GameCube](emulators/wii-gamecube.md#wii) | Auto |
 | **Motion Controls** | Nintendo Wii U | On, Off. See [Motion](emulators/wii-u.md#motion) | On |
@@ -324,8 +325,10 @@ The controller, the console's own controls and the on-screen buttons.
 | **Adjust buttons** | Every console, while the on-screen buttons are drawn and no controller is connected | | |
 
 - **Controller Type** is the Sega pad the game sees.
-- **Controller Layout** names the letters printed on your controller. See
-  [Controls](controls.md#controller-buttons).
+- **Button Mapping** binds each console button to a controller key, for
+  every controller. Changes apply at once; keep them for the console or the
+  game with [Save Changes](#save-changes). See
+  [Button Mapping](controls.md#button-mapping).
 - **Pad Opacity (landscape)** is how opaque the see-through on-screen
   buttons are over the game.
 - **Adjust buttons** opens the button layout editor over the paused game,
@@ -337,9 +340,6 @@ The controller, the console's own controls and the on-screen buttons.
 
     - **Controller Type** **Auto** uses 6 buttons only for games made for
       them.
-    - With **Controller Layout** set to your controller, its `A` is the
-      console's `A`; the other layout gives the console's original button
-      positions.
     - **Adjust buttons** shows only with no controller connected, since a
       controller hides the on-screen buttons. It edits the pad skin's
       layout, or the see-through buttons' own layout with **Pad skin** off.

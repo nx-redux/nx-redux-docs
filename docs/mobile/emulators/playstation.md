@@ -28,14 +28,19 @@ saves and BIOS.
 ![](../../assets/landing/mobile/zfold8.webp){ .nx-phone__frame }
 </figure>
 
-The face buttons map to the PlayStation buttons **by position**:
+The face buttons map to the PlayStation buttons by the letter each key sends,
+which puts them in the PlayStation's positions on an Xbox-style pad:
 
-| Position | PlayStation button |
-| --- | --- |
-| Bottom | Cross (×) |
-| Right | Circle (○) |
-| Top | Triangle (△) |
-| Left | Square (□) |
+| Key | Xbox-style position | PlayStation button |
+| --- | --- | --- |
+| `A` | Bottom | Cross (×) |
+| `B` | Right | Circle (○) |
+| `Y` | Top | Triangle (△) |
+| `X` | Left | Square (□) |
+
+On a pad with Nintendo letters (`A` on the right), `×` is the right
+button. To put it at the bottom, swap `×` and `○`, and `□` and `△`, in
+**Options → Controls → [Button Mapping](../controls.md#button-mapping)**.
 
 | Control | PlayStation control |
 | --- | --- |

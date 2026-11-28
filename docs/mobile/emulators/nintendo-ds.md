@@ -103,7 +103,7 @@ Two more rows are in other groups:
 
 | Row | Group | Values | Default | See |
 | --- | --- | --- | --- | --- |
-| **Controller Layout** | Controls | Auto-detect, Xbox (A at the bottom), Nintendo (A on the right) | Auto-detect | [Controls](../controls.md#controller-buttons) |
+| **Button Mapping** | Controls | Opens a page: which controller key does each button | Each button on its own key | [Button Mapping](../controls.md#button-mapping) |
 | **Local Wireless** | Multiplayer | On, Off | On | [Local wireless](#local-wireless) |
 
 Every Display row takes effect straight away; none needs the game

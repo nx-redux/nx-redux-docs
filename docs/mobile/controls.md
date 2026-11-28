@@ -230,51 +230,98 @@ games:
 
 ## Controller buttons
 
-A controller's face buttons work **as printed**: the button with `A` on it
-is the console's `A`, whatever controller you use. So `A` is the Super
-Nintendo's `A`, the Nintendo 64's `A` and the Dreamcast's `A`.
+A controller's face buttons go **by the letter** each key sends: the key
+that sends `A` does the job this table gives `A`, or the one you set in
+[Button Mapping](#button-mapping). The app doesn't guess the controller's
+make, so the same rule holds on every controller.
 
-The app detects your controller's layout: a **Nintendo-layout** pad has `A`
-on the right and `B` at the bottom, and any other pad is read as **Xbox
-layout**, with `A` at the bottom and `B` on the right.
+| Consoles | `A` | `B` | `X` | `Y` |
+| --- | --- | --- | --- | --- |
+| Super Nintendo, NES, Game Boys, Game Boy Advance, Nintendo DS, 3DS, Virtual Boy, Atari Lynx, Pokémon mini, WonderSwan, Nintendo 64, Wii, Wii U, GameCube, Dreamcast, NAOMI, Atomiswave, Neo Geo Pocket | `A` | `B` | `X` | `Y` |
+| PlayStation, PS2, PSP | `×` | `○` | `□` | `△` |
+| Sega consoles, arcade and the rest | The bottom button | The right button | The left button | The top button |
 
-**Controller Layout**, in the in-game menu's
-**Options → [Controls](in-game-menu.md#options)**, names
-the letters printed on your controller. Every console has it. Save it for
-the console or the game with Save Changes.
+The last two rows assume an Xbox-style pad, with `A` at the bottom. There,
+`×` is the bottom button as on the PlayStation's own pad, and the Sega and
+arcade buttons sit where each console's page shows them. The Nintendo 64's
+`X` and `Y` are C buttons; see its [page](emulators/nintendo-64.md).
 
-| Value | Use it for |
+!!! tip "A pad with Nintendo letters"
+    On a pad lettered like Nintendo's, with `A` on the right (a Switch Pro
+    controller, or a handheld in Nintendo mode), the letter consoles match
+    the letters printed on it. On PlayStation, `×` is then the right
+    button. To put it at the bottom, swap `×` and `○`, and `□` and `△`, in
+    Button Mapping.
+
+??? info "More detail"
+    - A **Controller Layout** of **Nintendo** saved before on a letter
+      console, the Dreamcast or the Neo Geo Pocket carries over as Button
+      Mapping with `A` and `B`, and `X` and `Y`, swapped.
+    - The consoles' rows list the face buttons they use: the Master System,
+      Game Gear and SG-1000 use the bottom and right buttons as `1` and `2`,
+      for example. See each console's page under
+      [Emulators](emulators/index.md).
+
+### Button Mapping
+
+**Button Mapping** chooses which controller key does each console button.
+It opens from three places:
+
+| Where | What it sets |
 | --- | --- |
-| **Auto-detect** (default) | Let the app read your controller |
-| **Xbox (A at the bottom)** | A pad with `A` at the bottom |
-| **Nintendo (A on the right)** | A pad with `A` on the right |
+| **Tools → Settings → Emulation → Default settings**, the emulator, then **Controls → Button Mapping** | The console's mapping. See [Emulator Settings](emulator-settings.md#an-emulators-settings). |
+| A game's context menu → **Game Settings**, then **Controls → Button Mapping** | That game's mapping. See [Game Settings](emulator-settings.md#game-settings). |
+| The in-game menu's **Options → [Controls](in-game-menu.md#controls) → Button Mapping** | The game you are playing. Changes apply at once; keep them with [Save Changes](in-game-menu.md#save-changes), **Save for console** or **Save for game**. |
 
-PlayStation, PSP, the Sega consoles, TurboGrafx-16, PICO-8, Atari,
-ColecoVision, Doom and arcade go **by position** instead, like the console's
-own pad: the bottom button is the PlayStation's `×` on every controller.
+The page has a row for each console button, by the console's own name, such
+as `×` `○` `□` `△` on PlayStation or **C-Left** on Nintendo 64, with the
+controller key that does it.
 
-??? info "More detail: by letter and by position"
-    - Nintendo's own controllers and pads in Switch mode are recognised as
-      Nintendo layout.
-    - Pick the layout that isn't your controller's to play with the console's
-      original button positions. On an Xbox pad set to **Nintendo**, the
-      right button is `A` on Super Nintendo, Nintendo DS and Nintendo 3DS, as
-      on the console's own pad.
-    - These consoles go by the printed letter: Super Nintendo, NES and
-      Famicom Disk System, Game Boy, Game Boy Color, Game Boy Advance,
-      Nintendo DS, Nintendo 3DS, Virtual Boy, Atari Lynx, Pokémon mini,
-      WonderSwan, Nintendo 64, Nintendo Wii, Nintendo GameCube, Nintendo
-      Wii U, Sega
-      Dreamcast, NAOMI, Atomiswave and Neo Geo Pocket.
-    - The Sega consoles that go by position are Genesis, Sega CD, 32X, Saturn, Master
-      System, Game Gear and SG-1000. These consoles' buttons have no letters,
-      or, on the Sega pad, `C` and `Z` would end up on the shoulders by
-      letter.
-    - On the by-position consoles, Controller Layout only changes which
-      button confirms in the in-game menu, so it can't fix a Nintendo-layout
-      pad that the app reads as Xbox layout.
+![Settings, Emulation, Sony PlayStation (PS) › Button Mapping at its defaults: × on A, ○ on B, □ on X, △ on Y, then L1, R1 and L2 on their own keys](../assets/screenshots/mobile/button-mapping-ps.webp){ .nx-wide }
 
-The other buttons:
+- Select a row, then press the key to bind to it. These keys can be bound:
+  `A`, `B`, `X`, `Y`, `L1`, `R1`, `L2`, `R2`, `L3` and `R3`.
+- Binding swaps: the key that had the job takes the row's old key, so every
+  button keeps a key.
+- While a row waits for a key, `B` binds like any other key. Use Back (the
+  system back) or tap the screen to cancel. A key that can't be bound
+  leaves the row waiting, and its line names the keys that can.
+- **Reset to default**, the last row, puts every button back on its own
+  key.
+
+`START`, `SELECT`, `MENU` and the d-pad can't be bound.
+
+**Keys the console keeps** are listed dimmed, with what they do. They can't
+be bound, and no other row can take them:
+
+| Console | Kept keys |
+| --- | --- |
+| Nintendo DS | `L2` Swap screens, `R2` Stylus, `L3` Swap screens, `R3` Touch |
+| Nintendo 3DS | `L3` Swap screens, `R3` Touch |
+| Nintendo Wii | `L3` Recenter, `R3` `HOME` |
+| Dreamcast, GameCube | `L` and `R`, the analog triggers |
+
+![Mario Party DS's in-game Button Mapping: R on R1 selected, then the dimmed Swap screens (L2), Stylus (R2), Swap screens 2 (L3) and Touch (R3) rows, and the first built-in combo, Menu on SELECT + START](../assets/screenshots/mobile/button-mapping.webp){ .nx-wide }
+
+**Built-in combos** are listed dimmed after the buttons:
+
+| Console | Combos |
+| --- | --- |
+| Nintendo DS | `SELECT` + `L1` swaps screens, `SELECT` + `R1` stylus, `SELECT` + `LEFT` / `RIGHT` previous or next layout, `SELECT` + `UP` / `DOWN` inset corner |
+| Nintendo 3DS | `SELECT` + `LEFT` / `RIGHT` layout, `SELECT` + `L1` swaps screens, `SELECT` + `R1` stylus |
+| Nintendo Wii U | `SELECT` + `LEFT` / `RIGHT` layout, `SELECT` + `L1` swaps screens |
+| Every console | `SELECT` + `START` opens the in-game menu |
+
+??? info "More detail"
+    - A game follows the console's mapping until you change something in
+      its own Button Mapping. Bind it back to match the console's and it
+      follows the console again.
+    - A combo with `L1` or `R1` shows the key that now does `L1`'s or
+      `R1`'s job.
+    - The mapping is for every controller, every player's included. It
+      doesn't change the on-screen pad, the pad skins or the app's menus.
+
+### Other buttons
 
 | Controller | NX Redux |
 | --- | --- |
@@ -410,8 +457,8 @@ saves). To feel a game's rumble:
 **Which button confirms:**
 
 - On a controller, `A` confirms and `B` goes back, by the letters printed on
-  it. In the in-game menu too, with the letters
-  [Controller Layout](#controller-buttons) names.
+  it. In the in-game menu too, by the letter the key sends (see
+  [Controller buttons](#controller-buttons)).
 - On the on-screen pad, the button drawn as `A` confirms and the one drawn as
   `B` goes back. On PlayStation and PSP, `×` confirms and `○` goes back.
 

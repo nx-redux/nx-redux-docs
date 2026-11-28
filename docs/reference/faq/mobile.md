@@ -120,10 +120,16 @@ yet either. See [Local Multiplayer](../../mobile/multiplayer.md#limits).
 
 ## Can I remap controller buttons?
 
-Not freely. Each console has a fixed mapping, and face buttons work **as
-printed**: your controller's `A` is the console's `A`. To swap the layout,
-use **Controller Layout** in the in-game menu's
-[Options](../../mobile/in-game-menu.md#options) **→ Controls**.
+Yes. **Button Mapping** binds each console button to a controller key, for
+a whole console or one game. Open it from the in-game menu's
+[Options](../../mobile/in-game-menu.md#options) **→ Controls**, from
+**Game Settings** in a game's context menu, or for the console from
+**Tools → Settings → Emulation → Default settings**. See
+[Button Mapping](../../mobile/controls.md#button-mapping).
+
+Out of the box, face buttons go by the letter each key sends: your
+controller's `A` is the console's `A` on Nintendo consoles and the
+Dreamcast, and `×` on PlayStation.
 
 On a controller without a mode button, press `SELECT` + `START` to open the
 in-game menu, or on the main menu the highlighted item's menu. If your controller's `SELECT`, `START` or `MENU` does the
@@ -132,13 +138,11 @@ wrong thing, bind it in
 [Controls](../../mobile/controls.md).
 
 ??? info "More detail"
-    - PlayStation, PSP, Sega, arcade and a few others go by position instead
-      of by letter.
-    - **Controller Layout** names your controller's letters: **Auto-detect**,
-      **Xbox (A at the bottom)** or **Nintendo (A on the right)**. Pick the
-      one that isn't your controller's for the console's original button
-      positions, such as the right button as `A` on Super Nintendo with an
-      Xbox pad.
+    - `A`, `B`, `X`, `Y`, `L1`, `R1`, `L2`, `R2`, `L3` and `R3` can be
+      bound. `START`, `SELECT`, `MENU` and the d-pad can't, nor the keys a
+      console keeps, such as the DS's `L3` and `R3`.
+    - On a pad with Nintendo letters (`A` on the right), `×` is the right
+      button on PlayStation until you swap it in Button Mapping.
 
 ## Can I move or resize the on-screen buttons?
 

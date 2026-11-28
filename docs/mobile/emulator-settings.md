@@ -34,7 +34,7 @@ The page is titled with the emulator, the console and the tag, such as
 | Group | What it holds |
 | --- | --- |
 | **Display** | The picture: the Nintendo DS and 3DS screen rows, **3D Resolution**, **Graphics API**, **GPU driver**, **Wii Screen** and **Bottom screen**. See [Display](in-game-menu.md#display). |
-| **Controls** | **Controller Layout**, **Controller Type**, and the Nintendo 3DS and Wii controls. See [Controls](in-game-menu.md#controls). |
+| **Controls** | **Button Mapping**, **Controller Type**, and the Nintendo 3DS and Wii controls. See [Controls](in-game-menu.md#controls). |
 | **Gameplay** | Fast forward, rewind, **Frame Skip** and **PS2 BIOS**. See [Gameplay](in-game-menu.md#gameplay). |
 | **Multiplayer** | **Local Wireless**, on Nintendo DS, 3DS and PSP. See [Local Wireless](local-wireless.md). |
 | **Audio** | **Audio Resampling Quality**, **Audio Buffer** and **Fill Audio Gaps**. See [Audio](in-game-menu.md#audio). |
@@ -78,8 +78,10 @@ What you set here is the console's setting, the same as the in-game menu's
       **Pointer** rows
       ([Nintendo Wii & GameCube](emulators/wii-gamecube.md#console-settings)).
       The in-game menu leaves them out.
-    - **Controller Layout**, the fast forward rows and the three **Audio**
-      rows are there for every console. **Controller Type** is for Sega
+    - **Button Mapping**, the fast forward rows and the three **Audio**
+      rows are there for every console. Button Mapping opens the console's
+      mapping; see [Button Mapping](controls.md#button-mapping).
+      **Controller Type** is for Sega
       Genesis, Sega CD and Sega 32X, the rewind rows for emulators that can
       rewind, and **Frame Skip** for Wii and GameCube.
     - While a second screen is connected, every console also has **Bottom
@@ -119,10 +121,14 @@ Advance: a Cable Link session always runs mGBA.
 Open a game's context menu with `MENU` in a game list, or a long press on
 the game, and choose **Game Settings**. The same page opens over the list, for that one game.
 
-![Game Settings for Tetris, over the Game Boy list: the Controls label in the accent with Controller Layout, then Gameplay with Max FF Speed selected and Fast Forward Audio](../assets/screenshots/mobile/game-settings.webp)
+![Game Settings for Tetris, over the Game Boy list: the Controls group with Button Mapping selected, then Gameplay with Max FF Speed and Fast Forward Audio](../assets/screenshots/mobile/game-settings.webp)
 
 - The first change gives the game its own settings, starting from the
   console's.
+- **Controls → Button Mapping** sets that game's buttons. The game follows
+  the console's mapping until you change one, and follows it again once
+  every button matches the console's. See
+  [Button Mapping](controls.md#button-mapping).
 - To go back to the console's settings, press `A` on **Use emulator
   settings**, the last row.
 - `B` goes back to the game list.

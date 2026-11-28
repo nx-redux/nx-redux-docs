@@ -82,9 +82,9 @@ A controller maps to the GamePad:
 | `SELECT`, `START` | `−`, `+` |
 | `MENU` | The app's [in-game menu](../in-game-menu.md) |
 
-To use the GamePad's positions on an Xbox pad (`A` on the right), set
-**Controller Layout** to **Nintendo**; see
-[Controls](../controls.md#controller-buttons).
+To use the GamePad's positions on an Xbox pad (`A` at the bottom), swap
+`A` and `B`, and `X` and `Y`, in **Options → Controls → Button Mapping**;
+see [Button Mapping](../controls.md#button-mapping).
 
 These shortcuts are the app's:
 
