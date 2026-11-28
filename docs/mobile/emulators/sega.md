@@ -60,6 +60,11 @@ on-screen [pad skin](../controls.md#pad-skins):
 On the Master System, Game Gear and SG-1000, the bottom and right face
 buttons are `1` and `2`.
 
+The positions are an Xbox-style pad's, with `A` at the bottom: the app
+reads the letter each key sends. On a pad with Nintendo letters, or to move
+a button, use **Options → Controls →
+[Button Mapping](../controls.md#button-mapping)**.
+
 ## Settings
 
 Genesis, Sega CD and 32X games have two rows on the **Controls** page of
@@ -71,7 +76,7 @@ straight away; keep them for the game or the console with
 | Row | Values | Default | See |
 | --- | --- | --- | --- |
 | **Controller Type** | Auto, 3 buttons, 6 buttons | Auto | [Controller Type](#controller-type) |
-| **Controller Layout** | Auto-detect, Xbox (A at the bottom), Nintendo (A on the right) | Auto-detect | [Controls](../controls.md#controller-buttons) |
+| **Button Mapping** | Opens a page: which controller key does each button | Each button on its own key | [Button Mapping](../controls.md#button-mapping) |
 
 ### Controller Type
 

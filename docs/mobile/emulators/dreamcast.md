@@ -23,8 +23,8 @@ one folder.
 ![](../../assets/landing/mobile/zfold8.webp){ .nx-phone__frame }
 </figure>
 
-The face buttons map to the Dreamcast pad **by the printed letter**: `A`
-is the Dreamcast's `A`. The Dreamcast pad is lettered like an Xbox pad:
+The face buttons map to the Dreamcast pad **by letter**: the key that sends
+`A` is the Dreamcast's `A`. The Dreamcast pad is lettered like an Xbox pad:
 
 | Position | Dreamcast button |
 | --- | --- |
@@ -46,9 +46,10 @@ is the Dreamcast's `A`. The Dreamcast pad is lettered like an Xbox pad:
 - `MENU`, or `SELECT` + `START`, opens the
   [in-game menu](../in-game-menu.md). On NAOMI and Atomiswave the game sees
   the `SELECT` press first, so it may count a coin.
-- On a Nintendo-layout pad, set **Controller Layout** to **Xbox** in
-  **Options → Controls** to play with the Dreamcast's positions (see
-  [Controls](../controls.md#controller-buttons)).
+- On a pad with Nintendo letters (`A` on the right), the letters match but
+  the positions don't. To play with the Dreamcast's positions, swap `A` and
+  `B`, and `X` and `Y`, in **Options → Controls →
+  [Button Mapping](../controls.md#button-mapping)**.
 
 ??? info "More detail"
     - The on-screen pad is the Dreamcast
@@ -61,8 +62,10 @@ is the Dreamcast's `A`. The Dreamcast pad is lettered like an Xbox pad:
       d-pad.
     - NAOMI and Atomiswave games get the arcade pad skin instead: the
       d-pad, `A` `B` `X` `Y`, `L` `R`, **COIN** and `START`.
-    - On a controller, a "Press A" prompt means the button printed `A`. If a
-      controller is read wrongly, set **Controller Layout** to match it.
+    - On a controller, a "Press A" prompt means the key that sends `A`, or
+      the one you bound to `A` in Button Mapping.
+    - `L2` and `R2` stay the analog triggers: Button Mapping shows them
+      dimmed and can't bind them.
     - `L3` and `R3` are on controllers only: the on-screen pad has no stick
       buttons.
     - On a controller the triggers press as far as you pull them. On the

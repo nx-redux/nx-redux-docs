@@ -150,7 +150,7 @@ group names. Keep a change for the game or the console with
 | --- | --- | --- | --- | --- |
 | **Wii Controller** (Wii) | Controls | Auto, Sideways Wiimote, Wiimote, Wiimote + Nunchuk, Classic Controller | Auto | [Wii](#wii) |
 | **Motion Controls** (Wii) | Controls | Auto, On, Off | Auto | [Motion controls](#motion-controls) |
-| **Controller Layout** | Controls | Auto-detect, Xbox (A at the bottom), Nintendo (A on the right) | Auto-detect | [Controls](../controls.md#controller-buttons) |
+| **Button Mapping** | Controls | Opens a page: which controller key does each button | Each button on its own key | [Button Mapping](../controls.md#button-mapping) |
 | **Frame Skip** | Gameplay | Auto, Off | Off | [Frame Skip](#frame-skip) |
 | **Fill Audio Gaps** | Audio | Auto, On, Off | Auto | [Frame Skip](#frame-skip) |
 

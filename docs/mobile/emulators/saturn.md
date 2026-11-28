@@ -34,6 +34,10 @@ controller plays it **by position**, as on the other
   on a controller, opens the [in-game menu](../in-game-menu.md).
 - The pad skin draws the Saturn pad: `A` `B` `C` below `X` `Y` `Z`, `L` and
   `R` on the shoulders, and `START` beside `MENU`.
+- The positions are an Xbox-style pad's, with `A` at the bottom: the app
+  reads the letter each key sends. On a pad with Nintendo letters, or to move
+  a button, use **Options → Controls →
+  [Button Mapping](../controls.md#button-mapping)**.
 
 ## BIOS
 

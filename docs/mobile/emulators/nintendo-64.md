@@ -43,10 +43,9 @@ Nintendo console: the button printed `A` is the N64's `A`.
   [in-game menu](../in-game-menu.md).
 
 ??? info "More detail"
-    **Controller Layout** in **Options → Controls** names your
-    controller's letters if it is read wrongly. Set it to the layout that
-    isn't your controller's to swap `A`/`B` and `X`/`Y`; see
-    [Controls](../controls.md#controller-buttons).
+    To move any N64 button to another key, such as **C-Left** or `Z`, use
+    **Options → Controls → Button Mapping**; see
+    [Button Mapping](../controls.md#button-mapping).
 
 ## Rumble
 

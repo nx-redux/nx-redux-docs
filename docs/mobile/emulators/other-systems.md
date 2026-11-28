@@ -31,11 +31,13 @@ packs aren't supported, and the emulator's ADAM options are hidden.
 System**, only for a game that doesn't run right.
 
 ??? info "More detail: face buttons"
-    A controller's face buttons work **by the printed letter** on the NES,
-    Super Nintendo, Virtual Boy, Pokémon mini, Atari Lynx, WonderSwan and
-    Neo Geo Pocket, and **by position** on the TurboGrafx-16, PICO-8, Atari,
-    ColecoVision and Doom; see
-    [Controls](../controls.md#controller-buttons).
+    A controller's face buttons go **by letter** on the NES, Super
+    Nintendo, Virtual Boy, Pokémon mini, Atari Lynx, WonderSwan and Neo Geo
+    Pocket: the key that sends `A` is the console's `A`. On the
+    TurboGrafx-16, PICO-8, Atari, ColecoVision and Doom, the keys go by an
+    Xbox-style pad's positions: `A` is the bottom button, `B` the right
+    one. See [Controller buttons](../controls.md#controller-buttons), and
+    [Button Mapping](../controls.md#button-mapping) to change them.
 
 ## Controls
 
